@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Sources</title>
+<style>
+  :root{
+    /* PwC palette */
+    --paper:#ffffff; --paper2:#f7f5f2; --ink:#000000; --ink2:#3d3d3d;
+    --muted:#6e6e6e; --rule:#dcdcdc; --rule-dark:#000000;
+    --crit:#AD1B02; --high:#D85604; --med:#E88D14; --low:#E669A2; --accent:#D85604;
+    --yellow:#F3BE26;
+    --serif:Georgia,"ITC Charter","Times New Roman",serif;
+    --sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--sans);}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+  .momentum{height:6px;margin:0 -20px 28px;
+    background:linear-gradient(90deg,#AD1B02 0%,#D85604 28%,#E88D14 52%,#F3BE26 76%,#E669A2 100%)}
+  header{border-bottom:3px solid var(--rule-dark);padding-bottom:16px}
+  .kick{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{margin:6px 0 0;font-size:38px;font-weight:700;font-family:var(--serif);letter-spacing:-.5px}
+  .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .intro{color:var(--ink2);margin:22px 0 6px}
+  section{margin-top:32px}
+  .cat{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+    color:var(--ink);border-bottom:2px solid var(--rule-dark);padding-bottom:8px;margin-bottom:8px}
+  .cat .ico{font-size:16px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+  tr:hover td{background:var(--paper2)}
+  td.name{white-space:nowrap;font-weight:700;width:210px;font-family:var(--serif)}
+  td.note{color:var(--ink2);font-size:13.5px}
+  .tier{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:3px;
+    border:1px solid;margin-left:8px;vertical-align:middle}
+  .t1{color:#fff;border-color:var(--accent);background:var(--accent)}
+  .t2{color:var(--accent);border-color:var(--accent);background:rgba(216,86,4,.08)}
+  .t3{color:var(--high);border-color:var(--med);background:rgba(232,141,20,.12)}
+  .flag{color:var(--crit);font-size:12.5px;font-weight:700}
+  footer{margin-top:46px;border-top:3px solid var(--rule-dark);padding-top:18px;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="momentum"></div>
+  <header>
+    <div class="kick">The Tech Briefing</div>
+    <h1>Tech Sources</h1>
+    <div class="sub">Updated July 3, 2026 &nbsp;·&nbsp; the outlets feeding your daily Tech section &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+  </header>
+
+  <p class="intro">General-technology outlets ranked by reputation, originality of reporting, and freshness — big tech &amp; business, devices &amp; consumer products, software &amp; platforms, and science &amp; emerging tech. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and specialist coverage; <span class="tier t3">Newsletter</span> add analysis and strategic context. This roster deliberately avoids narrow cybersecurity and pure AI-model news (covered by the sibling briefings) and is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog-tech.md">changelog</a>).</p>
+
+  <!-- BIG TECH & BUSINESS -->
+  <section>
+    <div class="cat"><span class="ico">💼</span> Big Tech &amp; Business <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.theverge.com/" target="_blank">The Verge</a></td><td class="note">High-volume, well-reported coverage across big tech, policy, devices, and platforms. A strong default first read.</td></tr>
+      <tr><td class="name"><a href="https://techcrunch.com/" target="_blank">TechCrunch</a></td><td class="note">Startups, funding, M&amp;A, and big-tech business news; strong original deal and venture reporting.</td></tr>
+      <tr><td class="name"><a href="https://arstechnica.com/" target="_blank">Ars Technica</a></td><td class="note">Technically rigorous reporting across computing, science, policy, and consumer tech.</td></tr>
+      <tr><td class="name"><a href="https://www.bloomberg.com/technology" target="_blank">Bloomberg Technology</a></td><td class="note">Original business/markets reporting on big tech, earnings, deals, and supply chains.</td></tr>
+      <tr><td class="name"><a href="https://www.reuters.com/technology/" target="_blank">Reuters Technology</a></td><td class="note">Wire-service breaking news on deals, earnings, regulation, and global tech.</td></tr>
+      <tr><td class="name"><a href="https://www.cnbc.com/technology/" target="_blank">CNBC Technology</a></td><td class="note">Markets-focused tech and business coverage; earnings, IPOs, and executive moves.</td></tr>
+      <tr><td class="name"><a href="https://www.theinformation.com/" target="_blank">The Information</a> <span class="tier t2">Strong</span></td><td class="note">Subscription outlet known for scoops on big-tech strategy, deals, and internals.</td></tr>
+      <tr><td class="name"><a href="https://news.crunchbase.com/" target="_blank">Crunchbase News</a> <span class="tier t2">Strong</span></td><td class="note">Data-driven original reporting on startups, venture funding, M&amp;A, and unicorn trends. <span class="flag">(added Jun 23, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://restofworld.org/" target="_blank">Rest of World</a> <span class="tier t2">Strong</span></td><td class="note">Nonprofit publication with on-the-ground original reporting on technology's impact across emerging markets beyond the Western tech bubble. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://stratechery.com/" target="_blank">Stratechery</a> <span class="tier t3">Newsletter</span></td><td class="note">Ben Thompson's influential analysis of tech strategy, business models, and platform economics.</td></tr>
+    </table>
+  </section>
+
+  <!-- DEVICES & CONSUMER -->
+  <section>
+    <div class="cat"><span class="ico">📱</span> Devices &amp; Consumer <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.engadget.com/" target="_blank">Engadget</a></td><td class="note">Consumer electronics, gadgets, and hands-on device coverage with steady daily news.</td></tr>
+      <tr><td class="name"><a href="https://the-gadgeteer.com/" target="_blank">The Gadgeteer</a> <span class="tier t2">Strong</span></td><td class="note">Long-running independent gadget reviews and new-product roundups.</td></tr>
+      <tr><td class="name"><a href="https://9to5mac.com/" target="_blank">9to5Mac</a> <span class="tier t2">Strong</span></td><td class="note">Primary-source Apple ecosystem reporting — devices, software releases, and rumors.</td></tr>
+      <tr><td class="name"><a href="https://www.tomshardware.com/" target="_blank">Tom's Hardware</a> <span class="tier t2">Strong</span></td><td class="note">Deep PC hardware, chips, and component benchmarking and news.</td></tr>
+      <tr><td class="name"><a href="https://www.tomsguide.com/" target="_blank">Tom's Guide</a> <span class="tier t2">Strong</span></td><td class="note">Consumer-facing tech site with original hands-on testing, reviews, and buying guidance across phones, wearables, audio, and smart home. <span class="flag">(added Jul 1, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://electrek.co/" target="_blank">Electrek</a> <span class="tier t2">Strong</span></td><td class="note">Original reporting on electric vehicles, batteries, and clean-energy tech, including primary-source quarterly delivery and production analysis for Tesla, Rivian, and other EV makers. <span class="flag">(added Jul 3, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- SOFTWARE & PLATFORMS -->
+  <section>
+    <div class="cat"><span class="ico">🖥️</span> Software &amp; Platforms <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.theregister.com/" target="_blank">The Register</a></td><td class="note">Enterprise IT, cloud, and software/platform news with original reporting and a sharp eye.</td></tr>
+      <tr><td class="name"><a href="https://www.zdnet.com/" target="_blank">ZDNet</a> <span class="tier t2">Strong</span></td><td class="note">Business technology, software platforms, and enterprise product coverage.</td></tr>
+      <tr><td class="name"><a href="https://www.404media.co/" target="_blank">404 Media</a> <span class="tier t2">Strong</span></td><td class="note">Journalist-owned independent outlet doing original, investigative reporting on internet platforms, right-to-repair, online communities, and consumer-tech accountability. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://siliconangle.com/" target="_blank">SiliconANGLE</a> <span class="tier t2">Strong</span></td><td class="note">Enterprise-tech and platforms news site with original reporting and analysis on cloud, AI infrastructure, chips, and software business. <span class="flag">(added Jul 1, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- SCIENCE & EMERGING -->
+  <section>
+    <div class="cat"><span class="ico">🔬</span> Science &amp; Emerging <span class="tier t2">Strong</span></div>
+    <table>
+      <tr><td class="name"><a href="https://arstechnica.com/science/" target="_blank">Ars Technica — Science</a></td><td class="note">Rigorous coverage of space, physics, and emerging science with technical depth.</td></tr>
+      <tr><td class="name"><a href="https://www.space.com/" target="_blank">Space.com</a></td><td class="note">Spaceflight, astronomy, and space-industry news; strong launch and mission coverage.</td></tr>
+      <tr><td class="name"><a href="https://spacenews.com/" target="_blank">SpaceNews</a> <span class="tier t2">Strong</span></td><td class="note">Independent, award-winning space-industry publication (since 1989) covering launches, spacecraft, satellite, and space-business news with original reporting. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a> <span class="tier t2">Strong</span></td><td class="note">Flagship publication of IEEE with original, technically authoritative journalism on computing, robotics, semiconductors, energy, and emerging engineering. <span class="flag">(added Jul 1, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://spaceflightnow.com/" target="_blank">Spaceflight Now</a> <span class="tier t2">Strong</span></td><td class="note">Long-running independent space-news outlet with original launch coverage, mission reporting, and 24/7 live broadcasts from Cape Canaveral and beyond. <span class="flag">(added Jul 2, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <footer>
+    25 sources across 4 categories (8 core, 16 strong, 1 newsletter), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog-tech.md">changelog</a>. Links open the live sites.
+  </footer>
+</div>
+</body>
+</html>

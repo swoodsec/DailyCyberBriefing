@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Briefing Source List</title>
+<style>
+  :root{
+    /* PwC palette */
+    --paper:#ffffff; --paper2:#f7f5f2; --ink:#000000; --ink2:#3d3d3d;
+    --muted:#6e6e6e; --rule:#dcdcdc; --rule-dark:#000000;
+    --crit:#AD1B02; --high:#D85604; --med:#E88D14; --low:#E669A2; --accent:#D85604;
+    --yellow:#F3BE26;
+    --serif:Georgia,"ITC Charter","Times New Roman",serif;
+    --sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--sans);}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+  .momentum{height:6px;margin:0 -20px 28px;
+    background:linear-gradient(90deg,#AD1B02 0%,#D85604 28%,#E88D14 52%,#F3BE26 76%,#E669A2 100%)}
+  header{border-bottom:3px solid var(--rule-dark);padding-bottom:16px}
+  .kick{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{margin:6px 0 0;font-size:38px;font-weight:700;font-family:var(--serif);letter-spacing:-.5px}
+  .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .intro{color:var(--ink2);margin:22px 0 6px}
+  section{margin-top:32px}
+  .cat{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+    color:var(--ink);border-bottom:2px solid var(--rule-dark);padding-bottom:8px;margin-bottom:8px}
+  .cat .ico{font-size:16px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+  tr:hover td{background:var(--paper2)}
+  td.name{white-space:nowrap;font-weight:700;width:210px;font-family:var(--serif)}
+  td.note{color:var(--ink2);font-size:13.5px}
+  .tier{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:3px;
+    border:1px solid;margin-left:8px;vertical-align:middle}
+  .t1{color:#fff;border-color:var(--accent);background:var(--accent)}
+  .t2{color:var(--accent);border-color:var(--accent);background:rgba(216,86,4,.08)}
+  .t3{color:var(--high);border-color:var(--med);background:rgba(232,141,20,.12)}
+  .flag{color:var(--crit);font-size:12.5px;font-weight:700}
+  footer{margin-top:46px;border-top:3px solid var(--rule-dark);padding-top:18px;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="momentum"></div>
+  <header>
+    <div class="kick">The AI Briefing</div>
+    <h1>AI Sources</h1>
+    <div class="sub">Updated July 3, 2026 &nbsp;·&nbsp; the outlets feeding your daily AI briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+  </header>
+
+  <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and specialist coverage; <span class="tier t3">Newsletter</span> sources distill the week's research and policy. This roster covers <b>general AI news</b> — model releases, research, products, and business/policy — and is <b>self-updating</b>: each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog-ai.md">changelog</a>).</p>
+
+  <!-- MODELS & RELEASES -->
+  <section>
+    <div class="cat"><span class="ico">🚀</span> Models &amp; Releases <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://openai.com/news/" target="_blank">OpenAI Blog</a></td><td class="note">Primary source for OpenAI model releases, research, and product announcements.</td></tr>
+      <tr><td class="name"><a href="https://deepmind.google/discover/blog/" target="_blank">Google DeepMind Blog</a></td><td class="note">Primary source for Gemini, robotics, and frontier research from DeepMind.</td></tr>
+      <tr><td class="name"><a href="https://www.anthropic.com/news" target="_blank">Anthropic News</a></td><td class="note">Primary source for Claude model releases, safety research, and policy posts.</td></tr>
+      <tr><td class="name"><a href="https://blogs.microsoft.com/ai/" target="_blank">Microsoft AI Blog</a></td><td class="note">Primary source for MAI models, Copilot, and Azure AI announcements.</td></tr>
+      <tr><td class="name"><a href="https://ai.meta.com/blog/" target="_blank">Meta AI Blog</a> <span class="tier t2">Strong</span></td><td class="note">Primary source for Llama and open-model research from Meta.</td></tr>
+      <tr><td class="name"><a href="https://developer.nvidia.com/blog/" target="_blank">NVIDIA Technical Blog</a> <span class="tier t2">Strong</span></td><td class="note">Primary source for AI hardware, CUDA, and applied-model releases (e.g. the Ising quantum models).</td></tr>
+    </table>
+  </section>
+
+  <!-- RESEARCH & CAPABILITIES -->
+  <section>
+    <div class="cat"><span class="ico">🔬</span> Research &amp; Capabilities <span class="tier t2">Strong</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank">MIT Technology Review — AI</a></td><td class="note">Deep, rigorous explainers on AI research and its societal impact.</td></tr>
+      <tr><td class="name"><a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/" target="_blank">ScienceDaily — AI</a></td><td class="note">Aggregates peer-reviewed AI research news from universities and journals.</td></tr>
+      <tr><td class="name"><a href="https://www.deeplearning.ai/the-batch/" target="_blank">The Batch (DeepLearning.AI)</a> <span class="tier t3">Newsletter</span></td><td class="note">Andrew Ng's weekly digest of AI research and applied developments.</td></tr>
+      <tr><td class="name"><a href="https://semianalysis.com/" target="_blank">SemiAnalysis</a> <span class="tier t2">Strong</span></td><td class="note">In-depth original research on AI semiconductors, datacenters, and compute economics. <span class="flag">(added Jun 23, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://the-decoder.com/" target="_blank">The Decoder</a> <span class="tier t2">Strong</span></td><td class="note">Editorially independent AI desk (heise medien) with original reporting on model releases, research, and policy. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://www.latent.space/" target="_blank">Latent Space</a> <span class="tier t3">Newsletter</span></td><td class="note">The definitive AI-engineering publication (swyx &amp; Alessio Fanelli); original deep dives and podcast on inference economics, agent frameworks, and the tooling layer. <span class="flag">(added Jul 1, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://www.interconnects.ai/" target="_blank">Interconnects</a> <span class="tier t3">Newsletter</span></td><td class="note">Frontier-lab research analysis from AI researcher Nathan Lambert; original essays, model reviews, and RL/post-training deep dives with a focus on open models. <span class="flag">(added Jul 2, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://alphasignal.ai/" target="_blank">AlphaSignal</a> <span class="tier t3">Newsletter</span></td><td class="note">Technical "by researchers, for researchers" newsletter (180k+ subscribers) on ML and hardware developments, trending research and repos, and analysis of emerging models and techniques. <span class="flag">(added Jul 3, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- PRODUCTS & TOOLS -->
+  <section>
+    <div class="cat"><span class="ico">🛠️</span> Products &amp; Tools <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.theverge.com/ai-artificial-intelligence" target="_blank">The Verge — AI</a></td><td class="note">Consumer AI products, launches, and culture; strong on scoops.</td></tr>
+      <tr><td class="name"><a href="https://arstechnica.com/ai/" target="_blank">Ars Technica — AI</a></td><td class="note">Technical, skeptical coverage of AI capabilities and products.</td></tr>
+      <tr><td class="name"><a href="https://www.engadget.com/" target="_blank">Engadget</a> <span class="tier t2">Strong</span></td><td class="note">Original consumer-tech and AI product reporting; broke the detail behind Meta's paused employee-tracking AI program. <span class="flag">(added Jun 24, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://venturebeat.com/category/ai/" target="_blank">VentureBeat</a> <span class="tier t2">Strong</span></td><td class="note">Enterprise-AI desk with original reporting and proprietary (VB Pulse) research on models, agents, and infrastructure. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- BUSINESS & POLICY -->
+  <section>
+    <div class="cat"><span class="ico">💼</span> Business &amp; Policy <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank">TechCrunch — AI</a></td><td class="note">Fast original reporting on AI startups, funding, and industry moves.</td></tr>
+      <tr><td class="name"><a href="https://www.cnbc.com/ai-artificial-intelligence/" target="_blank">CNBC — AI</a></td><td class="note">AI business, markets, IPOs, and big-tech strategy.</td></tr>
+      <tr><td class="name"><a href="https://www.reuters.com/technology/artificial-intelligence/" target="_blank">Reuters — Artificial Intelligence</a></td><td class="note">Wire-service breaking news on AI business and policy.</td></tr>
+      <tr><td class="name"><a href="https://www.axios.com/technology" target="_blank">Axios — Technology</a> <span class="tier t2">Strong</span></td><td class="note">Concise scoops on AI deals, talent, and Washington policy.</td></tr>
+      <tr><td class="name"><a href="https://jack-clark.net/" target="_blank">Import AI (Jack Clark)</a> <span class="tier t3">Newsletter</span></td><td class="note">Weekly newsletter on frontier-model research, governance, and policy.</td></tr>
+      <tr><td class="name"><a href="https://fortune.com/" target="_blank">Fortune</a> <span class="tier t2">Strong</span></td><td class="note">Original business reporting on AI funding, IPOs, and corporate strategy. <span class="flag">(added Jun 23, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://news.crunchbase.com/" target="_blank">Crunchbase News</a> <span class="tier t2">Strong</span></td><td class="note">Data-driven original reporting on startup funding rounds and venture trends. <span class="flag">(added Jun 23, 2026)</span></td></tr>
+      <tr><td class="name"><a href="https://www.bloomberg.com/technology" target="_blank">Bloomberg</a> <span class="tier t2">Strong</span></td><td class="note">Top-tier original reporting on AI deals, talent, and markets; broke the Google-to-Anthropic researcher departures. <span class="flag">(added Jun 25, 2026)</span></td></tr>
+    </table>
+  </section>
+
+  <footer>
+    26 sources across 5 categories (models, research, products, business, policy), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog-ai.md">changelog</a>. Links open the live sites.
+  </footer>
+</div>
+</body>
+</html>

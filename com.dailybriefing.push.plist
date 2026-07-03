@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.dailybriefing.push</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/andrewswartwood/Cursor/DailyCyberBriefing/daily-push.sh</string>
+    </array>
+    <!-- Runs at 6:30 AM daily, after the 6:00 AM briefing regeneration -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/dailybriefing-push.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/dailybriefing-push.err</string>
+</dict>
+</plist>

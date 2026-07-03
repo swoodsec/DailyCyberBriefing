@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing Source List</title>
+<style>
+  :root{
+    /* PwC palette */
+    --paper:#ffffff; --paper2:#f7f5f2; --ink:#000000; --ink2:#3d3d3d;
+    --muted:#6e6e6e; --rule:#dcdcdc; --rule-dark:#000000;
+    --crit:#AD1B02; --high:#D85604; --med:#E88D14; --low:#E669A2; --accent:#D85604;
+    --yellow:#F3BE26;
+    --serif:Georgia,"ITC Charter","Times New Roman",serif;
+    --sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--sans);}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+  .momentum{height:6px;margin:0 -20px 28px;
+    background:linear-gradient(90deg,#AD1B02 0%,#D85604 28%,#E88D14 52%,#F3BE26 76%,#E669A2 100%)}
+  header{border-bottom:3px solid var(--rule-dark);padding-bottom:16px}
+  .kick{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{margin:6px 0 0;font-size:38px;font-weight:700;font-family:var(--serif);letter-spacing:-.5px}
+  .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .intro{color:var(--ink2);margin:22px 0 6px}
+  section{margin-top:32px}
+  .cat{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+    color:var(--ink);border-bottom:2px solid var(--rule-dark);padding-bottom:8px;margin-bottom:8px}
+  .cat .ico{font-size:16px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+  tr:hover td{background:var(--paper2)}
+  td.name{white-space:nowrap;font-weight:700;width:210px;font-family:var(--serif)}
+  td.note{color:var(--ink2);font-size:13.5px}
+  .tier{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:3px;
+    border:1px solid;margin-left:8px;vertical-align:middle}
+  .t1{color:#fff;border-color:var(--accent);background:var(--accent)}
+  .t2{color:var(--accent);border-color:var(--accent);background:rgba(216,86,4,.08)}
+  .t3{color:var(--high);border-color:var(--med);background:rgba(232,141,20,.12)}
+  .flag{color:var(--crit);font-size:12.5px;font-weight:700}
+  footer{margin-top:46px;border-top:3px solid var(--rule-dark);padding-top:18px;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="momentum"></div>
+  <header>
+    <div class="kick">The Cyber Briefing</div>
+    <h1>Sources &amp; Masthead</h1>
+    <div class="sub">Updated July 3, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+  </header>
+
+  <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
+
+  <!-- BREAKING NEWS -->
+  <section>
+    <div class="cat"><span class="ico">📰</span> General Breaking News <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://thehackernews.com/" target="_blank">The Hacker News</a></td><td class="note">Highest-volume breaking cyber news; fast, technical, widely syndicated. The default first read.</td></tr>
+      <tr><td class="name"><a href="https://www.bleepingcomputer.com/" target="_blank">BleepingComputer</a></td><td class="note">Best for ransomware, malware, and breach specifics — often first with technical detail and IOCs.</td></tr>
+      <tr><td class="name"><a href="https://www.darkreading.com/" target="_blank">Dark Reading</a></td><td class="note">Deep analysis across threat intel, vulns, and enterprise defense; trusted by practitioners.</td></tr>
+      <tr><td class="name"><a href="https://www.securityweek.com/" target="_blank">SecurityWeek</a></td><td class="note">Steady, high-quality news and analysis; strong on ICS/OT and enterprise threats.</td></tr>
+      <tr><td class="name"><a href="https://therecord.media/" target="_blank">The Record (Recorded Future)</a></td><td class="note">Original reporting on nation-state, ransomware, and policy; strong sourcing in the cyber underground.</td></tr>
+      <tr><td class="name"><a href="https://cyberscoop.com/" target="_blank">CyberScoop</a></td><td class="note">Policy + breaking incidents, especially U.S. government and critical infrastructure.</td></tr>
+      <tr><td class="name"><a href="https://www.cybersecuritydive.com/" target="_blank">Cybersecurity Dive</a></td><td class="note">Business-focused, concise coverage of breaches, regulation, and industry moves.</td></tr>
+      <tr><td class="name"><a href="https://arstechnica.com/security/" target="_blank">Ars Technica — Security</a></td><td class="note">Explains the "how and why" of zero-days and nation-state attacks with technical rigor.</td></tr>
+      <tr><td class="name"><a href="https://www.infosecurity-magazine.com/" target="_blank">Infosecurity Magazine</a></td><td class="note">Broad industry news, M&A, and event coverage; good for vendor/tooling moves.</td></tr>
+      <tr><td class="name"><a href="https://thecyberwire.com/" target="_blank">The CyberWire</a></td><td class="note">Major daily cyber news/podcast network with original reporting and clear summaries. <span class="flag">(added 2026-06-15)</span></td></tr>
+      <tr><td class="name"><a href="https://www.helpnetsecurity.com/" target="_blank">Help Net Security</a></td><td class="note">Original news + research; broke the LiteLLM PyPI backdoor and OWASP prompt-injection coverage. <span class="flag">(added 2026-06-15)</span></td></tr>
+      <tr><td class="name"><a href="https://securityaffairs.com/" target="_blank">Security Affairs</a></td><td class="note">Pierluigi Paganini's long-running original-reporting blog; early source on the Aflac 22.7M and Handala Cal Water stories. <span class="flag">(added 2026-06-16)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- INVESTIGATIVE -->
+  <section>
+    <div class="cat"><span class="ico">🔎</span> Investigative &amp; Analysis <span class="tier t1">Core</span></div>
+    <table>
+      <tr><td class="name"><a href="https://krebsonsecurity.com/" target="_blank">Krebs on Security</a></td><td class="note">Brian Krebs's original cybercrime investigations — a primary source the whole industry follows.</td></tr>
+      <tr><td class="name"><a href="https://www.schneier.com/" target="_blank">Schneier on Security</a></td><td class="note">Bruce Schneier's systems-level take connecting tech to policy, economics, and society.</td></tr>
+      <tr><td class="name"><a href="https://risky.biz/" target="_blank">Risky Business</a></td><td class="note">Sharp weekly news + analysis (podcast & newsletter); excellent signal on what actually matters.</td></tr>
+      <tr><td class="name"><a href="https://www.lastwatchdog.com/" target="_blank">The Last Watchdog</a></td><td class="note">Byron Acohido's interview-driven analysis of emerging threats and industry trends.</td></tr>
+      <tr><td class="name"><a href="https://cybernews.com/" target="_blank">Cybernews</a></td><td class="note">Research team that discovers exposed databases and credential leaks first-hand; broke the 24-billion-record / 8.3 TB infostealer leak and the 4B-record China and IDMerit 3B KYC exposures. Primary investigative research. <span class="flag">(added 2026-06-25)</span></td></tr>
+      <tr><td class="name"><a href="https://securitydiscovery.com/" target="_blank">Security Discovery (Bob Diachenko)</a></td><td class="note">Researcher who discovers exposed databases and misconfigured servers first-hand; first flagged the FortiBleed attacker server and has a long track record (MOAB 26B records, 8.7B-record Chinese leak, 4.3B database). <span class="flag">(added 2026-07-03)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- THREAT INTEL -->
+  <section>
+    <div class="cat"><span class="ico">🧠</span> Threat-Intel &amp; Vendor Research <span class="tier t2">Strong</span></div>
+    <table>
+      <tr><td class="name"><a href="https://cloud.google.com/blog/topics/threat-intelligence" target="_blank">Google / Mandiant TI</a></td><td class="note">Frontline incident research and the M-Trends report; authoritative on nation-state TTPs.</td></tr>
+      <tr><td class="name"><a href="https://blog.talosintelligence.com/" target="_blank">Cisco Talos</a></td><td class="note">Largest commercial threat-intel team; deep malware and vulnerability research.</td></tr>
+      <tr><td class="name"><a href="https://unit42.paloaltonetworks.com/" target="_blank">Unit 42 (Palo Alto)</a></td><td class="note">Incident-response insights and threat research; strong on attacker speed and identity attacks.</td></tr>
+      <tr><td class="name"><a href="https://www.microsoft.com/en-us/security/blog/" target="_blank">Microsoft Threat Intelligence</a></td><td class="note">MSTIC research on nation-state actors and large-scale campaigns.</td></tr>
+      <tr><td class="name"><a href="https://www.crowdstrike.com/blog/" target="_blank">CrowdStrike</a></td><td class="note">Adversary tracking and eCrime/nation-state intel; named-actor profiles.</td></tr>
+      <tr><td class="name"><a href="https://news.sophos.com/" target="_blank">Sophos X-Ops</a></td><td class="note">Practical malware/ransomware research and active-adversary reporting.</td></tr>
+      <tr><td class="name"><a href="https://www.welivesecurity.com/" target="_blank">ESET WeLiveSecurity</a></td><td class="note">Award-winning research blog; strong on APT discoveries.</td></tr>
+      <tr><td class="name"><a href="https://isc.sans.edu/" target="_blank">SANS Internet Storm Center</a></td><td class="note">Daily handler diaries — early warning on active exploitation and anomalies.</td></tr>
+      <tr><td class="name"><a href="https://googleprojectzero.blogspot.com/" target="_blank">Google Project Zero</a></td><td class="note">Deep zero-day and exploit research; the bar for vulnerability writeups.</td></tr>
+      <tr><td class="name"><a href="https://cert.pl/en/" target="_blank">CERT Polska (CERT.PL)</a></td><td class="note">Poland's national CERT; original APT/phishing analysis with IOCs — broke the Ghostwriter/UNC1151 Gmail 2FA-phishing campaign. <span class="flag">(added 2026-06-17)</span></td></tr>
+      <tr><td class="name"><a href="https://arcticwolf.com/resources/blog/" target="_blank">Arctic Wolf Labs</a></td><td class="note">IR/threat-research team with original exploitation analysis and IOCs; published primary analysis of the actively-exploited Oracle PeopleSoft CVE-2026-35273 (ShinyHunters) campaign. <span class="flag">(added 2026-06-20)</span></td></tr>
+      <tr><td class="name"><a href="https://reliaquest.com/blog/" target="_blank">ReliaQuest</a></td><td class="note">GreyMatter threat-research team; dark-web monitoring and true-positive incident analysis — published the original Threat Spotlight on the Klue/"Icarus" OAuth Salesforce data-theft campaign. <span class="flag">(added 2026-06-23)</span></td></tr>
+      <tr><td class="name"><a href="https://www.huntress.com/blog" target="_blank">Huntress</a></td><td class="note">MDR provider with hands-on intrusion analysis and an adversary-tactics library; published its own primary investigation of the Klue breach (as both responder and victim). <span class="flag">(added 2026-06-23)</span></td></tr>
+      <tr><td class="name"><a href="https://blog.xlab.qianxin.com/tag/en/" target="_blank">XLab (QiAnXin)</a></td><td class="note">Botnet-hunting research lab; discovers and tracks large-scale botnets with C2 takeovers and honeypot telemetry — published the original RustDuck research and has exposed 30+ botnets (Zergeca, Vo1d, AISURU, AIRASHI). <span class="flag">(added 2026-07-01)</span></td></tr>
+      <tr><td class="name"><a href="https://www.sentinelone.com/labs/" target="_blank">SentinelOne (SentinelLABS)</a></td><td class="note">SentinelLABS research team; original macOS/APT malware analysis and attribution — published the macOS.Gaslight DPRK backdoor breakdown (Phil Stokes), the first malware seen prompt-injecting AI triage agents, plus NimDoor and the BONZAI family. <span class="flag">(added 2026-07-02)</span></td></tr>
+      <tr><td class="name"><a href="https://socradar.io/blog/" target="_blank">SOCRadar</a></td><td class="note">Threat Research Unit (STRU) that runs original dark-web/exposure investigations and ships free checker tools; ran the original FortiBleed investigation (86,644 firewalls), first tied it to INC and Lynx ransomware, and pushed the dataset to CERTs. <span class="flag">(added 2026-07-03)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- VULN FEEDS -->
+  <section>
+    <div class="cat"><span class="ico">🛠️</span> Vulnerability &amp; Advisory Feeds <span class="tier t2">Strong</span></div>
+    <table>
+      <tr><td class="name"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog</a></td><td class="note">Authoritative list of actively-exploited CVEs. <span class="flag">⚠ CISA retired RSS in May 2025</span> — pull the JSON/CSV feed or use a community mirror.</td></tr>
+      <tr><td class="name"><a href="https://nvd.nist.gov/" target="_blank">NIST NVD</a></td><td class="note">Canonical CVE database with CVSS scores and references.</td></tr>
+      <tr><td class="name"><a href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank">CISA Advisories</a></td><td class="note">Government alerts, ICS advisories, and joint advisories with named threat actors.</td></tr>
+      <tr><td class="name"><a href="https://www.rapid7.com/blog/" target="_blank">Rapid7 Blog</a></td><td class="note">Fast, clear "emergent threat" writeups when major CVEs are exploited.</td></tr>
+      <tr><td class="name"><a href="https://www.zerodayinitiative.com/blog/" target="_blank">Zero Day Initiative</a></td><td class="note">Trend Micro's ZDI — disclosures and Patch Tuesday breakdowns.</td></tr>
+      <tr><td class="name"><a href="https://msrc.microsoft.com/blog/" target="_blank">Microsoft MSRC</a></td><td class="note">Microsoft's own advisories and Patch Tuesday guidance.</td></tr>
+      <tr><td class="name"><a href="https://research.jfrog.com/" target="_blank">JFrog Security Research</a></td><td class="note">Vulnerability-research team that discloses original CVEs with working exploit walkthroughs; published the first public root exploit for the DirtyClone Linux kernel LPE (CVE-2026-43503) and the PixelSmash FFmpeg RCE (CVE-2026-8461). <span class="flag">(added 2026-06-25)</span></td></tr>
+      <tr><td class="name"><a href="https://labs.watchtowr.com/" target="_blank">watchTowr Labs</a></td><td class="note">Offensive-research team that reverse-engineers patches and ships working PoCs for edge/enterprise CVEs; published the original patch-diff and pre-auth PoC for the Progress Kemp LoadMaster RCE (CVE-2026-8037). <span class="flag">(added 2026-07-01)</span></td></tr>
+      <tr><td class="name"><a href="https://blog.calif.io/" target="_blank">Calif.io</a></td><td class="note">Vulnerability-research team that discloses original CVEs, including AI-assisted discoveries with PoCs; found and disclosed "Squidbleed" (CVE-2026-47729), the 29-year-old Squid proxy heap over-read leaking cleartext HTTP credentials. <span class="flag">(added 2026-07-02)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- AI SECURITY -->
+  <section>
+    <div class="cat"><span class="ico">🤖</span> AI &amp; LLM Security <span class="tier t3">AI focus</span></div>
+    <table>
+      <tr><td class="name"><a href="https://genai.owasp.org/" target="_blank">OWASP GenAI Security</a></td><td class="note">The reference framework — Top 10 for LLMs and Agentic AI; regularly updated risk guidance.</td></tr>
+      <tr><td class="name"><a href="https://atlas.mitre.org/" target="_blank">MITRE ATLAS</a></td><td class="note">Living knowledge base of adversarial AI tactics/techniques (prompt injection, poisoning, model theft).</td></tr>
+      <tr><td class="name"><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank">NIST AI RMF</a></td><td class="note">Governance/risk framework for AI systems; pairs with ATLAS for tactical detail.</td></tr>
+      <tr><td class="name"><a href="https://www.lakera.ai/blog" target="_blank">Lakera Blog</a></td><td class="note">Practical LLM-security research, red-teaming, and prompt-injection deep dives.</td></tr>
+      <tr><td class="name"><a href="https://embracethered.com/blog/" target="_blank">Embrace The Red</a></td><td class="note">Johann Rehberger's hands-on AI exploitation research — among the best for real attacks.</td></tr>
+      <tr><td class="name"><a href="https://simonwillison.net/" target="_blank">Simon Willison's Weblog</a></td><td class="note">Influential, plain-English coverage of prompt injection and practical LLM security.</td></tr>
+      <tr><td class="name"><a href="https://prompt.security/blog" target="_blank">Prompt Security</a></td><td class="note">Enterprise GenAI threat research and defenses.</td></tr>
+      <tr><td class="name"><a href="https://www.lasso.security/resources" target="_blank">Lasso Security</a></td><td class="note">LLM/agent security insights and incident analysis.</td></tr>
+      <tr><td class="name"><a href="https://github.com/TalEliyahu/AI-Security-Newsletter" target="_blank">AI Security Newsletter</a></td><td class="note">Monthly digest of AI-security research, reports, tools, and events (Tal Eliyahu).</td></tr>
+      <tr><td class="name"><a href="https://medium.com/ai-security-hub" target="_blank">AISecHub Adversarial AI Digest</a></td><td class="note">Red-teaming, agent security, and LLM exploitation roundups.</td></tr>
+      <tr><td class="name"><a href="https://huggingface.co/blog" target="_blank">Hugging Face Blog</a></td><td class="note">Model/dataset supply-chain risk and AI risk-assessment posts.</td></tr>
+      <tr><td class="name"><a href="https://jack-clark.net/" target="_blank">Import AI (Jack Clark)</a></td><td class="note">Weekly AI governance and safety; context on policy and frontier-model risk.</td></tr>
+      <tr><td class="name"><a href="https://developer.nvidia.com/blog/category/cybersecurity/" target="_blank">NVIDIA AI Red Team</a></td><td class="note">Practical, hands-on LLM security research (garak scanner, NeMo Guardrails) from a top red team. <span class="flag">(added 2026-06-15)</span></td></tr>
+      <tr><td class="name"><a href="https://www.obsidiansecurity.com/blog" target="_blank">Obsidian Security</a></td><td class="note">SaaS/identity and AI-gateway security research; disclosed the LiteLLM CVSS 9.9 priv-esc/RCE chain (CVE-2026-47101/47102/40217). <span class="flag">(added 2026-06-16)</span></td></tr>
+      <tr><td class="name"><a href="https://www.ox.security/blog" target="_blank">OX Security</a></td><td class="note">AppSec / AI supply-chain research; disclosed the systemic MCP arbitrary-command-execution vulnerability class (150M+ downloads affected). <span class="flag">(added 2026-06-17)</span></td></tr>
+      <tr><td class="name"><a href="https://adversa.ai/blog/" target="_blank">Adversa AI</a></td><td class="note">Adversarial-ML / AI red-teaming research and MCP security tracking; surfaced the June MCP exposure data (Censys, VIPER-MCP 67 CVEs). <span class="flag">(added 2026-06-17)</span></td></tr>
+      <tr><td class="name"><a href="https://orca.security/resources/blog/" target="_blank">Orca Security</a></td><td class="note">Cloud/AI security research with original supply-chain analysis; published the primary breakdown of the Mastra npm scope takeover (144 packages, easy-day-js typosquat, postinstall RAT). <span class="flag">(added 2026-06-23)</span></td></tr>
+      <tr><td class="name"><a href="https://www.pillar.security/blog" target="_blank">Pillar Security</a></td><td class="note">AI/agent security research with hands-on offensive findings; published the original "Agent Security Paradox" research disclosing the Cursor allowlist-bypass RCE (CVE-2026-22708). <span class="flag">(added 2026-06-25)</span></td></tr>
+    </table>
+  </section>
+
+  <!-- CANDIDATES UNDER REVIEW -->
+  <section>
+    <div class="cat"><span class="ico">🔬</span> Candidates Under Review</div>
+    <table>
+      <tr><td class="name"><a href="https://cybergeodigest.com/" target="_blank">CyberGeoDigest</a></td><td class="note">Daily cyber + geopolitics briefing. Useful, but more curated digest than original reporting — watching for original analysis before promoting.</td></tr>
+      <tr><td class="name"><a href="https://www.aikido.dev/blog" target="_blank">Aikido Security</a></td><td class="note">Its AI pentesting tool found the decade-old phpBB auth-bypass (CVE-2026-48611). Promising original vuln research, but a vendor product blog — watching cadence/independence. <span class="flag">(noted 2026-06-16)</span></td></tr>
+      <tr><td class="name"><a href="https://www.s-rminform.com/cyber-intelligence-briefing" target="_blank">S-RM</a></td><td class="note">Weekly cyber-intelligence briefing with some original incident framing (law-firm helpdesk-impersonation campaign). Largely curated — watching for sustained original reporting. <span class="flag">(noted 2026-06-17)</span></td></tr>
+      <tr><td class="name"><a href="https://www.halcyon.ai/ransomware-alerts" target="_blank">Halcyon</a></td><td class="note">Original ransomware tracking (INC Ransom law-firm campaign, 200+ legal incidents). Credible data, but a vendor alert feed — monitoring independence/cadence. <span class="flag">(noted 2026-06-17)</span></td></tr>
+    </table>
+  </section>
+
+  <footer>
+    61 sources across 5 categories (plus 4 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+  </footer>
+</div>
+</body>
+</html>
