@@ -1,11 +1,11 @@
 <div class="lead">
   <h2>Top of the Morning — AI</h2>
   <ul>
-    <li><span class="ld">The AI-compute glut fear goes mainstream —</span> Meta unveiled a plan to resell surplus AI capacity as a cloud business, and a report that OpenAI more than halved its inference costs helped send the Philadelphia Semiconductor Index down ~6% on July 2.</li>
-    <li><span class="ld">Abu Dhabi's MGX closes a $49B AI fund —</span> the OpenAI/Anthropic/xAI backer beat its $45B target for one of the largest AI-dedicated funds ever, cementing the Gulf as a top-tier source of AI capital.</li>
-    <li><span class="ld">Together AI doubles to $8.3B —</span> the open-model inference startup raised $800M led by Aramco Ventures, one of the week's biggest rounds as inference infrastructure keeps attracting mega-capital.</li>
-    <li><span class="ld">Google ships a fast, cheap image model —</span> Nano Banana 2 Lite delivers text-to-image in ~4 seconds at ~$0.034/image, while flagship Gemini 3.5 Pro's general availability is still targeted for July.</li>
-    <li><span class="ld">Anthropic reopens the frontier —</span> Fable 5 is back globally and Sonnet 5 is the new Free/Pro default, as labs coalesce around a shared jailbreak-severity framework.</li>
+    <li><span class="ld">OpenAI floats handing Washington a 5% stake —</span> per the FT, Sam Altman has pitched Trump, Lutnick and Bessent on giving the government equity worth ~$42.6B and wants every top US lab paying into an Alaska-style public fund, days after Washington delayed GPT-5.6.</li>
+    <li><span class="ld">The 20-day frontier-model shutdown, revealed —</span> Axios reconstructed how an Amazon jailbreak warning triggered export controls that pulled Anthropic's Mythos and Fable offline, and how a multi-agency crash course brought them back on July 1.</li>
+    <li><span class="ld">Anthropic overtakes OpenAI on revenue —</span> Claude's maker is now running past a ~$30B annualized run-rate versus OpenAI's ~$24-25B, powered by enterprise and Claude Code.</li>
+    <li><span class="ld">AI-infra capital keeps flowing —</span> Crusoe closed a $1.375B Series E at a $10B valuation for its datacenter buildout, days after Together AI's $800M round.</li>
+    <li><span class="ld">Grok 4.5 enters private beta —</span> Musk says xAI's 1.5T-parameter V9 model is testing at SpaceX and Tesla and rivals Claude Opus, with a monthly from-scratch model cadence planned.</li>
   </ul>
   <p class="rosternote">Roster update: added 1 new source today — see AI Sources.</p>
 </div>
@@ -16,38 +16,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Google DeepMind launches Nano Banana 2 Lite, its fastest, cheapest image model</h3>
-      <div class="date">📅 Jun 30, 2026</div>
-      <p>Google released Nano Banana 2 Lite (API ID <code>gemini-3.1-flash-lite-image</code>), the fastest and most cost-efficient model in its Nano Banana family, generating text-to-image outputs in roughly 4 seconds at about $0.034 per image with SynthID watermarking. Google positions it as the drop-in replacement for the original Nano Banana across AI Studio, the Gemini API, and consumer surfaces.</p>
-      <div class="why"><b>Why it matters:</b> Pushing near-instant, sub-4-cent image generation into high-volume creative pipelines undercuts standalone image startups and makes AI imagery cheap enough to embed in everyday product workflows rather than reserve for one-off creative tasks.</div>
-      <div class="src"><a href="https://deepmind.google/models/gemini-image/flash-lite/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Gemini 3.5 Pro's general availability still targeted for July after June slip</h3>
-      <div class="date stale">📅 Jun 29, 2026</div>
-      <p>Google's flagship Gemini 3.5 Pro — targeting a 2M-token context window and a Deep Think reasoning mode — remains in limited Vertex AI preview after missing its June window, with general availability now cleared for July following further quality work on token efficiency, coding, and long-horizon reasoning. The faster Gemini 3.5 Flash is already the default in the Gemini app and Search.</p>
-      <div class="why"><b>Why it matters:</b> A second public slip keeps Google's strongest reasoning model out of the general API while rivals ship, testing whether the Flash-first strategy can hold the frontier line as the GA date nears.</div>
-      <div class="src"><a href="https://www.techtimes.com/articles/319318/20260629/gemini-35-pro-cleared-july-launch-fable-5-nears-return-gpt-56-stays-locked.htm" target="_blank">Source</a></div>
+      <h3>Musk says Grok 4.5 has entered private beta at SpaceX and Tesla</h3>
+      <div class="date">📅 Jun 28, 2026</div>
+      <p>Elon Musk announced that Grok 4.5 — built on xAI's ~1.5-trillion-parameter V9 foundation model with additional Cursor-derived coding data — is running in private beta with teams at SpaceX and Tesla, with early internal evals said to land "close to, perhaps exceeding" Anthropic's Claude Opus. No public release date, benchmarks or system card have been published, and xAI says it plans to ship a from-scratch model every month for the rest of 2026.</p>
+      <div class="why"><b>Why it matters:</b> A model three times larger than Grok's current production system, trained on proprietary Tesla/SpaceX and Cursor data, signals xAI is trying to buy its way back to the frontier through sheer scale and a monthly release cadence rather than incremental tuning.</div>
+      <div class="src"><a href="https://cybernews.com/ai-news/musk-grok-4-5-private-beta-superior-claude-opus/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>Anthropic ships Claude Sonnet 5 as the new default and redeploys Fable 5 globally</h3>
-      <div class="date stale">📅 Jun 30, 2026</div>
-      <p>Anthropic released Claude Sonnet 5 — its most agentic Sonnet yet, close to Opus 4.8 on reasoning and coding but at Sonnet prices ($2/$10 per 1M tokens through Aug 31) — as the default for Free and Pro plans. On July 1, with export controls lifted, it brought flagship Fable 5 back globally and restored Mythos 5 for approved US partners.</p>
-      <div class="why"><b>Why it matters:</b> Near-flagship agentic ability at mid-tier prices resets the price-performance frontier just as the first government-forced frontier-model shutdown is fully unwound — locking in both cheaper autonomy and a new normal where Washington can gate availability.</div>
-      <div class="src"><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">Source</a></div>
+      <h3>Anthropic's Mythos and Fable models return after a 20-day government shutdown</h3>
+      <div class="date">📅 Jul 1, 2026</div>
+      <p>Axios reconstructed the saga: an Amazon warning about a jailbreak flaw in Anthropic's Mythos and Fable models triggered sweeping June 12 export controls that forced them offline, followed by a three-week, multi-agency crash course in AI safety involving Commerce, NSA and the White House. Agency heads approved Anthropic's fixes and the models were redeployed on July 1, though it remains uncertain when they will reach ally countries.</p>
+      <div class="why"><b>Why it matters:</b> The first government-forced shutdown of a frontier model — and the ad-hoc, personality-driven scramble to reverse it — shows how much power Washington now holds over model availability, with no clear framework yet for approving future releases.</div>
+      <div class="src"><a href="https://www.axios.com/2026/07/03/anthropic-ai-models-revived-behind-the-scenes" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>OpenAI's GPT-5.6 Sol, Terra and Luna stay gated to ~20 trusted partners</h3>
-      <div class="date stale">📅 Jun 26, 2026</div>
-      <p>OpenAI previewed the GPT-5.6 family — flagship Sol, balanced Terra, and fast Luna — but, per a June 2 executive order, made them available only to about 20 vetted organizations after sharing release plans with the US government; GPT-5.6 is not yet in ChatGPT. Sol is launching on Cerebras at up to 750 tokens/second in July, with general availability promised "in the coming weeks."</p>
-      <div class="why"><b>Why it matters:</b> A staggered, government-coordinated rollout of a frontier model is becoming standard practice, and pairing Sol with Cerebras signals a race on inference speed, not just raw capability.</div>
+      <h3>OpenAI's GPT-5.6 stays on hold amid daily talks with Washington</h3>
+      <div class="date stale">📅 Jul 3, 2026</div>
+      <p>OpenAI's flagship GPT-5.6 family (Sol, Terra, Luna) remains unreleased to the public — gated to roughly 20 trusted organizations under the June 2 executive order — with the company reportedly engaged in daily technical discussions with the government about how and when to ship it. OpenAI had no visibility into the parallel Anthropic-White House negotiations, per Axios.</p>
+      <div class="why"><b>Why it matters:</b> The staggered, government-coordinated rollout that stalled Anthropic's models is now the gating factor for OpenAI too, hardening a new normal where frontier launches wait on a case-by-case federal review.</div>
       <div class="src"><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3>Google's Gemini 3.5 Pro general availability still targeted for July</h3>
+      <div class="date stale">📅 Jun 29, 2026</div>
+      <p>Google's flagship Gemini 3.5 Pro — targeting a 2M-token context window and a Deep Think reasoning mode — remains in limited Vertex AI preview after missing its June window, with general availability now cleared for July following further work on token efficiency, coding, and long-horizon reasoning. The faster Gemini 3.5 Flash is already the default in the Gemini app and Search.</p>
+      <div class="why"><b>Why it matters:</b> A second public slip keeps Google's strongest reasoning model out of the general API while rivals maneuver, testing whether the Flash-first strategy can hold the frontier line as the GA date nears.</div>
+      <div class="src"><a href="https://www.techtimes.com/articles/319318/20260629/gemini-35-pro-cleared-july-launch-fable-5-nears-return-gpt-56-stays-locked.htm" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -58,30 +58,30 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-high">High</span></div>
-      <h3>Report: OpenAI engineers say they've more than halved inference costs</h3>
-      <div class="date">📅 Jun 30, 2026</div>
-      <p>Per reporting from The Information, OpenAI engineers told colleagues they found optimizations that more than halve inference costs — at one point cutting the Nvidia GPUs needed to serve logged-out ChatGPT traffic to "a couple hundred." OpenAI carried a 39% gross margin at the end of Q1 and wants to reach 52% by year-end; the exact methods (quantization, KV caching, batching, routing) remain undisclosed.</p>
-      <div class="why"><b>Why it matters:</b> If frontier inference can run on a fraction of the expected hardware, the industry's core assumption of compute scarcity weakens — reshaping both AI-lab economics and the demand case underpinning the chip buildout.</div>
-      <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/openai-efficiency-gains-hammer-chip-162740042.html" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
       <h3>AI labs propose a shared framework for scoring jailbreak severity</h3>
-      <div class="date stale">📅 Jun 30, 2026</div>
+      <div class="date">📅 Jun 30, 2026</div>
       <p>Alongside the Fable 5 redeploy, Anthropic — with Amazon, Microsoft, Google and other partners — proposed an industry-wide standard for rating jailbreaks on four axes: capability gain, breadth, ease of weaponization, and discoverability. It also opened a HackerOne program for cyber-jailbreak submissions and stood up 24/7 monitoring for the most severe cases.</p>
-      <div class="why"><b>Why it matters:</b> There is no common vocabulary for how dangerous a given jailbreak is; a shared severity scale — modeled on software's CVSS — could turn model-safety triage into a repeatable, cross-industry process rather than an ad hoc reaction.</div>
+      <div class="why"><b>Why it matters:</b> The Mythos/Fable shutdown exposed that there is no common vocabulary for how dangerous a jailbreak actually is; a shared severity scale — modeled on software's CVSS — could turn model-safety triage into a repeatable, cross-industry process rather than an ad hoc panic.</div>
       <div class="src"><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Trend</span></div>
-      <h3>New benchmarks keep exposing the gap between headline scores and hard reasoning</h3>
-      <div class="date stale">📅 Jun 12, 2026</div>
-      <p>Epoch released FrontierMath v2 (June 12) with cleaned research-level math problems, and Humanity's Last Exam still holds the best models to ~35% accuracy versus ~90% for human domain experts — even as every frontier LLM now clears 88% on the saturated MMLU. New agent benchmarks (Terminal-bench, research-lifecycle suites) are shifting evaluation toward realistic, multi-step tasks.</p>
-      <div class="why"><b>Why it matters:</b> As legacy benchmarks saturate, harder evaluations are the only way to tell real capability gains from test-set memorization — a prerequisite for trustworthy claims about what frontier models can actually do.</div>
-      <div class="src"><a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report" target="_blank">Source</a></div>
+      <h3>Report: OpenAI engineers say they've more than halved inference costs</h3>
+      <div class="date stale">📅 Jun 30, 2026</div>
+      <p>Per reporting from The Information, OpenAI engineers told colleagues they found optimizations that more than halve inference costs — at one point cutting the Nvidia GPUs needed to serve logged-out ChatGPT traffic to "a couple hundred." OpenAI carried a 39% gross margin at the end of Q1 and wants to reach 52% by year-end; the exact methods remain undisclosed.</p>
+      <div class="why"><b>Why it matters:</b> If frontier inference can run on a fraction of the expected hardware, the industry's core assumption of compute scarcity weakens — reshaping both AI-lab economics and the demand case underpinning the chip buildout.</div>
+      <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/openai-efficiency-gains-hammer-chip-162740042.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3>Chinese open-weight labs keep matching proprietary models on benchmarks</h3>
+      <div class="date stale">📅 Jun 27, 2026</div>
+      <p>The 2026 open-weight field has tightened sharply: DeepSeek V4 Pro leads open coding scores, Qwen 3.5 tops reasoning and math suites like GPQA Diamond and AIME, and MIT-licensed GLM-5 now matches or beats proprietary alternatives on key benchmarks — with Chinese labs holding many of the top open leaderboard positions under permissive Apache/MIT licenses.</p>
+      <div class="why"><b>Why it matters:</b> Frontier-adjacent capability under permissive licenses gives enterprises a credible, royalty-free alternative to closed APIs — and concentrates open-model leadership in Chinese labs even as US policy tightens around domestic frontier releases.</div>
+      <div class="src"><a href="https://benchlm.ai/blog/posts/best-open-source-llm" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -92,21 +92,21 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>Meta launches a cloud business to resell surplus AI compute</h3>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3>Square opens AI-search ordering via new ChatGPT app and Claude plugin</h3>
       <div class="date">📅 Jul 1, 2026</div>
-      <p>Meta unveiled Meta Compute, a cloud offering that sells access to its excess AI infrastructure to outside customers — turning years of aggressive capex into a revenue line. Meta shares jumped ~9% on the news, but chip stocks slumped as investors read a surplus-capacity signal into the move.</p>
-      <div class="why"><b>Why it matters:</b> A hyperscaler pivoting from hoarding compute to renting it out flips the industry's scarcity narrative and puts Meta into direct competition with AWS, Azure and Google Cloud for AI workloads.</div>
-      <div class="src"><a href="https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html" target="_blank">Source</a></div>
+      <p>Square launched a ChatGPT app and a Claude plugin for eligible sellers, letting US food-and-beverage merchants surface in AI search and take orders directly, with transactions routing into Square Online Ordering rather than stopping at discovery. The move plugs a merchant's storefront straight into the two most-used assistants' agentic checkout flows.</p>
+      <div class="why"><b>Why it matters:</b> As ChatGPT and Claude become shopping front-ends, commerce platforms that wire real transactions into assistant "apps" capture demand that used to start with a web search — an early test of agent-driven commerce at scale.</div>
+      <div class="src"><a href="https://blog.mean.ceo/ai-product-launches-news-july-2026/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>Willow's Atlas 1 targets frontier speech-to-text for real-time dictation</h3>
+      <h3>SnapLogic ships MCP Builder to turn enterprise pipelines into agent tools</h3>
       <div class="date">📅 Jul 1, 2026</div>
-      <p>Y Combinator-backed Willow Voice introduced Atlas 1, a new frontier speech-to-text model it says outperforms ElevenLabs, Deepgram and OpenAI "by a wide margin" on real-time dictation, built on human-powered transcription infrastructure. The startup positions Atlas 1 as a specialist rival to the big labs' general audio models.</p>
-      <div class="why"><b>Why it matters:</b> Focused startups are still finding room to beat frontier labs on narrow, high-value tasks like dictation — evidence that vertical specialization remains a viable wedge even as general models expand into audio.</div>
-      <div class="src"><a href="https://thenextweb.com/news/together-ai-800m-series-c-aramco-ventures" target="_blank">Source</a></div>
+      <p>SnapLogic made its MCP Builder generally available, letting enterprises expose existing integration pipelines, APIs, and business processes as governed Model Context Protocol tools through templates. It targets the plumbing problem of safely connecting AI agents to internal systems.</p>
+      <div class="why"><b>Why it matters:</b> MCP is becoming the default connective tissue for enterprise agents; tooling that converts legacy integrations into governed MCP endpoints lowers the barrier to putting agents into production without rebuilding backends.</div>
+      <div class="src"><a href="https://blog.mean.ceo/ai-product-launches-news-july-2026/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
@@ -127,38 +127,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>Abu Dhabi's MGX closes a $49B AI fund, one of the largest ever</h3>
-      <div class="date">📅 Jul 1, 2026</div>
-      <p>MGX closed Fund I at $49B — above its $45B target — spanning semiconductors, AI infrastructure and AI-enabling platforms, with investors from the Middle East, North America, Asia and Europe. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan and anchored by Mubadala and G42, MGX has already co-led Anthropic's and OpenAI's mega-rounds and backed xAI.</p>
-      <div class="why"><b>Why it matters:</b> A single fund the size of a national budget, concentrated in one Gulf firm that already backs every top US lab, makes Abu Dhabi a gatekeeper of frontier-AI capital — with geopolitical strings attached to who gets funded.</div>
-      <div class="src"><a href="https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html" target="_blank">Source</a></div>
+      <h3>OpenAI pitches giving the US government a 5% stake, FT reports</h3>
+      <div class="date">📅 Jul 2, 2026</div>
+      <p>Per the Financial Times, OpenAI is in talks to hand the Trump administration a roughly 5% stake — worth about $42.6B against its $852B March valuation — and Sam Altman wants every leading US lab to allot 5% of equity to an Alaska-Permanent-Fund-style public vehicle. Altman has floated the idea with Trump, Commerce Secretary Lutnick, Treasury Secretary Bessent, and Sen. Bernie Sanders, days after Washington delayed GPT-5.6.</p>
+      <div class="why"><b>Why it matters:</b> Trading equity for political goodwill would blur the line between frontier labs and the state, echoing the administration's Intel stake — and, if peers follow, could make the US government a direct shareholder in the AI race it is also trying to regulate.</div>
+      <div class="src"><a href="https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Together AI raises $800M at an $8.3B valuation, led by Aramco Ventures</h3>
-      <div class="date">📅 Jul 1, 2026</div>
-      <p>Open-model inference platform Together AI more than doubled its valuation to $8.3B with an $800M Series C led by Aramco Ventures (with Nvidia, General Catalyst, Vista and others). The company says it now runs more than $1B in annual bookings and has tripled open-source-model usage over the past year.</p>
-      <div class="why"><b>Why it matters:</b> Investors continue pouring mega-capital into the inference layer that lets businesses run open models cheaply — a bet that the durable AI margins sit in serving, not just training, and that open models are a real alternative to closed APIs.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/" target="_blank">Source</a></div>
+      <h3>Anthropic overtakes OpenAI in annualized revenue</h3>
+      <div class="date">📅 Jul 3, 2026</div>
+      <p>Anthropic is now running past a ~$30B annualized revenue run-rate versus OpenAI's roughly $24-25B — a milestone reached earlier than analysts expected, after Anthropic's ARR more than tripled from ~$9B at the end of 2025. Its lead is credited to an enterprise-first strategy, Claude's long context window, and the fast-growing Claude Code developer business.</p>
+      <div class="why"><b>Why it matters:</b> The consumer-AI leader being passed on revenue by an enterprise-focused rival reframes the race around durable business spend, not just ChatGPT scale — and validates the bet that reliability and developer tooling, not consumer reach, drive AI margins.</div>
+      <div class="src"><a href="https://www.trendingtopics.eu/anthropic-overtakes-openai-in-revenue-hitting-30-billion-run-rate/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-high">High</span></div>
-      <h3>Chip stocks slump ~6% on Meta cloud push and OpenAI efficiency report</h3>
-      <div class="date">📅 Jul 2, 2026</div>
-      <p>The Philadelphia Semiconductor Index fell about 6% as Meta's move to resell AI compute and a report of OpenAI's inference-cost cuts stoked fears of an AI-hardware overcapacity glut. SanDisk sank ~14%, Seagate ~10% and Micron ~5.5%, with Nvidia, AMD and Intel all lower on the session.</p>
-      <div class="why"><b>Why it matters:</b> For the first time the market is pricing in the possibility that AI compute could go from scarce to surplus — a sentiment shift that, if it sticks, threatens the demand thesis behind hundreds of billions in datacenter and chip spending.</div>
-      <div class="src"><a href="https://seekingalpha.com/news/4609003-ai-infrastructure-chip-stocks-fall-after-report-meta-building-cloud-business-for-excess-ai-compute" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>Crusoe closes a $1.375B Series E at a $10B valuation</h3>
+      <div class="date">📅 Jul 1, 2026</div>
+      <p>AI-datacenter builder Crusoe raised $1.375B in a Series E co-led by Valor Equity Partners and Mubadala Capital, with Nvidia, Fidelity and Founders Fund participating, tripling its valuation to ~$10B. The firm — which helped build OpenAI's first big US datacenter — reports 4.9GW of contracted capacity and a 40GW+ project pipeline, with the first phase of its 1.2GW Abilene, Texas campus now live.</p>
+      <div class="why"><b>Why it matters:</b> Even as some fear an AI-compute glut, institutional capital keeps pouring into the physical buildout — a bet that whoever controls power and datacenters, not just models, captures a durable slice of AI's economics.</div>
+      <div class="src"><a href="https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-e-funding" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Newsom's California-Anthropic deal gives state agencies Claude at 50% off</h3>
-      <div class="date stale">📅 Jun 29, 2026</div>
-      <p>Gov. Gavin Newsom announced a first-of-its-kind partnership letting California agencies — and its cities and counties — access Claude at a 50% discount, with free workforce training and support from Anthropic. The DMV and Department of Health Care Services already use Claude, and a 2,800-employee "Poppy" pilot across 67 departments is set for statewide rollout in July.</p>
-      <div class="why"><b>Why it matters:</b> As Washington treats frontier labs as a security concern, the largest US state is treating Anthropic as a preferred vendor — a template for public-sector AI procurement and a sign labs increasingly sell to governments, not just enterprises.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/" target="_blank">Source</a></div>
+      <h3>Together AI raises $800M at an $8.3B valuation, led by Aramco Ventures</h3>
+      <div class="date stale">📅 Jul 1, 2026</div>
+      <p>Open-model inference platform Together AI more than doubled its valuation to $8.3B with an $800M Series C led by Aramco Ventures (with Nvidia, General Catalyst, Vista and others). The company says it now runs more than $1B in annual bookings and has tripled open-source-model usage over the past year.</p>
+      <div class="why"><b>Why it matters:</b> Investors keep pouring mega-capital into the inference layer that lets businesses run open models cheaply — a bet that durable AI margins sit in serving, not just training, and that open models are a real alternative to closed APIs.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/" target="_blank">Source</a></div>
     </div>
 
   </div>
