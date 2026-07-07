@@ -1,12 +1,12 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><span class="ld">First fully AI-run ransomware caught in the wild —</span> Sysdig documented JADEPUFFER, an LLM agent that autonomously exploited Langflow, harvested credentials and destroyed a production database, fixing its own failed exploit in 31 seconds and firing 600+ self-narrating payloads with no human at the keyboard.</li>
-    <li><span class="ld">"Avalon" turns a legal lure into full-kill-chain ransomware —</span> Blackpoint Cyber uncovered a modular, AI-assisted framework that chains ISO/LNK phishing, ETW-blinding, credential theft and the new CrownX ransomware — evading nine EDR products before it encrypts.</li>
-    <li><span class="ld">PTC Windchill RCE is being exploited against defense and aerospace —</span> attackers are dropping JSP web shells via CVE-2026-12569 (CVSS 9.3), now on CISA's KEV list, on manufacturing PLM servers.</li>
-    <li><span class="ld">SharePoint RCE hits KEV as the July 4 patch deadline lands —</span> CISA added CVE-2026-45659 after real attacks overtook Microsoft's "exploitation less likely" rating.</li>
-    <li><span class="ld">Medtronic breach grows to 3.8M —</span> the pacemaker maker's ShinyHunters notification now covers SSNs and health data for millions.</li>
-    <li><span class="ld">Codeless AI malware translates plain English into shell commands —</span> Unit 42 found an implant that pipes attacker Telegram messages through a public LLM API — zero VirusTotal detections.</li>
+    <li><span class="ld">A hidden HTTP header let anyone become a Gitea admin —</span> Sysdig caught threat actors probing CVE-2026-20896 just 13 days after disclosure, exploiting a wildcard-trusted proxy header baked into Gitea's own Docker images across ~6,200 exposed instances.</li>
+    <li><span class="ld">A maximum-severity SimpleHelp bug is actively dropping infostealers —</span> attackers are forging OIDC tokens to grab technician sessions on remote-support servers, then deploying TaskWeaver and a new Djinn Stealer built to steal Claude, Gemini and Codex API keys alongside cloud and crypto credentials.</li>
+    <li><span class="ld">A year-old GitOps bug with no patch and no CVE can hand over your Kubernetes cluster —</span> Synacktiv published full exploit details for an unauthenticated RCE in Argo CD's repo-server after 18 months of vendor silence, warning teams to fence it off with network policies now.</li>
+    <li><span class="ld">Invisible text on ordinary web pages is now tricking AI agents into paying real money —</span> Zscaler found CSS-hidden and JSON-LD-buried prompts that got 4 of 26 tested LLM agents (including Llama and Gemini variants) to autonomously send cryptocurrency to attacker wallets.</li>
+    <li><span class="ld">SharePoint's May zero-day just became a compliance deadline —</span> CISA added CVE-2026-45659 to its KEV catalog after confirmed in-the-wild exploitation, with a patch window Microsoft had quietly omitted from its own release notes.</li>
+    <li><span class="ld">Palo Alto's $25B CyberArk deal anchors a record year for security M&amp;A —</span> Momentum Cyber's mid-year review tracks 2026 dealmaking above 2025's record 398 transactions, with identity, AI and OT the dominant themes.</li>
   </ul>
   <p class="rosternote">Roster update: added 2 new source(s) today — see Cyber Sources.</p>
 </div>
@@ -17,38 +17,47 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>"Avalon" framework chains phishing to the new CrownX ransomware</h3>
-      <div class="date">📅 Jul 3, 2026</div>
-      <p>Blackpoint Cyber uncovered Avalon, a previously undocumented modular malware framework delivered through a spoofed-legal-document email, a Proton Drive archive and an ISO-mounted LNK that launches an MSBuild-loaded .NET payload. Avalon disables Event Tracing for Windows, evades nine EDR products (Defender, SentinelOne, CrowdStrike, Sophos, Elastic, FortiEDR, ESET, McAfee, Bitdefender), steals browser/wallet/VPN credentials, and finishes with the CrownX ransomware component that kills shadow copies and corrupts disk structures.</p>
-      <div class="why"><b>Why it matters:</b> Blackpoint reports clear signs of AI-assisted development — a single operator can now assemble a full credential-theft-plus-ransomware kill chain that once demanded a skilled team, so capability no longer signals sophistication.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Medtronic breach notification grows to 3.8 million people</h3>
-      <div class="date">📅 Jul 3, 2026</div>
-      <p>Medical-device maker Medtronic is now notifying roughly 3.8 million people that a ShinyHunters intrusion (April 13–19, 2026) exposed names, contact details, dates of birth, Social Security numbers and health information. ShinyHunters claims it stole about 9 million records; Medtronic says device therapy was unaffected and is offering identity protection.</p>
-      <div class="why"><b>Why it matters:</b> The tally jumped sharply from the ~297,000 first disclosed — a reminder that early breach counts routinely understate scope, and SSN-plus-health data is the highest-value combo for downstream fraud.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/" target="_blank">Source</a></div>
+      <h3>Attackers actively probing critical Gitea Docker auth-bypass, 13 days after disclosure</h3>
+      <div class="date">📅 Jul 6, 2026</div>
+      <p>Sysdig detected the first in-the-wild exploitation attempts against CVE-2026-20896 (CVSS 9.8), a flaw where Gitea's official Docker images shipped with "REVERSE_PROXY_TRUSTED_PROXIES = *" hard-coded, letting any unauthenticated internet client spoof the X-WEBAUTH-USER header and gain elevated access — no password, token or session cookie required. Roughly 6,200 internet-facing Gitea instances remain exposed; Gitea fixed the default in versions 1.26.3/1.26.4.</p>
+      <div class="why"><b>Why it matters:</b> A misconfigured default in an official container image turned a routine self-hosted Git server into a one-header account takeover — patch or isolate exposed Gitea Docker deployments now, before probing turns into exploitation.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>FortiBleed credential theft tied to INC and Lynx ransomware operations</h3>
-      <div class="date stale">📅 Jul 2, 2026</div>
-      <p>SOCRadar's Threat Research Unit linked the FortiBleed campaign — mass credential theft from internet-exposed FortiGate firewalls — directly to the INC and Lynx ransomware crews. An operator on FortiBleed's infrastructure was found logged into both gangs' victim-negotiation panels, and researchers traced confirmed admin access on 409 devices and at least 12 resulting ransomware deployments across a large firewall target set.</p>
-      <div class="why"><b>Why it matters:</b> This is the first hard link between the FortiGate credential haul and actual ransomware detonation — a bleeding perimeter appliance turns straight into an encryption event.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/" target="_blank">Source</a></div>
+      <h3>Maximum-severity SimpleHelp bypass (CVSS 10.0) actively deploying Djinn Stealer</h3>
+      <div class="date stale">📅 Jun 30, 2026</div>
+      <p>Attackers are exploiting CVE-2026-48558, a critical SimpleHelp RMM auth bypass where a forged OIDC token grants a fully authenticated "Technician" session — even bypassing MFA, since technicians can self-register a new MFA method on first login. Confirmed intrusions deploy TaskWeaver, an obfuscated Node.js loader, followed by the new Djinn Stealer, which targets cloud tokens, Git/SSH credentials, Docker configs and AI dev-tool keys (Claude, Gemini, Codex) across Windows, macOS and Linux. CISA added it to KEV with a July 2 FCEB patch deadline; roughly 1,000 of 14,000 internet-facing servers remain unpatched.</p>
+      <div class="why"><b>Why it matters:</b> Remote-support tools are a favorite ransomware foothold precisely because they're trusted and privileged — and the stealer's specific hunt for AI-coding-tool API keys shows attackers now treat developer AI credentials as first-class loot.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>FBI seizes NetNut proxy platform and the 2M-device Popa botnet</h3>
+      <h3>FortiBleed ransomware pipeline widens: 12+ confirmed INC and Lynx deployments</h3>
+      <div class="date stale">📅 Jul 4, 2026</div>
+      <p>SOCRadar's Threat Research Unit linked the FortiBleed campaign — which harvested 110M+ credentials from 430,000 FortiGate firewalls via a Go tool abusing FortiOS's own diagnostic command — directly to the INC Ransom and Lynx operations. An operator was found logged into both groups' negotiation panels, and at least 12 ransomware deployments trace to FortiBleed-derived access; a leaked internal document exposed a structured ~20-person crew.</p>
+      <div class="why"><b>Why it matters:</b> This closes the loop from mass credential theft to actual encryption — every unrotated FortiGate credential from this campaign is a live ransomware foothold, not a theoretical risk.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>Medtronic begins notifying 3.8 million people after April ShinyHunters breach</h3>
+      <div class="date stale">📅 Jul 2026</div>
+      <p>Medtronic started sending breach notifications in late June for an April 2026 intrusion into its corporate IT systems, confirmed to affect roughly 3.8 million individuals. Exposed data includes names, contact information, dates of birth, Social Security numbers and health-related information. ShinyHunters claimed responsibility and alleged a larger 9-million-record haul; the group has since removed Medtronic from its leak site, suggesting a possible payment. Medtronic says there is no evidence of impact to device safety or product security.</p>
+      <div class="why"><b>Why it matters:</b> A corporate-IT breach at a medical device maker shows the blast radius of identity theft reaches patients even when the devices themselves are untouched — expect litigation and regulatory notifications to follow into Q3.</div>
+      <div class="src"><a href="https://www.securityweek.com/medtronic-data-breach-impacts-3-8-million-people/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3>DHS confirms hackers breached HSIN, its inter-agency info-sharing platform</h3>
       <div class="date stale">📅 Jul 2, 2026</div>
-      <p>KrebsOnSecurity reported the FBI, with the IRS, Google, Lumen and Shadowserver, seized hundreds of domains tied to NetNut — a residential-proxy service run by Israeli firm Alarum Technologies — after researchers connected it to the Popa botnet of at least two million devices. Nearly half of LG webOS apps and a quarter of Samsung Tizen apps analyzed carried proxy SDKs relaying traffic without meaningful consent.</p>
-      <div class="why"><b>Why it matters:</b> Residential-proxy networks are the anonymity layer under a huge share of fraud and espionage; naming the corporate operator raises the cost of hiding attacker traffic in "real" home IPs.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/" target="_blank">Source</a></div>
+      <p>The Department of Homeland Security confirmed an unknown actor compromised the Homeland Security Information Network (HSIN) and an associated SharePoint system between late May and early June 2026, potentially exposing 2026 World Cup security planning documents. DHS says classified systems were untouched and has not attributed the intrusion; Senator Warner has demanded a DOJ probe.</p>
+      <div class="why"><b>Why it matters:</b> This is the network that coordinates event security across federal, state, local and private partners — a compromise during active World Cup planning is an operational-security exposure, not just a data-loss one.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -60,38 +69,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>PTC Windchill RCE (CVE-2026-12569) exploited to drop web shells on PLM servers</h3>
-      <div class="date">📅 Jul 3, 2026</div>
-      <p>CISA's KEV entry for CVE-2026-12569 — a CVSS 9.3 unauthenticated remote-code-execution flaw in PTC Windchill PDMlink and FlexPLM — continues to draw active exploitation, with attackers deploying JavaServer Pages (JSP) web shells for command execution and data theft. The affected product-lifecycle-management software is heavily used by defense contractors, aerospace and automotive manufacturers.</p>
-      <div class="why"><b>Why it matters:</b> Windchill holds sensitive engineering and supply-chain IP; a pre-auth RCE with confirmed web-shell activity means the sectors most targeted for industrial espionage should assume active targeting, not theoretical risk.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html" target="_blank">Source</a></div>
+      <h3>Unpatched Argo CD repo-server flaw can hand attackers a full Kubernetes cluster</h3>
+      <div class="date">📅 Jul 6, 2026</div>
+      <p>Synacktiv published full technical details of an unauthenticated RCE in Argo CD's repo-server component after reporting it to maintainers in January 2025 and waiting 18 months with no fix and no CVE assigned. The repo-server's internal gRPC service has no authentication; a crafted GenerateManifest request can substitute a malicious script for the expected helm/kustomize call. Helm-chart installs leave network policies off by default, so an attacker who compromises just one pod can reach the repo-server, read the cluster's Redis password from an environment variable, and poison deployment data.</p>
+      <div class="why"><b>Why it matters:</b> GitOps control planes now deserve tier-zero protection — with no patch available, the only defense is turning on Kubernetes network policies to isolate the repo-server and Redis ports immediately.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>SharePoint RCE (CVE-2026-45659) added to CISA KEV; patch deadline is today</h3>
+      <div class="top"><span class="badge b-high">High</span></div>
+      <h3>Citrix patches six NetScaler flaws; one already under attack within 24 hours</h3>
+      <div class="date">📅 Jul 6, 2026</div>
+      <p>Citrix fixed six NetScaler ADC/Gateway CVEs (CTX696604) rated 6.9–8.8, including CVE-2026-8451, a CitrixBleed-style pre-auth out-of-bounds memory read triggered by malformed SAML authentication requests, and CVE-2026-8452, a Gateway memory overflow enabling denial-of-service. Fixes landed in versions 14.1-72.61 and 13.1-63.18 and FIPS equivalents; CVE-2026-13474, an HTTP/2-request DoS, needs an additional manual configuration change to fully close. Active exploitation of CVE-2026-8451 began less than a day after disclosure.</p>
+      <div class="why"><b>Why it matters:</b> NetScaler's SAML-parsing bugs keep echoing the CitrixBleed pattern that fueled mass ransomware intrusions in 2023 — the sub-24-hour exploitation window leaves almost no grace period to patch.</div>
+      <div class="src"><a href="https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">High</span></div>
+      <h3>CISA adds SharePoint deserialization RCE (CVE-2026-45659) to KEV catalog</h3>
       <div class="date stale">📅 Jul 1, 2026</div>
-      <p>CISA added CVE-2026-45659 — a CVSS 8.8 deserialization RCE in SharePoint Server (Subscription Edition, 2019, 2016) — to its KEV catalog on July 1, citing exploitation. Any authenticated user with as little as Site Member permissions can trigger it; Microsoft patched it in May 2026 but had rated exploitation "less likely." FCEB agencies were ordered to fix by July 4.</p>
-      <div class="why"><b>Why it matters:</b> On-prem SharePoint is a recurring enterprise pivot point, and a "less likely" rating overtaken by real attacks argues for prioritizing the KEV list over vendor exploitability guesses.</div>
+      <p>CISA added CVE-2026-45659, a Microsoft SharePoint Server deserialization-of-untrusted-data vulnerability, to its Known Exploited Vulnerabilities catalog after confirming active in-the-wild exploitation, setting a July 4 patch deadline for federal agencies. Microsoft fixed the bug in its May 2026 Patch Tuesday release but inadvertently omitted it from the initial release notes, only updating the advisory on May 27 — a visibility gap that delayed defender awareness.</p>
+      <div class="why"><b>Why it matters:</b> A patch that shipped quietly in May is only now getting the KEV spotlight it needed — a reminder to cross-check vendor advisory updates, not just initial release notes, when prioritizing patching.</div>
       <div class="src"><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>Progress Kemp LoadMaster command injection (CVE-2026-8037) exploited in the wild</h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>A CVSS 9.6 OS command-injection flaw in Progress Kemp LoadMaster load balancers allows arbitrary code execution on affected devices. Exploitation began around June 29, days after watchTowr Labs published a detailed technical write-up and working pre-auth exploit chain for the bug.</p>
-      <div class="why"><b>Why it matters:</b> LoadMaster sits at the network edge in front of critical apps; a pre-auth RCE with public PoC gives attackers a fast, reliable foothold and a vantage point over the traffic it fronts.</div>
-      <div class="src"><a href="https://labs.watchtowr.com/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-med">Watch</span></div>
-      <h3>DirtyClone Linux kernel LPE (CVE-2026-43503) lets local users reach root</h3>
-      <div class="date stale">📅 Jun 2026</div>
-      <p>DirtyClone is a CVSS 8.8 local-privilege-escalation flaw in the Linux kernel that lets an attacker running as an unprivileged user escalate to root via cloned packets. JFrog published the first public root-exploit walkthrough; the bug affects any system where an attacker can already run low-level code.</p>
-      <div class="why"><b>Why it matters:</b> Kernel LPEs are the reliable "last mile" of an intrusion — pairing a low-priv web foothold with DirtyClone converts a limited shell into full host control, so it belongs on the patch-priority short list.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3>Nightmare Eclipse walks back "bone shattering" July 14 zero-day threat</h3>
+      <div class="date stale">📅 Jul 2026</div>
+      <p>The researcher behind Nightmare Eclipse (aka Chaotic Eclipse), who has published six Windows zero-days since May over a grudge with Microsoft's MSRC program, now says the promised mass disclosure on July 14 "will be unable to mass disclose zerodays," citing exhaustion from the recent RoguePlanet Defender exploit. Three of the six already-published bugs — BlueHammer, RedSun and UnDefend — are already under active exploitation, including in ransomware attacks.</p>
+      <div class="why"><b>Why it matters:</b> The immediate July 14 mass-drop threat has cooled, but the existing published exploits remain live ammunition — treat this as a reprieve on timing, not on risk.</div>
+      <div class="src"><a href="https://www.theregister.com/security/2026/06/11/nightmare-eclipse-drops-claimed-bitlocker-bypass-for-microsoft-windows/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -103,37 +112,37 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>JADEPUFFER: first documented ransomware run end-to-end by an LLM agent</h3>
-      <div class="date">📅 Jul 1, 2026</div>
-      <p>Sysdig's Threat Research Team captured what it assesses is the first fully agent-driven ransomware operation. An LLM broke into an internet-facing Langflow server via CVE-2025-3248, swept for cloud and provider API keys, pivoted to a production MySQL/Nacos server, then encrypted 1,342 config items with an ephemeral, unrecoverable key. It fired 600+ self-narrating payloads and, after a failed admin login, diagnosed the cause and shipped a working fix in 31 seconds — no human at the keyboard.</p>
-      <div class="why"><b>Why it matters:</b> The skill floor for ransomware just dropped to "cost of running an agent." An LLM can chain recon, credential theft, lateral movement, persistence and destruction without operator expertise — and if it runs on stolen compute via LLMjacking, the cost approaches zero.</div>
+      <h3>Hidden web prompts trick 4 of 26 tested AI agents into sending crypto payments</h3>
+      <div class="date">📅 Jul 6, 2026</div>
+      <p>Zscaler's ThreatLabz documented two live indirect prompt-injection campaigns: one buries CSS-hidden and JSON-LD-embedded instructions in a fake "developer API key" page that tells visiting AI agents to pay 0.0012 ETH to an attacker wallet; the other impersonates the DeFi tracker DeBank via a typosquat domain reinforced with hidden prompts telling agents it's legitimate. Both use SEO poisoning to rank the pages highly so agents find them. Running its own agent across 26 LLMs, ThreatLabz got 4 to execute the fraudulent payment and 2 to misidentify the typosquat as genuine — including variants of Llama and Gemini.</p>
+      <div class="why"><b>Why it matters:</b> This is prompt injection turned into a working monetization loop with no human victim required — any agent given browsing and payment capability is now a target for content it was never meant to trust.</div>
+      <div class="src"><a href="https://www.zscaler.com/blogs/security-research/indirect-prompt-injection-web-content-targets-ai-agents" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>JADEPUFFER: the first ransomware run end-to-end by an AI agent — that lost its own key</h3>
+      <div class="date stale">📅 Jul 1, 2026</div>
+      <p>Sysdig's Threat Research Team captured what it assesses as the first fully agentic ransomware operation. An LLM agent broke into an internet-facing Langflow instance (CVE-2025-3248), then autonomously enumerated the host, swept for cloud and LLM-provider secrets, moved laterally and ran a destructive database-extortion playbook — adapting in real time with self-narrating payloads. It encrypted 1,342 Nacos configs, but the key was printed once to a log and never saved, making the data permanently unrecoverable.</p>
+      <div class="why"><b>Why it matters:</b> This is machine-speed extortion with no human in the loop — and the lost-key finale shows agentic attackers can be simultaneously more capable and more brittle, destroying data they meant to ransom.</div>
       <div class="src"><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Codeless AI malware turns attacker Telegram messages into shell commands</h3>
-      <div class="date stale">📅 Jul 3, 2026</div>
-      <p>Palo Alto Unit 42 detailed an implant that polls an attacker's Telegram bot every five seconds, forwards each plain-English instruction to a public LLM API (Groq/OpenAI-compatible) that translates it into a shell command, then executes and exfiltrates via the same channel. The sample, uploaded to VirusTotal in March 2026, still has zero detections across all engines.</p>
-      <div class="why"><b>Why it matters:</b> Building the malware requires no command-line skill and leaves almost no static signature — the "code" is generated on demand by an external LLM, defeating detection that looks for embedded commands.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>US lifts cyber ban on Anthropic's Claude Fable 5 and Mythos 5</h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>The Trump administration ended a weeks-long restriction on Anthropic's newest Claude models after Anthropic deployed a safety classifier that blocks over 99% of attempts replicating a reported cyber jailbreak. Fable 5 is again globally available; the more powerful Mythos 5 is restored only to federally-approved US organizations. Anthropic also published a draft AI jailbreak-severity framework and opened a HackerOne program for cyber-jailbreak reports.</p>
-      <div class="why"><b>Why it matters:</b> This is the first government export action on a frontier model driven explicitly by offensive-cyber capability — a template for how model releases, classifiers and controls get negotiated going forward.</div>
-      <div class="src"><a href="https://www.securityweek.com/trump-administration-lifts-restrictions-on-anthropics-claude-models-after-cybersecurity-alarm/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Prompt injection stays OWASP's #1 LLM risk as agents widen the blast radius</h3>
+      <h3>Djinn Stealer specifically hunts Claude, Gemini and Codex developer API keys</h3>
+      <div class="date stale">📅 Jun 30, 2026</div>
+      <p>Alongside cloud platform tokens, Git/SSH credentials and browser data, the new Djinn Stealer malware — deployed via the SimpleHelp CVE-2026-48558 auth-bypass chain — is purpose-built to harvest AI coding-assistant API keys (Claude, Gemini, Codex) across Windows, macOS and Linux, per Help Net Security's and BleepingComputer's writeups of the campaign.</p>
+      <div class="why"><b>Why it matters:</b> Infostealer authors now treat AI dev-tool credentials as valuable as cloud keys — a sign that AI coding assistants have become a standard part of the enterprise credential attack surface, not a niche one.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/06/30/simplehelp-vulnerability-exploited-cve-2026-48558/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-low">Trend</span></div>
+      <h3>OWASP: prompt injection up 340% year-over-year, still the top agentic AI failure</h3>
       <div class="date stale">📅 Jun 2026</div>
-      <p>OWASP's 2026 reporting keeps prompt injection as the top LLM risk and warns it remains an unsolved architectural problem. Researchers stress that MCP, agentic workflows and tool-using LLMs sharply widen what a single successful injection can accomplish — from RAG poisoning to tool abuse and data exfiltration.</p>
-      <div class="why"><b>Why it matters:</b> Models still can't hard-separate trusted instructions from untrusted content, so as agents wire into more tools the damage from one injected string keeps growing — least-privilege and tool gating are the durable controls.</div>
+      <p>OWASP's 2026 LLM Security Report, cited alongside the Zscaler findings, puts prompt injection as the fastest-growing attack category globally, with a 340% year-over-year surge, and identifies it as the leading driver of agentic AI security failures observed in production deployments.</p>
+      <div class="why"><b>Why it matters:</b> The data confirms prompt injection isn't a lab curiosity — it's the dominant, still-unsolved failure mode as organizations push more agents into production with real-world tool access.</div>
       <div class="src"><a href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/" target="_blank">Source</a></div>
     </div>
 
@@ -145,6 +154,15 @@
   <div class="cols">
 
     <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>Palo Alto's $25B CyberArk deal anchors a record year for cybersecurity M&amp;A</h3>
+      <div class="date stale">📅 Jul 1, 2026</div>
+      <p>Momentum Cyber's mid-year 2026 review, published July 1, reports cybersecurity M&amp;A tracking toward its highest-ever deal count, building on a record 398 deals in 2025. Headline transactions include Palo Alto Networks' $25B acquisition of identity-security firm CyberArk and Mitsubishi Electric's $1B purchase of Nozomi Networks — the largest OT security acquisition to date. AI, OT and identity remain the dominant strategic themes driving deal activity.</p>
+      <div class="why"><b>Why it matters:</b> Consolidation around identity and OT security signals where platform vendors expect the next wave of enterprise spending — and where standalone startups in those categories become acquisition targets rather than long-term independents.</div>
+      <div class="src"><a href="https://www.secureworld.io/industry-news/cybersecurity-funding-momentum-2026" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
       <h3>Cisco and Palo Alto both buy their way into non-human-identity security</h3>
       <div class="date stale">📅 Jul 2026</div>
@@ -154,21 +172,12 @@
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>Anthropic opens a cyber-jailbreak bug bounty and severity framework</h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>As part of re-releasing Claude Fable 5, Anthropic launched a HackerOne program inviting researchers to report cyber-focused jailbreaks and published a draft AI jailbreak-severity framework, alongside the classifier that blocks 99%+ of the reported bypass.</p>
-      <div class="why"><b>Why it matters:</b> Bug-bounty and severity scaffolding for model misuse — not just software bugs — marks AI providers treating offensive-capability jailbreaks as a first-class vulnerability class with a real disclosure pipeline.</div>
-      <div class="src"><a href="https://www.securityweek.com/trump-administration-lifts-restrictions-on-anthropics-claude-models-after-cybersecurity-alarm/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
       <div class="top"><span class="badge b-low">Trend</span></div>
-      <h3>Cyber funding stays AI- and identity-driven into H2 2026</h3>
+      <h3>Gitea ships 1.26.3/1.26.4 to remove the wildcard-trust default behind CVE-2026-20896</h3>
       <div class="date stale">📅 Jul 2026</div>
-      <p>Funding trackers show cybersecurity M&amp;A and venture activity holding strong into mid-2026, concentrated in AI-agent security, non-human identity, browser security and cyber-resilience; early-July rounds like Dawnguard's $3.3M pre-seed underscore continued investor appetite for AI-native security automation.</p>
-      <div class="why"><b>Why it matters:</b> Buyers and investors are betting AI-attack-surface and identity defense are the next platform layers — signaling where enterprise security budget is heading over the next year.</div>
-      <div class="src"><a href="https://fintech.global/2026/07/02/dawnguard-raises-3-3m-for-ai-cybersecurity/" target="_blank">Source</a></div>
+      <p>Gitea's maintainers shipped 1.26.3 and 1.26.4, removing the hard-coded "REVERSE_PROXY_TRUSTED_PROXIES = *" default from official Docker images and making reverse-proxy header authentication opt-in rather than implicit — the fix for the auth-bypass flaw now under active probing.</p>
+      <div class="why"><b>Why it matters:</b> A one-line default in a container template created a critical, unauthenticated admin-takeover path — self-hosted Git admins should treat any "trust this header from any source" default as a red flag going forward.</div>
+      <div class="src"><a href="https://blog.gitea.com/release-of-1.26.3-and-1.26.4/" target="_blank">Source</a></div>
     </div>
 
   </div>
