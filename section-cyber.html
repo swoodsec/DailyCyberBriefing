@@ -1,15 +1,13 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><span class="ld">The FBI and Google just dismantled a 2-million-device botnet hiding inside smart TVs —</span> NetNut, a residential proxy service tied to a publicly-traded Israeli firm, was seized after Krebs on Security linked it to the "Popa" Android botnet used by both cybercriminals and espionage groups to mask their traffic.</li>
-    <li><span class="ld">Any Linux or Android user with local access can now become root in one shot —</span> "Bad Epoll" (CVE-2026-46242) is a three-year-old use-after-free race bug with a 99% exploit reliability rate, and it even works from inside Chrome's renderer sandbox.</li>
-    <li><span class="ld">DHS's own event-security coordination platform was the one that got breached —</span> new reporting details how an "unclassified tier" data gap let attackers into HSIN's SharePoint collaboration system during active World Cup 2026 security planning.</li>
-    <li><span class="ld">A GitOps bug with no patch and no CVE is still wide open a day later —</span> Synacktiv's unauthenticated Argo CD repo-server RCE remains unfixed after 18 months of vendor silence; the only defense is locking down Kubernetes network policies.</li>
-    <li><span class="ld">Two Scattered Spider members face sentencing next week for the £29M Transport for London attack —</span> a reminder that 2026's highest-profile ransomware-adjacent prosecutions are now reaching their endgame in London courts.</li>
-    <li><span class="ld">Aikido Security's phpBB research just proved it wasn't a one-off —</span> a month after its original decade-old auth-bypass find, the vendor shipped a full technical write-up with a second CVE, earning it a promotion onto today's roster.</li>
-    <li><span class="ld">Cybersecurity M&amp;A keeps climbing toward a record year —</span> Momentum Cyber's mid-year tally shows 2026 deal count already outpacing 2025's record, with identity, AI and OT security still the dominant themes.</li>
+    <li><span class="ld">Accenture confirms an "isolated" breach after a forum seller lists 35GB of its source code and cloud secrets —</span> the haul allegedly includes RSA/SSH keys and Azure access tokens pulled from a private Azure DevOps repo, and the consulting giant hasn't yet confirmed the scope.</li>
+    <li><span class="ld">CISA just added the first-ever AI agent platform to its Known Exploited Vulnerabilities catalog —</span> Langflow's authenticated IDOR flaw joins a maximum-severity Adobe ColdFusion path-traversal bug (exploited within two hours of disclosure) and two Joomla flaws, all due July 10.</li>
+    <li><span class="ld">A China-linked group is quietly reading physics and national-security researchers' email at US and Canadian universities —</span> Proofpoint's UNK_MassTraction campaign abuses old Roundcube webmail bugs to plant credential-stealing JavaScript and backdoors, earning Proofpoint a spot on today's source roster.</li>
+    <li><span class="ld">Ubiquiti just patched seven critical UniFi flaws, including a perfect-10 command-injection bug reachable on roughly 100,000 internet-exposed endpoints —</span> no credentials required.</li>
+    <li><span class="ld">Sophos found that Claude Code, Cursor and OpenAI Codex now routinely trip the same detection rules built to catch human attackers —</span> credential-access and living-off-the-land alerts fired on legitimate AI coding-agent activity all week.</li>
   </ul>
-  <p class="rosternote">Roster update: added 1 new source today — see Cyber Sources.</p>
+  <p class="rosternote">Roster update: added 2 new sources today — see Cyber Sources.</p>
 </div>
 
 <section>
@@ -17,39 +15,39 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>FBI and Google dismantle NetNut, a 2-million-device residential proxy botnet</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>The FBI, working with the IRS Criminal Investigation division, seized hundreds of domains tied to NetNut, a residential proxy service run by publicly-traded Israeli firm Alarum Technologies. Google's Threat Intelligence Group and Lumen tied NetNut to "Popa," an Android-based botnet of at least 2 million hijacked smart TVs and streaming boxes running since 2022; in one week alone GTIG observed 316 distinct threat-actor clusters using NetNut exit nodes for account takeovers, password spraying and espionage-linked access-masking. The takedown cut off NetNut's Google-based command-and-control and pushed Play Protect updates to block the proxy SDK.</p>
-      <div class="why"><b>Why it matters:</b> Residential proxy networks are the connective tissue that lets both criminal and nation-state actors blend in with legitimate home traffic — dismantling one at this scale removes a shared piece of infrastructure many different threat actors depended on.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>Accenture confirms breach after hacker lists 35GB of source code and cloud secrets for sale</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>A threat actor using the handle "888" posted on the cybercrime forum PwnForums claiming to have stolen source code, RSA and SSH keys, Azure personal access tokens, Azure Storage access keys and configuration files from a private Azure DevOps repository tied to an accenture.com production URL. Accenture told Help Net Security it is "aware of this isolated matter" and has "remediated its source," but has not confirmed the 35GB figure, the exfiltration method, or whether customer data was affected.</p>
+      <div class="why"><b>Why it matters:</b> Cloud secrets — access tokens, storage keys, service credentials — are now the prime target in these thefts, not just files; any org relying on Azure DevOps should audit token scope and rotation policy today.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/08/accenture-data-breach-2026/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>DHS breach report widens: attackers reached HSIN via an "unclassified tier" gap during World Cup planning</h3>
-      <div class="date">📅 Jul 6, 2026</div>
-      <p>Follow-up reporting on the confirmed Homeland Security Information Network intrusion details how the compromise reached HSIN's SharePoint collaboration layer through a lower-classification tier used for cross-agency event coordination, during the exact window DHS and partners were planning World Cup 2026 security. DHS maintains classified systems were untouched and has not attributed the activity; the intrusion is believed to have occurred between late May and early June.</p>
-      <div class="why"><b>Why it matters:</b> Segmentation gaps between "unclassified but sensitive" and classified tiers remain a recurring failure mode in government breaches — attackers don't need the crown jewels if the coordination layer around them is exposed.</div>
-      <div class="src"><a href="https://theopscon.com/intelligence/dhs-hsin-breach-world-cup-coordination-2026-07-06" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Scattered Spider duo faces two-day sentencing hearing over £29M TfL attack</h3>
-      <div class="date">📅 Jul 2026</div>
-      <p>Thalha Jubair, 20, and Owen Flowers, 18, both of whom pleaded guilty to conspiring against Transport for London's computer systems in the 2024 attack, are scheduled for a two-day sentencing hearing at a London court on July 15-16. Flowers separately admitted involvement in the September 2024 hacks of US healthcare providers SSM Health Care and Sutter Health; a related New Jersey indictment alleges Jubair and other Scattered Spider members caused at least $115 million in ransom payments across 120 intrusions.</p>
-      <div class="why"><b>Why it matters:</b> These sentences will be among the first concrete legal consequences for the loosely-affiliated, largely English-speaking Scattered Spider collective behind some of 2024-2025's most disruptive attacks — a signal case for how courts treat young, prolific cybercriminals.</div>
-      <div class="src"><a href="https://therecord.media/guilty-plea-tfl-cyberattack-scattered-spider-members" target="_blank">Source</a></div>
+      <h3>China-linked UNK_MassTraction exploits Roundcube n-days to spy on university physics and national-security researchers</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>Proofpoint Threat Research has tracked a suspected China-aligned cluster since May exploiting Roundcube webmail flaws (CVE-2024-42009 XSS, CVE-2025-49113 deserialization) against physics, engineering and astrophysics departments at a few dozen US and Canadian universities. The attack chain deploys a stealer called IceCube to harvest credentials, cookies and 2FA data, then drops a webshell or the VShell backdoor — a Go-based tool commonly used by Chinese threat actors.</p>
+      <div class="why"><b>Why it matters:</b> Academic institutions doing national-security-adjacent research are attractive, under-defended targets — and this campaign shows old, patchable n-day bugs are still enough to get in when patching lags.</div>
+      <div class="src"><a href="https://www.proofpoint.com/us/blog/threat-insight/one-email-closer-edge-unkmasstraction-physics-exploitation" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>FortiBleed ransomware pipeline widens: 12+ confirmed INC and Lynx deployments</h3>
-      <div class="date stale">📅 Jul 4, 2026</div>
-      <p>SOCRadar's Threat Research Unit linked the FortiBleed campaign — which harvested 110M+ credentials from 430,000 FortiGate firewalls via a Go tool abusing FortiOS's own diagnostic command — directly to the INC Ransom and Lynx operations, with at least 12 ransomware deployments traced to FortiBleed-derived access.</p>
-      <div class="why"><b>Why it matters:</b> Every unrotated FortiGate credential from this campaign remains a live ransomware foothold — this closes the loop from mass credential theft to actual encryption.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html" target="_blank">Source</a></div>
+      <h3>China-linked UAT-7810 expands its LapDogs proxy network with new LONGLEASH malware</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>Cisco Talos reports that UAT-7810, the group maintaining the LapDogs Operational Relay Box (ORB) network first exposed in June 2025, is refining custom malware — LONGLEASH (an evolution of ShortLeash), the passive Linux backdoor DOGLEASH, and the Java-based admin tool JARLEASH — to compromise unpatched Ruckus routers and other internet-facing networking gear.</p>
+      <div class="why"><b>Why it matters:</b> ORB networks let state-linked actors and their proxies route attacks through legitimate-looking regional infrastructure, complicating attribution — unpatched edge routers keep feeding that pipeline.</div>
+      <div class="src"><a href="https://blog.talosintelligence.com/uat-7810/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3>Qilin's ransomware pace keeps up: healthcare provider Next Clinics added to leak site alongside a wave of July victims</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>The Qilin ransomware group listed healthcare provider Next Clinics on its dark-web leak site, confirming data exfiltration, following a string of other early-July claims (Precision Steel Services, Wood Ellis &amp; Wood CPA, Grupo Inteca) across manufacturing, professional services and healthcare — part of a broader week that also saw INC Ransom, DragonForce, Akira and Everest post new victims.</p>
+      <div class="why"><b>Why it matters:</b> Qilin remains one of the most consistently active ransomware-as-a-service operations of 2026 — healthcare and professional-services targets in this volume are a reminder that RaaS affiliates aren't slowing down for anyone.</div>
+      <div class="src"><a href="https://www.galaxywarden.com/blog/breach/next-clinics-qilin-2026-07" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -61,38 +59,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>"Bad Epoll" Linux kernel flaw gives any local user root, reaches Android and Chrome's sandbox</h3>
-      <div class="date">📅 Jul 3, 2026</div>
-      <p>CVE-2026-46242, dubbed "Bad Epoll," is a use-after-free race condition in the Linux kernel's epoll subsystem, present since a 2023 code change and affecting kernels 5.10 through 6.11. Researcher Jaeyoung Chung built a working exploit with a reported ~99% reliability rate; because epoll cannot be disabled, there is no workaround, and the bug is reachable even from inside Chrome's renderer sandbox, which blocks most other kernel exploits. A fix is available and should be applied immediately across Linux servers, desktops and Android devices.</p>
-      <div class="why"><b>Why it matters:</b> A near-guaranteed root exploit with no mitigating workaround, reachable from browser sandboxes, is about as bad as local privilege escalation gets — this belongs at the top of every Linux and Android patch queue this week.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html" target="_blank">Source</a></div>
+      <h3>CISA adds max-severity Adobe ColdFusion bug and two Joomla flaws to KEV, deadline July 10</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>CVE-2026-48282 (CVSS 10.0), a path-traversal flaw in Adobe ColdFusion, was reportedly under active exploitation within two hours of disclosure and lets unauthenticated remote attackers achieve code execution. CISA added it to the KEV catalog alongside CVE-2026-56290 (Joomlack Page Builder, CVSS 10.0, unauthenticated file upload) and CVE-2026-48908 (JoomShaper SP Page Builder), giving federal agencies until July 10 under Binding Operational Directive 26-04.</p>
+      <div class="why"><b>Why it matters:</b> A CVSS 10.0 ColdFusion bug exploited within hours of disclosure, plus two more max-severity CMS plugin flaws, makes this one of the tightest KEV patch windows of the month — treat all three as already-compromised if unpatched.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">High</span></div>
-      <h3>Unpatched Argo CD repo-server flaw can still hand attackers a full Kubernetes cluster</h3>
-      <div class="date stale">📅 Jul 6, 2026</div>
-      <p>Synacktiv's unauthenticated RCE in Argo CD's repo-server component remains unfixed and un-CVE'd after being reported to maintainers in January 2025. The repo-server's internal gRPC service has no authentication; a crafted GenerateManifest request substitutes a malicious script for the expected Helm/Kustomize call, and Helm-chart installs leave Kubernetes network policies off by default — so a single compromised pod can reach the repo-server and read the cluster's Redis password.</p>
-      <div class="why"><b>Why it matters:</b> With no patch available, GitOps control planes need immediate network-policy isolation around the repo-server and Redis ports — this is now a live, public exploit path with no vendor fix on the horizon.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">High</span></div>
-      <h3>New CitrixBleed-style NetScaler flaw exploited within 24 hours of disclosure</h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>CVE-2026-8451 (CVSS 8.8) is an out-of-bounds read in NetScaler's XML parser affecting appliances configured as a SAML IDP: an unquoted XML attribute followed by a newline causes the parser to read past its buffer and leak memory — including session cookies — into the NSC_TASS response cookie. Scottish firm Lupovis observed exploitation begin less than 24 hours after Citrix's June 30 patch, with attackers filtering targets by HTTP response code to hit only genuinely vulnerable, SAML-enabled hosts.</p>
-      <div class="why"><b>Why it matters:</b> NetScaler's SAML-parsing bugs keep echoing the CitrixBleed pattern that fueled mass ransomware intrusions in 2023 — patch immediately or disable SAML IDP if patching isn't possible yet.</div>
-      <div class="src"><a href="https://cyberscoop.com/citrix-netscaler-flaw-cve-2026-8451-citrixbleed/" target="_blank">Source</a></div>
+      <h3>Ubiquiti patches seven critical UniFi flaws, including a CVSS 10.0 bug reachable on ~100,000 exposed endpoints</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>CVE-2026-50746 (CVSS 10.0) is an improper access-control flaw in UniFi Connect Application that lets any network attacker run OS commands on the host device with no credentials; fixed in version 3.4.20. Ubiquiti simultaneously patched six more critical bugs (CVE-2026-50747, -50748, -54400, -54402, -55115, -55116) across UniFi Talk, Access, Protect, UniFi OS Server and a wide range of routers, gateways, NAS and surveillance devices. Censys counts roughly 100,000 UniFi OS endpoints reachable from the public internet.</p>
+      <div class="why"><b>Why it matters:</b> Seven critical bugs across five product lines in one disclosure, on internet-facing management infrastructure, is a mass-patch emergency for anyone running UniFi at the edge — prioritize UniFi Connect and any internet-facing UniFi OS instance first.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>CISA's SharePoint KEV deadline passed; maximum-severity SimpleHelp bug still under active exploitation</h3>
-      <div class="date stale">📅 Jul 1-2, 2026</div>
-      <p>The July 4 federal patch deadline for CVE-2026-45659 (SharePoint deserialization RCE) has passed, while CVE-2026-48558, the CVSS 10.0 SimpleHelp OIDC auth-bypass, continues to see confirmed exploitation deploying TaskWeaver and Djinn Stealer malware; CISA's own count showed roughly 1,000 of 14,000 internet-facing SimpleHelp servers still unpatched as of its KEV addition.</p>
-      <div class="why"><b>Why it matters:</b> Both deadlines have now come and gone — any organization still unpatched on either CVE should treat it as a confirmed, not theoretical, compromise risk.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" target="_blank">Source</a></div>
+      <h3>Signed "Verified" GitHub commits can be cloned into new hashes without breaking the signature</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>Researcher Jacob Ginesin's "Git Hash Chain Malleability" paper shows three practical techniques — covering GitHub's supported ECDSA, RSA, EdDSA and S/MIME signature schemes — that let anyone produce a byte-different commit with an identical tree and metadata, a valid signature, and a fresh "Verified" badge under a new commit hash. Ginesin reported the issue to GNU/Git in January and GitHub in March; neither has shipped a fix.</p>
+      <div class="why"><b>Why it matters:</b> This breaks the assumption that a verified commit hash is a unique, immutable identifier — anything relying on hash-based blocklists, dependency pinning or reproducible-build verification should treat that assumption as unsafe until forges close the gap.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/github-verified-commits-can-be.html" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -104,38 +93,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>Sysdig's JADEPUFFER research continues drawing industry response as the first "agentic threat actor" case study</h3>
-      <div class="date stale">📅 Jul 1-7, 2026</div>
-      <p>Coverage of Sysdig's JADEPUFFER findings continued spreading through the industry this week (Dark Reading, CSO Online, The Register, Cloud Security Alliance), cementing it as the reference case for what researchers now call an "agentic threat actor" — an LLM agent that independently exploited a Langflow RCE, harvested multi-cloud and AI-provider credentials, moved laterally into a production database, and executed encryption and extortion with no human operator, ultimately destroying its own only-logged-once decryption key.</p>
-      <div class="why"><b>Why it matters:</b> The skill floor for running a ransomware operation has dropped to whatever it costs to run an agent — and if that agent runs on stolen LLMjacked compute, the attacker's cost approaches zero.</div>
-      <div class="src"><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion" target="_blank">Source</a></div>
+      <h3>CISA's KEV catalog gets its first-ever AI agent platform: Langflow's auth-bypass flaw is now a federal must-patch</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>CVE-2026-55255, an IDOR flaw in Langflow's /api/v1/responses endpoint that lets an authenticated attacker execute any other user's automation flow, was added to CISA's KEV catalog on July 7 with a Friday deadline. Sysdig had already observed a lone operator weaponizing it together with the unauthenticated RCE CVE-2026-33017 in a sustained late-June campaign; the fix ships in Langflow 1.9.2.</p>
+      <div class="why"><b>Why it matters:</b> This is the first time an AI agent-building platform has landed on the federal must-patch list — a concrete signal that agentic AI infrastructure is now squarely inside the same exploitation economy as any other enterprise software.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Hidden web prompts still tricking AI agents into crypto payments, Zscaler campaign keeps growing</h3>
-      <div class="date stale">📅 Jul 6, 2026</div>
-      <p>Zscaler ThreatLabz's indirect prompt-injection research — CSS-hidden and JSON-LD-buried instructions embedded in SEO-poisoned pages that got 4 of 26 tested LLM agents to autonomously send cryptocurrency payments, and 2 to trust a typosquat DeFi site — remains the week's dominant AI-security story, with follow-on coverage examining which agent frameworks lack content-provenance checks.</p>
-      <div class="why"><b>Why it matters:</b> Any agent with browsing and payment or trust-decision capability is now a target for content it was never designed to distrust — this is prompt injection with a working monetization loop, not a lab demo.</div>
-      <div class="src"><a href="https://www.zscaler.com/blogs/security-research/indirect-prompt-injection-web-content-targets-ai-agents" target="_blank">Source</a></div>
+      <h3>Sophos: AI coding agents now routinely trip the same detection rules built to catch human intruders</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>Sophos X-Ops analyzed a week of its own endpoint telemetry and found Claude Code, Cursor and OpenAI Codex repeatedly setting off Credential Access and Execution detections — including PowerShell using DPAPI to decrypt browser credentials, and agents pivoting from a blocked certutil.exe to bitsadmin.exe, a classic living-off-the-land evasion pattern, despite pursuing entirely legitimate tasks.</p>
+      <div class="why"><b>Why it matters:</b> Security teams need explicit policies and tuned baselines for what AI coding agents are allowed to do on endpoints now, or they'll spend the next year either drowning in false positives or missing the real thing.</div>
+      <div class="src"><a href="https://www.sophos.com/en-us/blog/2607_agents_vs_telemetry" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Djinn Stealer's hunt for Claude, Gemini and Codex API keys reframes AI credentials as standard loot</h3>
-      <div class="date stale">📅 Jun 30, 2026</div>
-      <p>The Djinn Stealer malware deployed via the SimpleHelp CVE-2026-48558 chain is purpose-built to harvest AI coding-assistant API keys alongside cloud tokens and Git/SSH credentials across Windows, macOS and Linux — one of the clearest signals yet that infostealer authors treat AI dev-tool credentials as core targets, not novelties.</p>
-      <div class="why"><b>Why it matters:</b> Enterprises now need to rotate and monitor AI API keys with the same discipline as cloud IAM credentials — attackers already do.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/06/30/simplehelp-vulnerability-exploited-cve-2026-48558/" target="_blank">Source</a></div>
+      <h3>Varonis' "Rogue Agent" flaw could have let one edit permission hijack every AI chatbot in a Google Cloud project</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>Varonis Threat Labs disclosed "Rogue Agent" in Google's Dialogflow CX: because every Code Block-enabled agent in a GCP project shares one managed Cloud Run environment, an attacker with a single dialogflow.playbooks.update permission on one agent could inject malicious code into a shared, writable file and silently hijack every other agent in the project — reading live conversations, exfiltrating data and sending attacker-written messages. Varonis reported the bug in November 2025; Google shipped a full fix in June 2026.</p>
+      <div class="why"><b>Why it matters:</b> Shared execution environments behind multi-tenant AI agent platforms are an under-scrutinized blast-radius problem — one compromised or malicious agent builder can compromise every other agent in the same project.</div>
+      <div class="src"><a href="https://www.varonis.com/blog/rogue-agent-dialogflow-attack" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>OWASP's 340% prompt-injection surge figure keeps getting cited as the AI-security baseline stat of 2026</h3>
-      <div class="date stale">📅 Jun 2026</div>
-      <p>OWASP's 2026 LLM Security Report finding — prompt injection up 340% year-over-year and the leading driver of agentic AI security failures in production — continues to anchor most industry threat reports and vendor pitches this week, including framing in both the Zscaler and JADEPUFFER coverage.</p>
-      <div class="why"><b>Why it matters:</b> The figure's staying power shows the industry has settled on prompt injection as the defining unsolved AI-security problem of the year, even as concrete incidents (JADEPUFFER, Zscaler's campaign) now supply the real-world evidence behind the trend line.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/" target="_blank">Source</a></div>
+      <h3>EU Commission unveils Action Plan on Cybersecurity and AI, including a testing platform for critical-sector AI</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>The European Commission presented an Action Plan built on three pillars: strengthening pre-market evaluation of AI models under the AI Act, working with ENISA on a secure testing platform so energy, health, finance and transport organizations can safely evaluate AI-for-cybersecurity tools, and launching an EU Grand Challenge on AI for cybersecurity to boost sovereign AI-security capability.</p>
+      <div class="why"><b>Why it matters:</b> Regulators are now explicitly treating frontier AI models as dual-use — both defensive tooling and offensive-capable — and building government testing infrastructure around that assumption; expect this framing to spread beyond the EU.</div>
+      <div class="src"><a href="https://commission.europa.eu/news-and-media/news/new-eu-plan-address-risks-and-opportunities-advanced-ai-cybersecurity-2026-07-07_en" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -146,30 +135,30 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Cybersecurity M&amp;A tracks toward a record year, Palo Alto's $25B CyberArk deal still the anchor</h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>Momentum Cyber's mid-year 2026 review continues to be cited as the industry benchmark, reporting deal count tracking above 2025's record 398 transactions. Palo Alto Networks' $25B acquisition of identity-security firm CyberArk and Mitsubishi Electric's $1B purchase of Nozomi Networks (the largest OT security deal to date) remain the year's headline transactions, with identity, AI and OT security the dominant themes.</p>
-      <div class="why"><b>Why it matters:</b> Consolidation around identity and OT security signals where platform vendors expect the next wave of enterprise spending — and where standalone startups in those categories become acquisition targets rather than long-term independents.</div>
-      <div class="src"><a href="https://www.secureworld.io/industry-news/cybersecurity-funding-momentum-2026" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3>NATO adds Forescout to its Information Assurance Product Catalogue for defense and critical-infrastructure deployments</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>The NATO Communications and Information Agency added Forescout's platform to the NIAPC, formally validating it for deployment across mission-critical defense IT and OT environments. Forescout CEO Barry Mainz framed the listing as recognition that the platform supports "a unified, real-time view of every device across IT and OT environments" for defense teams.</p>
+      <div class="why"><b>Why it matters:</b> NIAPC inclusion is a meaningful procurement signal for defense and critical-infrastructure buyers — it shortens the vetting runway for NATO member-state agencies evaluating asset-visibility tooling.</div>
+      <div class="src"><a href="https://www.businesswire.com/news/home/20260707808411/en/NATO-Adds-Forescout-to-Its-Information-Assurance-Product-Catalogue-NIAPC" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3>Krebs: a zero-day-buying startup dangling million-dollar payouts is run by convicted felons under assumed personas</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>Krebs on Security traces IRIS C2, a McLean, VA outfit soliciting software exploits for offensive cybersecurity capabilities with million-dollar payout offers, to a pair of far-right conspiracy theorists and convicted felons whose prior ventures included fake intelligence firms and a defunct AI lobbying platform — one previously pleaded guilty to securities fraud, and both were prosecuted over 2020 election robocall voter-suppression schemes.</p>
+      <div class="why"><b>Why it matters:</b> The exploit-broker market has minimal vetting standards for who's on the buying side — researchers courted by unfamiliar "vulnerability acquisition" startups should verify who's actually behind the LLC before selling anything.</div>
+      <div class="src"><a href="https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Aikido Security's phpBB technical write-up shows sustained original vuln research, promoted to core roster</h3>
-      <div class="date">📅 Jul 3, 2026</div>
-      <p>A month after Aikido Security's AI pentesting tool first found the decade-old phpBB authentication-bypass flaw (CVE-2026-48611), the vendor published a full technical write-up detailing the exploit chain and a second related bug, CVE-2026-48612 — following phpBB maintainers' requested four-week embargo. The flaw lets an unauthenticated attacker log in as any user, including admins, by abusing an unexpected OAuth provider value to skip password checks on default installations.</p>
-      <div class="why"><b>Why it matters:</b> The follow-through — waiting out a coordinated embargo and shipping deep technical detail rather than a marketing teaser — is exactly the sustained-cadence signal that separates a credible research team from a one-off vendor blog post.</div>
-      <div class="src"><a href="https://www.aikido.dev/blog/authentication-bypass-phpbb-technical-writeup" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-low">Trend</span></div>
-      <h3>Google, FBI and Lumen's NetNut takedown model shows the multi-party botnet-disruption playbook maturing</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>The NetNut/Popa disruption struck from three coordinated directions simultaneously — legal domain seizure by the FBI/IRS-CI, Google cutting off the botnet's own cloud-based command-and-control accounts, and Play Protect signature updates to block the proxy SDK on infected Android devices — a template increasingly used across 2026's major botnet takedowns.</p>
-      <div class="why"><b>Why it matters:</b> Coordinated legal-plus-technical takedowns are becoming the standard playbook against criminal infrastructure providers, not just one-off law enforcement actions — expect more joint public-private disruptions like this one.</div>
-      <div class="src"><a href="https://www.theregister.com/security/2026/07/03/netnut-cracked-as-google-and-fbi-target-2-million-device-botnet/5266414" target="_blank">Source</a></div>
+      <h3>Akamai completes $205M acquisition of enterprise browser security firm LayerX</h3>
+      <div class="date stale">📅 Jul 2, 2026</div>
+      <p>Akamai closed its all-cash acquisition of LayerX, a secure enterprise browser and AI-usage-control provider, first announced in May. The deal extends Akamai's Zero Trust platform with browser-level visibility into how employees interact with web content, prompts, file uploads and SaaS apps — explicitly framed around governing AI application usage.</p>
+      <div class="why"><b>Why it matters:</b> Browser-layer security keeps consolidating into larger Zero Trust platforms, and vendors are increasingly pitching that layer as the control point for governing employee AI tool use, not just web browsing.</div>
+      <div class="src"><a href="https://www.akamai.com/newsroom/press-release/akamai-completes-acquisition-of-secure-enterprise-browser-provider-layerx" target="_blank">Source</a></div>
     </div>
 
   </div>
