@@ -1,11 +1,12 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><span class="ld">Accenture confirms an "isolated" breach after a forum seller lists 35GB of its source code and cloud secrets —</span> the haul allegedly includes RSA/SSH keys and Azure access tokens pulled from a private Azure DevOps repo, and the consulting giant hasn't yet confirmed the scope.</li>
-    <li><span class="ld">CISA just added the first-ever AI agent platform to its Known Exploited Vulnerabilities catalog —</span> Langflow's authenticated IDOR flaw joins a maximum-severity Adobe ColdFusion path-traversal bug (exploited within two hours of disclosure) and two Joomla flaws, all due July 10.</li>
-    <li><span class="ld">A China-linked group is quietly reading physics and national-security researchers' email at US and Canadian universities —</span> Proofpoint's UNK_MassTraction campaign abuses old Roundcube webmail bugs to plant credential-stealing JavaScript and backdoors, earning Proofpoint a spot on today's source roster.</li>
-    <li><span class="ld">Ubiquiti just patched seven critical UniFi flaws, including a perfect-10 command-injection bug reachable on roughly 100,000 internet-exposed endpoints —</span> no credentials required.</li>
-    <li><span class="ld">Sophos found that Claude Code, Cursor and OpenAI Codex now routinely trip the same detection rules built to catch human attackers —</span> credential-access and living-off-the-land alerts fired on legitimate AI coding-agent activity all week.</li>
+    <li><span class="ld">U.S. insurer AssuranceAmerica confirms the largest driver's-license breach of 2026 so far —</span> 6.99 million people's names, contact details and driver's-license numbers were stolen after hackers targeted a single employee's credentials; notification letters go out today.</li>
+    <li><span class="ld">Japanese telecom giant KDDI confirms a zero-day in shared ISP email infrastructure exposed 12.2 million email addresses and 7.6 million passwords —</span> five ISPs (STNet, JCOM, Chubu Telecommunications, NIFTY, BIGLOBE) were hit since May; a patch is still pending.</li>
+    <li><span class="ld">The UK's NCSC unveils "Cyber Shield," a national plan to hardwire agentic AI into machine-speed cyber defense —</span> paired with a 60-signatory Cyber Resilience Pledge, it's a direct response to AI compressing vulnerability discovery from weeks to minutes.</li>
+    <li><span class="ld">Microsoft is telling enterprises to shrink Windows patch deployment windows to as little as zero days —</span> its own guidance says AI is closing the gap between patch release and exploit so fast that multi-week rollout timelines are now a liability.</li>
+    <li><span class="ld">CISA's four-CVE emergency patch deadline (Adobe ColdFusion, two Joomla builders, Langflow) lands today, July 10 —</span> unpatched instances should be treated as already compromised.</li>
+    <li><span class="ld">Researchers show malicious AI coding-agent "skills" can dodge install-time scanners over 90% of the time —</span> a behavioral sandbox that watches what a skill actually does catches 97% of attacks that byte-level tools miss.</li>
   </ul>
   <p class="rosternote">Roster update: added 2 new sources today — see Cyber Sources.</p>
 </div>
@@ -16,38 +17,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Accenture confirms breach after hacker lists 35GB of source code and cloud secrets for sale</h3>
+      <h3>AssuranceAmerica confirms 6.99 million driver's-license records stolen — largest such breach of 2026</h3>
       <div class="date">📅 Jul 8, 2026</div>
-      <p>A threat actor using the handle "888" posted on the cybercrime forum PwnForums claiming to have stolen source code, RSA and SSH keys, Azure personal access tokens, Azure Storage access keys and configuration files from a private Azure DevOps repository tied to an accenture.com production URL. Accenture told Help Net Security it is "aware of this isolated matter" and has "remediated its source," but has not confirmed the 35GB figure, the exfiltration method, or whether customer data was affected.</p>
-      <div class="why"><b>Why it matters:</b> Cloud secrets — access tokens, storage keys, service credentials — are now the prime target in these thefts, not just files; any org relying on Azure DevOps should audit token scope and rotation policy today.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/08/accenture-data-breach-2026/" target="_blank">Source</a></div>
+      <p>The auto and rental insurer told customers hackers were in its systems from March 17 to June 15, stealing names, contact information, driver's-license numbers, policy details and claims data after "targeting one of the Company's employees" for credentials. Notification letters, confirmed at 6.99 million affected individuals by the Indiana and Maine attorneys general, go out July 10.</p>
+      <div class="why"><b>Why it matters:</b> Driver's-license numbers are increasingly the target of choice for fraud and impersonation, and this is the largest confirmed U.S. spill of them in 2026 — the fifth such incident TechCrunch has tracked in recent months.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/08/another-massive-data-breach-exposed-millions-of-drivers-license-numbers/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>China-linked UNK_MassTraction exploits Roundcube n-days to spy on university physics and national-security researchers</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>Proofpoint Threat Research has tracked a suspected China-aligned cluster since May exploiting Roundcube webmail flaws (CVE-2024-42009 XSS, CVE-2025-49113 deserialization) against physics, engineering and astrophysics departments at a few dozen US and Canadian universities. The attack chain deploys a stealer called IceCube to harvest credentials, cookies and 2FA data, then drops a webshell or the VShell backdoor — a Go-based tool commonly used by Chinese threat actors.</p>
-      <div class="why"><b>Why it matters:</b> Academic institutions doing national-security-adjacent research are attractive, under-defended targets — and this campaign shows old, patchable n-day bugs are still enough to get in when patching lags.</div>
-      <div class="src"><a href="https://www.proofpoint.com/us/blog/threat-insight/one-email-closer-edge-unkmasstraction-physics-exploitation" target="_blank">Source</a></div>
+      <h3>KDDI zero-day breach exposes 12.2 million email addresses, 7.6 million passwords across five Japanese ISPs</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>Hackers exploited a zero-day in shared email infrastructure KDDI operates for ISPs STNet, JCOM, Chubu Telecommunications, NIFTY and BIGLOBE, with exploitation dating back to May before KDDI discovered and evicted the intruders in June. KDDI's own mobile and fixed-line email were unaffected; a mandatory password reset for compromised accounts is underway while the vendor works on a patch.</p>
+      <div class="why"><b>Why it matters:</b> A single zero-day in shared backend infrastructure fanned out to millions of subscribers across five separate ISP brands — a reminder that "who do we notify" gets complicated fast when the breach sits upstream of the customer-facing provider.</div>
+      <div class="src"><a href="https://www.securityweek.com/12-million-impacted-by-data-breach-at-japanese-telco-kddi/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>China-linked UAT-7810 expands its LapDogs proxy network with new LONGLEASH malware</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>Cisco Talos reports that UAT-7810, the group maintaining the LapDogs Operational Relay Box (ORB) network first exposed in June 2025, is refining custom malware — LONGLEASH (an evolution of ShortLeash), the passive Linux backdoor DOGLEASH, and the Java-based admin tool JARLEASH — to compromise unpatched Ruckus routers and other internet-facing networking gear.</p>
-      <div class="why"><b>Why it matters:</b> ORB networks let state-linked actors and their proxies route attacks through legitimate-looking regional infrastructure, complicating attribution — unpatched edge routers keep feeding that pipeline.</div>
-      <div class="src"><a href="https://blog.talosintelligence.com/uat-7810/" target="_blank">Source</a></div>
+      <h3>Mount Royal University confirms ransomware theft of student and employee data as CMD Organization demands $1.9M</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>The Alberta, Canada public university confirmed hackers exfiltrated and deleted data from a shared "H drive" used by individual employees and students during a June 17 intrusion, and will provide 24 months of identity-theft monitoring to affected staff. A ransomware group calling itself CMD Organization added MRU to its leak site the same day, publishing screenshots and demanding $1.9 million in cryptocurrency for over 10TB of claimed data.</p>
+      <div class="why"><b>Why it matters:</b> CMD Organization has claimed 32 attacks with only four confirmed — a pattern of leak-site bluffing that institutions need to verify independently rather than take at face value, even as the underlying data theft here is confirmed.</div>
+      <div class="src"><a href="https://www.securityweek.com/mount-royal-university-confirms-data-stolen-in-ransomware-attack/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>Qilin's ransomware pace keeps up: healthcare provider Next Clinics added to leak site alongside a wave of July victims</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>The Qilin ransomware group listed healthcare provider Next Clinics on its dark-web leak site, confirming data exfiltration, following a string of other early-July claims (Precision Steel Services, Wood Ellis &amp; Wood CPA, Grupo Inteca) across manufacturing, professional services and healthcare — part of a broader week that also saw INC Ransom, DragonForce, Akira and Everest post new victims.</p>
-      <div class="why"><b>Why it matters:</b> Qilin remains one of the most consistently active ransomware-as-a-service operations of 2026 — healthcare and professional-services targets in this volume are a reminder that RaaS affiliates aren't slowing down for anyone.</div>
-      <div class="src"><a href="https://www.galaxywarden.com/blog/breach/next-clinics-qilin-2026-07" target="_blank">Source</a></div>
+      <h3>INTERPOL's four-month Operation First Light 2026 nets 5,811 arrests, $293M in seized fraud proceeds across 97 countries</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>The global crackdown on social-engineering scams and their money-laundering pipelines froze 31,014 bank accounts and worked through roughly 150,000 cases, relying partly on INTERPOL's Global Rapid Intervention of Payments stop-payment system. Standout cases included an Eswatini network running fake Brazilian-police impersonation video calls and a Thai romance-scam ring that moved $122.5 million through crypto in ten months.</p>
+      <div class="why"><b>Why it matters:</b> A rare good-news counterweight to the daily breach drumbeat — proof that coordinated, rapid-freeze payment interdiction can claw back real money from social-engineering rings before it disappears offshore.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/09/interpol-fraud-bust-social-engineering-scams/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -59,29 +60,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3>CISA adds max-severity Adobe ColdFusion bug and two Joomla flaws to KEV, deadline July 10</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>CVE-2026-48282 (CVSS 10.0), a path-traversal flaw in Adobe ColdFusion, was reportedly under active exploitation within two hours of disclosure and lets unauthenticated remote attackers achieve code execution. CISA added it to the KEV catalog alongside CVE-2026-56290 (Joomlack Page Builder, CVSS 10.0, unauthenticated file upload) and CVE-2026-48908 (JoomShaper SP Page Builder), giving federal agencies until July 10 under Binding Operational Directive 26-04.</p>
-      <div class="why"><b>Why it matters:</b> A CVSS 10.0 ColdFusion bug exploited within hours of disclosure, plus two more max-severity CMS plugin flaws, makes this one of the tightest KEV patch windows of the month — treat all three as already-compromised if unpatched.</div>
+      <h3>CISA's four-CVE emergency patch deadline hits today: ColdFusion, two Joomla builders and Langflow</h3>
+      <div class="date">📅 Jul 10, 2026</div>
+      <p>Federal agencies face a same-day Binding Operational Directive 26-04 deadline to patch CVE-2026-48282 (Adobe ColdFusion path traversal, CVSS 10.0, exploited within two hours of disclosure), CVE-2026-56290 and CVE-2026-48908 (Joomlack/JoomShaper page-builder file-upload flaws, both CVSS 10.0), and CVE-2026-55255 (Langflow authorization bypass, the first AI agent platform ever added to KEV).</p>
+      <div class="why"><b>Why it matters:</b> This is the deadline day itself — any of these four still unpatched in an internet-facing environment should be treated as already compromised, not merely at risk.</div>
       <div class="src"><a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">High</span></div>
-      <h3>Ubiquiti patches seven critical UniFi flaws, including a CVSS 10.0 bug reachable on ~100,000 exposed endpoints</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>CVE-2026-50746 (CVSS 10.0) is an improper access-control flaw in UniFi Connect Application that lets any network attacker run OS commands on the host device with no credentials; fixed in version 3.4.20. Ubiquiti simultaneously patched six more critical bugs (CVE-2026-50747, -50748, -54400, -54402, -55115, -55116) across UniFi Talk, Access, Protect, UniFi OS Server and a wide range of routers, gateways, NAS and surveillance devices. Censys counts roughly 100,000 UniFi OS endpoints reachable from the public internet.</p>
-      <div class="why"><b>Why it matters:</b> Seven critical bugs across five product lines in one disclosure, on internet-facing management infrastructure, is a mass-patch emergency for anyone running UniFi at the edge — prioritize UniFi Connect and any internet-facing UniFi OS instance first.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/" target="_blank">Source</a></div>
+      <h3>CERT/CC discloses undocumented Tenda firmware backdoor after failing to reach the vendor</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>CVE-2026-11405 is a hardcoded backdoor password baked into the login function of Tenda's web-server binary across multiple router, switch and networking-device firmware versions: any username succeeds when paired with the backdoor password, granting full administrative access with no documentation or visibility in the admin interface. CERT/CC published the advisory unpatched after being unable to coordinate disclosure with Tenda.</p>
+      <div class="why"><b>Why it matters:</b> An undocumented, unpatched authentication bypass on consumer and SMB networking gear with no fix timeline means the only mitigation is disabling remote web management now — treat any internet-facing Tenda device as compromised until Tenda acts.</div>
+      <div class="src"><a href="https://kb.cert.org/vuls/id/213560" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">High</span></div>
+      <h3>BeyondTrust patches two critical pre-auth flaws in Remote Support and Privileged Remote Access</h3>
+      <div class="date">📅 Jul 7, 2026</div>
+      <p>CVE-2026-40138 and CVE-2026-40139 (both CVSS 9.2) let a network-positioned, unauthenticated attacker bypass access controls in the authentication subsystem to gain unauthorized access to RS/PRA appliances, including accounts with elevated privileges. BeyondTrust also shipped fixes for two related high-severity denial-of-service/access-restriction bugs; self-hosted customers not on auto-update need to apply the April rollup or upgrade to 25.3.3+.</p>
+      <div class="why"><b>Why it matters:</b> BeyondTrust RS/PRA flaws have been abused in the past to plant web shells and backdoors on privileged remote-access infrastructure — this is exactly the kind of appliance attackers use to leapfrog into help-desk and admin tooling.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/beyondtrust-warns-of-critical-flaws-in-remote-access-software/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Signed "Verified" GitHub commits can be cloned into new hashes without breaking the signature</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>Researcher Jacob Ginesin's "Git Hash Chain Malleability" paper shows three practical techniques — covering GitHub's supported ECDSA, RSA, EdDSA and S/MIME signature schemes — that let anyone produce a byte-different commit with an identical tree and metadata, a valid signature, and a fresh "Verified" badge under a new commit hash. Ginesin reported the issue to GNU/Git in January and GitHub in March; neither has shipped a fix.</p>
-      <div class="why"><b>Why it matters:</b> This breaks the assumption that a verified commit hash is a unique, immutable identifier — anything relying on hash-based blocklists, dependency pinning or reproducible-build verification should treat that assumption as unsafe until forges close the gap.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/github-verified-commits-can-be.html" target="_blank">Source</a></div>
+      <h3>Threat actors probe critical Gitea Docker auth-bypass flaw 13 days after disclosure</h3>
+      <div class="date stale">📅 Jul 6, 2026</div>
+      <p>Sysdig detected the first in-the-wild reconnaissance against CVE-2026-20896 (CVSS 9.8), which stems from Gitea's official Docker images hard-coding a wildcard trusted-proxy setting that lets anyone reaching the container impersonate any user — including admins — via a spoofed X-WEBAUTH-USER header. Roughly 6,200 Gitea instances remain internet-facing; the fix shipped in version 1.26.3.</p>
+      <div class="why"><b>Why it matters:</b> The probing so far is reconnaissance only, not confirmed exploitation, but a wildcard-trust misconfiguration shipped as the official Docker default is the kind of bug that turns into mass exploitation fast once someone finds the reconnaissance signal worth acting on.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -92,39 +102,39 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3>CISA's KEV catalog gets its first-ever AI agent platform: Langflow's auth-bypass flaw is now a federal must-patch</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>CVE-2026-55255, an IDOR flaw in Langflow's /api/v1/responses endpoint that lets an authenticated attacker execute any other user's automation flow, was added to CISA's KEV catalog on July 7 with a Friday deadline. Sysdig had already observed a lone operator weaponizing it together with the unauthenticated RCE CVE-2026-33017 in a sustained late-June campaign; the fix ships in Langflow 1.9.2.</p>
-      <div class="why"><b>Why it matters:</b> This is the first time an AI agent-building platform has landed on the federal must-patch list — a concrete signal that agentic AI infrastructure is now squarely inside the same exploitation economy as any other enterprise software.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>UK's NCSC unveils "Cyber Shield," a national plan to hardwire agentic AI into machine-speed cyber defense</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>Announced July 7 alongside a separately launched Cyber Resilience Pledge (60 founding signatories committing to board-level cybersecurity accountability, NCSC early-warning enrollment, and Cyber Essentials across the supply chain), Cyber Shield calls for academia, critical infrastructure, frontier AI labs and the cyber-defense sector to build federated agentic red/blue teams for national-scale vulnerability discovery, detection and remediation. NCSC acknowledges it hasn't yet seen fully autonomous attacks across a complete intrusion lifecycle — but is building for when it does.</p>
+      <div class="why"><b>Why it matters:</b> A national government is now explicitly building AI-vs-AI cyber-defense infrastructure as policy, not just research — critics note the more immediate risk for most organizations is still unpatched basics, not sophisticated AI-driven attacks.</div>
+      <div class="src"><a href="https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3>Sophos: AI coding agents now routinely trip the same detection rules built to catch human intruders</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>Sophos X-Ops analyzed a week of its own endpoint telemetry and found Claude Code, Cursor and OpenAI Codex repeatedly setting off Credential Access and Execution detections — including PowerShell using DPAPI to decrypt browser credentials, and agents pivoting from a blocked certutil.exe to bitsadmin.exe, a classic living-off-the-land evasion pattern, despite pursuing entirely legitimate tasks.</p>
-      <div class="why"><b>Why it matters:</b> Security teams need explicit policies and tuned baselines for what AI coding agents are allowed to do on endpoints now, or they'll spend the next year either drowning in false positives or missing the real thing.</div>
-      <div class="src"><a href="https://www.sophos.com/en-us/blog/2607_agents_vs_telemetry" target="_blank">Source</a></div>
+      <h3>Microsoft rewrites Windows patch guidance, telling enterprises to shrink deployment windows because of AI</h3>
+      <div class="date">📅 Jul 10, 2026</div>
+      <p>Microsoft now recommends a quality-update deferral period under three days, update deadlines of zero to one day, and grace periods no longer than two days — down sharply from typical multi-week rollout schedules. "That's ample time for attackers using AI to find and exploit known security gaps," said Microsoft 365 director Jeremy Chapman, pointing organizations to Windows Autopatch reporting, Hotpatch (no-reboot updates) and Conditional Access to enforce compliance.</p>
+      <div class="why"><b>Why it matters:</b> This is a vendor formally acknowledging that AI has compressed the patch-to-exploit window enough to rewrite its own default guidance — a strong signal that "patch within 30 days" policies across the industry are already obsolete.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/10/microsoft-windows-update-deployment-timelines/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Varonis' "Rogue Agent" flaw could have let one edit permission hijack every AI chatbot in a Google Cloud project</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>Varonis Threat Labs disclosed "Rogue Agent" in Google's Dialogflow CX: because every Code Block-enabled agent in a GCP project shares one managed Cloud Run environment, an attacker with a single dialogflow.playbooks.update permission on one agent could inject malicious code into a shared, writable file and silently hijack every other agent in the project — reading live conversations, exfiltrating data and sending attacker-written messages. Varonis reported the bug in November 2025; Google shipped a full fix in June 2026.</p>
-      <div class="why"><b>Why it matters:</b> Shared execution environments behind multi-tenant AI agent platforms are an under-scrutinized blast-radius problem — one compromised or malicious agent builder can compromise every other agent in the same project.</div>
-      <div class="src"><a href="https://www.varonis.com/blog/rogue-agent-dialogflow-attack" target="_blank">Source</a></div>
+      <h3>Researchers show malicious AI coding-agent "skills" evade install-time scanners over 90% of the time</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>Hong Kong University of Science and Technology researchers built SkillCloak, which keeps a malicious agent skill's behavior intact while rewriting suspicious tokens or hiding payloads in directories scanners skip — evading static scanners more than 80% of the time and one hybrid LLM-plus-rules tool 96% of the time. Their countermeasure, SkillDetonate, runs skills in a behavioral sandbox and caught 97% of attacks on synthetic tests versus roughly 10% for the best static scanner once evasion tricks were applied.</p>
+      <div class="why"><b>Why it matters:</b> One skill marketplace has already listed over 40,000 largely unvetted skills, and a real campaign (ClawHavoc) planted 300+ malicious ones on a single marketplace — install-time byte scanning alone is not a sufficient control for agent skill supply chains.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/09/malicious-ai-agent-skills-scan/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>EU Commission unveils Action Plan on Cybersecurity and AI, including a testing platform for critical-sector AI</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>The European Commission presented an Action Plan built on three pillars: strengthening pre-market evaluation of AI models under the AI Act, working with ENISA on a secure testing platform so energy, health, finance and transport organizations can safely evaluate AI-for-cybersecurity tools, and launching an EU Grand Challenge on AI for cybersecurity to boost sovereign AI-security capability.</p>
-      <div class="why"><b>Why it matters:</b> Regulators are now explicitly treating frontier AI models as dual-use — both defensive tooling and offensive-capable — and building government testing infrastructure around that assumption; expect this framing to spread beyond the EU.</div>
-      <div class="src"><a href="https://commission.europa.eu/news-and-media/news/new-eu-plan-address-risks-and-opportunities-advanced-ai-cybersecurity-2026-07-07_en" target="_blank">Source</a></div>
+      <h3>Dutch financial and privacy regulators warn AI is compressing cyberattack timelines from weeks to hours</h3>
+      <div class="date">📅 Jul 8, 2026</div>
+      <p>The Dutch Data Protection Authority (AP) and Authority for the Financial Markets (AFM) both warned that increasingly capable AI models can identify vulnerabilities, chain multiple attack steps, and execute complex intrusions in controlled environments far faster than organizations can patch. The AP separately reported account-takeover complaints nearly tripled year-over-year, from 607 in 2024 to 1,742 in 2025.</p>
+      <div class="why"><b>Why it matters:</b> Financial and privacy regulators — not just security vendors — are now formally telling organizations the discover-to-exploit window has collapsed, adding regulatory weight to arguments for faster patch cycles.</div>
+      <div class="src"><a href="https://nltimes.nl/2026/07/08/ai-increases-dangers-phishing-cyberattacks-says-dutch-data-authority" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -135,30 +145,30 @@
   <div class="cols">
 
     <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3>npm 12 disables install scripts by default, starts phasing out 2FA-bypass publish tokens</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>GitHub's npm 12 release turns off automatic dependency lifecycle scripts (preinstall/install/postinstall) and implicit node-gyp builds by default, along with git and remote-URL dependency resolution — all now opt-in via <code>npm approve-scripts</code>. Starting in August, granular access tokens configured to bypass 2FA lose the ability to perform sensitive account and package-management actions; by January 2027 they lose direct publish rights entirely, pushed toward trusted OIDC publishing or human-approved staged publishing.</p>
+      <div class="why"><b>Why it matters:</b> Install-time lifecycle scripts have been the single largest code-execution surface in the npm ecosystem and a favorite supply-chain attack vector — this is the most significant default-security change to npm's install behavior in years.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>NATO adds Forescout to its Information Assurance Product Catalogue for defense and critical-infrastructure deployments</h3>
-      <div class="date">📅 Jul 7, 2026</div>
-      <p>The NATO Communications and Information Agency added Forescout's platform to the NIAPC, formally validating it for deployment across mission-critical defense IT and OT environments. Forescout CEO Barry Mainz framed the listing as recognition that the platform supports "a unified, real-time view of every device across IT and OT environments" for defense teams.</p>
-      <div class="why"><b>Why it matters:</b> NIAPC inclusion is a meaningful procurement signal for defense and critical-infrastructure buyers — it shortens the vetting runway for NATO member-state agencies evaluating asset-visibility tooling.</div>
-      <div class="src"><a href="https://www.businesswire.com/news/home/20260707808411/en/NATO-Adds-Forescout-to-Its-Information-Assurance-Product-Catalogue-NIAPC" target="_blank">Source</a></div>
+      <h3>Chrome 150 patches 27 vulnerabilities, including two critical use-after-free bugs</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>Google's Chrome 150 update resolves 13 use-after-free defects — including two critical-severity bugs in the Ozone and Views components, both found internally — plus uninitialized-use, integer-overflow, and out-of-bounds read/write flaws. Google has now shipped fixes for more than 1,400 Chrome vulnerabilities since April, a pace the company attributes partly to AI-assisted bug hunting.</p>
+      <div class="why"><b>Why it matters:</b> Two critical UAFs in a browser used by billions is a standard "update now" item, but the broader trend — AI driving a sharp rise in vulnerability discovery even as bounty payouts shrink — is reshaping how fast browser vendors can find and fix bugs before attackers do.</div>
+      <div class="src"><a href="https://www.securityweek.com/chrome-150-update-patches-27-vulnerabilities/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3>Krebs: a zero-day-buying startup dangling million-dollar payouts is run by convicted felons under assumed personas</h3>
-      <div class="date">📅 Jul 8, 2026</div>
-      <p>Krebs on Security traces IRIS C2, a McLean, VA outfit soliciting software exploits for offensive cybersecurity capabilities with million-dollar payout offers, to a pair of far-right conspiracy theorists and convicted felons whose prior ventures included fake intelligence firms and a defunct AI lobbying platform — one previously pleaded guilty to securities fraud, and both were prosecuted over 2020 election robocall voter-suppression schemes.</p>
-      <div class="why"><b>Why it matters:</b> The exploit-broker market has minimal vetting standards for who's on the buying side — researchers courted by unfamiliar "vulnerability acquisition" startups should verify who's actually behind the LLC before selling anything.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3>Akamai completes $205M acquisition of enterprise browser security firm LayerX</h3>
-      <div class="date stale">📅 Jul 2, 2026</div>
-      <p>Akamai closed its all-cash acquisition of LayerX, a secure enterprise browser and AI-usage-control provider, first announced in May. The deal extends Akamai's Zero Trust platform with browser-level visibility into how employees interact with web content, prompts, file uploads and SaaS apps — explicitly framed around governing AI application usage.</p>
-      <div class="why"><b>Why it matters:</b> Browser-layer security keeps consolidating into larger Zero Trust platforms, and vendors are increasingly pitching that layer as the control point for governing employee AI tool use, not just web browsing.</div>
-      <div class="src"><a href="https://www.akamai.com/newsroom/press-release/akamai-completes-acquisition-of-secure-enterprise-browser-provider-layerx" target="_blank">Source</a></div>
+      <h3>Israeli startup QIZ Security raises $17M for post-quantum cryptographic governance platform</h3>
+      <div class="date">📅 Jul 9, 2026</div>
+      <p>The seed round, led by Bessemer Venture Partners and Merlin Ventures, funds a platform that continuously discovers cryptographic assets across on-prem, cloud and hybrid environments, flags weak ciphers and outdated protocols, and ranks remediation priorities by business impact ahead of the industry's "Q-Day" quantum-readiness deadline pressure.</p>
+      <div class="why"><b>Why it matters:</b> Continued early-stage investment in post-quantum cryptography tooling signals that "crypto-agility" is moving from a compliance checkbox to a funded product category as PQC migration deadlines approach.</div>
+      <div class="src"><a href="https://www.securityweek.com/qiz-security-raises-17-million-for-cryptographic-governance-platform/" target="_blank">Source</a></div>
     </div>
 
   </div>
