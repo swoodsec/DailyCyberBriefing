@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated July 10, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated July 13, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -133,6 +133,7 @@
       <tr><td class="name"><a href="https://www.synacktiv.com/en/publications" target="_blank">Synacktiv</a></td><td class="note">French offensive-security/pentest firm with 300+ public vulnerability disclosures; published the original unauthenticated-RCE research on an unpatched, un-CVE'd Argo CD repo-server flaw that can lead to full Kubernetes cluster takeover, after 18 months of unresolved vendor disclosure. <span class="flag">(added 2026-07-07)</span></td></tr>
       <tr><td class="name"><a href="https://www.aikido.dev/blog" target="_blank">Aikido Security</a></td><td class="note">AI-assisted AppSec/pentesting vendor that discloses original CVEs with deep technical write-ups; promoted from candidate after publishing a full technical write-up and a second CVE (CVE-2026-48612) for its original decade-old phpBB auth-bypass find (CVE-2026-48611), honoring the maintainers' requested embargo. <span class="flag">(added 2026-07-08)</span></td></tr>
       <tr><td class="name"><a href="https://www.kb.cert.org/vuls/" target="_blank">CERT Coordination Center (CERT/CC)</a></td><td class="note">Carnegie Mellon's vulnerability coordination center; publishes original advisories, including unpatched/uncoordinated disclosures when vendors don't respond. Independently disclosed today's undocumented Tenda firmware backdoor (CVE-2026-11405) and an HP Deskjet API-exposure flaw after failing to reach either vendor. <span class="flag">(added 2026-07-10)</span></td></tr>
+      <tr><td class="name"><a href="https://nebusec.ai/research/" target="_blank">Nebula Security</a></td><td class="note">AI-driven vulnerability-research lab (VEGA bug-hunting tool) with a continuously updated 885+ entry disclosure catalog; its VEGA team discovered and published the original "GhostLock" (CVE-2026-43499) disclosure — a 15-year-old Linux kernel futex use-after-free giving root and container escape, earning a $92,337 Google kernelCTF award. <span class="flag">(added 2026-07-13)</span></td></tr>
     </table>
   </section>
 
@@ -161,6 +162,8 @@
       <tr><td class="name"><a href="https://www.armadin.com/resources" target="_blank">Armadin</a></td><td class="note">AI-native offensive-security firm (ex-Mandiant CEO Kevin Mandia and Mandiant founders) whose researchers publish hands-on agent/AI-tool attack chains; detailed the full Claude Cowork sandbox escape reaching root inside the Hyper-V VM (USERENV.dll sideload + CoworkVMService RPC abuse). <span class="flag">(added 2026-07-05)</span></td></tr>
       <tr><td class="name"><a href="https://www.zscaler.com/blogs/security-research" target="_blank">Zscaler ThreatLabz</a></td><td class="note">Large-scale threat-research org analyzing cloud telemetry at scale; ran its own multi-model agent harness to uncover indirect-prompt-injection campaigns that tricked 4 of 26 tested LLM agents into autonomous crypto payments via CSS-hidden and JSON-LD-buried web prompts. <span class="flag">(added 2026-07-07)</span></td></tr>
       <tr><td class="name"><a href="https://www.varonis.com/blog/tag/threat-research" target="_blank">Varonis Threat Labs</a></td><td class="note">Data-security research team with a sustained original AI-platform disclosure cadence; published "Rogue Agent," a shared-execution-environment flaw in Google Dialogflow CX that could let one edit permission compromise every AI chatbot agent in a GCP project (plus SearchLeak in M365 Copilot, Reprompt, Cookie Bite). <span class="flag">(added 2026-07-09)</span></td></tr>
+      <tr><td class="name"><a href="https://ainowinstitute.org/" target="_blank">AI Now Institute</a></td><td class="note">Independent, non-corporate-funded AI policy and research institute now publishing hands-on technical exploit research; published the original "Friendly Fire" exploit brief showing Claude Code and OpenAI's Codex can be hijacked into executing attacker payloads during defensive code review. <span class="flag">(added 2026-07-13)</span></td></tr>
+      <tr><td class="name"><a href="https://www.sandsecurity.ai/" target="_blank">Sand Security</a></td><td class="note">AI-runtime security research team (formerly Koi Security) publishing original AI-infrastructure and supply-chain vulnerability disclosures; discovered and disclosed "WriteOut," a critical cross-tenant session-isolation flaw in Writer AI, coordinating the fix with the vendor. <span class="flag">(added 2026-07-13)</span></td></tr>
     </table>
   </section>
 
@@ -176,7 +179,7 @@
   </section>
 
   <footer>
-    74 sources across 5 categories (plus 4 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    77 sources across 5 categories (plus 4 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>
