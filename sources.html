@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated July 13, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated July 14, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -113,6 +113,7 @@
       <tr><td class="name"><a href="https://blackpointcyber.com/blog/" target="_blank">Blackpoint Cyber</a></td><td class="note">MDR provider whose Adversary Pursuit Group publishes first-party intrusion analysis and malware breakdowns; discovered and detailed the Avalon modular framework and the new CrownX ransomware, including its AI-assisted-development assessment. <span class="flag">(added 2026-07-04)</span></td></tr>
       <tr><td class="name"><a href="https://www.sekoia.io/en/blog/" target="_blank">Sekoia TDR</a></td><td class="note">Sekoia Threat Detection &amp; Research team; original malware/campaign analysis with IOCs and infrastructure tracking — ran the original ChocoPoC investigation (with YesWeHack) on seven trojanized CVE-PoC repos and a Mapbox DoH dead-drop C2, plus Aurora Stealer, GootLoader and ClickFix tracking. <span class="flag">(added 2026-07-05)</span></td></tr>
       <tr><td class="name"><a href="https://www.proofpoint.com/us/blog/threat-insight" target="_blank">Proofpoint</a></td><td class="note">Threat Research team publishing original APT/campaign analysis with IOCs and attribution; tracked UNK_MassTraction's China-aligned Roundcube campaign against US/Canadian university physics and national-security researchers since May 2026 (IceCube stealer, VShell backdoor). <span class="flag">(added 2026-07-09)</span></td></tr>
+      <tr><td class="name"><a href="https://www.jamf.com/threat-labs/" target="_blank">Jamf Threat Labs</a></td><td class="note">Apple-ecosystem threat-research team publishing original macOS/iOS malware analysis; discovered and published the "CrashStealer" notarized macOS infostealer, tracked from a May sample through July in-the-wild detections, plus prior ClickFix/Atomic Stealer and Predator spyware research. <span class="flag">(added 2026-07-14)</span></td></tr>
     </table>
   </section>
 
@@ -134,6 +135,7 @@
       <tr><td class="name"><a href="https://www.aikido.dev/blog" target="_blank">Aikido Security</a></td><td class="note">AI-assisted AppSec/pentesting vendor that discloses original CVEs with deep technical write-ups; promoted from candidate after publishing a full technical write-up and a second CVE (CVE-2026-48612) for its original decade-old phpBB auth-bypass find (CVE-2026-48611), honoring the maintainers' requested embargo. <span class="flag">(added 2026-07-08)</span></td></tr>
       <tr><td class="name"><a href="https://www.kb.cert.org/vuls/" target="_blank">CERT Coordination Center (CERT/CC)</a></td><td class="note">Carnegie Mellon's vulnerability coordination center; publishes original advisories, including unpatched/uncoordinated disclosures when vendors don't respond. Independently disclosed today's undocumented Tenda firmware backdoor (CVE-2026-11405) and an HP Deskjet API-exposure flaw after failing to reach either vendor. <span class="flag">(added 2026-07-10)</span></td></tr>
       <tr><td class="name"><a href="https://nebusec.ai/research/" target="_blank">Nebula Security</a></td><td class="note">AI-driven vulnerability-research lab (VEGA bug-hunting tool) with a continuously updated 885+ entry disclosure catalog; its VEGA team discovered and published the original "GhostLock" (CVE-2026-43499) disclosure — a 15-year-old Linux kernel futex use-after-free giving root and container escape, earning a $92,337 Google kernelCTF award. <span class="flag">(added 2026-07-13)</span></td></tr>
+      <tr><td class="name"><a href="https://socket.dev/blog" target="_blank">Socket</a></td><td class="note">Application-security research team that detects and reverse-engineers npm/PyPI supply-chain compromises in near-real time; detected and analyzed the Jscrambler npm backdoor (ChaCha20-Poly1305-obfuscated infostealer targeting AI coding-tool configs) within its two-hour compromise window, plus prior Shai-Hulud, IronWorm and node-ipc research. <span class="flag">(added 2026-07-14)</span></td></tr>
     </table>
   </section>
 
@@ -164,6 +166,7 @@
       <tr><td class="name"><a href="https://www.varonis.com/blog/tag/threat-research" target="_blank">Varonis Threat Labs</a></td><td class="note">Data-security research team with a sustained original AI-platform disclosure cadence; published "Rogue Agent," a shared-execution-environment flaw in Google Dialogflow CX that could let one edit permission compromise every AI chatbot agent in a GCP project (plus SearchLeak in M365 Copilot, Reprompt, Cookie Bite). <span class="flag">(added 2026-07-09)</span></td></tr>
       <tr><td class="name"><a href="https://ainowinstitute.org/" target="_blank">AI Now Institute</a></td><td class="note">Independent, non-corporate-funded AI policy and research institute now publishing hands-on technical exploit research; published the original "Friendly Fire" exploit brief showing Claude Code and OpenAI's Codex can be hijacked into executing attacker payloads during defensive code review. <span class="flag">(added 2026-07-13)</span></td></tr>
       <tr><td class="name"><a href="https://www.sandsecurity.ai/" target="_blank">Sand Security</a></td><td class="note">AI-runtime security research team (formerly Koi Security) publishing original AI-infrastructure and supply-chain vulnerability disclosures; discovered and disclosed "WriteOut," a critical cross-tenant session-isolation flaw in Writer AI, coordinating the fix with the vendor. <span class="flag">(added 2026-07-13)</span></td></tr>
+      <tr><td class="name"><a href="https://www.manifold.security/blog" target="_blank">Manifold Security</a></td><td class="note">AI-agent runtime-security research team (AIDR platform) founded by the creators of the LLM Guard open-source firewall; disclosed the original ClaudeBleed-linked Claude for Chrome bypass, reported to Anthropic May 21 and re-verified as unpatched across all eight subsequent releases, plus earlier spoofed-git-identity AI-code-reviewer research. <span class="flag">(added 2026-07-14)</span></td></tr>
     </table>
   </section>
 
@@ -175,11 +178,12 @@
       <tr><td class="name"><a href="https://www.s-rminform.com/cyber-intelligence-briefing" target="_blank">S-RM</a></td><td class="note">Weekly cyber-intelligence briefing with some original incident framing (law-firm helpdesk-impersonation campaign). Largely curated — watching for sustained original reporting. <span class="flag">(noted 2026-06-17)</span></td></tr>
       <tr><td class="name"><a href="https://www.halcyon.ai/ransomware-alerts" target="_blank">Halcyon</a></td><td class="note">Original ransomware tracking (INC Ransom law-firm campaign, 200+ legal incidents). Credible data, but a vendor alert feed — monitoring independence/cadence. <span class="flag">(noted 2026-06-17)</span></td></tr>
       <tr><td class="name"><a href="https://www.yeswehack.com/news" target="_blank">YesWeHack</a></td><td class="note">Co-authored the original ChocoPoC research with Sekoia TDR (trojanized CVE-PoC repos targeting researchers). Promising original vuln-intel, but primarily a bug-bounty-platform news blog — watching for sustained independent original research. <span class="flag">(noted 2026-07-05)</span></td></tr>
+      <tr><td class="name"><a href="https://asset-group.github.io/" target="_blank">ASSET Research Group (UMKC)</a></td><td class="note">University of Missouri-Kansas City academic group behind "Ghostcommit," the PNG-hidden prompt-injection technique, with a public GitHub PoC and working multimodal PR-defense prototype. Strong original research, but a one-off disclosure/project page rather than a sustained publishing outlet — watching for continued independent output. <span class="flag">(noted 2026-07-14)</span></td></tr>
     </table>
   </section>
 
   <footer>
-    77 sources across 5 categories (plus 4 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    80 sources across 5 categories (plus 5 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>
