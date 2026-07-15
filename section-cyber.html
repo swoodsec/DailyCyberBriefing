@@ -1,11 +1,11 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><a href="https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/" target="_blank" rel="noopener"><span class="ld">The EU and UK launched their first-ever joint cyber sanctions package, naming Russia's FSB Centre 16 as the controller behind Turla and a dozen other hacking groups —</span> the two blocs designated dozens of individuals and entities, including GRU officers, Trickbot/Conti leader Vitaly Kovalev, and Lumma Stealer developers.</a></li>
-    <li><a href="https://www.securityweek.com/unpatched-claude-for-chrome-flaw-lets-extensions-read-gmail-calendar/" target="_blank" rel="noopener"><span class="ld">A ClaudeBleed-linked flaw in Claude for Chrome remains exploitable across all eight patches Anthropic has shipped since May —</span> researchers at Manifold say a malicious extension can still fake a user click and, in "Act without asking" mode, silently read Gmail, Docs and Calendar.</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/" target="_blank" rel="noopener"><span class="ld">A new "Ghostcommit" technique hides prompt-injection instructions inside a PNG image to slip past AI code reviewers that never open image files —</span> a coding agent then reads the picture, encodes a repo's .env secrets as integers, and commits them in plain sight.</a></li>
-    <li><a href="https://www.helpnetsecurity.com/2026/07/14/crashstealer-macos-infostealer-password-theft/" target="_blank" rel="noopener"><span class="ld">Jamf Threat Labs uncovered "CrashStealer," a new macOS infostealer that impersonates Apple's own crash-reporting tool to pass Gatekeeper —</span> it targets 80+ crypto wallets and 14 password managers, encrypting stolen files before exfiltration.</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/us-sanctions-vpn-malware-providers-linked-to-ransomware-gangs/" target="_blank" rel="noopener"><span class="ld">The U.S. Treasury sanctioned First VPN Service (1VPNS) and a Belarusian "cryptor" seller for propping up ransomware gangs —</span> the no-log VPN's infrastructure reportedly surfaced in nearly every major cybercrime case Europol has supported.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" rel="noopener">Microsoft shipped its largest-ever Patch Tuesday — 570+ flaws, three zero-days, two already exploited in the wild — with AI-assisted bug hunting cited as a driver of the record count.</a></li>
+    <li><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's new 2026 AI Security Report documents intrusions where AI ran the entire exploitation workflow autonomously, and finds 87–93% of organizations saw a high-risk AI interaction every month since October.</a></li>
+    <li><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank" rel="noopener">US and UK authorities warn that Russia's FSB-linked Berzerk Bear/Dragonfly group is exploiting misconfigured Cisco Smart Install devices across critical infrastructure — the same unit the EU and UK sanctioned this week.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall confirmed two SMA1000 zero-days, one a maximum-severity CVSS 10.0 SSRF bug, being chained together in active attacks — patch or isolate these appliances now.</a></li>
+    <li><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank" rel="noopener">Okta is warning of an active vishing campaign that talks victims through fake Microsoft Entra passkey enrollment to hijack Microsoft 365 accounts for data-extortion.</a></li>
   </ul>
   <p class="rosternote">Roster update: added 3 new sources today — see Cyber Sources.</p>
 </div>
@@ -16,47 +16,47 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/" target="_blank" rel="noopener">EU and UK launch first joint cyber sanctions package, naming Russia's FSB Centre 16 and Turla</a></h3>
+      <h3><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank" rel="noopener">US and UK authorities warn Russia's FSB-linked Berzerk Bear is exploiting vulnerable Cisco devices</a></h3>
       <div class="date">📅 Jul 13, 2026</div>
-      <p>The Council of the EU sanctioned nine individuals and four entities while the UK separately designated 24, including senior GRU officers, Trickbot/Conti leader Vitaly Kovalev, Lumma Stealer developers, and members tied to a failed Turla-linked strike on Poland's energy grid that could have cut power to roughly 500,000 people. It is the first time the two blocs have coordinated a cyber-sanctions package together.</p>
-      <div class="why"><b>Why it matters:</b> Publicly naming a specific FSB unit as the controller behind a decade of European intrusions is a rare attribution move — it signals governments now have enough confidence to put names, not just malware families, on the record.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/" target="_blank">Source</a></div>
+      <p>A joint advisory says hackers tied to Russia's FSB Center 16 — tracked as Berzerk Bear or Dragonfly — are sending SNMP set-requests to poorly secured, often end-of-life Cisco Smart Install devices, copying their configurations to attacker-controlled servers via TFTP. Targets span communications, defense, energy, financial, government and healthcare sectors.</p>
+      <div class="why"><b>Why it matters:</b> This is the same FSB unit the EU and UK just named and sanctioned — a reminder that publicly attributing an actor doesn't stop the campaign; unpatched, forgotten network gear remains its preferred way in.</div>
+      <div class="src"><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/us-sanctions-vpn-malware-providers-linked-to-ransomware-gangs/" target="_blank" rel="noopener">US Treasury sanctions First VPN Service and a "cryptor" seller for enabling ransomware attacks</a></h3>
+      <h3><a href="https://techcrunch.com/2026/07/14/iran-abused-mobile-networks-vulnerabilities-to-locate-u-s-military-in-the-middle-east-report-says/" target="_blank" rel="noopener">Iran reportedly abused SS7 mobile-network flaws and ad-tech to locate US troops before strikes</a></h3>
       <div class="date">📅 Jul 14, 2026</div>
-      <p>OFAC designated First VPN Service (1VPNS) and its administrator Dmytro Rashevskyi, along with Belarusian national Yegeniy Silayev, who sells malware-obfuscating "cryptor" tools. The action follows a May takedown of 1VPNS's infrastructure by European police and the FBI; officials say ransomware operations using these services caused billions in losses to US businesses, hospitals and municipal governments.</p>
-      <div class="why"><b>Why it matters:</b> Sanctioning the infrastructure providers and tool sellers behind ransomware — not just the operators — targets the supply chain that lets new ransomware brands spin up quickly after takedowns.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/us-sanctions-vpn-malware-providers-linked-to-ransomware-gangs/" target="_blank">Source</a></div>
+      <p>Citing the Mobile Surveillance Monitor research project, the Financial Times (via TechCrunch) reports Iran exploited long-known Signaling System 7 weaknesses — plus commercial ad-tech used to serve targeted ads — to locate US personnel at bases and hotels in Iraq, Bahrain and elsewhere during the buildup to and early days of the Iran war.</p>
+      <div class="why"><b>Why it matters:</b> Decades-old telecom-signaling flaws and everyday advertising surveillance infrastructure are being weaponized for real-world kinetic targeting, not just data theft — a stark illustration of why SS7 hardening keeps getting deprioritized at everyone's peril.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/14/iran-abused-mobile-networks-vulnerabilities-to-locate-u-s-military-in-the-middle-east-report-says/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/07/13/lidl-data-breach-customer-data/" target="_blank" rel="noopener">Lidl discloses online-shop breach after an IT service provider is hacked</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>Lidl is notifying online-shop customers in Germany, Belgium and the Netherlands that attackers briefly accessed a file at a third-party IT provider containing names, phone numbers, email addresses, dates of birth and customer numbers. Lidl says passwords and payment data were not in the exposed file but has not yet fully ruled out further exposure, and is warning customers to watch for phishing.</p>
-      <div class="why"><b>Why it matters:</b> Another reminder that a retailer's own security posture is only as strong as its weakest outsourced IT vendor — third-party breach notifications like this one rarely name the vendor, complicating downstream risk assessment.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/13/lidl-data-breach-customer-data/" target="_blank">Source</a></div>
+      <h3><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank" rel="noopener">Okta warns of vishing campaign hijacking Microsoft Entra passkey enrollment for data extortion</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Since April, a threat actor Okta tracks as O-UNC-066 has called employees at food/beverage, tech, healthcare, automotive, construction and aviation firms, walking them through what looks like legitimate Entra passkey enrollment while an operator-controlled phishing panel adapts in real time to whatever MFA prompt appears. The group runs a "Pink" leak site to pressure victims into paying.</p>
+      <div class="why"><b>Why it matters:</b> A human operator steering the phishing page live, rather than a static kit, defeats a lot of the checks helpdesk staff are trained to run — treat any unsolicited passkey-enrollment call as hostile until verified through a separate channel.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/" target="_blank" rel="noopener">Nearly 300 fake GitHub repos impersonate security brands, including Arctic Wolf, to push infostealer malware</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>Since June 26, an unattributed actor has published 292+ brand-impersonation GitHub pages — mimicking security, crypto, developer and productivity tools — each with a hidden download link that serves a ZIP archive changing every minute. The payload, a trojanized libcurl.dll bundled with a legitimate signed updater, harvests data from 19+ browsers and 32 crypto wallets; binary analysis ties it to the BoryptGrab stealer family.</p>
+      <div class="why"><b>Why it matters:</b> Search-driven discovery of trusted-looking GitHub repos is a growing initial-access vector that bypasses email-based phishing defenses entirely — verify any security-tool download against the vendor's own site, not search results.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/japans-largest-taxi-operator-shuts-systems-after-cyberattack/" target="_blank" rel="noopener">Nihon Kotsu, Japan's largest taxi operator, shuts down systems after malware infection</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>Nihon Kotsu confirmed unauthorized external access to its internal systems over the weekend and disconnected infrastructure to contain the damage, taking down car-hire booking, reservation management and telephone dispatch — including a "labor taxi" service used by pregnant women in Tokyo and several other cities. No ransomware group has claimed responsibility, and no confirmed data leak has surfaced yet.</p>
-      <div class="why"><b>Why it matters:</b> An 18,000-employee transportation operator going dark on booking and dispatch shows how quickly a single malware infection can cascade into real-world service disruption for vulnerable riders, not just an IT inconvenience.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/japans-largest-taxi-operator-shuts-systems-after-cyberattack/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/07/14/crashstealer-macos-infostealer-password-theft/" target="_blank" rel="noopener">"CrashStealer" macOS malware poses as Apple's own crash-reporting tool</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Jamf Threat Labs tracked CrashStealer from a May sample through early-July in-the-wild detections: a C++ infostealer delivered via a notarized, Gatekeeper-passing dropper that harvests browser profiles, roughly 80 cryptocurrency wallet extensions and 14 password managers, then encrypts the stolen files with AES-GCM before exfiltration to slow analysis.</p>
-      <div class="why"><b>Why it matters:</b> A notarized dropper that clears Apple's own trust checks undercuts the assumption that "Apple-signed" means "safe," and the client-side encryption of stolen data is a maturing evasion trend worth tracking across other stealer families.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/14/crashstealer-macos-infostealer-password-theft/" target="_blank">Source</a></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/" target="_blank" rel="noopener">Accenture confirms breach after hacker offers 35GB of source code and cloud keys for sale</a></h3>
+      <div class="date stale">📅 Jul 8, 2026</div>
+      <p>A threat actor using the handle "888" claims to have pulled roughly 35GB from an Accenture Azure DevOps repository, including source code, RSA and SSH keys, Azure personal access tokens and storage access keys, and is offering it for sale in Monero. Accenture calls it "an isolated matter" with no operational impact but hasn't disclosed how attackers got in or confirmed the scope of what was taken.</p>
+      <div class="why"><b>Why it matters:</b> Leaked source code and cloud access keys from a consulting giant with Fortune Global 500 clients could expose vulnerabilities in client-facing systems well beyond Accenture itself — worth watching for downstream disclosures over the coming weeks.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -68,29 +68,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/" target="_blank" rel="noopener">Hackers backdoor Jscrambler's npm package with a Rust infostealer targeting AI coding tools</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>A threat actor used compromised publishing credentials to push malicious jscrambler npm releases (8.14–8.20) downloaded nearly 1,500 times before Jscrambler deprecated them two hours later. The payload, obfuscated with ChaCha20-Poly1305 encryption per Socket's analysis, hunted for cloud credentials, CI/CD tokens, crypto wallets, and configs for AI coding tools including Claude, Cursor and Windsurf.</p>
-      <div class="why"><b>Why it matters:</b> The two-hour window shows how fast a compromised publishing credential can weaponize a trusted package — and the deliberate targeting of AI coding-tool configs marks a new, high-value theft target developers may not think to rotate.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.cisa.gov/news-events/alerts/2026/07/13/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA adds an 18-year-old Cisco IOS CSRF flaw to the KEV catalog</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>CVE-2008-4128, a cross-site request forgery vulnerability in the HTTP administration interface of Cisco IOS 12.4 on Cisco 871 routers, joined CISA's Known Exploited Vulnerabilities catalog with a July 16 federal remediation deadline — confirmation that a bug dating to 2008 is being actively exploited nearly two decades later.</p>
-      <div class="why"><b>Why it matters:</b> Ancient, unpatched network gear left running for years is exactly the kind of forgotten attack surface nation-state and criminal actors keep finding profitable — this is a good prompt to audit any legacy Cisco IOS devices still online.</div>
-      <div class="src"><a href="https://www.cisa.gov/news-events/alerts/2026/07/13/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.securityweek.com/sap-patches-critical-vulnerabilities-in-netweaver-approuter-commerce-cloud/" target="_blank" rel="noopener">SAP's July Patch Day fixes a CVSS 9.9 NetWeaver memory-corruption flaw plus two more critical bugs</a></h3>
+      <h3><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" rel="noopener">Microsoft's record 570+ CVE Patch Tuesday includes two actively exploited zero-days</a></h3>
       <div class="date">📅 Jul 14, 2026</div>
-      <p>SAP released 20 security notes this Patch Day, led by CVE-2026-44747 (CVSS 9.9), a memory-corruption bug in NetWeaver Application Server ABAP that lets attackers access and modify data or crash the system. Also fixed: a critical HTTP request-smuggling flaw in Approuter (CVE-2026-27690) and hardcoded OAuth2 credentials left over from sample scripts in Commerce Cloud (CVE-2026-44761).</p>
-      <div class="why"><b>Why it matters:</b> A near-maximum CVSS score in NetWeaver, a system that underpins ERP for large enterprises worldwide, warrants the same urgency as a Patch Tuesday zero-day — prioritize this alongside the ongoing Commerce Cloud credential-hygiene audit.</div>
-      <div class="src"><a href="https://www.securityweek.com/sap-patches-critical-vulnerabilities-in-netweaver-approuter-commerce-cloud/" target="_blank">Source</a></div>
+      <p>July's Patch Tuesday is Microsoft's largest ever — nearly triple last month's record — with 59 Critical bugs (48 RCE) and three zero-days, two already under active exploitation: CVE-2026-56155 (Active Directory Federation Services elevation of privilege) and CVE-2026-56164 (SharePoint Server elevation of privilege). Microsoft credits AI-assisted internal vulnerability discovery for the surging patch counts.</p>
+      <div class="why"><b>Why it matters:</b> If AI-assisted bug hunting keeps finding this many flaws before attackers do, expect patch volume — and the maintenance-window planning it demands — to keep climbing well past historical Patch Tuesday norms.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-crit">Critical</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall SMA1000 zero-days (one CVSS 10.0) exploited in tandem, added to CISA's KEV</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>CVE-2026-15409, a maximum-severity unauthenticated SSRF in the SMA1000 Work Place interface, is being paired with CVE-2026-15410, a post-auth code-injection flaw, to compromise SMA6210/7210/8200v appliances. CISA added both to its Known Exploited Vulnerabilities catalog the same day; federal agencies must remediate by July 17 under BOD 26-04.</p>
+      <div class="why"><b>Why it matters:</b> Chaining an unauthenticated SSRF with a post-auth command flaw turns two moderate-looking bugs into full compromise — patch to hotfix 12.4.3-03453/12.5.0-02835 immediately or take exposed SMA1000 appliances offline.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html" target="_blank" rel="noopener">GhostLock Linux kernel flaw can be chained with a Firefox-on-Android bug for one-tap root</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Nebula Security's follow-up on its GhostLock disclosure (CVE-2026-43499, the 15-year-old futex use-after-free covered here Jul 13) shows the local-root bug can be reached remotely: a single tap on a malicious link exploiting a Firefox-on-Android flaw hands an attacker the local access GhostLock needs to escalate to full root.</p>
+      <div class="why"><b>Why it matters:</b> "Local access required" is not a reason to deprioritize a patch — this chain shows how a browser bug can turn a local-privilege-escalation flaw into a one-click remote compromise; prioritize GhostLock patching on any internet-facing or BYOD Android fleet.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank" rel="noopener">CISA's own postmortem: AWS GovCloud keys sat exposed on GitHub for six months, nine alerts ignored</a></h3>
+      <div class="date">📅 Jul 13, 2026</div>
+      <p>Krebs details CISA's lessons-learned report on a contractor who disabled GitHub's default secret-scanning block and published admin credentials to three AWS GovCloud servers, plus a plaintext password file, in a public repo used to sync files between a work and home computer since November. GitGuardian flagged it via automated alerts nine times before CISA acted; key rotation still took over 48 hours.</p>
+      <div class="why"><b>Why it matters:</b> Even the agency that runs the federal KEV catalog and issues secrets-hygiene guidance got bitten by the most basic version of this mistake — a useful prompt to audit whether your own org's secret-scanning alerts are actually being triaged, not just generated.</div>
+      <div class="src"><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -102,29 +111,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.securityweek.com/unpatched-claude-for-chrome-flaw-lets-extensions-read-gmail-calendar/" target="_blank" rel="noopener">ClaudeBleed-linked flaw in Claude for Chrome still unpatched across eight releases, Manifold says</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Manifold reported two flaws to Anthropic on May 21, related to the mitigation shipped after the original ClaudeBleed disclosure: a malicious extension can fake the "real user click" Anthropic's fix requires to trigger Claude actions, and in the extension's autonomous "Act without asking" mode this proceeds with no visible warning, exposing Gmail, Docs and Calendar. None of the eight Claude for Chrome versions released since — including the latest 1.0.80 — appear to fix it.</p>
-      <div class="why"><b>Why it matters:</b> A mitigation that survives eight patch cycles without closing the actual gap is a case study in how hard it is to retrofit trust boundaries onto an agentic browser extension after the fact — treat "fixed" claims for agent products skeptically until independently verified.</div>
-      <div class="src"><a href="https://www.securityweek.com/unpatched-claude-for-chrome-flaw-lets-extensions-read-gmail-calendar/" target="_blank">Source</a></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's 2026 AI Security Report: attackers now run entire intrusions autonomously with AI</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Check Point documented intrusions where AI generated thousands of commands across dozens of sessions with minimal human direction, orchestrating reconnaissance through exploitation on its own. The riskiest actors, the report says, are those who obtain capable models and strip their safety controls to automate multi-stage attacks; 87–93% of organizations logged at least one high-risk AI interaction every month from October 2025 through May 2026.</p>
+      <div class="why"><b>Why it matters:</b> "AI-assisted attack" is giving way to "AI-run attack" — defenders should assume adversaries can now execute full attack chains at machine speed and plan detection/response tooling that doesn't depend on human-paced attacker behavior.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/" target="_blank" rel="noopener">"Ghostcommit" hides prompt injection inside PNG images to steal repo secrets from AI coding agents</a></h3>
-      <div class="date stale">📅 Jul 11, 2026</div>
-      <p>Researchers at UMKC's ASSET group built a pull request that points an AGENTS.md convention file at an innocuous-looking PNG; the exploit text lives inside the image, which text-based reviewers like CodeRabbit and Bugbot never open. A coding agent later reads the picture, encodes a repo's .env secrets as integers, and commits them as a harmless-looking constant. Cursor and Antigravity leaked secrets across multiple models; Claude Code refused every time.</p>
-      <div class="why"><b>Why it matters:</b> The coding harness, not the underlying model, determined whether the attack succeeded — a strong argument for evaluating the security posture of the AI coding tool itself, not just which model it's running.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/" target="_blank">Source</a></div>
+      <h3><a href="https://fortune.com/2026/07/10/openai-gpt-5-6-sol-jailbreaks-cyber-attacks-similar-to-security-flaw-that-led-u-s-government-to-force-anthropic-to-disable-fable-5/" target="_blank" rel="noopener">UK AI Security Institute finds "universal jailbreaks" in GPT-5.6 Sol enabling autonomous exploit development</a></h3>
+      <div class="date stale">📅 Jul 10, 2026</div>
+      <p>The UK's AISI says it found jailbreaks — some developed within hours — that unlock long-form agentic work in vulnerability discovery and exploit development on OpenAI's GPT-5.6 Sol, calling them "universal" rather than narrow prompt tricks. AISI says the finding is arguably more severe than the Fable 5 issue that triggered US export controls on Anthropic, since it unlocks autonomous exploitation, not just vulnerability identification.</p>
+      <div class="why"><b>Why it matters:</b> A frontier lab's own "strongest cybersecurity model to date" marketing claim being undercut by an independent government red team within days of release is a strong signal that vendor safety claims for agentic coding models need independent verification before deployment.</div>
+      <div class="src"><a href="https://fortune.com/2026/07/10/openai-gpt-5-6-sol-jailbreaks-cyber-attacks-similar-to-security-flaw-that-led-u-s-government-to-force-anthropic-to-disable-fable-5/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html" target="_blank" rel="noopener">China's MIIT flags a "security backdoor" in Anthropic's Claude Code; Alibaba bans internal use</a></h3>
+      <div class="date stale">📅 Jul 8, 2026</div>
+      <p>China's Ministry of Industry and Information Technology says Claude Code versions 2.1.91–2.1.196 transmit users' location and identity-related identifiers back to Anthropic without consent. Anthropic confirmed it embedded the tracking code earlier this year as an anti-distillation experiment and notes its policy already bars use by China-majority-owned entities. Alibaba told employees to stop using Claude Code starting July 10.</p>
+      <div class="why"><b>Why it matters:</b> A vendor's own anti-abuse telemetry becoming the center of a geopolitical "backdoor" dispute shows how any covert data collection built into an AI coding tool — even for a defensible purpose — can be repurposed as a trust and export-control flashpoint.</div>
+      <div class="src"><a href="https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/" target="_blank" rel="noopener">Microsoft expects heavier Windows patch loads as its AI vulnerability-scanning harness finds more bugs</a></h3>
-      <div class="date stale">📅 Jul 10, 2026</div>
-      <p>Microsoft says its multi-model agentic scanning harness (MDASH) is finding more vulnerabilities in Windows source code before they become zero-days, meaning future Patch Tuesdays will bundle more fixes per release. Human engineers still review and validate every AI-suggested fix before it ships.</p>
-      <div class="why"><b>Why it matters:</b> As AI-assisted bug-hunting scales at the vendor whose OS runs most enterprise endpoints, admins should expect — and plan maintenance windows for — a real increase in monthly patch volume, not just marketing about "AI-powered security."</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/" target="_blank">Source</a></div>
+      <h3><a href="https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/" target="_blank" rel="noopener">Google fixes "Rogue Agent" flaw that let one permission hijack Dialogflow CX chatbots</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>Varonis's disclosure, now fully patched, showed that a single dialogflow.playbooks.update permission on one agent let an attacker inject persistent malicious code into Dialogflow CX's Code Blocks feature, silently exfiltrating conversations and enabling large-scale phishing. Google's April fix proved incomplete; a full resolution shipped in June after further Varonis testing.</p>
+      <div class="why"><b>Why it matters:</b> A single low-friction permission compromising every chatbot agent in a shared GCP project is a reminder that AI-platform permission models need the same least-privilege scrutiny as IAM roles — and that vendor "fixed" claims deserve a second look, as this one needed two rounds.</div>
+      <div class="src"><a href="https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -136,29 +154,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.securityweek.com/pentagon-suspends-cmmc-phase-2-as-it-rethinks-contractor-cybersecurity-rules/" target="_blank" rel="noopener">Pentagon suspends CMMC Phase 2 requirements, launching a 60-day review of the program</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>The Department of War (formerly Defense) immediately suspended the November 2026 deadline requiring third-party cybersecurity assessments across all defense contracts touching sensitive but unclassified data, citing a shortfall of roughly 100 qualified assessors against 100,000+ businesses needing certification. Phase 1 self-assessment requirements remain in force while a new task force studies scaled-back rules.</p>
-      <div class="why"><b>Why it matters:</b> Defense contractors and the assessors who serve them should treat this as a pause, not a cancellation — expect a revised, likely lighter-weight framework within 60 days rather than a return to the original Phase 2 timeline.</div>
-      <div class="src"><a href="https://www.securityweek.com/pentagon-suspends-cmmc-phase-2-as-it-rethinks-contractor-cybersecurity-rules/" target="_blank">Source</a></div>
+      <h3><a href="https://www.securityweek.com/keyfactor-scores-1-billion-investment-for-ai-post-quantum-security/" target="_blank" rel="noopener">Keyfactor lands $1B+ growth investment to expand machine-identity platform for AI and post-quantum threats</a></h3>
+      <div class="date stale">📅 Jul 7, 2026</div>
+      <p>Summit Partners led the strategic growth round, with existing backers Insight Partners and Sixth Street Growth retaining significant stakes. The capital funds global scale, product work and acquisitions for Keyfactor's AgileSec platform, which manages encryption keys, PKI and digital certificates and flags outdated keys or weak algorithms.</p>
+      <div class="why"><b>Why it matters:</b> A billion-dollar bet on machine-identity and cryptographic-inventory tooling underscores how urgently enterprises need to know what's encrypting their data as post-quantum migration deadlines and AI-issued credentials both accelerate certificate sprawl.</div>
+      <div class="src"><a href="https://www.securityweek.com/keyfactor-scores-1-billion-investment-for-ai-post-quantum-security/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://www.securityweek.com/valarian-raises-50-million-for-sovereign-infrastructure-control-layer/" target="_blank" rel="noopener">Valarian raises $50M to build a "sovereign infrastructure" control layer for AI and government workloads</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>The UK-based startup's Series A, led by NEA with participation from Lightbank and XTX Markets, funds ACRA, a Kubernetes-level control plane that lets governments and enterprises keep using Amazon or Microsoft cloud infrastructure while governing exactly what data leaves, who touches it and when — aimed at agencies wary of foreign cloud and AI dependency.</p>
-      <div class="why"><b>Why it matters:</b> Data-sovereignty control layers are becoming their own funded product category as governments push back on foreign-cloud dependency for AI workloads — worth tracking if your organization handles government or defense-adjacent data.</div>
-      <div class="src"><a href="https://www.securityweek.com/valarian-raises-50-million-for-sovereign-infrastructure-control-layer/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/" target="_blank" rel="noopener">UK unveils "Cyber Shield" agentic-AI defense plan and a 60-organization resilience pledge</a></h3>
+      <div class="date stale">📅 Jul 7, 2026</div>
+      <p>The NCSC's Cyber Shield initiative calls for academia, critical-infrastructure operators, frontier AI labs and the defense sector to build a national-scale agentic cyber-defense capability. Alongside it, Secretary Liz Kendall launched a Cyber Resilience Pledge — 60 organizations committing to board-level cybersecurity ownership, NCSC early-warning enrollment and Cyber Essentials across their supply chains — backed by £90 million for SMB defenses.</p>
+      <div class="why"><b>Why it matters:</b> A government explicitly recruiting frontier AI labs into national cyber defense — rather than only regulating them — signals where public-private AI-security cooperation is headed; UK-linked supply chains should expect Cyber Essentials expectations to tighten.</div>
+      <div class="src"><a href="https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://hackread.com/torq-and-criminal-ip-partner-to-deliver-decision-ready-threat-intelligence-for-autonomous-soc-operations/" target="_blank" rel="noopener">Torq and Criminal IP partner to feed decision-ready threat intel into autonomous SOC workflows</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>The integration routes every IP, domain or asset indicator entering the Torq AI SOC Platform to Criminal IP's threat-intelligence engine, returning a malicious/suspicious/anonymized verdict and exposure context in real time so confirmed-bad indicators can trigger automated blocking without an analyst leaving the console.</p>
-      <div class="why"><b>Why it matters:</b> Enrichment-and-response integrations like this are the connective tissue that determines whether "agentic SOC" platforms actually cut alert-triage time or just add another dashboard — worth a look if your SOC is drowning in indicator volume.</div>
-      <div class="src"><a href="https://hackread.com/torq-and-criminal-ip-partner-to-deliver-decision-ready-threat-intelligence-for-autonomous-soc-operations/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-of-runzero-netrise-in-4-1-billion-ot-cybersecurity-push/" target="_blank" rel="noopener">Accenture to acquire majority stake in Dragos, all of runZero and NetRise in $4.175B OT push</a></h3>
+      <div class="date stale">📅 Jun 18, 2026</div>
+      <p>The combined deal, expected to close in August or September, values Dragos at $3.25 billion and folds runZero and NetRise underneath it, extending Accenture from OT security services into software as it targets a market projected to grow from roughly $27 billion this year to nearly $59 billion by 2031. runZero CEO HD Moore and NetRise's leadership move into Dragos executive roles.</p>
+      <div class="why"><b>Why it matters:</b> runZero is one of this roster's own vetted vulnerability-research sources — worth watching whether its research independence and disclosure cadence survive being folded into a much larger consulting-firm-owned OT security business.</div>
+      <div class="src"><a href="https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-of-runzero-netrise-in-4-1-billion-ot-cybersecurity-push/" target="_blank">Source</a></div>
     </div>
 
   </div>
