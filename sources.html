@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated July 15, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated July 16, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -116,6 +116,7 @@
       <tr><td class="name"><a href="https://www.jamf.com/threat-labs/" target="_blank">Jamf Threat Labs</a></td><td class="note">Apple-ecosystem threat-research team publishing original macOS/iOS malware analysis; discovered and published the "CrashStealer" notarized macOS infostealer, tracked from a May sample through July in-the-wild detections, plus prior ClickFix/Atomic Stealer and Predator spyware research. <span class="flag">(added 2026-07-14)</span></td></tr>
       <tr><td class="name"><a href="https://research.checkpoint.com/" target="_blank">Check Point Research</a></td><td class="note">200+ analyst research arm publishing original threat intelligence and annual security reports; published the 2026 AI Security Report documenting fully autonomous AI-orchestrated intrusions and the 87-93%-of-orgs high-risk-AI-interaction finding. Promoted after recurring since being held as an informal candidate on 2026-06-25. <span class="flag">(added 2026-07-15)</span></td></tr>
       <tr><td class="name"><a href="https://www.okta.com/blog/threat-intelligence/" target="_blank">Okta Threat Intelligence</a></td><td class="note">Identity-security research team publishing original phishing/vishing campaign tracking with named threat-actor clusters; discovered and published the original O-UNC-066 research — an operator-controlled vishing campaign hijacking Microsoft Entra passkey enrollment for data extortion. <span class="flag">(added 2026-07-15)</span></td></tr>
+      <tr><td class="name"><a href="https://defusedcyber.com/" target="_blank">Defused</a></td><td class="note">Honeypot-as-a-service threat-intel firm whose globally distributed decoy sensors repeatedly catch pre-disclosure zero-day exploitation; its telemetry first flagged in-the-wild attacks on the Cisco Unified CM SSRF (CVE-2026-20230) and produced original SharePoint exploit-intelligence writeups, plus a track record of pre-disclosure catches (CVE-2026-35616 FortiClient EMS). <span class="flag">(added 2026-07-16)</span></td></tr>
     </table>
   </section>
 
@@ -170,6 +171,8 @@
       <tr><td class="name"><a href="https://ainowinstitute.org/" target="_blank">AI Now Institute</a></td><td class="note">Independent, non-corporate-funded AI policy and research institute now publishing hands-on technical exploit research; published the original "Friendly Fire" exploit brief showing Claude Code and OpenAI's Codex can be hijacked into executing attacker payloads during defensive code review. <span class="flag">(added 2026-07-13)</span></td></tr>
       <tr><td class="name"><a href="https://www.sandsecurity.ai/" target="_blank">Sand Security</a></td><td class="note">AI-runtime security research team (formerly Koi Security) publishing original AI-infrastructure and supply-chain vulnerability disclosures; discovered and disclosed "WriteOut," a critical cross-tenant session-isolation flaw in Writer AI, coordinating the fix with the vendor. <span class="flag">(added 2026-07-13)</span></td></tr>
       <tr><td class="name"><a href="https://www.manifold.security/blog" target="_blank">Manifold Security</a></td><td class="note">AI-agent runtime-security research team (AIDR platform) founded by the creators of the LLM Guard open-source firewall; disclosed the original ClaudeBleed-linked Claude for Chrome bypass, reported to Anthropic May 21 and re-verified as unpatched across all eight subsequent releases, plus earlier spoofed-git-identity AI-code-reviewer research. <span class="flag">(added 2026-07-14)</span></td></tr>
+      <tr><td class="name"><a href="https://cereblab.com/" target="_blank">CEREBLAB</a></td><td class="note">Independent AI-safety researcher publishing wire-level (mitmproxy packet-capture) analyses of what AI coding tools actually transmit; proved xAI's Grok Build CLI uploaded entire tracked Git repositories plus secrets/history to a Google Cloud bucket — 27,800x the data the task needed — despite xAI's privacy-toggle claim. <span class="flag">(added 2026-07-16)</span></td></tr>
+      <tr><td class="name"><a href="https://www.wiz.io/research" target="_blank">Wiz Research</a></td><td class="note">Cloud-security research team of veteran white-hat hackers publishing original cloud/AI isolation and supply-chain vulnerability disclosures; discovered "GhostApproval," a trust-boundary/symlink flaw letting malicious repos trick six major AI coding assistants into writing files outside their sandbox via a spoofed approval dialog. <span class="flag">(added 2026-07-16)</span></td></tr>
     </table>
   </section>
 
@@ -182,11 +185,12 @@
       <tr><td class="name"><a href="https://www.halcyon.ai/ransomware-alerts" target="_blank">Halcyon</a></td><td class="note">Original ransomware tracking (INC Ransom law-firm campaign, 200+ legal incidents). Credible data, but a vendor alert feed — monitoring independence/cadence. <span class="flag">(noted 2026-06-17)</span></td></tr>
       <tr><td class="name"><a href="https://www.yeswehack.com/news" target="_blank">YesWeHack</a></td><td class="note">Co-authored the original ChocoPoC research with Sekoia TDR (trojanized CVE-PoC repos targeting researchers). Promising original vuln-intel, but primarily a bug-bounty-platform news blog — watching for sustained independent original research. <span class="flag">(noted 2026-07-05)</span></td></tr>
       <tr><td class="name"><a href="https://asset-group.github.io/" target="_blank">ASSET Research Group (UMKC)</a></td><td class="note">University of Missouri-Kansas City academic group behind "Ghostcommit," the PNG-hidden prompt-injection technique, with a public GitHub PoC and working multimodal PR-defense prototype. Strong original research, but a one-off disclosure/project page rather than a sustained publishing outlet — watching for continued independent output. <span class="flag">(noted 2026-07-14)</span></td></tr>
+      <tr><td class="name"><a href="https://thenextweb.com/" target="_blank">TNW (The Next Web)</a></td><td class="note">Ran a fast, clearly-sourced writeup of the xAI Grok Build CLI data-exfiltration story with named authorship, but the underlying wire-level research was done by CEREBLAB, not TNW itself, and its cybersecurity coverage is intermittent within a broader general-tech beat. Watching for sustained original cyber-specific reporting. <span class="flag">(noted 2026-07-16)</span></td></tr>
     </table>
   </section>
 
   <footer>
-    83 sources across 5 categories (plus 5 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    86 sources across 5 categories (plus 6 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>

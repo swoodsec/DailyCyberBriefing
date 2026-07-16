@@ -1,11 +1,11 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" rel="noopener">Microsoft shipped its largest-ever Patch Tuesday — 570+ flaws, three zero-days, two already exploited in the wild — with AI-assisted bug hunting cited as a driver of the record count.</a></li>
-    <li><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's new 2026 AI Security Report documents intrusions where AI ran the entire exploitation workflow autonomously, and finds 87–93% of organizations saw a high-risk AI interaction every month since October.</a></li>
-    <li><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank" rel="noopener">US and UK authorities warn that Russia's FSB-linked Berzerk Bear/Dragonfly group is exploiting misconfigured Cisco Smart Install devices across critical infrastructure — the same unit the EU and UK sanctioned this week.</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall confirmed two SMA1000 zero-days, one a maximum-severity CVSS 10.0 SSRF bug, being chained together in active attacks — patch or isolate these appliances now.</a></li>
-    <li><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank" rel="noopener">Okta is warning of an active vishing campaign that talks victims through fake Microsoft Entra passkey enrollment to hijack Microsoft 365 accounts for data-extortion.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank" rel="noopener">A new ransomware actor called Spirals went from initial access to full network encryption in under 24 hours, the fastest documented "hands-on-keyboard" intrusion timeline yet.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank" rel="noopener">CISA is urging admins to patch three actively exploited on-premises SharePoint Server flaws being chained for authentication bypass, RCE and IIS machine-key theft.</a></li>
+    <li><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank" rel="noopener">Independent researcher CEREBLAB proved xAI's Grok Build CLI was quietly uploading developers' entire Git repositories — secrets and history included — to a Google Cloud bucket, even with the privacy toggle off.</a></li>
+    <li><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank" rel="noopener">The US unsealed charges against three Russian nationals behind the Medialand/ML.Cloud "bulletproof hosting" services tied to over $62 million in ransomware and cybercrime losses.</a></li>
+    <li><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank" rel="noopener">Sophos finds 79% of ransomware attacks now start with a compromised identity rather than an exploited vulnerability — and MFA was present in 97% of those cases anyway.</a></li>
   </ul>
   <p class="rosternote">Roster update: added 3 new sources today — see Cyber Sources.</p>
 </div>
@@ -15,48 +15,48 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank" rel="noopener">US and UK authorities warn Russia's FSB-linked Berzerk Bear is exploiting vulnerable Cisco devices</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>A joint advisory says hackers tied to Russia's FSB Center 16 — tracked as Berzerk Bear or Dragonfly — are sending SNMP set-requests to poorly secured, often end-of-life Cisco Smart Install devices, copying their configurations to attacker-controlled servers via TFTP. Targets span communications, defense, energy, financial, government and healthcare sectors.</p>
-      <div class="why"><b>Why it matters:</b> This is the same FSB unit the EU and UK just named and sanctioned — a reminder that publicly attributing an actor doesn't stop the campaign; unpatched, forgotten network gear remains its preferred way in.</div>
-      <div class="src"><a href="https://www.cybersecuritydive.com/news/us-authorities-state-linked-hackers-vulnerable-networking-devices-Cisco/825062/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank" rel="noopener">New "Spirals" ransomware encrypts a victim network in under 24 hours</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Symantec's Threat Hunter Team traced a Spirals intrusion at a South Asian IT services firm from an exposed IIS server to full encryption in under a day: a web shell, UAC bypass, RDP enablement, a new local account, lateral movement to a dozen-plus hosts via WMI, and redundant remote-access channels (revsocks, Chisel, Cloudflare tunnels) before the Rust-based payload dropped.</p>
+      <div class="why"><b>Why it matters:</b> Sub-24-hour dwell time leaves almost no window for manual detection and response — this is another data point that ransomware defense now has to assume automated, near-real-time containment rather than next-business-day triage.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://techcrunch.com/2026/07/14/iran-abused-mobile-networks-vulnerabilities-to-locate-u-s-military-in-the-middle-east-report-says/" target="_blank" rel="noopener">Iran reportedly abused SS7 mobile-network flaws and ad-tech to locate US troops before strikes</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Citing the Mobile Surveillance Monitor research project, the Financial Times (via TechCrunch) reports Iran exploited long-known Signaling System 7 weaknesses — plus commercial ad-tech used to serve targeted ads — to locate US personnel at bases and hotels in Iraq, Bahrain and elsewhere during the buildup to and early days of the Iran war.</p>
-      <div class="why"><b>Why it matters:</b> Decades-old telecom-signaling flaws and everyday advertising surveillance infrastructure are being weaponized for real-world kinetic targeting, not just data theft — a stark illustration of why SS7 hardening keeps getting deprioritized at everyone's peril.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/07/14/iran-abused-mobile-networks-vulnerabilities-to-locate-u-s-military-in-the-middle-east-report-says/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank" rel="noopener">Okta warns of vishing campaign hijacking Microsoft Entra passkey enrollment for data extortion</a></h3>
+      <h3><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank" rel="noopener">US charges Russian operators of Medialand/ML.Cloud "bulletproof hosting" services</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>Since April, a threat actor Okta tracks as O-UNC-066 has called employees at food/beverage, tech, healthcare, automotive, construction and aviation firms, walking them through what looks like legitimate Entra passkey enrollment while an operator-controlled phishing panel adapts in real time to whatever MFA prompt appears. The group runs a "Pink" leak site to pressure victims into paying.</p>
-      <div class="why"><b>Why it matters:</b> A human operator steering the phishing page live, rather than a static kit, defeats a lot of the checks helpdesk staff are trained to run — treat any unsolicited passkey-enrollment call as hostile until verified through a separate channel.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html" target="_blank">Source</a></div>
+      <p>Federal prosecutors unsealed an indictment against Alexander Volosovik, Kirill Zatolokin and Yulia Pankova, plus their St. Petersburg-based firms Medialand LLC and ML.Cloud LLC, accusing them of leasing take-down-resistant infrastructure across Russia, China, Finland and the Netherlands that powered ransomware, phishing and malware campaigns netting over $62 million from victims. A $10 million reward is now on offer for further information.</p>
+      <div class="why"><b>Why it matters:</b> Bulletproof hosting is the plumbing behind a huge share of ransomware and phishing infrastructure — disrupting the providers, not just individual campaigns, is one of the few actions that raises costs across the entire criminal ecosystem at once.</div>
+      <div class="src"><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/" target="_blank" rel="noopener">Nearly 300 fake GitHub repos impersonate security brands, including Arctic Wolf, to push infostealer malware</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Since June 26, an unattributed actor has published 292+ brand-impersonation GitHub pages — mimicking security, crypto, developer and productivity tools — each with a hidden download link that serves a ZIP archive changing every minute. The payload, a trojanized libcurl.dll bundled with a legitimate signed updater, harvests data from 19+ browsers and 32 crypto wallets; binary analysis ties it to the BoryptGrab stealer family.</p>
-      <div class="why"><b>Why it matters:</b> Search-driven discovery of trusted-looking GitHub repos is a growing initial-access vector that bypasses email-based phishing defenses entirely — verify any security-tool download against the vendor's own site, not search results.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/" target="_blank">Source</a></div>
+      <h3><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank" rel="noopener">Sophos: identity attacks overtake exploits as the top ransomware root cause</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Sophos's latest incident-response data shows 79% of ransomware attacks now originate from compromised identities — malicious email (26%), phishing (24%) and stolen credentials (23%) combined — while vulnerability exploitation fell to 18% from 32% previously. MFA was deployed in 97% of the credential-based incidents studied but still failed to stop the compromise.</p>
+      <div class="why"><b>Why it matters:</b> "MFA deployed" clearly isn't the same as "MFA enforced everywhere" — the data argues for shifting ransomware-prevention budget from patch cadence toward identity threat detection, phishing-resistant MFA coverage gaps, and auditing non-human credentials.</div>
+      <div class="src"><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/" target="_blank" rel="noopener">Accenture confirms breach after hacker offers 35GB of source code and cloud keys for sale</a></h3>
-      <div class="date stale">📅 Jul 8, 2026</div>
-      <p>A threat actor using the handle "888" claims to have pulled roughly 35GB from an Accenture Azure DevOps repository, including source code, RSA and SSH keys, Azure personal access tokens and storage access keys, and is offering it for sale in Monero. Accenture calls it "an isolated matter" with no operational impact but hasn't disclosed how attackers got in or confirmed the scope of what was taken.</p>
-      <div class="why"><b>Why it matters:</b> Leaked source code and cloud access keys from a consulting giant with Fortune Global 500 clients could expose vulnerabilities in client-facing systems well beyond Accenture itself — worth watching for downstream disclosures over the coming weeks.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/" target="_blank">Source</a></div>
+      <h3><a href="https://cybernews.com/security/bosch-synopsys-data-breach-claim/" target="_blank" rel="noopener">D1R ransomware group claims Synopsys breach, threatens to leak Bosch data — Synopsys denies it</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>A little-known extortion group calling itself D1R claims it pulled a 40,000-entry customer database from chip-design firm Synopsys and used it to access Bosch engineering data, threatening to publish it unless paid. Synopsys says it found no evidence of unauthorized access and has not been contacted by the group; the "proof" screenshot the attackers posted of Bosch CAN data appears to match a publicly available user manual.</p>
+      <div class="why"><b>Why it matters:</b> New, unverified leak-site claims from low-reputation actors are common and often exaggerated or fabricated — treat them as unconfirmed until the named victim or an independent researcher corroborates the data, not as an automatic incident.</div>
+      <div class="src"><a href="https://cybernews.com/security/bosch-synopsys-data-breach-claim/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://www.militarytimes.com/pay-benefits/military-benefits/health-care/2026/07/13/nearly-12000-military-tricare-beneficiaries-warned-of-data-breach/" target="_blank" rel="noopener">TriWest Healthcare Alliance notifies ~11,844 TRICARE West beneficiaries of a data breach</a></h3>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>TriWest, the managed-care contractor for the TRICARE West Region covering roughly 4 million beneficiaries, says an unauthorized party accessed and downloaded data on April 16, discovered internally, with notification letters dated July 2. Exposed data includes names, DoD Benefit Numbers and ZIP codes, with Social Security numbers, addresses and birthdates affecting fewer than five individuals. Free 24-month Experian credit monitoring is being offered.</p>
+      <div class="why"><b>Why it matters:</b> A nearly three-month gap between discovery and notification for a defense-health contractor is a reminder to check your own breach-notification SLAs against what regulators and affected individuals actually expect, especially for military and healthcare populations.</div>
+      <div class="src"><a href="https://www.militarytimes.com/pay-benefits/military-benefits/health-care/2026/07/13/nearly-12000-military-tricare-beneficiaries-warned-of-data-breach/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -68,38 +68,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" rel="noopener">Microsoft's record 570+ CVE Patch Tuesday includes two actively exploited zero-days</a></h3>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank" rel="noopener">CISA warns three SharePoint Server flaws are being actively chained for full compromise</a></h3>
       <div class="date">📅 Jul 14, 2026</div>
-      <p>July's Patch Tuesday is Microsoft's largest ever — nearly triple last month's record — with 59 Critical bugs (48 RCE) and three zero-days, two already under active exploitation: CVE-2026-56155 (Active Directory Federation Services elevation of privilege) and CVE-2026-56164 (SharePoint Server elevation of privilege). Microsoft credits AI-assisted internal vulnerability discovery for the surging patch counts.</p>
-      <div class="why"><b>Why it matters:</b> If AI-assisted bug hunting keeps finding this many flaws before attackers do, expect patch volume — and the maintenance-window planning it demands — to keep climbing well past historical Patch Tuesday norms.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall SMA1000 zero-days (one CVSS 10.0) exploited in tandem, added to CISA's KEV</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>CVE-2026-15409, a maximum-severity unauthenticated SSRF in the SMA1000 Work Place interface, is being paired with CVE-2026-15410, a post-auth code-injection flaw, to compromise SMA6210/7210/8200v appliances. CISA added both to its Known Exploited Vulnerabilities catalog the same day; federal agencies must remediate by July 17 under BOD 26-04.</p>
-      <div class="why"><b>Why it matters:</b> Chaining an unauthenticated SSRF with a post-auth command flaw turns two moderate-looking bugs into full compromise — patch to hotfix 12.4.3-03453/12.5.0-02835 immediately or take exposed SMA1000 appliances offline.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank">Source</a></div>
+      <p>Attackers are combining CVE-2026-32201, CVE-2026-45659 and CVE-2026-56164 — added to CISA's KEV catalog on April 14, July 1 and July 14 respectively — to bypass authentication, achieve remote code execution, steal IIS machine keys and maintain persistence on internet-exposed on-premises SharePoint Server instances. Federal agencies must remediate CVE-2026-56164 by July 17 under BOD 26-04.</p>
+      <div class="why"><b>Why it matters:</b> Three separately-disclosed bugs chained into one compromise path shows why patching each CVE in isolation isn't enough — verify the full chain is closed, rotate IIS machine keys on affected servers, and enable AMSI integration as CISA recommends.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html" target="_blank" rel="noopener">GhostLock Linux kernel flaw can be chained with a Firefox-on-Android bug for one-tap root</a></h3>
+      <h3><a href="https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html" target="_blank" rel="noopener">Researcher drops unpatched Windows zero-day "LegacyHive" hours after Patch Tuesday</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>Nebula Security's follow-up on its GhostLock disclosure (CVE-2026-43499, the 15-year-old futex use-after-free covered here Jul 13) shows the local-root bug can be reached remotely: a single tap on a malicious link exploiting a Firefox-on-Android flaw hands an attacker the local access GhostLock needs to escalate to full root.</p>
-      <div class="why"><b>Why it matters:</b> "Local access required" is not a reason to deprioritize a patch — this chain shows how a browser bug can turn a local-privilege-escalation flaw into a one-click remote compromise; prioritize GhostLock patching on any internet-facing or BYOD Android fleet.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html" target="_blank">Source</a></div>
+      <p>The researcher behind the Nightmare Eclipse handle published "LegacyHive," a local-privilege-escalation bug in the Windows User Profile Service (profsvc) that lets an attacker load another user's registry hive — including an administrator's — on fully patched systems. The proof-of-concept was deliberately stripped down to slow immediate exploitation, and no CVE has been assigned yet.</p>
+      <div class="why"><b>Why it matters:</b> A working local-privilege-escalation technique dropped with no vendor coordination and no patch available is a live risk on every current Windows build — watch for a Microsoft advisory and treat any unusual profile-loading behavior as suspicious in the meantime.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank" rel="noopener">CISA's own postmortem: AWS GovCloud keys sat exposed on GitHub for six months, nine alerts ignored</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>Krebs details CISA's lessons-learned report on a contractor who disabled GitHub's default secret-scanning block and published admin credentials to three AWS GovCloud servers, plus a plaintext password file, in a public repo used to sync files between a work and home computer since November. GitGuardian flagged it via automated alerts nine times before CISA acted; key rotation still took over 48 hours.</p>
-      <div class="why"><b>Why it matters:</b> Even the agency that runs the federal KEV catalog and issues secrets-hygiene guidance got bitten by the most basic version of this mistake — a useful prompt to audit whether your own org's secret-scanning alerts are actually being triaged, not just generated.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank">Source</a></div>
+      <h3><a href="https://www.thezdi.com/blog/2026/7/14/the-july-2026-security-update-review" target="_blank" rel="noopener">Zero Day Initiative's July 2026 review flags the bugs buried in Microsoft's record patch load</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>ZDI's monthly breakdown of Microsoft's 570+ CVE Patch Tuesday highlights which of the record haul are most likely to be weaponized next — beyond the two already-exploited zero-days — with guidance on triage order for enterprise patch teams facing an unusually large release.</p>
+      <div class="why"><b>Why it matters:</b> When a single Patch Tuesday nearly triples the previous record, the "which 10 of 570 matter most this week" analysis from a research team that tracks exploitation trends is often more actionable than the raw advisory list.</div>
+      <div class="src"><a href="https://www.thezdi.com/blog/2026/7/14/the-july-2026-security-update-review" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/" target="_blank" rel="noopener">"CitrixBleed" echo: new NetScaler memory-overread flaw exploited within 24 hours of disclosure</a></h3>
+      <div class="date stale">📅 Jul 1, 2026</div>
+      <p>watchTowr Labs' technical writeup on CVE-2026-8451 — an out-of-bounds read in NetScaler's SAML IDP XML parser that leaks memory via the NSC_TASS cookie — was followed within a day by active scanning and exploitation attempts against exposed NetScaler ADC/Gateway appliances, per Scottish threat-intel firm Lupovis.</p>
+      <div class="why"><b>Why it matters:</b> The gap between "researcher publishes technical detail" and "attackers are exploiting it" keeps shrinking toward zero for internet-facing edge appliances — patch on disclosure day, not on your normal monthly cycle, for anything touching NetScaler.</div>
+      <div class="src"><a href="https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -111,38 +111,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's 2026 AI Security Report: attackers now run entire intrusions autonomously with AI</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Check Point documented intrusions where AI generated thousands of commands across dozens of sessions with minimal human direction, orchestrating reconnaissance through exploitation on its own. The riskiest actors, the report says, are those who obtain capable models and strip their safety controls to automate multi-stage attacks; 87–93% of organizations logged at least one high-risk AI interaction every month from October 2025 through May 2026.</p>
-      <div class="why"><b>Why it matters:</b> "AI-assisted attack" is giving way to "AI-run attack" — defenders should assume adversaries can now execute full attack chains at machine speed and plan detection/response tooling that doesn't depend on human-paced attacker behavior.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank">Source</a></div>
+      <h3><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank" rel="noopener">xAI's Grok Build CLI uploaded entire Git repositories — secrets included — despite privacy toggle</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>Researcher CEREBLAB's wire-level (mitmproxy) analysis of Grok Build CLI v0.2.93 found it packaging developers' full tracked repositories, including committed secrets and Git history, and sending them to a Google Cloud Storage bucket — roughly 27,800x the data the coding task needed. Disabling xAI's "Improve the model" training-consent toggle had no effect on the uploads. xAI silently disabled the behavior on July 13 after the research reached Hacker News's front page and Musk promised to purge previously uploaded data.</p>
+      <div class="why"><b>Why it matters:</b> A training-consent toggle and a data-transmission control are not the same setting — verify what your AI coding tools actually send over the wire rather than trusting a privacy switch's label, especially for tools with access to your source and secrets.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://fortune.com/2026/07/10/openai-gpt-5-6-sol-jailbreaks-cyber-attacks-similar-to-security-flaw-that-led-u-s-government-to-force-anthropic-to-disable-fable-5/" target="_blank" rel="noopener">UK AI Security Institute finds "universal jailbreaks" in GPT-5.6 Sol enabling autonomous exploit development</a></h3>
-      <div class="date stale">📅 Jul 10, 2026</div>
-      <p>The UK's AISI says it found jailbreaks — some developed within hours — that unlock long-form agentic work in vulnerability discovery and exploit development on OpenAI's GPT-5.6 Sol, calling them "universal" rather than narrow prompt tricks. AISI says the finding is arguably more severe than the Fable 5 issue that triggered US export controls on Anthropic, since it unlocks autonomous exploitation, not just vulnerability identification.</p>
-      <div class="why"><b>Why it matters:</b> A frontier lab's own "strongest cybersecurity model to date" marketing claim being undercut by an independent government red team within days of release is a strong signal that vendor safety claims for agentic coding models need independent verification before deployment.</div>
-      <div class="src"><a href="https://fortune.com/2026/07/10/openai-gpt-5-6-sol-jailbreaks-cyber-attacks-similar-to-security-flaw-that-led-u-s-government-to-force-anthropic-to-disable-fable-5/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html" target="_blank" rel="noopener">China's MIIT flags a "security backdoor" in Anthropic's Claude Code; Alibaba bans internal use</a></h3>
+      <h3><a href="https://www.infosecurity-magazine.com/news/ghostapproval-flaw-ai-coding/" target="_blank" rel="noopener">"GhostApproval" trust-boundary flaw hits six major AI coding assistants</a></h3>
       <div class="date stale">📅 Jul 8, 2026</div>
-      <p>China's Ministry of Industry and Information Technology says Claude Code versions 2.1.91–2.1.196 transmit users' location and identity-related identifiers back to Anthropic without consent. Anthropic confirmed it embedded the tracking code earlier this year as an anti-distillation experiment and notes its policy already bars use by China-majority-owned entities. Alibaba told employees to stop using Claude Code starting July 10.</p>
-      <div class="why"><b>Why it matters:</b> A vendor's own anti-abuse telemetry becoming the center of a geopolitical "backdoor" dispute shows how any covert data collection built into an AI coding tool — even for a defensible purpose — can be repurposed as a trust and export-control flashpoint.</div>
-      <div class="src"><a href="https://www.cnbc.com/2026/07/08/china-anthropic-ai-claude-code-backdoor-security-threat.html" target="_blank">Source</a></div>
+      <p>Wiz Research disclosed a symlink-based technique letting a malicious repository trick Amazon Q Developer, Claude Code, Cursor, Google Antigravity, Windsurf and Augment into writing an attacker-supplied key to a sensitive location — while the approval dialog shown to the developer displayed only the harmless-looking target filename, bypassing informed consent. Amazon, Google and Cursor shipped fixes; Augment remains in progress and Windsurf has gone quiet since acknowledging the report in June.</p>
+      <div class="why"><b>Why it matters:</b> If an AI coding agent's own permission-approval UI can't show you what it's actually about to touch, "the developer approved it" isn't a meaningful safeguard — treat agent file-write approvals as untrusted until vendors close this class of gap.</div>
+      <div class="src"><a href="https://www.infosecurity-magazine.com/news/ghostapproval-flaw-ai-coding/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/" target="_blank" rel="noopener">Google fixes "Rogue Agent" flaw that let one permission hijack Dialogflow CX chatbots</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Varonis's disclosure, now fully patched, showed that a single dialogflow.playbooks.update permission on one agent let an attacker inject persistent malicious code into Dialogflow CX's Code Blocks feature, silently exfiltrating conversations and enabling large-scale phishing. Google's April fix proved incomplete; a full resolution shipped in June after further Varonis testing.</p>
-      <div class="why"><b>Why it matters:</b> A single low-friction permission compromising every chatbot agent in a shared GCP project is a reminder that AI-platform permission models need the same least-privilege scrutiny as IAM roles — and that vendor "fixed" claims deserve a second look, as this one needed two rounds.</div>
-      <div class="src"><a href="https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/" target="_blank">Source</a></div>
+      <h3><a href="https://www.globenewswire.com/news-release/2026/07/07/3323253/0/en/latest-digicert-research-shows-ai-security-risks-already-hitting-enterprises-with-78-reporting-incidents.html" target="_blank" rel="noopener">DigiCert survey: 78% of organizations already hit by an AI-related security incident</a></h3>
+      <div class="date stale">📅 Jul 7, 2026</div>
+      <p>A Propeller Insights survey of 1,001 IT/security decision-makers across the US, UK and Australia, run for DigiCert, found 78% had experienced an AI-related incident or identified an AI-related vulnerability in the past six months, yet only about half have a formal AI-governance program. 47% can't fully trace an AI decision back to the model and data that produced it, and about half can't terminate a misbehaving agent.</p>
+      <div class="why"><b>Why it matters:</b> Governance and traceability gaps this wide, at 75% of orgs running four or more AI systems, suggest most incident-response playbooks still haven't caught up to what's already been deployed — worth an internal gap-check against your own AI-agent inventory and kill-switch capability.</div>
+      <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/07/3323253/0/en/latest-digicert-research-shows-ai-security-risks-already-hitting-enterprises-with-78-reporting-incidents.html" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -154,29 +145,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.securityweek.com/keyfactor-scores-1-billion-investment-for-ai-post-quantum-security/" target="_blank" rel="noopener">Keyfactor lands $1B+ growth investment to expand machine-identity platform for AI and post-quantum threats</a></h3>
-      <div class="date stale">📅 Jul 7, 2026</div>
-      <p>Summit Partners led the strategic growth round, with existing backers Insight Partners and Sixth Street Growth retaining significant stakes. The capital funds global scale, product work and acquisitions for Keyfactor's AgileSec platform, which manages encryption keys, PKI and digital certificates and flags outdated keys or weak algorithms.</p>
-      <div class="why"><b>Why it matters:</b> A billion-dollar bet on machine-identity and cryptographic-inventory tooling underscores how urgently enterprises need to know what's encrypting their data as post-quantum migration deadlines and AI-issued credentials both accelerate certificate sprawl.</div>
-      <div class="src"><a href="https://www.securityweek.com/keyfactor-scores-1-billion-investment-for-ai-post-quantum-security/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/" target="_blank" rel="noopener">UK unveils "Cyber Shield" agentic-AI defense plan and a 60-organization resilience pledge</a></h3>
-      <div class="date stale">📅 Jul 7, 2026</div>
-      <p>The NCSC's Cyber Shield initiative calls for academia, critical-infrastructure operators, frontier AI labs and the defense sector to build a national-scale agentic cyber-defense capability. Alongside it, Secretary Liz Kendall launched a Cyber Resilience Pledge — 60 organizations committing to board-level cybersecurity ownership, NCSC early-warning enrollment and Cyber Essentials across their supply chains — backed by £90 million for SMB defenses.</p>
-      <div class="why"><b>Why it matters:</b> A government explicitly recruiting frontier AI labs into national cyber defense — rather than only regulating them — signals where public-private AI-security cooperation is headed; UK-linked supply chains should expect Cyber Essentials expectations to tighten.</div>
-      <div class="src"><a href="https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/" target="_blank">Source</a></div>
+      <h3><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank" rel="noopener">Oak exits stealth with $60M to build an "AI-native" identity operating system</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Founded by former Ermetic CEO Shai Morag, Oak raised a $60M seed co-led by Accel, Greylock and CRV to replace fragmented identity-governance tooling with a single control plane that builds a live identity graph — human, machine and AI agent alike — across on-prem, cloud, SaaS and homegrown apps, with AI-driven root-cause remediation.</p>
+      <div class="why"><b>Why it matters:</b> A former identity-security founder raising at this size to specifically target AI-agent identity sprawl is a strong signal that "which agent can do what, and who's accountable" is becoming its own well-funded security category rather than a feature bolted onto existing IAM.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-of-runzero-netrise-in-4-1-billion-ot-cybersecurity-push/" target="_blank" rel="noopener">Accenture to acquire majority stake in Dragos, all of runZero and NetRise in $4.175B OT push</a></h3>
-      <div class="date stale">📅 Jun 18, 2026</div>
-      <p>The combined deal, expected to close in August or September, values Dragos at $3.25 billion and folds runZero and NetRise underneath it, extending Accenture from OT security services into software as it targets a market projected to grow from roughly $27 billion this year to nearly $59 billion by 2031. runZero CEO HD Moore and NetRise's leadership move into Dragos executive roles.</p>
-      <div class="why"><b>Why it matters:</b> runZero is one of this roster's own vetted vulnerability-research sources — worth watching whether its research independence and disclosure cadence survive being folded into a much larger consulting-firm-owned OT security business.</div>
-      <div class="src"><a href="https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-of-runzero-netrise-in-4-1-billion-ot-cybersecurity-push/" target="_blank">Source</a></div>
+      <h3><a href="https://www.prnewswire.com/il/news-releases/pentera-adds-granular-testing-of-ransomware-families-qilin-play-and-blackcat-to-prevent-breaches-302825448.html" target="_blank" rel="noopener">Pentera adds granular attack simulation for Qilin, Play and BlackCat ransomware</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Pentera's exposure-validation platform now runs real attack scenarios modeled on 2026's most active ransomware families — Qilin (now the world's most active group), the fast-growing Play, and BlackCat/ALPHV — at no extra cost to existing customers, testing whether an organization's controls actually stop the specific evasion and encryption techniques each group uses.</p>
+      <div class="why"><b>Why it matters:</b> Testing against named, currently-active ransomware playbooks rather than generic attack simulations gives defenders a more honest answer to "would this specific group's TTPs get through our stack today."</div>
+      <div class="src"><a href="https://www.prnewswire.com/il/news-releases/pentera-adds-granular-testing-of-ransomware-families-qilin-play-and-blackcat-to-prevent-breaches-302825448.html" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://www.securityweek.com/runlayer-raises-30-million-in-series-a-funding/" target="_blank" rel="noopener">Runlayer raises $30M Series A for an enterprise AI-agent control layer</a></h3>
+      <div class="date stale">📅 Jun 24, 2026</div>
+      <p>Felicis-led, Khosla-backed Runlayer brings its total funding to $42M for a platform that centralizes AI-agent identity, permissions and policy enforcement with real-time visibility into agent actions across enterprise systems; customers include Instacart, Gusto and Decagon.</p>
+      <div class="why"><b>Why it matters:</b> Another well-funded entrant in AI-agent governance (alongside today's Oak raise) underscores how quickly "who let the agent do that" has become a venture-backed security category rather than a niche concern.</div>
+      <div class="src"><a href="https://www.securityweek.com/runlayer-raises-30-million-in-series-a-funding/" target="_blank">Source</a></div>
     </div>
 
   </div>
