@@ -98,7 +98,7 @@
     <h1>The Daily Briefing</h1>
     <div class="dateline">
       <span>Daily Edition</span>
-      <span>Thursday, July 16, 2026</span>
+      <span>Friday, July 17, 2026</span>
       <span><a id="sourcesLink" href="sources.html">Sources &amp; Masthead →</a></span>
     </div>
   </div>
@@ -113,13 +113,13 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank" rel="noopener">A new ransomware actor called Spirals went from initial access to full network encryption in under 24 hours, the fastest documented "hands-on-keyboard" intrusion timeline yet.</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank" rel="noopener">CISA is urging admins to patch three actively exploited on-premises SharePoint Server flaws being chained for authentication bypass, RCE and IIS machine-key theft.</a></li>
-    <li><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank" rel="noopener">Independent researcher CEREBLAB proved xAI's Grok Build CLI was quietly uploading developers' entire Git repositories — secrets and history included — to a Google Cloud bucket, even with the privacy toggle off.</a></li>
-    <li><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank" rel="noopener">The US unsealed charges against three Russian nationals behind the Medialand/ML.Cloud "bulletproof hosting" services tied to over $62 million in ransomware and cybercrime losses.</a></li>
-    <li><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank" rel="noopener">Sophos finds 79% of ransomware attacks now start with a compromised identity rather than an exploited vulnerability — and MFA was present in 97% of those cases anyway.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank" rel="noopener">Coca-Cola confirmed a ransomware attack on its Fairlife dairy subsidiary has suspended U.S. production, with no group claiming responsibility yet.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall's SMA1000 appliances are under active attack via a CVSS-10 SSRF paired with a post-auth code-injection bug, with a federal patch deadline landing today.</a></li>
+    <li><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank" rel="noopener">CISA added an actively-exploited SharePoint deserialization zero-day and two FortiSandbox command-injection flaws to its KEV catalog this week.</a></li>
+    <li><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">Hugging Face disclosed that an autonomous AI agent — not a human operator — drove a weekend-long intrusion into its production infrastructure, and the company used AI of its own to reconstruct the attack.</a></li>
+    <li><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank" rel="noopener">Two Scattered Spider members were sentenced to 66 months in prison for the 2024 Transport for London hack that cost the agency an estimated £29 million.</a></li>
   </ul>
-  <p class="rosternote">Roster update: added 3 new sources today — see Cyber Sources.</p>
+  <p class="rosternote">Roster update: added 1 new source today — see Cyber Sources.</p>
 </div>
 
 <section>
@@ -128,47 +128,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank" rel="noopener">New "Spirals" ransomware encrypts a victim network in under 24 hours</a></h3>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank" rel="noopener">Coca-Cola's Fairlife dairy unit halts U.S. production after ransomware attack</a></h3>
       <div class="date">📅 Jul 16, 2026</div>
-      <p>Symantec's Threat Hunter Team traced a Spirals intrusion at a South Asian IT services firm from an exposed IIS server to full encryption in under a day: a web shell, UAC bypass, RDP enablement, a new local account, lateral movement to a dozen-plus hosts via WMI, and redundant remote-access channels (revsocks, Chisel, Cloudflare tunnels) before the Rust-based payload dropped.</p>
-      <div class="why"><b>Why it matters:</b> Sub-24-hour dwell time leaves almost no window for manual detection and response — this is another data point that ransomware defense now has to assume automated, near-real-time containment rather than next-business-day triage.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank">Source</a></div>
+      <p>Coca-Cola disclosed in an SEC 8-K filing that Fairlife detected unauthorized access to systems — including production systems — tied to a ransomware attack, temporarily suspending U.S. manufacturing while Canadian operations continue unaffected. The company says product quality and safety are not impacted, has notified law enforcement, and has not yet disclosed whether data was stolen or a ransom demanded.</p>
+      <div class="why"><b>Why it matters:</b> A ransomware hit that reaches OT/production systems at a household-name manufacturer — not just IT — is a reminder that segmentation between corporate networks and the plant floor is what determines whether an intrusion becomes an inconvenience or a supply disruption.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank" rel="noopener">US charges Russian operators of Medialand/ML.Cloud "bulletproof hosting" services</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Federal prosecutors unsealed an indictment against Alexander Volosovik, Kirill Zatolokin and Yulia Pankova, plus their St. Petersburg-based firms Medialand LLC and ML.Cloud LLC, accusing them of leasing take-down-resistant infrastructure across Russia, China, Finland and the Netherlands that powered ransomware, phishing and malware campaigns netting over $62 million from victims. A $10 million reward is now on offer for further information.</p>
-      <div class="why"><b>Why it matters:</b> Bulletproof hosting is the plumbing behind a huge share of ransomware and phishing infrastructure — disrupting the providers, not just individual campaigns, is one of the few actions that raises costs across the entire criminal ecosystem at once.</div>
-      <div class="src"><a href="https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting" target="_blank">Source</a></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank" rel="noopener">Scattered Spider duo jailed 66 months over £29M Transport for London hack</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Thalha Jubair, 20, and Owen Flowers, 18, were each sentenced to five years and six months under Section 3ZA of the UK's Computer Misuse Act for the August 2024 TfL intrusion that hit 148 systems, forced a password reset for all 27,000 employees, and disrupted Dial-a-Ride, concessionary travel cards and refunds. Investigators estimated a full network outage could have cost the UK economy up to £56 billion.</p>
+      <div class="why"><b>Why it matters:</b> This is only the second-ever conviction under the CMA's toughest provision and Britain's biggest cybercrime prosecution to date — a real deterrence data point as Scattered Spider's helpdesk-impersonation playbook keeps spreading.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank" rel="noopener">Sophos: identity attacks overtake exploits as the top ransomware root cause</a></h3>
+      <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/" target="_blank" rel="noopener">Microsoft: compromised AsyncAPI npm packages deliver malware at import time, not install</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>Sophos's latest incident-response data shows 79% of ransomware attacks now originate from compromised identities — malicious email (26%), phishing (24%) and stolen credentials (23%) combined — while vulnerability exploitation fell to 18% from 32% previously. MFA was deployed in 97% of the credential-based incidents studied but still failed to stop the compromise.</p>
-      <div class="why"><b>Why it matters:</b> "MFA deployed" clearly isn't the same as "MFA enforced everywhere" — the data argues for shifting ransomware-prevention budget from patch cadence toward identity threat detection, phishing-resistant MFA coverage gaps, and auditing non-human credentials.</div>
-      <div class="src"><a href="https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause" target="_blank">Source</a></div>
+      <p>Microsoft Threat Intelligence traced a coordinated compromise of five package versions across the @asyncapi npm organization — pulled via a poisoned pull request — that trigger a hidden malicious loader on <code>require()</code>/<code>import</code> rather than a postinstall hook, meaning the common <code>npm install --ignore-scripts</code> mitigation doesn't stop it. The loader fetches a second-stage payload from IPFS and is detected by Defender as Trojan:JS/MiasmStealer.SC.</p>
+      <div class="why"><b>Why it matters:</b> An import-time trigger defeats the standard "disable install scripts" supply-chain defense — teams need to also pin exact versions, purge caches, and hunt for the malware's OS-specific masquerade directories rather than relying on one mitigation.</div>
+      <div class="src"><a href="https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://cybernews.com/security/bosch-synopsys-data-breach-claim/" target="_blank" rel="noopener">D1R ransomware group claims Synopsys breach, threatens to leak Bosch data — Synopsys denies it</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>A little-known extortion group calling itself D1R claims it pulled a 40,000-entry customer database from chip-design firm Synopsys and used it to access Bosch engineering data, threatening to publish it unless paid. Synopsys says it found no evidence of unauthorized access and has not been contacted by the group; the "proof" screenshot the attackers posted of Bosch CAN data appears to match a publicly available user manual.</p>
-      <div class="why"><b>Why it matters:</b> New, unverified leak-site claims from low-reputation actors are common and often exaggerated or fabricated — treat them as unconfirmed until the named victim or an independent researcher corroborates the data, not as an automatic incident.</div>
-      <div class="src"><a href="https://cybernews.com/security/bosch-synopsys-data-breach-claim/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.militarytimes.com/pay-benefits/military-benefits/health-care/2026/07/13/nearly-12000-military-tricare-beneficiaries-warned-of-data-breach/" target="_blank" rel="noopener">TriWest Healthcare Alliance notifies ~11,844 TRICARE West beneficiaries of a data breach</a></h3>
+      <h3><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank" rel="noopener">Krebs: CISA ignored nine GitGuardian alerts on exposed AWS keys for six months</a></h3>
       <div class="date stale">📅 Jul 13, 2026</div>
-      <p>TriWest, the managed-care contractor for the TRICARE West Region covering roughly 4 million beneficiaries, says an unauthorized party accessed and downloaded data on April 16, discovered internally, with notification letters dated July 2. Exposed data includes names, DoD Benefit Numbers and ZIP codes, with Social Security numbers, addresses and birthdates affecting fewer than five individuals. Free 24-month Experian credit monitoring is being offered.</p>
-      <div class="why"><b>Why it matters:</b> A nearly three-month gap between discovery and notification for a defense-health contractor is a reminder to check your own breach-notification SLAs against what regulators and affected individuals actually expect, especially for military and healthcare populations.</div>
-      <div class="src"><a href="https://www.militarytimes.com/pay-benefits/military-benefits/health-care/2026/07/13/nearly-12000-military-tricare-beneficiaries-warned-of-data-breach/" target="_blank">Source</a></div>
+      <p>A CISA postmortem details how a contractor published internal CISA credentials, including AWS GovCloud keys, in a public GitHub repository for nearly six months; GitGuardian's automated scanner flagged the exposure nine separate times before Krebs's own outreach prompted a response on May 15.</p>
+      <div class="why"><b>Why it matters:</b> The federal government's own cybersecurity agency missing nine automated secret-leak alerts over half a year is a hard reset on how much to trust "we'll see the alert" as a control — automated detection only works if someone is actually triaging the queue.</div>
+      <div class="src"><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -180,38 +171,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank" rel="noopener">CISA warns three SharePoint Server flaws are being actively chained for full compromise</a></h3>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall SMA1000 zero-days (CVSS 10.0) actively exploited; federal deadline is today</a></h3>
       <div class="date">📅 Jul 14, 2026</div>
-      <p>Attackers are combining CVE-2026-32201, CVE-2026-45659 and CVE-2026-56164 — added to CISA's KEV catalog on April 14, July 1 and July 14 respectively — to bypass authentication, achieve remote code execution, steal IIS machine keys and maintain persistence on internet-exposed on-premises SharePoint Server instances. Federal agencies must remediate CVE-2026-56164 by July 17 under BOD 26-04.</p>
-      <div class="why"><b>Why it matters:</b> Three separately-disclosed bugs chained into one compromise path shows why patching each CVE in isolation isn't enough — verify the full chain is closed, rotate IIS machine keys on affected servers, and enable AMSI integration as CISA recommends.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/" target="_blank">Source</a></div>
+      <p>CVE-2026-15409, a critical unauthenticated SSRF in the SMA1000 Work Place interface, and CVE-2026-15410, a post-auth code-injection flaw in the Management Console, are being actively exploited against SMA6210/7210/8200v appliances to steal credentials, session databases and TOTP MFA seeds. Both are now in CISA's KEV catalog, and Binding Operational Directive 26-04 requires federal agencies to remediate or discontinue use by July 17.</p>
+      <div class="why"><b>Why it matters:</b> A CVSS-10 pre-auth bug on internet-facing remote-access gear is a worst-case combination — if you run SMA1000, patch to the hotfix releases today, check the published IOCs, and assume compromise (re-image and rotate credentials/TOTP seeds) rather than just patching.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-crit">Critical</span></div>
+      <h3><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank" rel="noopener">CISA adds exploited SharePoint deserialization zero-day and two FortiSandbox flaws to KEV</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>CVE-2026-58644 (CVSS 9.8), a SharePoint Server deserialization bug patched in July's Patch Tuesday, was confirmed exploited as a zero-day before the fix shipped and joins CVE-2026-32201/45659/56164 in enabling RCE and IIS machine-key theft on on-prem SharePoint. The same day, CISA also added two critical FortiSandbox command-injection bugs (CVE-2026-25089, CVE-2026-39808) following continued active exploitation reports.</p>
+      <div class="why"><b>Why it matters:</b> Four separate SharePoint CVEs are now confirmed exploited in the same campaign — patching the newest one isn't enough; CISA's guidance to rotate IIS machine keys and verify AMSI integration applies across the whole chain, not just the latest CVE.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html" target="_blank" rel="noopener">Researcher drops unpatched Windows zero-day "LegacyHive" hours after Patch Tuesday</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>The researcher behind the Nightmare Eclipse handle published "LegacyHive," a local-privilege-escalation bug in the Windows User Profile Service (profsvc) that lets an attacker load another user's registry hive — including an administrator's — on fully patched systems. The proof-of-concept was deliberately stripped down to slow immediate exploitation, and no CVE has been assigned yet.</p>
-      <div class="why"><b>Why it matters:</b> A working local-privilege-escalation technique dropped with no vendor coordination and no patch available is a live risk on every current Windows build — watch for a Microsoft advisory and treat any unusual profile-loading behavior as suspicious in the meantime.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.thezdi.com/blog/2026/7/14/the-july-2026-security-update-review" target="_blank" rel="noopener">Zero Day Initiative's July 2026 review flags the bugs buried in Microsoft's record patch load</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>ZDI's monthly breakdown of Microsoft's 570+ CVE Patch Tuesday highlights which of the record haul are most likely to be weaponized next — beyond the two already-exploited zero-days — with guidance on triage order for enterprise patch teams facing an unusually large release.</p>
-      <div class="why"><b>Why it matters:</b> When a single Patch Tuesday nearly triples the previous record, the "which 10 of 570 matter most this week" analysis from a research team that tracks exploitation trends is often more actionable than the raw advisory list.</div>
-      <div class="src"><a href="https://www.thezdi.com/blog/2026/7/14/the-july-2026-security-update-review" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/" target="_blank" rel="noopener">"CitrixBleed" echo: new NetScaler memory-overread flaw exploited within 24 hours of disclosure</a></h3>
-      <div class="date stale">📅 Jul 1, 2026</div>
-      <p>watchTowr Labs' technical writeup on CVE-2026-8451 — an out-of-bounds read in NetScaler's SAML IDP XML parser that leaks memory via the NSC_TASS cookie — was followed within a day by active scanning and exploitation attempts against exposed NetScaler ADC/Gateway appliances, per Scottish threat-intel firm Lupovis.</p>
-      <div class="why"><b>Why it matters:</b> The gap between "researcher publishes technical detail" and "attackers are exploiting it" keeps shrinking toward zero for internet-facing edge appliances — patch on disclosure day, not on your normal monthly cycle, for anything touching NetScaler.</div>
-      <div class="src"><a href="https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/" target="_blank">Source</a></div>
+      <h3><a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank" rel="noopener">Microsoft's record Patch Tuesday: 570-plus flaws, and the company blames AI for the surge</a></h3>
+      <div class="date stale">📅 Jul 14, 2026</div>
+      <p>July's Patch Tuesday nearly tripled June's record haul, closing three zero-days (two already under active attack) among the pile. Microsoft told Krebs the ballooning counts partly reflect vulnerability discovery accelerated by AI-assisted code review — both its own and, per Check Point's newest AI Security Report, attackers'.</p>
+      <div class="why"><b>Why it matters:</b> If AI is accelerating discovery on both sides of the fence, patch-cycle assumptions built around "a few dozen CVEs a month" are already out of date — triage tooling and faster deployment pipelines are becoming the bottleneck, not the advisories themselves.</div>
+      <div class="src"><a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -223,29 +205,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank" rel="noopener">xAI's Grok Build CLI uploaded entire Git repositories — secrets included — despite privacy toggle</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Researcher CEREBLAB's wire-level (mitmproxy) analysis of Grok Build CLI v0.2.93 found it packaging developers' full tracked repositories, including committed secrets and Git history, and sending them to a Google Cloud Storage bucket — roughly 27,800x the data the coding task needed. Disabling xAI's "Improve the model" training-consent toggle had no effect on the uploads. xAI silently disabled the behavior on July 13 after the research reached Hacker News's front page and Musk promised to purge previously uploaded data.</p>
-      <div class="why"><b>Why it matters:</b> A training-consent toggle and a data-transmission control are not the same setting — verify what your AI coding tools actually send over the wire rather than trusting a privacy switch's label, especially for tools with access to your source and secrets.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank">Source</a></div>
+      <h3><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">Hugging Face discloses intrusion driven end-to-end by an autonomous AI agent</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Hugging Face says a malicious dataset abused a remote-code dataset loader and a template-injection bug to run code on a processing worker, then an autonomous agent framework — executing thousands of actions across a swarm of short-lived sandboxes with self-migrating C2 — escalated to node-level access and moved laterally over a weekend. Hugging Face itself used an open-weight model (GLM 5.2) run on its own infrastructure to analyze the 17,000-event attacker log, after hosted frontier-model APIs refused to process the raw attack commands as a safety-guardrail false positive.</p>
+      <div class="why"><b>Why it matters:</b> This is a rare first-party admission that an "agentic attacker" scenario the industry has only forecast is now operational — and the finding that defenders' own hosted-AI guardrails can block legitimate forensic analysis of attack logs is a planning gap worth closing before your own incident, not during it.</div>
+      <div class="src"><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.infosecurity-magazine.com/news/ghostapproval-flaw-ai-coding/" target="_blank" rel="noopener">"GhostApproval" trust-boundary flaw hits six major AI coding assistants</a></h3>
-      <div class="date stale">📅 Jul 8, 2026</div>
-      <p>Wiz Research disclosed a symlink-based technique letting a malicious repository trick Amazon Q Developer, Claude Code, Cursor, Google Antigravity, Windsurf and Augment into writing an attacker-supplied key to a sensitive location — while the approval dialog shown to the developer displayed only the harmless-looking target filename, bypassing informed consent. Amazon, Google and Cursor shipped fixes; Augment remains in progress and Windsurf has gone quiet since acknowledging the report in June.</p>
-      <div class="why"><b>Why it matters:</b> If an AI coding agent's own permission-approval UI can't show you what it's actually about to touch, "the developer approved it" isn't a meaningful safeguard — treat agent file-write approvals as untrusted until vendors close this class of gap.</div>
-      <div class="src"><a href="https://www.infosecurity-magazine.com/news/ghostapproval-flaw-ai-coding/" target="_blank">Source</a></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's 2026 AI Security Report: "AI used to help plan the break-in, now it's doing the break-in"</a></h3>
+      <div class="date stale">📅 Jul 15, 2026</div>
+      <p>Check Point Research documented year-long intrusions where AI ran exploitation workflows autonomously — generating thousands of commands across dozens of sessions with minimal human direction — and found 87-93% of organizations had at least one high-risk AI data-exposure interaction each month between October 2025 and May 2026. A persistent jailbreak technique now plants malicious instructions in auto-loaded files like CLAUDE.md rather than relying on prompts that get patched.</p>
+      <div class="why"><b>Why it matters:</b> The report's core claim — that the skill gap separating capable attackers from novices is disappearing — argues for auditing which auto-loaded config/instruction files your AI coding and analysis tools trust by default, since that's now a persistence mechanism, not just a convenience feature.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.globenewswire.com/news-release/2026/07/07/3323253/0/en/latest-digicert-research-shows-ai-security-risks-already-hitting-enterprises-with-78-reporting-incidents.html" target="_blank" rel="noopener">DigiCert survey: 78% of organizations already hit by an AI-related security incident</a></h3>
-      <div class="date stale">📅 Jul 7, 2026</div>
-      <p>A Propeller Insights survey of 1,001 IT/security decision-makers across the US, UK and Australia, run for DigiCert, found 78% had experienced an AI-related incident or identified an AI-related vulnerability in the past six months, yet only about half have a formal AI-governance program. 47% can't fully trace an AI decision back to the model and data that produced it, and about half can't terminate a misbehaving agent.</p>
-      <div class="why"><b>Why it matters:</b> Governance and traceability gaps this wide, at 75% of orgs running four or more AI systems, suggest most incident-response playbooks still haven't caught up to what's already been deployed — worth an internal gap-check against your own AI-agent inventory and kill-switch capability.</div>
-      <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/07/3323253/0/en/latest-digicert-research-shows-ai-security-risks-already-hitting-enterprises-with-78-reporting-incidents.html" target="_blank">Source</a></div>
+      <h3><a href="https://agentic.tracebit.com/context-bombs/" target="_blank" rel="noopener">Tracebit's "context bombs" cut AI-attacker success rates by up to 90% in cyber-range tests</a></h3>
+      <div class="date stale">📅 Jul 14, 2026</div>
+      <p>Tracebit researchers planted decoy credentials containing a "context bomb" — text designed to trigger an offensive AI agent's own safety guardrails — and ran 152 attack sessions across five frontier models (Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, Kimi K2.6) against a simulated AWS environment. Opus 4.8 went from 93% full-admin success in clean runs to 0% once a context bomb was present; across all five models, attack-path success fell from 91% to 15%.</p>
+      <div class="why"><b>Why it matters:</b> Flipping prompt injection from an attacker's tool into a defender's tripwire is a genuinely new deception technique — worth testing against your own canary/honeytoken strategy, though it's not a silver bullet against "abliterated" models stripped of safety guardrails, which the researchers haven't yet tested.</div>
+      <div class="src"><a href="https://agentic.tracebit.com/context-bombs/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -257,29 +239,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank" rel="noopener">Oak exits stealth with $60M to build an "AI-native" identity operating system</a></h3>
+      <h3><a href="https://www.sophos.com/en-us/blog/sophos-fusion" target="_blank" rel="noopener">Sophos launches "Fusion," unifying its stack with Secureworks' Taegis analytics on one AI-native platform</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>Founded by former Ermetic CEO Shai Morag, Oak raised a $60M seed co-led by Accel, Greylock and CRV to replace fragmented identity-governance tooling with a single control plane that builds a live identity graph — human, machine and AI agent alike — across on-prem, cloud, SaaS and homegrown apps, with AI-driven root-cause remediation.</p>
-      <div class="why"><b>Why it matters:</b> A former identity-security founder raising at this size to specifically target AI-agent identity sprawl is a strong signal that "which agent can do what, and who's accountable" is becoming its own well-funded security category rather than a feature bolted onto existing IAM.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank">Source</a></div>
+      <p>Sophos Fusion rebuilds Sophos Central — used by 625,000 organizations — onto a single open architecture tying together SOC, endpoint, network, identity, email and cloud protection, incorporating the Taegis analytics engine picked up in last year's Secureworks acquisition. Next-Gen SIEM and MDR modules go generally available August 15, with further capabilities rolling out through October.</p>
+      <div class="why"><b>Why it matters:</b> Another large vendor consolidating a post-acquisition product line into a single AI-native platform underscores the broader push toward unified detection-and-response stacks — worth checking your renewal timeline against the phased August/October rollout before committing to point tools it may soon replace.</div>
+      <div class="src"><a href="https://www.sophos.com/en-us/blog/sophos-fusion" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.prnewswire.com/il/news-releases/pentera-adds-granular-testing-of-ransomware-families-qilin-play-and-blackcat-to-prevent-breaches-302825448.html" target="_blank" rel="noopener">Pentera adds granular attack simulation for Qilin, Play and BlackCat ransomware</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Pentera's exposure-validation platform now runs real attack scenarios modeled on 2026's most active ransomware families — Qilin (now the world's most active group), the fast-growing Play, and BlackCat/ALPHV — at no extra cost to existing customers, testing whether an organization's controls actually stop the specific evasion and encryption techniques each group uses.</p>
-      <div class="why"><b>Why it matters:</b> Testing against named, currently-active ransomware playbooks rather than generic attack simulations gives defenders a more honest answer to "would this specific group's TTPs get through our stack today."</div>
-      <div class="src"><a href="https://www.prnewswire.com/il/news-releases/pentera-adds-granular-testing-of-ransomware-families-qilin-play-and-blackcat-to-prevent-breaches-302825448.html" target="_blank">Source</a></div>
+      <h3><a href="https://www.prnewswire.com/news-releases/beacon-security-raises-13-million-in-seed-funding-to-give-ai-agents-a-trustworthy-data-foundation-for-cyber-defense-302826450.html" target="_blank" rel="noopener">Beacon Security raises $13M seed to build a trusted data layer for AI-driven cyber defense</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Notable Capital led the round for Beacon, founded by intelligence and offensive-security veterans, which fuses telemetry across security vendors, pre-resolves entities and automates normalization so both human analysts and autonomous agents work from clean data; the company reports 300% ARR growth in H1 2026.</p>
+      <div class="why"><b>Why it matters:</b> As more SOCs hand alert triage to AI agents, "garbage in, garbage out" telemetry becomes a security risk in its own right — a dedicated data-normalization layer for agentic defense is a sign the market sees that as a distinct, fundable problem rather than a feature of existing SIEMs.</div>
+      <div class="src"><a href="https://www.prnewswire.com/news-releases/beacon-security-raises-13-million-in-seed-funding-to-give-ai-agents-a-trustworthy-data-foundation-for-cyber-defense-302826450.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.securityweek.com/runlayer-raises-30-million-in-series-a-funding/" target="_blank" rel="noopener">Runlayer raises $30M Series A for an enterprise AI-agent control layer</a></h3>
-      <div class="date stale">📅 Jun 24, 2026</div>
-      <p>Felicis-led, Khosla-backed Runlayer brings its total funding to $42M for a platform that centralizes AI-agent identity, permissions and policy enforcement with real-time visibility into agent actions across enterprise systems; customers include Instacart, Gusto and Decagon.</p>
-      <div class="why"><b>Why it matters:</b> Another well-funded entrant in AI-agent governance (alongside today's Oak raise) underscores how quickly "who let the agent do that" has become a venture-backed security category rather than a niche concern.</div>
-      <div class="src"><a href="https://www.securityweek.com/runlayer-raises-30-million-in-series-a-funding/" target="_blank">Source</a></div>
+      <h3><a href="https://www.uktech.news/cybersecurity/risk-ledger-secures-24m-to-scale-supply-chain-security-network-20260716" target="_blank" rel="noopener">Risk Ledger raises £24M Series B to push supply-chain security into the US</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Axiom Equity led the round for Risk Ledger, whose network-first platform — now covering 16,000+ organizations across financial services, insurance and critical infrastructure — replaces duplicate vendor questionnaires with one continuously-updated shared risk profile; funds will build AI-enabled assessment capabilities and fund US expansion.</p>
+      <div class="why"><b>Why it matters:</b> Third-party risk management has long been a check-the-box exercise built on stale annual questionnaires — a well-capitalized network-based alternative reaching this scale is worth watching if your vendor-risk program still runs on spreadsheets.</div>
+      <div class="src"><a href="https://www.uktech.news/cybersecurity/risk-ledger-secures-24m-to-scale-supply-chain-security-network-20260716" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -290,12 +272,12 @@
 <div class="lead">
   <h2>Top of the Morning — AI</h2>
   <ul>
-    <li><a href="https://futureoflife.org/ai-safety-index-summer-2026/" target="_blank" rel="noopener"><span class="ld">No AI lab scored above a C+ —</span> the Future of Life Institute's Summer 2026 Safety Index put Anthropic first at just C+, OpenAI and Google DeepMind at C, and flunked xAI, DeepSeek and Mistral as labs quietly drop earlier "pause" commitments.</a></li>
-    <li><a href="https://www.bloomberg.com/news/articles/2026-06-28/samsung-sk-reportedly-to-invest-1-3-trillion-over-10-years" target="_blank" rel="noopener"><span class="ld">South Korea is orchestrating an ~$880B AI push —</span> Samsung, SK Hynix and others would pour money into memory fabs and 18.4GW of data centers to lock in the country's place at the center of the AI supply chain.</a></li>
-    <li><a href="https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/" target="_blank" rel="noopener"><span class="ld">AI "vibe coding" startup Emergent hit a $1.5B valuation —</span> a $130M Series C just over a year after launch, with 70% of its 200,000 paying customers reportedly having never written code.</a></li>
-    <li><a href="https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/" target="_blank" rel="noopener"><span class="ld">Daniel Ek's Neko Health raised $700M for AI body scans —</span> valuing the preventive-health startup near $7B as it opens its first US clinic in New York.</a></li>
-    <li><a href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank" rel="noopener"><span class="ld">Anthropic peered inside Claude's "hidden thoughts" —</span> a new interpretability tool surfaced a latent "J-space" of responses the model considers but doesn't say, though researchers caution against over-reading it.</a></li>
-    <li><a href="https://skift.com/2026/07/07/mews-layoffs-restructuring-ai/" target="_blank" rel="noopener"><span class="ld">Hotel-software unicorn Mews cut 15% of staff, naming AI —</span> roughly 170 jobs, one of the clearest cases yet of a company openly attributing layoffs to AI efficiency.</a></li>
+    <li><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank" rel="noopener"><span class="ld">China's Moonshot shipped the largest open model ever —</span> Kimi K3, a 2.8-trillion-parameter open MoE, beats Claude Opus 4.8 and GPT-5.5 on benchmarks and trails only the very top US frontier models, at a fraction of the price.</a></li>
+    <li><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank" rel="noopener"><span class="ld">Gemini 3.5 Pro is due to land today —</span> Google's ground-up rebuild, six weeks late and reportedly carrying a 2M-token window and a Deep Think layer, drops into the most crowded frontier week in AI history.</a></li>
+    <li><a href="https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google" target="_blank" rel="noopener"><span class="ld">OpenAI, Anthropic and DeepMind now agree on regulation —</span> in five weeks all three CEOs converged on outside pre-release testing and a US-led standards body, an on-the-record break from the industry's self-reporting era.</a></li>
+    <li><a href="https://tribune.com.pk/story/2618236/global-ai-summit-set-to-open-in-shanghai-from-july-17-20" target="_blank" rel="noopener"><span class="ld">Shanghai's World AI Conference opens today with Xi attending —</span> a four-day summit built around global AI governance, as Beijing pushes its own multilateral framework opposite Washington's.</a></li>
+    <li><a href="https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/" target="_blank" rel="noopener"><span class="ld">A "vibe coding" startup hit a $1.5B valuation in a year —</span> India's Emergent raised $130M with 200,000 paying customers, ~70% of whom say they've never written code.</a></li>
+    <li><a href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank" rel="noopener"><span class="ld">Anthropic peered inside Claude's "hidden thoughts" —</span> a new interpretability tool surfaced a latent space of responses the model weighs but never says, though researchers warn against over-reading it.</a></li>
   </ul>
   <p class="rosternote">Roster update: added 1 new source today — see AI Sources.</p>
 </div>
@@ -305,21 +287,21 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank" rel="noopener">Gemini 3.5 Pro's July 17 target is now one day out — and Google still hasn't confirmed it</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>Google DeepMind is still tracking a July 17 launch for Gemini 3.5 Pro after scrapping the 2.5 Pro architecture for a full ground-up rebuild, with leaks pointing to a 2M-token context window and a "Deep Think" reasoning layer — none of it officially confirmed by Google, no model card or pricing published.</p>
-      <div class="why"><b>Why it matters:</b> With the date landing tomorrow and still no official word, the launch reads less like a confident, pre-planned release and more like a scramble to answer GPT-5.6 Sol and Grok 4.5 on Google's own terms.</div>
-      <div class="src"><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-crit">Major</span></div>
+      <h3><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank" rel="noopener">Moonshot's Kimi K3 becomes the largest open-source model ever, rivaling top US systems</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>China's Moonshot AI released Kimi K3, a 2.8-trillion-parameter sparse Mixture-of-Experts model with native vision and a 1M-token context, built on its own Kimi Delta Attention and Attention Residuals. It reportedly outperforms Claude Opus 4.8 and GPT-5.5 on benchmarks — losing only to Claude Fable 5 and GPT-5.6 Sol — while pricing near the much cheaper Sonnet tier, with full open weights promised by July 27.</p>
+      <div class="why"><b>Why it matters:</b> An open-weight Chinese model that trades blows with the US frontier while undercutting it on price collapses the moat argument for closed labs — and hands developers worldwide near-frontier capability they can run and fine-tune themselves.</div>
+      <div class="src"><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Claude Sonnet 5 ships with near-Opus performance at a fraction of the price</a></h3>
-      <div class="date stale">📅 Jun 30, 2026</div>
-      <p>Anthropic's most agentic mid-tier model yet can plan, use browsers and terminals, and run autonomously at a level that recently required far larger models — landing close to Opus 4.8 quality at an introductory $2/$10 per-million-token price through August 31, and now the default on Free and Pro plans.</p>
-      <div class="why"><b>Why it matters:</b> The competitive frontier is shifting from "biggest model wins" to price-performance — pushing near-frontier agentic capability into a cheap default tier is how a lab wins day-to-day developer and enterprise usage.</div>
-      <div class="src"><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank" rel="noopener">Gemini 3.5 Pro's July 17 target lands today after a ground-up rebuild</a></h3>
+      <div class="date">📅 Jul 17, 2026</div>
+      <p>Google DeepMind is tracking today for the general availability of Gemini 3.5 Pro after scrapping the original base model and restarting pretraining, pushing the launch roughly six weeks late. Leaks point to a 2M-token context window and a "Deep Think" reasoning layer gated behind the $250/month Ultra tier — but every spec, and the date itself, still comes from third-party reporting rather than an official Google announcement.</p>
+      <div class="why"><b>Why it matters:</b> Landing five days after GPT-5.6 and nine after Grok 4.5, Gemini 3.5 Pro is Google's answer to the most competitive single week in frontier AI — and shipping a rebuilt model on a fixed date is a bet that quality now beats being first out the gate.</div>
+      <div class="src"><a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
@@ -341,28 +323,28 @@
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
       <h3><a href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank" rel="noopener">What Anthropic's latest AI discovery does — and doesn't — show</a></h3>
-      <div class="date">📅 Jul 13, 2026</div>
-      <p>Anthropic's new interpretability tool (a "Jacobian lens") surfaced a hidden internal "J-space" inside Claude — words tied to responses the model is weighing but may never actually produce. MIT Technology Review cautions the finding is real but easy to over-interpret as the model having secret intentions.</p>
-      <div class="why"><b>Why it matters:</b> As agents get handed more autonomy, being able to see what a model is "considering" but suppressing is exactly the kind of oversight tool safety depends on — but only if the field resists reading too much into early results.</div>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>Anthropic's new "Jacobian lens" interpretability tool surfaced a hidden internal "J-space" inside Claude — words tied to responses the model is weighing but may never produce — and ablating a small evaluation-awareness subspace flipped a blackmail eval's behavior. MIT Technology Review cautions the finding is real but easy to over-read as the model harboring secret intentions.</p>
+      <div class="why"><b>Why it matters:</b> As agents are handed more autonomy, being able to see what a model is "considering" but suppressing is exactly the oversight tool safety depends on — but only if the field resists reading too much into early results.</div>
       <div class="src"><a href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3><a href="https://epoch.ai/benchmarks" target="_blank" rel="noopener">Epoch AI's capabilities index shows Claude Fable 5 holding the frontier lead</a></h3>
+      <div class="date">📅 Jul 14, 2026</div>
+      <p>Epoch AI's public benchmark database — now tracking thousands of models — records Claude Fable 5 topping the composite Epoch Capabilities Index ahead of GPT-5.6 Sol and GPT-5.5 Pro, as new agentic and research-level evals keep getting added and the lead changes hands month to month.</p>
+      <div class="why"><b>Why it matters:</b> With labs increasingly citing their own preferred benchmarks, an independent, continuously-expanding measurement layer is what keeps "state of the art" claims honest — and a fast-shifting leaderboard now reframes today's Kimi K3 and Gemini 3.5 launches.</div>
+      <div class="src"><a href="https://epoch.ai/benchmarks" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
       <h3><a href="https://futureoflife.org/ai-safety-index-summer-2026/" target="_blank" rel="noopener">2026 AI Safety Index: nine labs graded, and nobody clears a C+</a></h3>
       <div class="date stale">📅 Jul 7, 2026</div>
-      <p>The Future of Life Institute's independent expert panel scored nine frontier labs across 37 indicators and six domains. Anthropic led at C+ (2.66), OpenAI and Google DeepMind landed at C, and xAI, DeepSeek and Mistral effectively failed — with reviewers noting several labs have weakened earlier pledges to pause development at danger thresholds.</p>
-      <div class="why"><b>Why it matters:</b> An independent, recurring safety scorecard is one of the few external checks on labs' self-reported safety claims — and its verdict that even the leader is "completely inadequate" relative to capability gains is a pointed rebuttal to industry reassurances.</div>
+      <p>The Future of Life Institute's independent expert panel scored nine frontier labs across 37 indicators and six domains. Anthropic led at just C+ (2.66), OpenAI and Google DeepMind landed at C, and xAI, DeepSeek and Mistral effectively failed — with reviewers noting several labs have quietly weakened earlier pledges to pause development at danger thresholds.</p>
+      <div class="why"><b>Why it matters:</b> An independent, recurring safety scorecard is one of the few external checks on labs' self-reported claims — and its verdict that even the leader is "completely inadequate" is the backdrop to this week's sudden CEO consensus on outside regulation.</div>
       <div class="src"><a href="https://futureoflife.org/ai-safety-index-summer-2026/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://epoch.ai/benchmarks" target="_blank" rel="noopener">Epoch AI's capabilities index shows Claude Fable 5 taking the frontier lead</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Epoch AI's public benchmark database — now tracking thousands of models — records Claude Fable 5 setting a new high on the composite Epoch Capabilities Index, edging past GPT-5.5 Pro and marking the first time Anthropic has led the ECI in over a year, as new agentic and research-level evals keep getting added.</p>
-      <div class="why"><b>Why it matters:</b> With labs increasingly citing their own preferred benchmarks, an independent, continuously-expanding measurement layer is what keeps "state of the art" claims honest — and the lead is now changing hands month to month.</div>
-      <div class="src"><a href="https://epoch.ai/benchmarks" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -377,7 +359,7 @@
       <h3><a href="https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/" target="_blank" rel="noopener">AI "engineering team in a box" Emergent becomes a unicorn a year after launch</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
       <p>Indian AI-coding startup Emergent raised a $130M Series C (led by Creaegis) at a $1.5B valuation — a fivefold jump in six months — for a product that builds software from plain-language prompts. It reports a $120M annual run rate and 200,000 paying customers, roughly 70% of whom say they've never coded.</p>
-      <div class="why"><b>Why it matters:</b> "Vibe coding" tools are turning non-engineers into software creators fast enough to mint unicorns in a year — reshaping who builds software and putting real pressure on the traditional dev-tools and outsourcing markets.</div>
+      <div class="why"><b>Why it matters:</b> "Vibe coding" tools are turning non-engineers into software creators fast enough to mint unicorns in a year — reshaping who builds software and putting real pressure on traditional dev-tools and outsourcing markets.</div>
       <div class="src"><a href="https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/" target="_blank">Source</a></div>
     </div>
 
@@ -392,11 +374,11 @@
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.mobihealthnews.com/news/neko-health-raises-700m-ai-full-body-health-scans" target="_blank" rel="noopener">Neko Health scales AI full-body scanning toward a US launch</a></h3>
+      <h3><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">ChatGPT adds unified search and quadruples its custom-instructions limit</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>Spotify founder Daniel Ek's Neko Health pairs proprietary body-scanning hardware with bloodwork and AI analysis to flag health issues early; it says more than 100,000 people have been scanned and 350,000-plus are on the waitlist as it opens its first US clinic in New York on the back of a fresh $700M round.</p>
-      <div class="why"><b>Why it matters:</b> Consumer preventive-health AI is one of the fastest-growing applied-AI product categories — but scaling clinical diagnostics to the public also stress-tests how much medical judgment people are willing to hand to an algorithm.</div>
-      <div class="src"><a href="https://www.mobihealthnews.com/news/neko-health-raises-700m-ai-full-body-health-scans" target="_blank">Source</a></div>
+      <p>OpenAI rolled out unified search across chats, projects, images and documents on web, iOS and Android, letting users find past content from one place with content-type filters. Separately, custom instructions jumped to 5,000 characters (up from 1,500) for Plus, Pro, Enterprise, Business and Education users.</p>
+      <div class="why"><b>Why it matters:</b> As ChatGPT becomes a system of record for people's work, retrieval and durable personalization — not just raw model quality — are what turn a chatbot into stickier daily infrastructure.</div>
+      <div class="src"><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -408,29 +390,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3><a href="https://www.bloomberg.com/news/articles/2026-06-28/samsung-sk-reportedly-to-invest-1-3-trillion-over-10-years" target="_blank" rel="noopener">South Korea marshals ~$880B from Samsung and SK Hynix for an AI supply-chain moonshot</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Seoul is orchestrating at least 1,350 trillion won (~$880B) of company-led investment — roughly $513B for memory fabs plus HBM packaging and about $352B toward 18.4GW of data centers by 2035 (8.4GW by 2029) — in an explicit bid to sit at the center of the global AI supply chain, alongside a humanoid-robotics push.</p>
-      <div class="why"><b>Why it matters:</b> Memory and data-center capacity are the physical chokepoints of the AI buildout; a state-coordinated program at this scale is Korea betting its industrial future that owning that supply is as strategic as building the models.</div>
-      <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-06-28/samsung-sk-reportedly-to-invest-1-3-trillion-over-10-years" target="_blank">Source</a></div>
+      <h3><a href="https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google" target="_blank" rel="noopener">OpenAI, Anthropic and Google DeepMind converge on the same AI-regulation playbook</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Within a five-week stretch, the CEOs of the three leading labs each published detailed views that land on the same prescriptions: independent pre-release testing of frontier models, a standards body that can certify compliance and limit access to dangerous systems, and US leadership over a patchwork of state or rival national regimes. Demis Hassabis's proposal — a FINRA-style, industry-funded watchdog under government oversight — drew rare public praise from Sam Altman, Satya Nadella and even Elon Musk, and he heads to Washington next week to lobby for it.</p>
+      <div class="why"><b>Why it matters:</b> Rivals who spent years resisting outside oversight now agreeing, in writing, on external testing marks the end of the self-reporting era — and whoever shapes the standards body's rules gains enormous leverage over what "safe enough to ship" means.</div>
+      <div class="src"><a href="https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/" target="_blank" rel="noopener">Neko Health raises $700M at a ~$7B valuation for AI preventive care</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>The Series C, led by Lightspeed and co-led by O.G. Venture Partners, roughly quadruples Neko's valuation from its early-2025 Series B and draws a long roster of celebrity and founder backers. The Swedish-born company, now in the UK and Sweden, is opening its first US clinic in New York.</p>
-      <div class="why"><b>Why it matters:</b> A $700M round for AI-driven body scanning shows investors are writing consumer-healthcare AI checks at frontier-lab scale — a bet that preventive diagnostics is one of AI's largest untapped consumer markets.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/" target="_blank">Source</a></div>
+      <h3><a href="https://tribune.com.pk/story/2618236/global-ai-summit-set-to-open-in-shanghai-from-july-17-20" target="_blank" rel="noopener">Shanghai's World AI Conference opens with Xi attending and governance center-stage</a></h3>
+      <div class="date">📅 Jul 17, 2026</div>
+      <p>The World Artificial Intelligence Conference and High-Level Meeting on Global AI Governance runs July 17-20 in Shanghai, with more than 140 forums, over 1,100 exhibitors, and Xi Jinping attending the opening. Under the theme "Intelligent Partners, Co-create the Future," Beijing is using the summit to press its own multilateral AI-governance framework built on openness and cooperation.</p>
+      <div class="why"><b>Why it matters:</b> As the US labs coalesce around a Washington-led standards body, China is staging a competing global-governance vision the same week — a reminder that the fight over AI rules is now as geopolitical as the race over the models themselves.</div>
+      <div class="src"><a href="https://tribune.com.pk/story/2618236/global-ai-summit-set-to-open-in-shanghai-from-july-17-20" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://skift.com/2026/07/07/mews-layoffs-restructuring-ai/" target="_blank" rel="noopener">Hotel-software unicorn Mews cuts 15% of staff and blames AI directly</a></h3>
-      <div class="date stale">📅 Jul 7, 2026</div>
-      <p>Mews is laying off about 170 of its roughly 1,350 employees — its deepest restructuring since the pandemic — with founder Richard Valtr saying AI has made the roles obsolete and pivoting the company from selling software toward absorbing hotel operations work like revenue management and procurement.</p>
-      <div class="why"><b>Why it matters:</b> Most "AI layoffs" are hedged as broad restructurings; a well-funded unicorn openly naming AI as the cause — while pivoting to an AI-services model — is a candid preview of how automation reshapes headcount at software companies themselves.</div>
-      <div class="src"><a href="https://skift.com/2026/07/07/mews-layoffs-restructuring-ai/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://www.prnewswire.com/news-releases/wonder-announces-650-million-series-d-round-at-a-9-billion-pre-money-valuation-302827208.html" target="_blank" rel="noopener">Wonder raises $650M at a $9B valuation to scale AI-and-robotics food operations</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Food-tech platform Wonder closed a $650M Series D at a $9B pre-money valuation, with Accel, GV, NEA, ARK Invest and AllianceBernstein-managed funds participating. The company — which has tripled from 46 to 140 locations since mid-2025 — says the money will fund expansion plus investments in kitchen robotics and AI.</p>
+      <div class="why"><b>Why it matters:</b> Nine-figure rounds are still flowing to AI-and-robotics applications well outside the model labs, a sign investors see the buildout paying off in physical, vertically integrated operations — not just chatbots.</div>
+      <div class="src"><a href="https://www.prnewswire.com/news-releases/wonder-announces-650-million-series-d-round-at-a-9-billion-pre-money-valuation-302827208.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
@@ -450,14 +432,14 @@
 <div class="lead">
   <h2>Top of the Morning — Tech</h2>
   <ul>
-    <li><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank" rel="noopener">Stripe and Advent reportedly offer $53B to take PayPal private, sending PYPL shares soaring.</a></li>
-    <li><a href="https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/" target="_blank" rel="noopener">Apple stock hits an all-time high after China clears Apple Intelligence to launch there, powered by Alibaba's Qwen.</a></li>
-    <li><a href="https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html" target="_blank" rel="noopener">ASML beats Q2 estimates and raises its 2026 outlook for the second time this year — yet the stock still slips.</a></li>
-    <li><a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-slashes-list-of-authorized-customers-in-asia-in-a-bid-to-reduce-ai-chip-smuggling-report-claims-company-sent-field-inspectors-called-customers-to-check-if-business-is-genuine-after-pressure-from-washington" target="_blank" rel="noopener">Nvidia strips more than half of its approved Asian AI-chip buyers off a new compliance "white list."</a></li>
-    <li><a href="https://www.theregister.com/ai-and-ml/2026/07/14/musk-promises-purge-after-grok-build-caught-sending-entire-repos-to-the-cloud/5271123" target="_blank" rel="noopener">Musk pledges to open-source X's entire codebase, "no exceptions," after a Grok Build privacy backlash.</a></li>
-    <li><a href="https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-16-2026" target="_blank" rel="noopener">SpaceX targets tonight for Starship Flight 13 — the first flight to carry production V3 Starlink satellites.</a></li>
+    <li><a href="https://techcrunch.com/2026/07/16/ubers-14-8b-delivery-hero-deal-would-nearly-double-its-global-footprint/" target="_blank" rel="noopener">Uber agrees to buy Germany's Delivery Hero for $14.8B, nearly doubling its global delivery footprint to 99 markets.</a></li>
+    <li><a href="https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-2026-earnings-record-112109987.html" target="_blank" rel="noopener">TSMC posts a record quarter on AI demand, hikes 2026 capex to $60–64B, and pledges another $100B for Arizona.</a></li>
+    <li><a href="https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" target="_blank" rel="noopener">Netflix beats on earnings but a soft Q3 outlook sends shares down as much as 9% to a one-year low.</a></li>
+    <li><a href="https://9to5google.com/2026/07/15/google-play-store-third-party-android-app-store-changes-july/" target="_blank" rel="noopener">Google will let Android users install rival app stores straight from Google Play starting July 22.</a></li>
+    <li><a href="https://spaceflightnow.com/2026/07/16/live-coverage-spacex-to-deploy-first-starlink-v3-satellites-on-suborbital-starship-super-heavy-flight/" target="_blank" rel="noopener">A last-second engine anomaly aborts Starship Flight 13, delaying the debut of production Starlink V3 satellites.</a></li>
+    <li><a href="https://www.space.com/astronomy/exoplanets/found-you-astronomers-spot-faintest-exoplanet-ever-seen-from-earth-after-a-decade-of-hide-and-seek" target="_blank" rel="noopener">Webb finds Beta Pictoris d — the faintest exoplanet ever directly imaged from Earth — after a decade of hunting.</a></li>
   </ul>
-  <p class="rosternote">Roster update: no new sources met the bar today — see Tech Sources.</p>
+  <p class="rosternote">Roster update: added 1 new source today — see Tech Sources.</p>
 </div>
 
 <section>
@@ -466,38 +448,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Major</span></div>
-      <h3><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank" rel="noopener">Stripe and Advent make a $53B bid to take PayPal private</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Reuters reports Stripe and private-equity firm Advent International jointly offered $60.50 a share — a 28% premium — to buy PayPal in a deal backed by roughly $50 billion in committed bank financing. The approach, first floated in April and resubmitted this month, hasn't drawn a response yet from PayPal's board.</p>
-      <div class="why"><b>Why it matters:</b> A combined Stripe-PayPal would process an estimated $3.7 trillion a year in payment volume, reshaping online payments just as Stripe's IPO ambitions and PayPal's turnaround both hang in the balance.</div>
-      <div class="src"><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank">CNBC</a></div>
+      <h3><a href="https://techcrunch.com/2026/07/16/ubers-14-8b-delivery-hero-deal-would-nearly-double-its-global-footprint/" target="_blank" rel="noopener">Uber strikes a $14.8B deal to buy Delivery Hero</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Uber agreed to acquire Frankfurt-listed Delivery Hero for €41.50 a share in cash, an equity value of about $14.8 billion, in a combination that spans 99 markets with roughly $236 billion in combined 2025 gross bookings. Delivery Hero's boards unanimously back the offer, and Uber will separately divest the company's businesses in 14 markets to SSW Partners for about $1.6 billion.</p>
+      <div class="why"><b>Why it matters:</b> The deal nearly doubles Uber's global delivery reach and creates the largest food-delivery platform outside China — a major bet on consolidation just as the sector's growth cools, though it faces a long regulatory review before an expected 2027 close.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/16/ubers-14-8b-delivery-hero-deal-would-nearly-double-its-global-footprint/" target="_blank">TechCrunch</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/" target="_blank" rel="noopener">Apple stock hits a record high as China clears Apple Intelligence via Alibaba's Qwen</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>China's Cyberspace Administration approved Apple Intelligence to launch in the country by integrating Alibaba's Qwen model into iOS, iPadOS, macOS and visionOS, after Apple's earlier talks with Baidu, DeepSeek and ByteDance stalled. Alibaba's U.S.-listed shares jumped over 4% on the news, and Apple closed at a fresh all-time high of $327.50.</p>
-      <div class="why"><b>Why it matters:</b> Losing China's roughly 1-billion-user iPhone market to a feature gap has dogged Apple's AI push for two years; a homegrown-model workaround finally unblocks Apple Intelligence in its most important growth market.</div>
-      <div class="src"><a href="https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/" target="_blank">TechCrunch</a></div>
+      <h3><a href="https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-2026-earnings-record-112109987.html" target="_blank" rel="noopener">TSMC posts record profit, lifts capex, and adds $100B to its Arizona build-out</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Taiwan Semiconductor reported a record Q2 net income of NT$706.6 billion, up 77.4% year over year, on revenue of $40.2 billion, and raised its 2026 capital-spending outlook to $60–64 billion from $52–56 billion. CEO C.C. Wei also announced an additional $100 billion investment in Arizona — lifting TSMC's total U.S. commitment there to $265 billion — and lifted full-year revenue growth guidance to above 40%.</p>
+      <div class="why"><b>Why it matters:</b> As the sole foundry for the most advanced AI chips, TSMC's record results and back-to-back capex hikes are the clearest read yet that the AI hardware buildout is still accelerating — and its expanded Arizona footprint deepens the U.S. push to onshore leading-edge chipmaking.</div>
+      <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-2026-earnings-record-112109987.html" target="_blank">Yahoo Finance / Quartz</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html" target="_blank" rel="noopener">ASML raises 2026 guidance a second time on AI-chip demand — but shares still fall</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>ASML reported Q2 net sales of €9.3 billion and net income of €2.9 billion, both beating estimates, and lifted its full-year 2026 sales outlook to €43–45 billion from €36–40 billion as CEO Christophe Fouquet called order intake "extremely strong." The chipmaking-equipment giant plans to expand EUV and DUV lithography capacity by 30% in each of the next two years — yet the stock fell as investors judged the upgrade already priced in.</p>
-      <div class="why"><b>Why it matters:</b> ASML's tools are the choke point for advanced-chip production; a second guidance hike this year confirms the AI buildout is still accelerating even as markets grow twitchy about how much further the rally can run.</div>
-      <div class="src"><a href="https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html" target="_blank">CNBC</a></div>
+      <h3><a href="https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" target="_blank" rel="noopener">Netflix beats on earnings but a soft outlook drags shares to a one-year low</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Netflix reported Q2 revenue of $12.56 billion, up 13.4%, and net income of $3.4 billion (80 cents a share), edging past profit estimates on membership growth, pricing, and ad revenue it still expects to double to $3 billion this year. But guidance for 11.7% Q3 growth undershot Wall Street, and the stock fell as much as 9% after hours to its lowest level in more than a year.</p>
+      <div class="why"><b>Why it matters:</b> After two years of strong gains, investors are now scrutinizing whether Netflix's advertising and pricing engine can keep offsetting slowing engagement growth — and a cautious outlook was enough to break the momentum.</div>
+      <div class="src"><a href="https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" target="_blank">CNBC</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-slashes-list-of-authorized-customers-in-asia-in-a-bid-to-reduce-ai-chip-smuggling-report-claims-company-sent-field-inspectors-called-customers-to-check-if-business-is-genuine-after-pressure-from-washington" target="_blank" rel="noopener">Nvidia halves its list of approved Asian AI-chip buyers</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Per a Financial Times report, Nvidia has stripped more than half of its previously authorized Asian customers — mostly neo-cloud providers in Singapore, Malaysia and Japan — off a new buyer "white list," after sending field inspectors and calling customers to verify their business was genuine. The crackdown follows a May 31 U.S. Commerce Department rule expanding export-control reach across the whole Asia-Pacific supply chain.</p>
-      <div class="why"><b>Why it matters:</b> Washington is pushing Nvidia to police its own customer base to stop chips reaching China by the back door — turning a chipmaker into a de facto export-compliance enforcer for an entire region.</div>
-      <div class="src"><a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-slashes-list-of-authorized-customers-in-asia-in-a-bid-to-reduce-ai-chip-smuggling-report-claims-company-sent-field-inspectors-called-customers-to-check-if-business-is-genuine-after-pressure-from-washington" target="_blank">Tom's Hardware</a></div>
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3><a href="https://www.cnbc.com/2026/07/13/chinese-humanoid-startups-ipo-limx-unitree.html" target="_blank" rel="noopener">Chinese humanoid-robot startups rush toward IPOs</a></h3>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>A wave of Chinese humanoid-robotics companies — including Unitree and LimX Dynamics, which just raised a $200 million pre-IPO round at a ~$2.2 billion valuation — are racing to go public, with founders describing a listing as "a must" to fund scaling. The push follows a record fundraising stretch that saw billions poured into the "physical AI" sector over the past year.</p>
+      <div class="why"><b>Why it matters:</b> A cluster of humanoid IPOs would give public markets their first real read on the economics of a still-unproven industry, and underscores how aggressively China is trying to industrialize robotics ahead of Western rivals.</div>
+      <div class="src"><a href="https://www.cnbc.com/2026/07/13/chinese-humanoid-startups-ipo-limx-unitree.html" target="_blank">CNBC</a></div>
     </div>
 
   </div>
@@ -509,29 +491,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.engadget.com/2216077/samsung-galaxy-s26-ultra-screens-turning-red-not-sure-why/" target="_blank" rel="noopener">Samsung confirms some Galaxy S26 Ultra screens are turning red — and doesn't know why</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Owners have posted photos of a pink-red rectangle developing in the center of their Galaxy S26 Ultra displays, with reports dating back to March and intensifying after months of use. Samsung confirmed the issue and said it is "examining the matter internally to confirm the cause," with the S26 Ultra's unique Privacy Display dimming pattern one suspected culprit.</p>
-      <div class="why"><b>Why it matters:</b> A flagship-only display defect with no known fix or cause is an awkward look for Samsung's newest privacy feature, right as it heads into a crowded foldables season.</div>
-      <div class="src"><a href="https://www.engadget.com/2216077/samsung-galaxy-s26-ultra-screens-turning-red-not-sure-why/" target="_blank">Engadget</a></div>
+      <h3><a href="https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-unpacked-2026-preview-galaxy-z-fold-8-z-flip-8-intelligent-eyewear-and-more" target="_blank" rel="noopener">Samsung's July 22 Unpacked: new foldables, watches, and its first smart glasses</a></h3>
+      <div class="date">📅 Jul 16, 2026</div>
+      <p>Samsung's next Galaxy Unpacked lands July 22 in London, where it's expected to reveal the Galaxy Z Fold 8 and a wider Z Fold 8 Ultra — debuting a new "Flex Titanium" hinge and screen tech billed as reducing the crease — alongside the Z Flip 8, two new Galaxy Watches, and its first Android XR smart glasses built with Gentle Monster.</p>
+      <div class="why"><b>Why it matters:</b> The event is Samsung's biggest device showcase of the season, and its debut of camera-and-audio smart glasses would put it head-to-head with Meta's Ray-Bans in the fast-emerging AI-eyewear category before Apple enters it.</div>
+      <div class="src"><a href="https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-unpacked-2026-preview-galaxy-z-fold-8-z-flip-8-intelligent-eyewear-and-more" target="_blank">Tom's Guide</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://9to5mac.com/2026/07/15/airpods-just-got-a-long-requested-feature-in-new-public-beta/" target="_blank" rel="noopener">AirPods finally get custom EQ in a new public beta</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Apple's AirPods firmware public beta (build 9A314b) adds long-requested custom EQ controls, found under Settings &gt; AirPods &gt; Audio and Routing, for every H2-chip model: AirPods Pro 2 and 3, AirPods 4 (with and without ANC), and AirPods Max 2. It arrives a day after the iOS 27 public beta, which the update depends on.</p>
-      <div class="why"><b>Why it matters:</b> Custom EQ has been one of AirPods users' most-requested features for years; pairing it with iOS 27's broader audio overhaul suggests Apple is finally treating AirPods software as a first-class release, not an afterthought.</div>
-      <div class="src"><a href="https://9to5mac.com/2026/07/15/airpods-just-got-a-long-requested-feature-in-new-public-beta/" target="_blank">9to5Mac</a></div>
+      <h3><a href="https://9to5google.com/2026/07/07/nothing-phone-4b-hands-on-launch-price-specs/" target="_blank" rel="noopener">Nothing Phone (4b) is the brand's cheapest handset yet</a></h3>
+      <div class="date stale">📅 Jul 7, 2026</div>
+      <p>Nothing's first b-series phone pairs a 6.77-inch 120Hz AMOLED display, Snapdragon 6 Gen 4 chip, and a 50MP main camera with the company's signature Glyph LED lighting, running Android 16 with three years of OS updates. Priced at £299/€329, it began shipping to buyers in mid-July as a more accessible entry point into Nothing's ecosystem.</p>
+      <div class="why"><b>Why it matters:</b> Nothing is pushing its distinctive design language deeper into the budget tier, testing whether style and long software support can win value buyers in a segment usually defined purely by spec-per-dollar.</div>
+      <div class="src"><a href="https://9to5google.com/2026/07/07/nothing-phone-4b-hands-on-launch-price-specs/" target="_blank">9to5Google</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://www.gsmarena.com/motorola_edge_70_max_is_official_with_a_7100mah_battery_and_68inch_display-news-73726.php" target="_blank" rel="noopener">Motorola's Edge 70 Max lands in India with a 7,100mAh battery</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Motorola's new mid-range flagship pairs a 6.8-inch 144Hz Quad HD+ AMOLED display and Snapdragon 8 Gen 5 chip with a 7,100mAh battery, 90W wired and 25W magnetic wireless charging, and a 50MP Sony LYTIA 710 main camera. It goes on sale July 20 starting at roughly ₹54,999 (about $570).</p>
-      <div class="why"><b>Why it matters:</b> Motorola is chasing battery size as its differentiator in a saturated mid-range market — a reminder that endurance, not cameras or chipsets, has become the newest smartphone battleground.</div>
-      <div class="src"><a href="https://www.gsmarena.com/motorola_edge_70_max_is_official_with_a_7100mah_battery_and_68inch_display-news-73726.php" target="_blank">GSMArena</a></div>
+      <h3><a href="https://www.gearpatrol.com/audio/best-tech-audio-hi-fi-releases-2026-july-week-1/" target="_blank" rel="noopener">Sony marks a decade of noise-cancelers with the 1000X "ColleXion"</a></h3>
+      <div class="date stale">📅 Jul 3, 2026</div>
+      <p>Sony introduced the 1000X The ColleXion, a limited flagship pair of over-ear noise-canceling headphones celebrating the 10th anniversary of its 1000X series, swapping in more premium materials like soft vegan leather and metal accents over the standard 1000XM6.</p>
+      <div class="why"><b>Why it matters:</b> The anniversary edition signals Sony leaning into premium materials and brand heritage to defend the high end of the ANC-headphone market against Apple, Bose, and a growing field of cheaper challengers.</div>
+      <div class="src"><a href="https://www.gearpatrol.com/audio/best-tech-audio-hi-fi-releases-2026-july-week-1/" target="_blank">Gear Patrol</a></div>
     </div>
 
   </div>
@@ -543,29 +525,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.theregister.com/ai-and-ml/2026/07/14/musk-promises-purge-after-grok-build-caught-sending-entire-repos-to-the-cloud/5271123" target="_blank" rel="noopener">Musk pledges to open-source X's entire codebase after a Grok Build privacy scandal</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>Security researchers found xAI's Grok Build coding tool was uploading users' entire private repositories — including .env files, credentials and Git history — to Google Cloud storage without clear consent, in one case sending 5.1GB for a task that needed 192KB. Musk responded by promising to make X's "entire codebase open source, with no exceptions" once a security review wraps, plus independent verification that public code matches what actually runs, and to delete previously uploaded user data.</p>
-      <div class="why"><b>Why it matters:</b> A platform-wide transparency pledge born out of a developer-tool privacy failure shows how quickly AI-coding-tool trust can evaporate — and how far a company now has to go to win it back.</div>
-      <div class="src"><a href="https://www.theregister.com/ai-and-ml/2026/07/14/musk-promises-purge-after-grok-build-caught-sending-entire-repos-to-the-cloud/5271123" target="_blank">The Register</a></div>
+      <h3><a href="https://9to5google.com/2026/07/15/google-play-store-third-party-android-app-store-changes-july/" target="_blank" rel="noopener">Google will let Android users install rival app stores from Google Play on July 22</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>After Google and Epic Games jointly withdrew their latest bid to alter the court order in Epic's antitrust win, Google confirmed that starting July 22, U.S. users can download competing app stores directly from within Google Play instead of through sideloading. Developers' U.S. listings will automatically become available to rival stores unless they opt out, and third-party store operators pay a $5,000 annual fee.</p>
+      <div class="why"><b>Why it matters:</b> It's the most consequential opening of Android's app economy yet — pitting Google's long-standing 30% commission against stores like Epic's that charge as little as 12%, and setting a template regulators elsewhere will watch closely.</div>
+      <div class="src"><a href="https://9to5google.com/2026/07/15/google-play-store-third-party-android-app-store-changes-july/" target="_blank">9to5Google</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.404media.co/hack-reveals-suno-ai-music-generator-scraped-youtube-deezer-and-genius/" target="_blank" rel="noopener">Hacked Suno source code reveals how the AI music generator scraped YouTube, Deezer and Genius</a></h3>
+      <h3><a href="https://www.socialmediatoday.com/news/tiktok-bans-ai-generated-voices-in-shopping-livestreams/822977/" target="_blank" rel="noopener">TikTok Shop bans AI voices and prerecorded audio from shopping livestreams</a></h3>
       <div class="date">📅 Jul 15, 2026</div>
-      <p>A hacker breached Suno and obtained 2023–2024 source code showing scraping pipelines pulling from YouTube Music, Deezer, Genius, Jamendo, Freesound, IMSLP and podcast RSS feeds — including a dataset tagged "152,162 hours of ytm_tagged" — reportedly routed through scraping-infrastructure vendor Bright Data. The breach also exposed user account and Stripe payment data for hundreds of thousands of Suno customers.</p>
-      <div class="why"><b>Why it matters:</b> It's a rare inside look, via a hack rather than a leak or lawsuit filing, at exactly how an AI-training pipeline was built — evidence that will likely feed the copyright fights already surrounding AI music generators.</div>
-      <div class="src"><a href="https://www.404media.co/hack-reveals-suno-ai-music-generator-scraped-youtube-deezer-and-genius/" target="_blank">404 Media</a></div>
+      <p>TikTok updated its Live rules to prohibit AI-generated voices, prerecorded audio, radio-style narration, and looping or static-image content in shopping livestreams, requiring hosts to communicate in real time by voice or sign language. Violations now feed the platform's new 0-to-1,000 Account Health Rating, which governs seller access to campaigns and commissions.</p>
+      <div class="why"><b>Why it matters:</b> As AI-cloned voices and faux-live streams flood commerce platforms, TikTok is betting that enforcing genuine real-time human hosts protects buyer trust — a signal of how platforms are drawing lines around synthetic media in live shopping.</div>
+      <div class="src"><a href="https://www.socialmediatoday.com/news/tiktok-bans-ai-generated-voices-in-shopping-livestreams/822977/" target="_blank">Social Media Today</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://www.phoronix.com/news/Linux-7.2-rc3-Released" target="_blank" rel="noopener">Linux 7.2-rc3 lands as the kernel inches toward an August stable release</a></h3>
-      <div class="date stale">📅 Jul 12, 2026</div>
-      <p>The third release candidate for Linux 7.2 adds Ultra RISC-V support to the default RISC-V config, SEGA Dreamcast driver fixes, multi-GPU display-detection improvements, and marks veteran LLVM contributor Nick Desaulniers' return to kernel build tooling. The kernel source tree now tops 43 million lines, with a stable 7.2 release expected in August.</p>
-      <div class="why"><b>Why it matters:</b> An unremarkable, on-schedule release cycle is itself notable — after several kernel versions marked by disruptive changes, this one is trending toward the quietest "new normal" in a while.</div>
-      <div class="src"><a href="https://www.phoronix.com/news/Linux-7.2-rc3-Released" target="_blank">Phoronix</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-latest-update-will-let-you-pause-updates-indefinitely" target="_blank" rel="noopener">Windows 11's July update adds indefinite update pausing and one-click system restore</a></h3>
+      <div class="date stale">📅 Jul 14, 2026</div>
+      <p>Microsoft's July 2026 Patch Tuesday update lets users pause Windows Update on a calendar up to 35 days at a time and introduces Point-in-Time Restore, a Home and Pro feature that snapshots settings, files, and apps to quickly roll a PC back to a good state. The release also brings quieter Widgets defaults, a faster File Explorer, and a major Bluetooth fix.</p>
+      <div class="why"><b>Why it matters:</b> Giving users far more control over when updates install — and an easy full-system rollback — directly addresses two of the longest-running frustrations with Windows, and reflects Microsoft's push to make the OS feel less disruptive.</div>
+      <div class="src"><a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-latest-update-will-let-you-pause-updates-indefinitely" target="_blank">Windows Central</a></div>
     </div>
 
   </div>
@@ -577,29 +559,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-16-2026" target="_blank" rel="noopener">SpaceX targets tonight for Starship Flight 13, the first flight of V3 Starlink satellites</a></h3>
+      <h3><a href="https://spaceflightnow.com/2026/07/16/live-coverage-spacex-to-deploy-first-starlink-v3-satellites-on-suborbital-starship-super-heavy-flight/" target="_blank" rel="noopener">A last-second engine anomaly aborts SpaceX's Starship Flight 13</a></h3>
       <div class="date">📅 Jul 16, 2026</div>
-      <p>Starship's 13th test flight — the second launch of the vehicle's Version 3 configuration — is set for a 90-minute window opening 6:45 p.m. EDT from Starbase, Texas, after the FAA closed its Flight 12 investigation. The mission will deploy 20 functioning Starlink V3 satellites, attempt a single in-space Raptor relight, and target a controlled splashdown in the Indian Ocean.</p>
-      <div class="why"><b>Why it matters:</b> Successfully deploying operational V3 Starlink satellites — not just test masses — would be the clearest sign yet that Starship is transitioning from test article to working satellite-launch workhorse.</div>
-      <div class="src"><a href="https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-16-2026" target="_blank">Space.com</a></div>
+      <p>SpaceX reached Super Heavy ignition at Starbase but telemetry showed four booster engines failed to start as planned, triggering an automatic abort seconds before liftoff. The flight was set to deploy the first 20 production Starlink V3 satellites on a suborbital trajectory; Elon Musk said a next attempt could come "in a few days."</p>
+      <div class="why"><b>Why it matters:</b> Flight 13 is meant to prove Starship's V3 vehicle can deploy operational satellites, a milestone toward the orbital flights NASA is counting on for Artemis 3 — so even a clean pad abort resets a tight cadence SpaceX hopes to run monthly.</div>
+      <div class="src"><a href="https://spaceflightnow.com/2026/07/16/live-coverage-spacex-to-deploy-first-starlink-v3-satellites-on-suborbital-starship-super-heavy-flight/" target="_blank">Spaceflight Now</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.space.com/space-exploration/launches-spacecraft/soyuz-ms-29-astronaut-launch-international-space-station-anil-menon" target="_blank" rel="noopener">Soyuz MS-29 delivers a NASA astronaut and two cosmonauts to the ISS in a record-fast flight</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>NASA's Anil Menon and Roscosmos cosmonauts Pyotr Dubrov and Anna Kikina launched from Baikonur and docked with the ISS's Prichal module just three hours and four minutes later — far faster than typical six-to-48-hour rendezvous profiles. It's Menon's first spaceflight; the trio will spend roughly eight months aboard before returning in April 2027.</p>
-      <div class="why"><b>Why it matters:</b> Ultra-fast rendezvous profiles reduce crew fatigue and mission risk, and continued smooth Soyuz operations underscore how ISS crew rotation still depends on U.S.-Russia space cooperation even amid broader geopolitical friction.</div>
-      <div class="src"><a href="https://www.space.com/space-exploration/launches-spacecraft/soyuz-ms-29-astronaut-launch-international-space-station-anil-menon" target="_blank">Space.com</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://www.space.com/astronomy/exoplanets/found-you-astronomers-spot-faintest-exoplanet-ever-seen-from-earth-after-a-decade-of-hide-and-seek" target="_blank" rel="noopener">Webb spots Beta Pictoris d, the faintest exoplanet ever directly imaged</a></h3>
+      <div class="date">📅 Jul 15, 2026</div>
+      <p>Using the NIRSpec instrument on the James Webb Space Telescope, astronomers identified a third giant planet — Beta Pictoris d, at least twice Jupiter's mass — orbiting the intensely studied young star some 30 astronomical units out. It's the first directly imaged planet found primarily through moderate-resolution spectroscopy rather than traditional coronagraphic imaging.</p>
+      <div class="why"><b>Why it matters:</b> Detecting a planet by its atmospheric "fingerprint" in a crowded, dusty system proves a new technique for finding worlds that conventional imaging misses, expanding how and where astronomers can hunt for exoplanets.</div>
+      <div class="src"><a href="https://www.space.com/astronomy/exoplanets/found-you-astronomers-spot-faintest-exoplanet-ever-seen-from-earth-after-a-decade-of-hide-and-seek" target="_blank">Space.com</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-low">Watch</span></div>
-      <h3><a href="https://www.therobotreport.com/ai%C2%B2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/" target="_blank" rel="noopener">AI² Robotics raises $735M for wheeled humanoid robots</a></h3>
-      <div class="date stale">📅 Jul 10, 2026</div>
-      <p>The Shenzhen-based startup's fresh round values it at roughly $3 billion (50 billion RMB), with backers ranging from a Chinese state SME fund to Sino Biopharmaceutical and the Moutai Group. Its AlphaBot 2 pairs a humanoid torso and five-fingered hands with a wheeled base, aimed at logistics, manufacturing, biotech and retail deployments rather than the home.</p>
-      <div class="why"><b>Why it matters:</b> It's one of the largest humanoid-robotics rounds of the year, and another sign China's "physical AI" sector is racing to scale wheeled, task-specific humanoids into real workplaces well ahead of general-purpose home robots.</div>
-      <div class="src"><a href="https://www.therobotreport.com/ai%C2%B2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/" target="_blank">The Robot Report</a></div>
+      <h3><a href="https://thequantuminsider.com/2026/07/06/quantum-simulation-fusion-material-ornl-ibm-cleveland-clinic/" target="_blank" rel="noopener">Quantum computers model fusion-fuel material for the first time</a></h3>
+      <div class="date stale">📅 Jul 6, 2026</div>
+      <p>Researchers at Oak Ridge National Laboratory, Cleveland Clinic, and IBM calculated nine molecular configurations of FLiBe — a molten salt central to breeding tritium in future fusion reactors — the first known instance of such computations run on quantum computers. The work, tied to the U.S. Genesis Mission, blends high-performance and quantum computing to speed materials discovery.</p>
+      <div class="why"><b>Why it matters:</b> Simulating fusion-relevant chemistry on quantum hardware is an early but concrete example of quantum computing tackling a problem beyond classical reach, and points toward faster design of the materials commercial fusion will require.</div>
+      <div class="src"><a href="https://thequantuminsider.com/2026/07/06/quantum-simulation-fusion-material-ornl-ibm-cleveland-clinic/" target="_blank">The Quantum Insider</a></div>
     </div>
 
   </div>
