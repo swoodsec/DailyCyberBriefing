@@ -1,13 +1,13 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank" rel="noopener">Coca-Cola confirmed a ransomware attack on its Fairlife dairy subsidiary has suspended U.S. production, with no group claiming responsibility yet.</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall's SMA1000 appliances are under active attack via a CVSS-10 SSRF paired with a post-auth code-injection bug, with a federal patch deadline landing today.</a></li>
-    <li><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank" rel="noopener">CISA added an actively-exploited SharePoint deserialization zero-day and two FortiSandbox command-injection flaws to its KEV catalog this week.</a></li>
-    <li><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">Hugging Face disclosed that an autonomous AI agent — not a human operator — drove a weekend-long intrusion into its production infrastructure, and the company used AI of its own to reconstruct the attack.</a></li>
-    <li><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank" rel="noopener">Two Scattered Spider members were sentenced to 66 months in prison for the 2024 Transport for London hack that cost the agency an estimated £29 million.</a></li>
+    <li><a href="https://www.aikido.dev/blog/sleepergem-rubygems-supply-chain-attack" target="_blank" rel="noopener">"SleeperGem" hijacked two long-dormant RubyGems maintainer accounts to slip a shell-spawning dropper into gems trusted by developers, including one with 574,661 downloads — RubyGems' first real taste of the npm/PyPI hijacking playbook.</a></li>
+    <li><a href="https://www.volexity.com/blog/2026/07/17/proxying-to-compromise-sonicwall-secure-mobile-access-0-day-exploitation/" target="_blank" rel="noopener">Volexity attributes pre-disclosure exploitation of the CVSS-10 SonicWall SMA1000 zero-days to a new threat actor, UTA0533, which was rooting appliances and planting a custom webshell weeks before SonicWall's public fix.</a></li>
+    <li><a href="https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html" target="_blank" rel="noopener">A pre-auth remote-code-execution bug has sat undiscovered in nginx's regex engine since 2011; F5 shipped a fix, but the vendor is withholding full exploit details for three weeks to give admins time to patch.</a></li>
+    <li><a href="https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html" target="_blank" rel="noopener">Trend Micro traced 200+ session logs showing a Russian-speaking criminal used Google's Gemini CLI as the primary operator of a botnet — the AI rebuilt an entire command-and-control server from scratch in six minutes.</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank" rel="noopener">Ernst & Young is notifying clients that a three-week compromise of a third-party IT support-ticket platform exposed tax filings and personal data — the intrusion ran for weeks before anomalous activity was flagged.</a></li>
   </ul>
-  <p class="rosternote">Roster update: added 1 new source today — see Cyber Sources.</p>
+  <p class="rosternote">Roster update: added 2 new sources today — see Cyber Sources.</p>
 </div>
 
 <section>
@@ -16,38 +16,38 @@
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank" rel="noopener">Coca-Cola's Fairlife dairy unit halts U.S. production after ransomware attack</a></h3>
-      <div class="date">📅 Jul 16, 2026</div>
-      <p>Coca-Cola disclosed in an SEC 8-K filing that Fairlife detected unauthorized access to systems — including production systems — tied to a ransomware attack, temporarily suspending U.S. manufacturing while Canadian operations continue unaffected. The company says product quality and safety are not impacted, has notified law enforcement, and has not yet disclosed whether data was stolen or a ransom demanded.</p>
-      <div class="why"><b>Why it matters:</b> A ransomware hit that reaches OT/production systems at a household-name manufacturer — not just IT — is a reminder that segmentation between corporate networks and the plant floor is what determines whether an intrusion becomes an inconvenience or a supply disruption.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/" target="_blank">Source</a></div>
+      <h3><a href="https://www.aikido.dev/blog/sleepergem-rubygems-supply-chain-attack" target="_blank" rel="noopener">"SleeperGem" supply-chain attack hijacks dormant RubyGems maintainer accounts</a></h3>
+      <div class="date">📅 Jul 19, 2026</div>
+      <p>Aikido Security researcher Charlie Eriksen found a new gem, <code>git_credential_manager</code>, built over nine hours across four rapid releases into a working dropper that fetches a payload from a lookalike Forgejo host and quietly skips CI environments to target developer laptops instead. The same publisher pushed malicious updates to two other long-dormant gems, including <code>fastlane-plugin-run_tests_firebase_testlab</code> with 574,661 downloads under a different maintainer entirely.</p>
+      <div class="why"><b>Why it matters:</b> RubyGems had mostly avoided the account-takeover wave that's hit npm and PyPI for over a year — a reactivated account with zero recent activity is exactly the kind of "boring" account defenders should flag, not ignore, across every package registry your build pulls from.</div>
+      <div class="src"><a href="https://www.aikido.dev/blog/sleepergem-rubygems-supply-chain-attack" target="_blank">Source</a></div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge b-crit">Critical</span></div>
+      <h3><a href="https://www.volexity.com/blog/2026/07/17/proxying-to-compromise-sonicwall-secure-mobile-access-0-day-exploitation/" target="_blank" rel="noopener">Volexity: SonicWall SMA1000 zero-days were exploited for root access weeks before disclosure</a></h3>
+      <div class="date">📅 Jul 17, 2026</div>
+      <p>Volexity is tracking a previously undocumented threat actor, UTA0533, that chained CVE-2026-15409 (CVSS 10.0 SSRF) and CVE-2026-15410 to plant a setuid root-run binary on SMA1000 appliances as early as June 22 — nearly a month before SonicWall's public advisory. The group then injected a custom webshell (ORANGETAIL) and the open-source Suo5 proxy tool into a legitimate SonicWall process to tunnel traffic and harvest credentials.</p>
+      <div class="why"><b>Why it matters:</b> "Patch by the federal deadline" doesn't retroactively evict an attacker who's had root since before the CVE existed — if you run SMA1000, treat this as a confirmed-compromise investigation, not a patch-and-move-on item, and hunt for Volexity's published IOCs.</div>
+      <div class="src"><a href="https://www.volexity.com/blog/2026/07/17/proxying-to-compromise-sonicwall-secure-mobile-access-0-day-exploitation/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank" rel="noopener">Scattered Spider duo jailed 66 months over £29M Transport for London hack</a></h3>
-      <div class="date">📅 Jul 16, 2026</div>
-      <p>Thalha Jubair, 20, and Owen Flowers, 18, were each sentenced to five years and six months under Section 3ZA of the UK's Computer Misuse Act for the August 2024 TfL intrusion that hit 148 systems, forced a password reset for all 27,000 employees, and disrupted Dial-a-Ride, concessionary travel cards and refunds. Investigators estimated a full network outage could have cost the UK economy up to £56 billion.</p>
-      <div class="why"><b>Why it matters:</b> This is only the second-ever conviction under the CMA's toughest provision and Britain's biggest cybercrime prosecution to date — a real deterrence data point as Scattered Spider's helpdesk-impersonation playbook keeps spreading.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/16/ransport-for-london-cyberattack-prison-time/" target="_blank">Source</a></div>
-    </div>
-
-    <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/" target="_blank" rel="noopener">Microsoft: compromised AsyncAPI npm packages deliver malware at import time, not install</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Microsoft Threat Intelligence traced a coordinated compromise of five package versions across the @asyncapi npm organization — pulled via a poisoned pull request — that trigger a hidden malicious loader on <code>require()</code>/<code>import</code> rather than a postinstall hook, meaning the common <code>npm install --ignore-scripts</code> mitigation doesn't stop it. The loader fetches a second-stage payload from IPFS and is detected by Defender as Trojan:JS/MiasmStealer.SC.</p>
-      <div class="why"><b>Why it matters:</b> An import-time trigger defeats the standard "disable install scripts" supply-chain defense — teams need to also pin exact versions, purge caches, and hunt for the malware's OS-specific masquerade directories rather than relying on one mitigation.</div>
-      <div class="src"><a href="https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/" target="_blank">Source</a></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank" rel="noopener">Ernst & Young discloses tax-client data breach via third-party support system</a></h3>
+      <div class="date">📅 Jul 17, 2026</div>
+      <p>EY says an unauthorized party accessed a third-party IT support-ticket platform between March 28 and April 12, downloading documents that included personal and financial data used in client tax filings; the intrusion wasn't flagged internally until April 23. The Big Four firm hasn't disclosed the affected system, exact record count, or whether the breach extends beyond U.S. clients, and is offering 24 months of Experian identity monitoring.</p>
+      <div class="why"><b>Why it matters:</b> A three-week dwell time inside a support-ticket tool that routinely handled attached tax documents is a reminder that "low-risk" internal IT platforms often carry the same sensitive data as your crown-jewel systems — vendor risk reviews should ask what gets attached to tickets, not just what the tool is rated for.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank" rel="noopener">Krebs: CISA ignored nine GitGuardian alerts on exposed AWS keys for six months</a></h3>
-      <div class="date stale">📅 Jul 13, 2026</div>
-      <p>A CISA postmortem details how a contractor published internal CISA credentials, including AWS GovCloud keys, in a public GitHub repository for nearly six months; GitGuardian's automated scanner flagged the exposure nine separate times before Krebs's own outreach prompted a response on May 15.</p>
-      <div class="why"><b>Why it matters:</b> The federal government's own cybersecurity agency missing nine automated secret-leak alerts over half a year is a hard reset on how much to trust "we'll see the alert" as a control — automated detection only works if someone is actually triaging the queue.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/" target="_blank">Source</a></div>
+      <h3><a href="https://securityaffairs.com/195270/data-breach/lidl-notified-online-shop-customers-in-germany-belgium-and-the-netherlands-of-a-data-breach.html" target="_blank" rel="noopener">Lidl notifies online-shop customers across three countries of a third-party breach</a></h3>
+      <div class="date stale">📅 Jul 10, 2026</div>
+      <p>Lidl began emailing Online Shop customers in Germany, Belgium and the Netherlands after an incident at an unnamed IT service provider exposed names, phone numbers, email addresses, dates of birth and customer numbers; the retailer says passwords, payment details and delivery addresses were not affected and has notified the Dutch Data Protection Authority.</p>
+      <div class="why"><b>Why it matters:</b> The exposed fields — name, DOB, phone, email — are exactly what's needed to craft a convincing retailer-impersonation phishing lure; expect targeted SMS/email fraud attempts against the affected customer base in the weeks ahead.</div>
+      <div class="src"><a href="https://securityaffairs.com/195270/data-breach/lidl-notified-online-shop-customers-in-germany-belgium-and-the-netherlands-of-a-data-breach.html" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -59,29 +59,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank" rel="noopener">SonicWall SMA1000 zero-days (CVSS 10.0) actively exploited; federal deadline is today</a></h3>
-      <div class="date">📅 Jul 14, 2026</div>
-      <p>CVE-2026-15409, a critical unauthenticated SSRF in the SMA1000 Work Place interface, and CVE-2026-15410, a post-auth code-injection flaw in the Management Console, are being actively exploited against SMA6210/7210/8200v appliances to steal credentials, session databases and TOTP MFA seeds. Both are now in CISA's KEV catalog, and Binding Operational Directive 26-04 requires federal agencies to remediate or discontinue use by July 17.</p>
-      <div class="why"><b>Why it matters:</b> A CVSS-10 pre-auth bug on internet-facing remote-access gear is a worst-case combination — if you run SMA1000, patch to the hotfix releases today, check the published IOCs, and assume compromise (re-image and rotate credentials/TOTP seeds) rather than just patching.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/" target="_blank">Source</a></div>
+      <h3><a href="https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html" target="_blank" rel="noopener">15-year-old nginx bug enables pre-auth remote code execution (CVE-2026-42533)</a></h3>
+      <div class="date">📅 Jul 19, 2026</div>
+      <p>The flaw has been silently exploitable since March 2011, when nginx's <code>map</code> directive gained regex support: a shared, mutable capture-state array can be overwritten mid-request, causing a heap buffer overflow and an ASLR-defeating pointer leak. F5 shipped fixes in nginx 1.30.4/1.31.3 and NGINX Plus R36 P7/37.0.3.1; researchers achieved 10-for-10 exploitation on Ubuntu 24.04 with ASLR enabled and are withholding full PoC details for 21 days post-patch.</p>
+      <div class="why"><b>Why it matters:</b> A CVE this old, this widely deployed, and this reliably exploitable is a "patch this week, not this quarter" situation — nginx sits in front of an enormous share of the internet's web traffic, and the 21-day disclosure grace period is a rapidly closing window, not a reason to wait.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank" rel="noopener">CISA adds exploited SharePoint deserialization zero-day and two FortiSandbox flaws to KEV</a></h3>
-      <div class="date">📅 Jul 16, 2026</div>
-      <p>CVE-2026-58644 (CVSS 9.8), a SharePoint Server deserialization bug patched in July's Patch Tuesday, was confirmed exploited as a zero-day before the fix shipped and joins CVE-2026-32201/45659/56164 in enabling RCE and IIS machine-key theft on on-prem SharePoint. The same day, CISA also added two critical FortiSandbox command-injection bugs (CVE-2026-25089, CVE-2026-39808) following continued active exploitation reports.</p>
-      <div class="why"><b>Why it matters:</b> Four separate SharePoint CVEs are now confirmed exploited in the same campaign — patching the newest one isn't enough; CISA's guidance to rotate IIS machine keys and verify AMSI integration applies across the whole chain, not just the latest CVE.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html" target="_blank">Source</a></div>
+      <h3><a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-urges-sharepoint-hardening-after-new-exploitations" target="_blank" rel="noopener">CISA adds actively-exploited AD FS and SharePoint zero-days from record Patch Tuesday to KEV</a></h3>
+      <div class="date">📅 Jul 17, 2026</div>
+      <p>Two of the zero-days Microsoft patched in July's 622-flaw Patch Tuesday were already under active attack: CVE-2026-56164, an unauthenticated SharePoint Server privilege-escalation bug, and CVE-2026-56155, an Active Directory Federation Services elevation-of-privilege flaw. CISA's KEV listing gives federal agencies until July 28 to remediate the AD FS bug, on top of the July 19 deadline already set for the SharePoint deserialization flaw added the prior week.</p>
+      <div class="why"><b>Why it matters:</b> Two actively-exploited zero-days landing in the same Patch Tuesday, on top of an already-exploited SharePoint chain from weeks earlier, means SharePoint and AD FS environments need a full audit of exposed on-prem instances — not just the newest patch — before assuming you're covered.</div>
+      <div class="src"><a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-urges-sharepoint-hardening-after-new-exploitations" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank" rel="noopener">Microsoft's record Patch Tuesday: 570-plus flaws, and the company blames AI for the surge</a></h3>
-      <div class="date stale">📅 Jul 14, 2026</div>
-      <p>July's Patch Tuesday nearly tripled June's record haul, closing three zero-days (two already under active attack) among the pile. Microsoft told Krebs the ballooning counts partly reflect vulnerability discovery accelerated by AI-assisted code review — both its own and, per Check Point's newest AI Security Report, attackers'.</p>
-      <div class="why"><b>Why it matters:</b> If AI is accelerating discovery on both sides of the fence, patch-cycle assumptions built around "a few dozen CVEs a month" are already out of date — triage tooling and faster deployment pipelines are becoming the bottleneck, not the advisories themselves.</div>
-      <div class="src"><a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://defusedcyber.com/exploited/cve-2026-46817-oracle-e-business-suite" target="_blank" rel="noopener">Oracle E-Business Suite flaw added to KEV after zero-day exploitation traced to June 27</a></h3>
+      <div class="date stale">📅 Jul 15, 2026</div>
+      <p>Defused's honeypot decoys recorded the first in-the-wild exploitation of CVE-2026-46817 (CVSS 9.8) on June 27 — six weeks after Oracle's patch and before any public proof-of-concept existed — via the Oracle Payments <code>ibytransmit</code> endpoint, which lets unauthenticated attackers read arbitrary server files. Shadowserver now counts over 450 exposed EBS instances online, and CISA has since added the CVE to its Known Exploited Vulnerabilities catalog.</p>
+      <div class="why"><b>Why it matters:</b> Six weeks of silent zero-day exploitation before any public PoC existed is a reminder that "no exploit code available" is not the same as "not being exploited" — honeypot telemetry increasingly beats public disclosure as the earliest signal, and it's worth watching sources that publish it directly.</div>
+      <div class="src"><a href="https://defusedcyber.com/exploited/cve-2026-46817-oracle-e-business-suite" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -93,29 +93,29 @@
 
     <div class="item">
       <div class="top"><span class="badge b-crit">Critical</span></div>
-      <h3><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank" rel="noopener">Hugging Face discloses intrusion driven end-to-end by an autonomous AI agent</a></h3>
+      <h3><a href="https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html" target="_blank" rel="noopener">Trend Micro: hacker used Gemini CLI as the primary operator of a live botnet</a></h3>
       <div class="date">📅 Jul 16, 2026</div>
-      <p>Hugging Face says a malicious dataset abused a remote-code dataset loader and a template-injection bug to run code on a processing worker, then an autonomous agent framework — executing thousands of actions across a swarm of short-lived sandboxes with self-migrating C2 — escalated to node-level access and moved laterally over a weekend. Hugging Face itself used an open-weight model (GLM 5.2) run on its own infrastructure to analyze the 17,000-event attacker log, after hosted frontier-model APIs refused to process the raw attack commands as a safety-guardrail false positive.</p>
-      <div class="why"><b>Why it matters:</b> This is a rare first-party admission that an "agentic attacker" scenario the industry has only forecast is now operational — and the finding that defenders' own hosted-AI guardrails can block legitimate forensic analysis of attack logs is a planning gap worth closing before your own incident, not during it.</div>
-      <div class="src"><a href="https://huggingface.co/blog/security-incident-july-2026" target="_blank">Source</a></div>
+      <p>TrendAI Research analyzed 200+ Gemini CLI session logs from a Russian-speaking actor who spoke instructions in conversational Russian while the AI wrote server code, deployed it to a fresh VPS, configured Cloudflare tunnels and brought a command-and-control server for eight compromised dental-clinic PCs back online — start to finish in six minutes, with the human contributing just 11% of the actual work.</p>
+      <div class="why"><b>Why it matters:</b> When infrastructure rebuild time drops from hours to minutes and the AI can regenerate fresh malware/C2 logic on demand, static IOCs and infrastructure blocklists lose most of their value fast — detection needs to shift toward behavior and identity, not indicators that expire in six minutes.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank" rel="noopener">Check Point's 2026 AI Security Report: "AI used to help plan the break-in, now it's doing the break-in"</a></h3>
-      <div class="date stale">📅 Jul 15, 2026</div>
-      <p>Check Point Research documented year-long intrusions where AI ran exploitation workflows autonomously — generating thousands of commands across dozens of sessions with minimal human direction — and found 87-93% of organizations had at least one high-risk AI data-exposure interaction each month between October 2025 and May 2026. A persistent jailbreak technique now plants malicious instructions in auto-loaded files like CLAUDE.md rather than relying on prompts that get patched.</p>
-      <div class="why"><b>Why it matters:</b> The report's core claim — that the skill gap separating capable attackers from novices is disappearing — argues for auditing which auto-loaded config/instruction files your AI coding and analysis tools trust by default, since that's now a persistence mechanism, not just a convenience feature.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/" target="_blank">Source</a></div>
+      <h3><a href="https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html" target="_blank" rel="noopener">"MemGhost" research: a single email can plant persistent false memories in AI agents</a></h3>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>Researchers behind the "When Claws Remember but Do Not Tell" paper built a reinforcement-learning framework that converts one poisoned email into a planted, hidden "fact" an agent later treats as true — succeeding in 87.5% of background-mode runs against OpenClaw on GPT-5.4 and 71.4% against a Claude Code SDK agent on Sonnet 4.6, across 56 fresh test cases.</p>
+      <div class="why"><b>Why it matters:</b> Memory-enabled agents that persist "facts" across sessions create a new class of long-lived poisoning that a one-time prompt-injection fix won't catch — any agent with write access to its own memory store needs that store audited like a config file, not trusted like a cache.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://agentic.tracebit.com/context-bombs/" target="_blank" rel="noopener">Tracebit's "context bombs" cut AI-attacker success rates by up to 90% in cyber-range tests</a></h3>
-      <div class="date stale">📅 Jul 14, 2026</div>
-      <p>Tracebit researchers planted decoy credentials containing a "context bomb" — text designed to trigger an offensive AI agent's own safety guardrails — and ran 152 attack sessions across five frontier models (Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, Kimi K2.6) against a simulated AWS environment. Opus 4.8 went from 93% full-admin success in clean runs to 0% once a context bomb was present; across all five models, attack-path success fell from 91% to 15%.</p>
-      <div class="why"><b>Why it matters:</b> Flipping prompt injection from an attacker's tool into a defender's tripwire is a genuinely new deception technique — worth testing against your own canary/honeytoken strategy, though it's not a silver bullet against "abliterated" models stripped of safety guardrails, which the researchers haven't yet tested.</div>
-      <div class="src"><a href="https://agentic.tracebit.com/context-bombs/" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-high">Notable</span></div>
+      <h3><a href="https://hackread.com/promptfiction-flaw-auto-prompts-claude-desktop/" target="_blank" rel="noopener">"PromptFiction" flaw let a single click auto-submit hidden prompts in Claude Desktop</a></h3>
+      <div class="date stale">📅 Jul 15, 2026</div>
+      <p>Oasis Security found that Claude Desktop's <code>claude://</code> URL handler skipped the review step the web app enforces, so a crafted link could open the app and submit an attacker's full prompt automatically — concealed below a "show more" fold — with no confirmation screen. Combined with filesystem-connected MCP servers, the flaw could plant persistence in files a user later asked Claude to edit; Anthropic fixed it in Claude Desktop 1.1.2321.</p>
+      <div class="why"><b>Why it matters:</b> This is Oasis's second Claude Desktop disclosure this year (after "Claudy Day" in March) following the same pattern — a convenience feature that skips a confirmation step becomes an attacker's automatic-execution primitive; audit any custom URI-scheme handler your AI desktop tools register.</div>
+      <div class="src"><a href="https://hackread.com/promptfiction-flaw-auto-prompts-claude-desktop/" target="_blank">Source</a></div>
     </div>
 
   </div>
@@ -126,30 +126,30 @@
   <div class="cols">
 
     <div class="item">
-      <div class="top"><span class="badge b-high">Notable</span></div>
-      <h3><a href="https://www.sophos.com/en-us/blog/sophos-fusion" target="_blank" rel="noopener">Sophos launches "Fusion," unifying its stack with Secureworks' Taegis analytics on one AI-native platform</a></h3>
-      <div class="date">📅 Jul 15, 2026</div>
-      <p>Sophos Fusion rebuilds Sophos Central — used by 625,000 organizations — onto a single open architecture tying together SOC, endpoint, network, identity, email and cloud protection, incorporating the Taegis analytics engine picked up in last year's Secureworks acquisition. Next-Gen SIEM and MDR modules go generally available August 15, with further capabilities rolling out through October.</p>
-      <div class="why"><b>Why it matters:</b> Another large vendor consolidating a post-acquisition product line into a single AI-native platform underscores the broader push toward unified detection-and-response stacks — worth checking your renewal timeline against the phased August/October rollout before committing to point tools it may soon replace.</div>
-      <div class="src"><a href="https://www.sophos.com/en-us/blog/sophos-fusion" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-med">Update</span></div>
+      <h3><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank" rel="noopener">Oak emerges from stealth with $60M to fix identity sprawl in the AI-agent era</a></h3>
+      <div class="date stale">📅 Jul 15, 2026</div>
+      <p>Israeli startup Oak, founded by Ermetic/Tenable veteran Shai Morag, launched publicly with its identity control-plane product already deployed at enterprise clients, backed by a $60M seed round co-led by Accel, CRV and Greylock. The platform maps access grants to actual app usage and removes stale permissions in real time rather than through periodic reviews.</p>
+      <div class="why"><b>Why it matters:</b> Machine and AI-agent identities are outpacing human ones inside most enterprises, and legacy IAM tools weren't built for real-time, usage-based deprovisioning — a well-funded, experienced team betting specifically on that gap is worth tracking against your own agent-identity sprawl.</div>
+      <div class="src"><a href="https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
       <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.prnewswire.com/news-releases/beacon-security-raises-13-million-in-seed-funding-to-give-ai-agents-a-trustworthy-data-foundation-for-cyber-defense-302826450.html" target="_blank" rel="noopener">Beacon Security raises $13M seed to build a trusted data layer for AI-driven cyber defense</a></h3>
-      <div class="date">📅 Jul 16, 2026</div>
-      <p>Notable Capital led the round for Beacon, founded by intelligence and offensive-security veterans, which fuses telemetry across security vendors, pre-resolves entities and automates normalization so both human analysts and autonomous agents work from clean data; the company reports 300% ARR growth in H1 2026.</p>
-      <div class="why"><b>Why it matters:</b> As more SOCs hand alert triage to AI agents, "garbage in, garbage out" telemetry becomes a security risk in its own right — a dedicated data-normalization layer for agentic defense is a sign the market sees that as a distinct, fundable problem rather than a feature of existing SIEMs.</div>
-      <div class="src"><a href="https://www.prnewswire.com/news-releases/beacon-security-raises-13-million-in-seed-funding-to-give-ai-agents-a-trustworthy-data-foundation-for-cyber-defense-302826450.html" target="_blank">Source</a></div>
+      <h3><a href="https://fortune.com/2026/07/13/ai-sovereignty-cloud-valarian-50-million-nea-palantir-europe-microsoft-aws-google-defense/" target="_blank" rel="noopener">Valarian raises $50M Series A for a "sovereign" control layer over AI workloads</a></h3>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>UK-based Valarian's ACRA platform sits atop Kubernetes to govern what data leaves, who touches it, and when — letting governments and enterprises keep using Amazon or Microsoft cloud infrastructure while enforcing sovereignty controls over AI models and agents. NEA led the round, its first defense/dual-use investment in Europe, bringing Valarian's total funding to $70M.</p>
+      <div class="why"><b>Why it matters:</b> Data-sovereignty and AI-governance requirements are converging fast for regulated and government customers — a dedicated control layer that doesn't require ripping out existing cloud infrastructure is a pragmatic middle path worth watching as EU and UK AI rules tighten.</div>
+      <div class="src"><a href="https://fortune.com/2026/07/13/ai-sovereignty-cloud-valarian-50-million-nea-palantir-europe-microsoft-aws-google-defense/" target="_blank">Source</a></div>
     </div>
 
     <div class="item">
-      <div class="top"><span class="badge b-med">Update</span></div>
-      <h3><a href="https://www.uktech.news/cybersecurity/risk-ledger-secures-24m-to-scale-supply-chain-security-network-20260716" target="_blank" rel="noopener">Risk Ledger raises £24M Series B to push supply-chain security into the US</a></h3>
-      <div class="date">📅 Jul 16, 2026</div>
-      <p>Axiom Equity led the round for Risk Ledger, whose network-first platform — now covering 16,000+ organizations across financial services, insurance and critical infrastructure — replaces duplicate vendor questionnaires with one continuously-updated shared risk profile; funds will build AI-enabled assessment capabilities and fund US expansion.</p>
-      <div class="why"><b>Why it matters:</b> Third-party risk management has long been a check-the-box exercise built on stale annual questionnaires — a well-capitalized network-based alternative reaching this scale is worth watching if your vendor-risk program still runs on spreadsheets.</div>
-      <div class="src"><a href="https://www.uktech.news/cybersecurity/risk-ledger-secures-24m-to-scale-supply-chain-security-network-20260716" target="_blank">Source</a></div>
+      <div class="top"><span class="badge b-low">Watch</span></div>
+      <h3><a href="https://www.cloudflare.com/press/press-releases/2026/cloudflare-introduces-precursor-one-click-behavioral-defense-against-modern-bots/" target="_blank" rel="noopener">Cloudflare launches "Precursor," continuous behavioral bot detection across entire sessions</a></h3>
+      <div class="date stale">📅 Jul 13, 2026</div>
+      <p>Precursor replaces one-time CAPTCHA-style checks with ongoing analysis of mouse movement, keystroke dynamics and navigation behavior throughout a browsing session, aiming to catch automation that passes an initial challenge but behaves non-human later on. It's available as a one-click deployment across Cloudflare's existing bot-management customer base.</p>
+      <div class="why"><b>Why it matters:</b> AI-driven scraping and account-abuse bots are increasingly good at clearing static checks, so the shift toward continuous, session-long behavioral scoring is a trend worth matching against your own bot-management stack rather than a one-off vendor launch.</div>
+      <div class="src"><a href="https://www.cloudflare.com/press/press-releases/2026/cloudflare-introduces-precursor-one-click-behavioral-defense-against-modern-bots/" target="_blank">Source</a></div>
     </div>
 
   </div>
