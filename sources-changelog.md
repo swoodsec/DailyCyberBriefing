@@ -33,6 +33,13 @@ Initial 40 sources curated from a dedicated research project across general news
 - ~CANDIDATE Halcyon — original ransomware tracking (INC Ransom law-firm campaign, 200+ legal incidents); credible but a vendor alert feed, monitor independence/cadence.
 - Reviewed ~6 candidates; 3 added (at the daily cap), 2 parked, rest were aggregators/SEO listicles that didn't meet the bar.
 
+## 2026-07-22
+- +ADDED Searchlight Cyber / Assetnote (vulnfeeds/strong) — discovered and originally disclosed two of today's lead vuln stories: the ServiceNow AI Platform sandbox-escape RCE (CVE-2026-6875, CVSS 9.5) and the "wp2shell" unauthenticated WordPress Core RCE chain (CVE-2026-63030/CVE-2026-60137, researcher Adam Kues). Primary vulnerability research, not aggregation.
+- +ADDED Cato Networks / Cato CTRL (aisecurity/aifocus) — published the original research behind today's lead AI story, tracking Russian-speaking threat actor "Trim" from a March jailbreak tutorial to a commercially marketed "AI Pentest Checker" platform built on jailbroken Claude Opus; named handles, documented four-month timeline, hands-on threat research.
+- +ADDED KELA Cyber Threat Intelligence (threatintel/strong) — its research first attributed the ByteToBreach persona behind today's Romania land-registry wipe to a named individual (Zakaria Mahdjoub) using infostealer-log evidence; documented track record tracking the actor since 2025 (Sweden e-gov portal breach).
+- ~CANDIDATE Sakana AI — released Fugu-Cyber, a defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits; legitimate original vendor content but a product-announcement blog rather than sustained research output — watch before promoting.
+- Reviewed ~6 sources behind today's stories (Searchlight Cyber, Cato Networks, KELA, Sakana AI, MLQ News, hipther.com roundup). 3 added (at the daily cap); Sakana AI parked as an informal candidate; MLQ News and the hipther.com "Cybersecurity Roundup" were aggregation/syndication of others' reporting and did not clear the original-research bar. Version bumped 25 → 26.
+
 ## 2026-06-20
 
 - +ADDED Arctic Wolf Labs (threatintel/strong) — published original technical analysis of the actively-exploited Oracle PeopleSoft CVE-2026-35273 (ShinyHunters) campaign ahead of broad coverage; credible IR/threat research with IOCs.

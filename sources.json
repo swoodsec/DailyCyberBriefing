@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 25,
-  "lastUpdated": "2026-07-20",
+  "version": 26,
+  "lastUpdated": "2026-07-22",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -858,6 +858,36 @@
       "seed": false,
       "note": "Vendor security research and DDoS/attack-trend reporting from Cloudflare's global network vantage.",
       "rationale": "Original primary-source vendor research cited in today's stories; publishes firsthand attack-trend and mitigation data; cloudflare.com not previously in roster."
+    },
+    {
+      "name": "Searchlight Cyber (Assetnote)",
+      "url": "https://slcyber.io/research-center/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-07-22",
+      "seed": false,
+      "note": "Research team (Assetnote) that discloses original pre-auth RCE/sandbox-escape vulnerabilities in enterprise SaaS and widely-deployed CMS platforms.",
+      "rationale": "Discovered and originally disclosed two of today's lead vuln stories: the ServiceNow AI Platform sandbox-escape RCE (CVE-2026-6875, CVSS 9.5, reported to the vendor in April) and the 'wp2shell' unauthenticated WordPress Core RCE chain (CVE-2026-63030/CVE-2026-60137, found by researcher Adam Kues). Primary vulnerability research, not aggregation; no slcyber.io domain in the roster."
+    },
+    {
+      "name": "Cato Networks (Cato CTRL)",
+      "url": "https://www.catonetworks.com/blog/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-07-22",
+      "seed": false,
+      "note": "Cato CTRL threat-intelligence team publishing original hands-on tracking of underground AI-jailbreak and offensive-AI tool development.",
+      "rationale": "Published the original research behind today's lead AI story, tracking the Russian-speaking threat actor 'Trim' from a March forum jailbreak tutorial to a commercially marketed 'AI Pentest Checker' platform built on jailbroken Claude Opus and a leaked frontier-model system prompt, with named forum handles and a documented four-month timeline. Primary hands-on threat research, not aggregation; no catonetworks.com domain in the roster."
+    },
+    {
+      "name": "KELA Cyber Threat Intelligence",
+      "url": "https://www.kelacyber.com/blog/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-07-22",
+      "seed": false,
+      "note": "Dark-web/cybercrime intelligence firm that unmasks and attributes threat actors using infostealer-log and underground-forum evidence.",
+      "rationale": "Its research first attributed the ByteToBreach persona behind today's Romania land-registry wipe to a named individual (Zakaria Mahdjoub) using infostealer-log and browser-cookie evidence, and has tracked the actor's prior breaches of Sweden's e-government portal and other government targets since 2025. Primary attribution research, not aggregation; no kelacyber.com domain in the roster."
     }
   ],
   "candidates": [
@@ -923,6 +953,14 @@
       "category": "breaking",
       "added": "2026-07-20",
       "note": "Security news outlet; more aggregation than original reporting — parked pending evidence of original scoops."
+    },
+    {
+      "name": "Sakana AI",
+      "url": "https://sakana.ai/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "noted": "2026-07-22",
+      "rationale": "Released Fugu-Cyber, a purpose-built defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits behind today's story. Legitimate original vendor content, but a product-announcement blog rather than a sustained research/disclosure body of work — watch for original security research before promoting."
     }
   ]
 }

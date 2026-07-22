@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 18,
-  "lastUpdated": "2026-07-20",
+  "version": 19,
+  "lastUpdated": "2026-07-22",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -392,6 +392,16 @@
       "seed": false,
       "note": "Science and deep-tech news covering quantum, fusion, materials, and space research.",
       "rationale": "Original source behind today's quantum-computing/fusion tritium story; covers science & emerging tech distinct from AI-model and cyber briefings; domain not previously in roster."
+    },
+    {
+      "name": "Android Central",
+      "url": "https://www.androidcentral.com/",
+      "category": "devices",
+      "tier": "strong",
+      "added": "2026-07-22",
+      "seed": false,
+      "note": "Future plc-owned Android/Google-ecosystem publication (sister to Tom's Guide) with original hands-on reviews, live event coverage, and daily device news.",
+      "rationale": "Surfaced as the original source behind today's live coverage of Samsung's July 22 Galaxy Unpacked (Z Fold 8, Z Fold 8 Ultra, Z Flip 8, Galaxy Glasses). Passes discovery criteria: reputable and editorially credible (established Future plc technology brand), primarily original hands-on reporting and live-event journalism rather than aggregation, actively publishing throughout 2026, and clearly relevant to general devices/consumer rather than narrow cybersecurity or pure AI-model coverage. New domain (androidcentral.com) not previously in roster; complements 9to5Google and GSMArena with additional Android/Samsung launch-day coverage."
     }
   ],
   "candidates": [
