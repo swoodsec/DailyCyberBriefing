@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 19,
-  "lastUpdated": "2026-07-22",
+  "version": 20,
+  "lastUpdated": "2026-07-23",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -402,9 +402,29 @@
       "seed": false,
       "note": "Future plc-owned Android/Google-ecosystem publication (sister to Tom's Guide) with original hands-on reviews, live event coverage, and daily device news.",
       "rationale": "Surfaced as the original source behind today's live coverage of Samsung's July 22 Galaxy Unpacked (Z Fold 8, Z Fold 8 Ultra, Z Flip 8, Galaxy Glasses). Passes discovery criteria: reputable and editorially credible (established Future plc technology brand), primarily original hands-on reporting and live-event journalism rather than aggregation, actively publishing throughout 2026, and clearly relevant to general devices/consumer rather than narrow cybersecurity or pure AI-model coverage. New domain (androidcentral.com) not previously in roster; complements 9to5Google and GSMArena with additional Android/Samsung launch-day coverage."
+    },
+    {
+      "name": "MacRumors",
+      "url": "https://www.macrumors.com/",
+      "category": "devices",
+      "tier": "strong",
+      "added": "2026-07-23",
+      "seed": false,
+      "note": "Long-running (since 2000) Apple-focused publication with original reporting, well-sourced rumors, hands-on coverage, and detailed feature roundups across iPhone, iPad, Mac, and Apple software betas.",
+      "rationale": "Surfaced as the original source behind two of today's items: the iPhone 18 Pro expected-features roundup (under-display Face ID, 2nm A20 Pro) and the 'everything new in iOS 27 beta 4' write-up, and corroborated the Apple Upgrade Program wind-down. Passes discovery criteria: reputable and editorially credible (a reference Apple outlet for over two decades), primarily original reporting and analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general devices/consumer and software/platforms (Apple ecosystem) rather than narrow cybersecurity or pure AI-model coverage. New domain (macrumors.com) not previously in roster; complements 9to5Mac with additional Apple rumor and feature-tracking depth."
     }
   ],
   "candidates": [
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/",
+      "category": "science",
+      "tier": "strong",
+      "added": "2026-07-23",
+      "seed": false,
+      "note": "Independent MIT-owned magazine (since 1899) with original, authoritative long-form journalism on emerging technology, computing, biotech, energy, and policy.",
+      "rationale": "Surfaced repeatedly in a source-discovery search for the best original technology publications of 2026 as a top-tier independent outlet for original reporting. Reviewed but parked as a candidate rather than added this cycle because it did not directly originate any story used today and its editorial center of gravity leans heavily toward AI/model coverage that overlaps the sibling AI briefing; the single daily add slot went to MacRumors, which originated multiple items today. Promote if it originates a clearly general-tech or science-and-emerging story used directly in the briefing."
+    },
     {
       "name": "FERC News & Rulemakings",
       "url": "https://www.ferc.gov/",

@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 26,
-  "lastUpdated": "2026-07-22",
+  "version": 27,
+  "lastUpdated": "2026-07-23",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -888,6 +888,36 @@
       "seed": false,
       "note": "Dark-web/cybercrime intelligence firm that unmasks and attributes threat actors using infostealer-log and underground-forum evidence.",
       "rationale": "Its research first attributed the ByteToBreach persona behind today's Romania land-registry wipe to a named individual (Zakaria Mahdjoub) using infostealer-log and browser-cookie evidence, and has tracked the actor's prior breaches of Sweden's e-government portal and other government targets since 2025. Primary attribution research, not aggregation; no kelacyber.com domain in the roster."
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-07-23",
+      "seed": false,
+      "note": "Google's AI research lab; publishes original vulnerability-hunting model releases and AI-agent-security research alongside a sustained 'Responsibility & Safety' cadence.",
+      "rationale": "Original source behind today's lead vendor story — 'Introducing Gemini 3.5 Flash Cyber,' a gated vulnerability-discovery-and-patching model restricted to governments and trusted partners over dual-use risk, published the same week as its 'Securing the future of AI agents' and 'Investing in multi-agent AI safety research' posts. Primary technical AI-security research, not aggregation; no deepmind.google domain in the roster."
+    },
+    {
+      "name": "Forescout Research (Vedere Labs)",
+      "url": "https://www.forescout.com/research-labs/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-07-23",
+      "seed": false,
+      "note": "Forescout's dedicated threat-and-vulnerability research division; runs a Global Cyber Intelligence Dashboard drawing on 30 billion telemetry datapoints from deployed IT/IoT/OT/IoMT devices.",
+      "rationale": "Published the original 2026 H1 Threat Review behind today's vendor story — 37,137 newly published vulnerabilities (+51% YoY), 4,544 ransomware claims (+25%), 103 active ransomware groups, and its own tracking of 1,033 threat actors and 5,700+ hacktivist Telegram claims. Decade-long track record of original IoT/OT/IoMT research (Sierra:21); primary data, not aggregation; no forescout.com domain in the roster."
+    },
+    {
+      "name": "0patch / ACROS Security",
+      "url": "https://0patch.com/blog",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-07-23",
+      "seed": false,
+      "note": "Independent micropatching lab (est. 1999) that reverse-engineers and patches actively-exploited zero-days, often before the affected vendor ships an official fix.",
+      "rationale": "Its CEO Mitja Kolsek published the original technical breakdown and free micropatch behind today's Windows 'LegacyHive' zero-day story, days before Microsoft has assigned a CVE or shipped a fix; sustained multi-year track record of original zero-day analysis ahead of vendor patches (RasMan, NTLM-hash-leak flaws). Primary technical vuln research, not aggregation; no 0patch.com domain in the roster."
     }
   ],
   "candidates": [
