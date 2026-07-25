@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 27,
-  "lastUpdated": "2026-07-23",
+  "version": 28,
+  "lastUpdated": "2026-07-25",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -918,6 +918,26 @@
       "seed": false,
       "note": "Independent micropatching lab (est. 1999) that reverse-engineers and patches actively-exploited zero-days, often before the affected vendor ships an official fix.",
       "rationale": "Its CEO Mitja Kolsek published the original technical breakdown and free micropatch behind today's Windows 'LegacyHive' zero-day story, days before Microsoft has assigned a CVE or shipped a fix; sustained multi-year track record of original zero-day analysis ahead of vendor patches (RasMan, NTLM-hash-leak flaws). Primary technical vuln research, not aggregation; no 0patch.com domain in the roster."
+    },
+    {
+      "name": "Hunt.io",
+      "url": "https://hunt.io/blog",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-07-25",
+      "seed": false,
+      "note": "Threat-intelligence firm that finds exposed attacker infrastructure and staging servers via internet-wide scanning, then publishes original technical breakdowns.",
+      "rationale": "Discovered and published, alongside researcher Bob Diachenko, the original evidence behind today's lead AI story — an operator running the open-source Hermes AI agent unattended against Thailand's Ministry of Finance — after finding the operator's own logs, exploit tooling and staging-server indicators on an open web directory. Primary hands-on discovery research, not aggregation; no hunt.io domain in the roster."
+    },
+    {
+      "name": "Zenity Labs",
+      "url": "https://labs.zenity.io/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-07-25",
+      "seed": false,
+      "note": "AI-agent security research team publishing original disclosures on enterprise AI-platform trust-boundary and agent-hijacking flaws.",
+      "rationale": "Published the original 'AgentForger' research behind today's lead AI story — a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent with access to a victim's connected apps — responsibly disclosed to and fixed by OpenAI. Also the source behind June's LiteLLM/Ollama AI-infrastructure-hijacking research already cited via other roster entries. Primary hands-on AI-security research, not aggregation; no zenity.io domain in the roster."
     }
   ],
   "candidates": [
@@ -991,6 +1011,14 @@
       "tier": "aifocus",
       "noted": "2026-07-22",
       "rationale": "Released Fugu-Cyber, a purpose-built defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits behind today's story. Legitimate original vendor content, but a product-announcement blog rather than a sustained research/disclosure body of work — watch for original security research before promoting."
+    },
+    {
+      "name": "Windows Latest",
+      "url": "https://www.windowslatest.com/",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-07-25",
+      "rationale": "Cited 'a new advisory seen by Windows Latest' when it broke today's Microsoft Entra passkey-mandate/SMS-MFA-retirement story ahead of Microsoft's own public documentation, showing genuine primary-document sourcing. But it's a general Windows-enthusiast outlet with security as one beat among many rather than a dedicated cybersecurity publication — watch for sustained original security-scoop cadence before promoting."
     }
   ]
 }
