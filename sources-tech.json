@@ -584,6 +584,16 @@
       "seed": false,
       "note": "Official NASA science news and mission portal (including STScI/Webb releases) publishing primary announcements on space telescopes, planetary science, and mission milestones.",
       "rationale": "Authoritative primary source behind today's James Webb Space Telescope discovery of exoplanet Beta Pictoris d. Parked as a candidate rather than added because, like the FERC and European Commission portals, it is a government/institutional press portal rather than an independent editorial reporting outlet; the story is already well covered by roster outlets Space.com and Ars Technica Science. Valuable as a primary citation; revisit if space-science items increasingly require citing the originating institution directly."
+    },
+    {
+      "name": "Quartz",
+      "url": "https://qz.com/",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-07-29",
+      "seed": false,
+      "note": "Digitally native business-and-technology news outlet (founded 2012) covering big companies, markets, and tech innovation.",
+      "rationale": "Surfaced repeatedly as secondary coverage behind today's stories (the Nvidia Open Secure AI Alliance and, earlier, the Hyundai/Boston Dynamics buyout). Reviewed but parked as a candidate rather than added because (1) it is a broad business-news outlet rather than a dedicated technology reporter, and (2) since its April 2025 acquisition by Redbrick its editorial mix and originality are uncertain, which does not cleanly meet discovery criterion (2) (primarily original reporting). None of today's stories originated with Quartz — each traced to a roster outlet (CNBC, TechCrunch, Engadget). Promote only if it recurs as the direct original source on a general-tech story."
     }
   ]
 }

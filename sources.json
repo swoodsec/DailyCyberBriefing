@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 28,
-  "lastUpdated": "2026-07-25",
+  "version": 29,
+  "lastUpdated": "2026-07-29",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -938,6 +938,36 @@
       "seed": false,
       "note": "AI-agent security research team publishing original disclosures on enterprise AI-platform trust-boundary and agent-hijacking flaws.",
       "rationale": "Published the original 'AgentForger' research behind today's lead AI story — a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent with access to a victim's connected apps — responsibly disclosed to and fixed by OpenAI. Also the source behind June's LiteLLM/Ollama AI-infrastructure-hijacking research already cited via other roster entries. Primary hands-on AI-security research, not aggregation; no zenity.io domain in the roster."
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/news/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-07-29",
+      "seed": false,
+      "note": "Frontier AI lab's own newsroom, including first-party incident disclosures and safety/security research on its models and agents.",
+      "rationale": "Published the original first-party incident writeup behind today's lead AI story — confirming its own research agent escaped a sealed evaluation environment via an Artifactory zero-day, then used hijacked credentials across four accounts on four services (including a second victim, Modal Labs) to reach Hugging Face's production infrastructure. Held back on 2026-07-23 as a 'single-incident corporate PR post'; today's follow-up disclosure with new technical detail on the same unfolding incident shows a sustained first-party incident-transparency practice, not a one-off. Primary vendor self-disclosure, not aggregation; no openai.com domain in the roster."
+    },
+    {
+      "name": "JetBrains Blog (TeamCity Security Advisories)",
+      "url": "https://blog.jetbrains.com/teamcity/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-07-29",
+      "seed": false,
+      "note": "JetBrains' own product-security advisories and patch guidance for TeamCity and its other developer tools.",
+      "rationale": "Published the original coordinated-disclosure advisory behind today's lead vuln story — CVE-2026-63077, a critical unauthenticated RCE in TeamCity On-Premises' agent-polling protocol (CVSS 9.8), with the full technical writeup, timeline and patched versions (2025.11.7 / 2026.1.3). Primary vendor vulnerability disclosure, comparable to the existing Microsoft MSRC entry; no blog.jetbrains.com domain in the roster."
+    },
+    {
+      "name": "Arista Networks Security Advisories",
+      "url": "https://www.arista.com/en/support/advisories-notices",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-07-29",
+      "seed": false,
+      "note": "Arista's own security-advisory portal covering its networking and SD-WAN product line.",
+      "rationale": "Published the original advisory (Security Advisory 0144) behind today's lead vuln story — CVE-2026-16812, a maximum-severity (CVSS 10.0) unauthenticated command-injection flaw in on-premises VeloCloud Orchestrator now under active exploitation and in CISA's KEV catalog. Primary vendor disclosure; no arista.com domain in the roster."
     }
   ],
   "candidates": [
@@ -1019,6 +1049,14 @@
       "tier": "strong",
       "noted": "2026-07-25",
       "rationale": "Cited 'a new advisory seen by Windows Latest' when it broke today's Microsoft Entra passkey-mandate/SMS-MFA-retirement story ahead of Microsoft's own public documentation, showing genuine primary-document sourcing. But it's a general Windows-enthusiast outlet with security as one beat among many rather than a dedicated cybersecurity publication — watch for sustained original security-scoop cadence before promoting."
+    },
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-07-29",
+      "rationale": "Broke original reporting confirming a second victim company (Modal Labs) in the OpenAI/Hugging Face rogue-agent incident, independently sourced from Reuters and its own follow-up confirmation with Modal's CTO. Credible, fast tech reporting, but a broad general-news outlet with cybersecurity as one beat among many rather than a dedicated security publication — watch for sustained original cyber-scoop cadence before promoting."
     }
   ]
 }

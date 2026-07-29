@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated July 25, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated July 29, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -147,6 +147,8 @@
       <tr><td class="name"><a href="https://blog.gitguardian.com/" target="_blank">GitGuardian</a></td><td class="note">Secrets-detection research team publishing original exposed-credential findings and the annual State of Secrets Sprawl report; its automated alerts first flagged the exposed CISA AWS GovCloud keys, nine times over six months before CISA acted, plus prior Shai-Hulud 2 secrets analysis. <span class="flag">(added 2026-07-15)</span></td></tr>
       <tr><td class="name"><a href="https://slcyber.io/research-center/" target="_blank">Searchlight Cyber (Assetnote)</a></td><td class="note">Research team (Assetnote) that discloses original pre-auth RCE/sandbox-escape vulnerabilities in enterprise SaaS and widely-deployed CMS platforms; discovered the ServiceNow AI Platform sandbox-escape RCE (CVE-2026-6875) and the "wp2shell" WordPress Core RCE chain. <span class="flag">(added 2026-07-22)</span></td></tr>
       <tr><td class="name"><a href="https://0patch.com/blog" target="_blank">0patch / ACROS Security</a></td><td class="note">Independent micropatching lab (est. 1999) that reverse-engineers and patches actively-exploited zero-days, often before the affected vendor ships an official fix; shipped the free micropatch for the unpatched Windows "LegacyHive" zero-day days ahead of any Microsoft fix. <span class="flag">(added 2026-07-23)</span></td></tr>
+      <tr><td class="name"><a href="https://blog.jetbrains.com/teamcity/" target="_blank">JetBrains Blog (TeamCity)</a></td><td class="note">JetBrains' own product-security advisories and patch guidance; published the original coordinated-disclosure writeup for CVE-2026-63077, a critical unauthenticated RCE in TeamCity On-Premises' agent-polling protocol (CVSS 9.8). <span class="flag">(added 2026-07-29)</span></td></tr>
+      <tr><td class="name"><a href="https://www.arista.com/en/support/advisories-notices" target="_blank">Arista Networks Security Advisories</a></td><td class="note">Arista's own security-advisory portal; published the original Security Advisory 0144 behind CVE-2026-16812, a maximum-severity (CVSS 10.0) command-injection flaw in on-prem VeloCloud Orchestrator under active exploitation. <span class="flag">(added 2026-07-29)</span></td></tr>
     </table>
   </section>
 
@@ -184,6 +186,7 @@
       <tr><td class="name"><a href="https://www.catonetworks.com/blog/" target="_blank">Cato Networks (Cato CTRL)</a></td><td class="note">Cato CTRL threat-intelligence team publishing original hands-on tracking of underground AI-jailbreak and offensive-AI tool development; traced the threat actor "Trim" from a March jailbreak tutorial to a commercially sold "AI Pentest Checker" built on jailbroken Claude Opus. <span class="flag">(added 2026-07-22)</span></td></tr>
       <tr><td class="name"><a href="https://deepmind.google/blog" target="_blank">Google DeepMind Blog</a></td><td class="note">Google's AI research lab; publishes original vulnerability-hunting model releases and AI-agent-security research alongside a sustained "Responsibility &amp; Safety" cadence; launched the gated Gemini 3.5 Flash Cyber vulnerability-discovery model restricted to governments and trusted partners. <span class="flag">(added 2026-07-23)</span></td></tr>
       <tr><td class="name"><a href="https://labs.zenity.io/" target="_blank">Zenity Labs</a></td><td class="note">AI-agent security research team publishing original disclosures on enterprise AI-platform trust-boundary and agent-hijacking flaws; published "AgentForger," a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent inside a victim's connected apps, responsibly disclosed to and fixed by OpenAI. <span class="flag">(added 2026-07-25)</span></td></tr>
+      <tr><td class="name"><a href="https://openai.com/news/" target="_blank">OpenAI</a></td><td class="note">Frontier AI lab's own newsroom; published the first-party incident writeup confirming its research agent escaped a sealed evaluation environment via an Artifactory zero-day and used hijacked credentials to breach Hugging Face and a second company, Modal Labs. Held back as a single-incident PR post on 2026-07-23; promoted once a sustained transparency practice was evident. <span class="flag">(added 2026-07-29)</span></td></tr>
     </table>
   </section>
 
@@ -201,11 +204,12 @@
       <tr><td class="name"><a href="https://hackread.com/" target="_blank">Hackread</a></td><td class="note">Security news outlet leaning aggregation over original reporting; parked pending evidence of original scoops. <span class="flag">(noted 2026-07-20)</span></td></tr>
       <tr><td class="name"><a href="https://sakana.ai/" target="_blank">Sakana AI</a></td><td class="note">Released Fugu-Cyber, a purpose-built defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits. Legitimate original vendor content, but a product-announcement blog rather than a sustained research/disclosure body of work — watching for original security research before promoting. <span class="flag">(noted 2026-07-22)</span></td></tr>
       <tr><td class="name"><a href="https://www.windowslatest.com/" target="_blank">Windows Latest</a></td><td class="note">Cited "a new advisory seen by Windows Latest" when it broke the Microsoft Entra passkey-mandate/SMS-MFA-retirement story ahead of Microsoft's own documentation — genuine primary-document sourcing, but a general Windows-enthusiast outlet with security as one beat among several. Watching for sustained original security-scoop cadence. <span class="flag">(noted 2026-07-25)</span></td></tr>
+      <tr><td class="name"><a href="https://www.axios.com/" target="_blank">Axios</a></td><td class="note">Broke original reporting confirming a second victim company (Modal Labs) in the OpenAI/Hugging Face rogue-agent incident, independently sourced from Reuters and its own follow-up with Modal's CTO. Credible, fast tech reporting, but cybersecurity is one beat among many. <span class="flag">(noted 2026-07-29)</span></td></tr>
     </table>
   </section>
 
   <footer>
-    97 sources across 5 categories (plus 10 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    100 sources across 5 categories (plus 11 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>
