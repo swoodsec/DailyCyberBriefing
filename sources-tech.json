@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 20,
-  "lastUpdated": "2026-07-23",
+  "version": 23,
+  "lastUpdated": "2026-08-03",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -412,6 +412,46 @@
       "seed": false,
       "note": "Long-running (since 2000) Apple-focused publication with original reporting, well-sourced rumors, hands-on coverage, and detailed feature roundups across iPhone, iPad, Mac, and Apple software betas.",
       "rationale": "Surfaced as the original source behind two of today's items: the iPhone 18 Pro expected-features roundup (under-display Face ID, 2nm A20 Pro) and the 'everything new in iOS 27 beta 4' write-up, and corroborated the Apple Upgrade Program wind-down. Passes discovery criteria: reputable and editorially credible (a reference Apple outlet for over two decades), primarily original reporting and analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general devices/consumer and software/platforms (Apple ecosystem) rather than narrow cybersecurity or pure AI-model coverage. New domain (macrumors.com) not previously in roster; complements 9to5Mac with additional Apple rumor and feature-tracking depth."
+    },
+    {
+      "name": "Nature",
+      "url": "https://www.nature.com/",
+      "category": "science",
+      "tier": "strong",
+      "added": "2026-08-01",
+      "seed": false,
+      "note": "World-leading primary science journal and news desk; definitive reference for physics, quantum, materials, and emerging-tech research.",
+      "rationale": "Original source behind today's silicon-spin-qubit breakthrough (HRL and QuTech, error rates ~0.2%). Reputable and editorially authoritative, primarily original research/reporting rather than aggregation, actively publishing in 2026, clearly relevant to science & emerging tech, and new domain (nature.com) not previously in roster."
+    },
+    {
+      "name": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com/",
+      "category": "science",
+      "tier": "strong",
+      "added": "2026-08-01",
+      "seed": false,
+      "note": "Independent quantum-industry news and analysis with original reporting on hardware milestones, funding, and roadmaps.",
+      "rationale": "Covered today's HRL self-controlled silicon QPU result with original analysis. Reputable niche outlet, original reporting rather than aggregation, active in 2026, relevant to emerging tech, and new domain (quantumcomputingreport.com) not previously in roster; complements The Quantum Insider."
+    },
+    {
+      "name": "Fortune",
+      "url": "https://fortune.com/",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-08-02",
+      "seed": false,
+      "note": "Business magazine with a substantial dedicated technology operation (Fortune Tech daily newsletter, Big Tech section, and Brainstorm Tech) producing original reporting and analysis on big-tech earnings, strategy, and markets.",
+      "rationale": "Surfaced as the original source behind two of today's lead Big Tech items: Microsoft's biggest one-day stock gain since 2008 as Azure crossed $100B, and Meta's 91% free-cash-flow collapse with Zuckerberg hinting at a cloud business. Passes discovery criteria: reputable and editorially credible, primarily original reporting/analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business rather than narrow cybersecurity or pure AI-model coverage. Distinguished from the previously parked general-news orgs (CNN, Axios, WaPo, Quartz) by a large, standing technology desk and repeated origination of stories used in the briefing. New domain (fortune.com) not previously in roster."
+    },
+    {
+      "name": "Gizmodo",
+      "url": "https://gizmodo.com/",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-08-03",
+      "seed": false,
+      "note": "Long-running general-technology and consumer-tech publication with original reporting and sharp analysis across gadgets, platforms, internet culture, and science.",
+      "rationale": "Surfaced as an original outlet behind today's Google Earth AI-image rollback story (its 'AI Slop Factory' reporting on how the feature was abused), which the briefing also traced to TechCrunch and Bloomberg. Passes discovery criteria: reputable and editorially credible (a widely cited general-tech outlet still actively publishing original reporting in 2026), primarily original reporting/analysis rather than aggregation, and clearly relevant to general technology (big tech, platforms, devices, science) rather than narrow cybersecurity or pure AI-model coverage. A notable prior omission from the roster despite being one of the most-cited general-tech publications; adding it formalizes a clear gap. New domain (gizmodo.com) not previously in roster."
     }
   ],
   "candidates": [

@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 29,
-  "lastUpdated": "2026-07-29",
+  "version": 32,
+  "lastUpdated": "2026-08-03",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -968,6 +968,86 @@
       "seed": false,
       "note": "Arista's own security-advisory portal covering its networking and SD-WAN product line.",
       "rationale": "Published the original advisory (Security Advisory 0144) behind today's lead vuln story — CVE-2026-16812, a maximum-severity (CVSS 10.0) unauthenticated command-injection flaw in on-premises VeloCloud Orchestrator now under active exploitation and in CISA's KEV catalog. Primary vendor disclosure; no arista.com domain in the roster."
+    },
+    {
+      "name": "DoublePulsar (Kevin Beaumont)",
+      "url": "https://doublepulsar.com/",
+      "category": "investigative",
+      "tier": "strong",
+      "added": "2026-08-01",
+      "seed": false,
+      "note": "Independent security researcher's blog with a long track record of original malware/infrastructure discoveries.",
+      "rationale": "Kevin Beaumont discovered and published the original analysis behind today's lead breach story — the Adform ad-platform crypto-clipper supply-chain attack (trackpoint-async.js clipboard hijacker) — ahead of broad coverage. Long-running independent-research blog (former Microsoft MSTIC/Mandiant/Sophos analyst) with a documented history of primary discoveries (WannaCry kill-switch domain registration, PrintNightmare naming, ransomware infrastructure tracking). Primary hands-on research, not aggregation; no doublepulsar.com domain in the roster."
+    },
+    {
+      "name": "DataBreaches.Net (Dissent Kim)",
+      "url": "https://databreaches.net/",
+      "category": "investigative",
+      "tier": "strong",
+      "added": "2026-08-01",
+      "seed": false,
+      "note": "Long-running (est. 2009) breach-notification and FOIA-based investigative outlet.",
+      "rationale": "Original source reporting on today's Amgen SEC 8-K breach disclosure and other filings. Dissent Kim's outlet is one of the longest-running dedicated breach-notification trackers in the industry, doing original document-based reporting (FOIA requests, AG notification letters) rather than aggregation; widely cited as a primary source across the security press. No databreaches.net domain in the roster."
+    },
+    {
+      "name": "Intezer Research",
+      "url": "https://research.intezer.com/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-01",
+      "seed": false,
+      "note": "Malware-analysis research team publishing original hands-on vulnerability and threat disclosures.",
+      "rationale": "Discovered and published the original technical writeup behind the AWS Kiro agentic-IDE RCE (CVE-2026-10591) — hidden one-pixel web text rewriting Kiro's MCP config to auto-launch an attacker-controlled MCP server with developer privileges — ahead of broad coverage. Established malware-research team (Intezer Analyze) with a consistent original-research track record. Primary hands-on research, not aggregation; no intezer.com domain in the roster."
+    },
+    {
+      "name": "Securelist (Kaspersky GReAT)",
+      "url": "https://securelist.com/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-02",
+      "seed": false,
+      "note": "Kaspersky's Global Research & Analysis Team (GReAT) research blog; original APT/backdoor discoveries with deep malware analysis and IOCs.",
+      "rationale": "Published the original technical disclosure behind today's OctLurk and SilkLurk backdoors — a suspected Chinese-speaking cyber-espionage campaign against Central Asian and Afghan government targets since January 2025 — ahead of broad coverage. Long-established, globally cited APT-research team with a deep original-disclosure track record (dating to Stuxnet/Flame analysis); surprising gap in the roster given its influence. Primary research, not aggregation; no securelist.com domain in the roster."
+    },
+    {
+      "name": "Qualys Security Blog",
+      "url": "https://blog.qualys.com/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-02",
+      "seed": false,
+      "note": "Qualys Threat Research Unit; discloses original CVEs with deep technical root-cause writeups, including AI-assisted vulnerability-hunting research.",
+      "rationale": "Published the original technical disclosure of RefluXFS (CVE-2026-64600), the nine-year-old Linux kernel XFS race condition exposing an estimated 16.4 million RHEL and enterprise Linux systems to silent root takeover — found by tasking Anthropic's Claude Mythos Preview with hunting for a Dirty COW-style race condition. Established vulnerability-research vendor with a long original-disclosure track record; no blog.qualys.com domain in the roster."
+    },
+    {
+      "name": "N-able Blog (Security Advisories)",
+      "url": "https://www.n-able.com/blog",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-03",
+      "seed": false,
+      "note": "N-able's own product-security advisories and incident updates for its N-central RMM platform.",
+      "rationale": "Published the original coordinated disclosure and running incident updates behind today's lead breach story — CVE-2026-18556/CVE-2026-18577, an N-central authentication bypass that attackers exploited to seize admin control after N-able's first fix proved incomplete — with dated advisory posts and the August 2 hotfix (2026.3.1.7). Primary vendor disclosure, comparable to the existing Microsoft MSRC and JetBrains entries; no n-able.com domain in the roster."
+    },
+    {
+      "name": "CERT-UA (Government of Ukraine)",
+      "url": "https://cert.gov.ua/en",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-03",
+      "seed": false,
+      "note": "Ukraine's national CERT; publishes original malware-campaign analysis with IOCs, often first to catch region-specific threat clusters.",
+      "rationale": "Uncovered and published the original technical analysis behind today's UAC-0099 campaign, which hijacks a trojanized Notepad++ plugin (LUNCHPOKE) to deploy the BURNYBEAR backdoor and MATCHBOIL.V2 loader; provided specific patched-version guidance (Notepad++ 8.9.7, WinRAR 7.23, 7-Zip 26.02). Government CSIRT with a documented track record of original regional threat research, matching the precedent set by the existing CERT Polska entry; no cert.gov.ua domain in the roster."
+    },
+    {
+      "name": "Broadcom / VMware Security Advisories",
+      "url": "https://support.broadcom.com/web/ecx/support-content-notification",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-03",
+      "seed": false,
+      "note": "Broadcom's own security-advisory portal covering VMware vCenter, ESXi and Cloud Foundation.",
+      "rationale": "Published the original coordinated-disclosure advisory VMSA-2026-0006 behind today's lead vuln story — CVE-2026-59309/CVE-2026-59310, twin CVSS 9.8 vCenter authentication-bypass and RCE flaws, plus the VMXNET3 VM-escape bug CVE-2026-47876 — with per-CVE technical detail and patched-build guidance across vCenter and ESXi branches. Primary vendor disclosure, comparable to the existing Microsoft MSRC, Arista and JetBrains entries; no broadcom.com domain in the roster."
     }
   ],
   "candidates": [
@@ -1057,6 +1137,54 @@
       "tier": "strong",
       "noted": "2026-07-29",
       "rationale": "Broke original reporting confirming a second victim company (Modal Labs) in the OpenAI/Hugging Face rogue-agent incident, independently sourced from Reuters and its own follow-up confirmation with Modal's CTO. Credible, fast tech reporting, but a broad general-news outlet with cybersecurity as one beat among many rather than a dedicated security publication — watch for sustained original cyber-scoop cadence before promoting."
+    },
+    {
+      "name": "The Register (Security)",
+      "url": "https://www.theregister.com/security/",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-08-01",
+      "rationale": "Ran an early, clearly-sourced writeup tying the Zimbra CVE-2025-66376 exploitation history to today's Laundry Bear/TA488 Outlook OWA campaign, citing Proofpoint's research directly. Consistently fast and well-sourced, but leans on other teams' primary research (Proofpoint, vendors) rather than first-hand disclosure — informally parked on 2026-06-20 and 2026-07-02 for the same reason; formalizing as a candidate here to track cadence and independence before promoting."
+    },
+    {
+      "name": "Ayush Paul (personal blog)",
+      "url": "https://www.ayush.digital/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "noted": "2026-08-01",
+      "rationale": "Independent researcher published \"The Memory Heist,\" original hands-on research showing claude.ai's web_fetch tool could be chained with nested links to exfiltrate a user's inferred personal data via Claude's memory system; picked up and analyzed by Simon Willison and multiple security outlets. Promising primary AI-security research from a single-researcher blog with limited publishing cadence so far — watch for continued original output before promoting."
+    },
+    {
+      "name": "Block Engineering Blog",
+      "url": "https://engineering.block.xyz/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "noted": "2026-08-02",
+      "rationale": "Published the original root-cause technical analysis behind today's Coldcard hardware-wallet story, tracing the $70.2M Bitcoin theft to a predictable-RNG fallback and 32-bit reseed flaw in Coldcard firmware (production config disabling the hardware RNG). Credible first-party engineering research from Block/Square's security team, but publishes on security topics only occasionally rather than as a sustained cadence — watch for continued original vulnerability research before promoting."
+    },
+    {
+      "name": "Tech Times (Security)",
+      "url": "https://www.techtimes.com/security",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-08-02",
+      "rationale": "Ran an early, well-sourced Black Hat USA 2026 preview tying the GPUBreach GPU-Rowhammer research (University of Toronto, IEEE S&P 2026) to this week's unprecedented government keynote lineup (CISA, FBI, White House Cyber Director). Clear, well-organized reporting, but leans heavily on the academic paper, Black Hat's own press releases and the Cloud Security Alliance's research note rather than original disclosure — general tech outlet with security as one beat among many. Watch for sustained original cyber-scoop cadence before promoting."
+    },
+    {
+      "name": "Cyber Security News",
+      "url": "https://cybersecuritynews.com/",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-08-03",
+      "rationale": "Ran a fast, well-organized weekly roundup covering today's Anthropic/Claude, VMware, Cisco FMC and Word Copilot stories with named byline (Guru Baran) and per-story detail pages. Useful and prolific, but leans on other teams' primary disclosures (Wiz, Cisco PSIRT, CERT-UA, Nebula Security) rather than first-hand research or scoops — watch for original reporting cadence before promoting."
+    },
+    {
+      "name": "LavaHQ",
+      "url": "https://lavahq.com/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "noted": "2026-08-03",
+      "rationale": "Its researchers discovered and published the original scan data behind today's 20-year-old IPMI/BMC exposure story (CVE-2013-4786), finding 36,872 publicly exposed Baseboard Management Controllers and live exploitation evidence (an HPE iLO ransom note). Promising original hands-on research, but a single-story appearance with no established publishing cadence yet — watch before promoting."
     }
   ]
 }
