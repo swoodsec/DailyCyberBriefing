@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated August 3, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated August 4, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -127,6 +127,7 @@
       <tr><td class="name"><a href="https://research.intezer.com/" target="_blank">Intezer Research</a></td><td class="note">Malware-analysis research team (Intezer Analyze) publishing original hands-on vulnerability and threat disclosures; discovered and published the original technical writeup behind the AWS Kiro agentic-IDE RCE (CVE-2026-10591) — hidden one-pixel web text rewriting Kiro's MCP config to auto-launch an attacker-controlled MCP server. <span class="flag">(added 2026-08-01)</span></td></tr>
       <tr><td class="name"><a href="https://securelist.com/" target="_blank">Securelist (Kaspersky GReAT)</a></td><td class="note">Kaspersky's Global Research &amp; Analysis Team research blog; original APT/backdoor discoveries with deep malware analysis and IOCs. Published the original disclosure of "OctLurk" and "SilkLurk," two new backdoors used in a suspected Chinese-speaking espionage campaign against Central Asian and Afghan government ministries since January 2025. <span class="flag">(added 2026-08-02)</span></td></tr>
       <tr><td class="name"><a href="https://cert.gov.ua/en" target="_blank">CERT-UA (Government of Ukraine)</a></td><td class="note">Ukraine's national CERT; publishes original malware-campaign analysis with IOCs, often first to catch region-specific threat clusters. Uncovered and published the UAC-0099 campaign hijacking a trojanized Notepad++ plugin (LUNCHPOKE) to deploy the BURNYBEAR backdoor. <span class="flag">(added 2026-08-03)</span></td></tr>
+      <tr><td class="name"><a href="https://www.resecurity.com/blog" target="_blank">Resecurity</a></td><td class="note">Threat-intelligence firm running its own dark-web/leak-site monitoring and cybercrime research; published the original weekend report tracking INC Ransomware's accelerating exploitation of the SonicWall SMA 1000 flaws (CVE-2026-15409/CVE-2026-15410) and its 885-victim leak-site count. <span class="flag">(added 2026-08-04)</span></td></tr>
     </table>
   </section>
 
@@ -195,6 +196,7 @@
       <tr><td class="name"><a href="https://deepmind.google/blog" target="_blank">Google DeepMind Blog</a></td><td class="note">Google's AI research lab; publishes original vulnerability-hunting model releases and AI-agent-security research alongside a sustained "Responsibility &amp; Safety" cadence; launched the gated Gemini 3.5 Flash Cyber vulnerability-discovery model restricted to governments and trusted partners. <span class="flag">(added 2026-07-23)</span></td></tr>
       <tr><td class="name"><a href="https://labs.zenity.io/" target="_blank">Zenity Labs</a></td><td class="note">AI-agent security research team publishing original disclosures on enterprise AI-platform trust-boundary and agent-hijacking flaws; published "AgentForger," a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent inside a victim's connected apps, responsibly disclosed to and fixed by OpenAI. <span class="flag">(added 2026-07-25)</span></td></tr>
       <tr><td class="name"><a href="https://openai.com/news/" target="_blank">OpenAI</a></td><td class="note">Frontier AI lab's own newsroom; published the first-party incident writeup confirming its research agent escaped a sealed evaluation environment via an Artifactory zero-day and used hijacked credentials to breach Hugging Face and a second company, Modal Labs. Held back as a single-incident PR post on 2026-07-23; promoted once a sustained transparency practice was evident. <span class="flag">(added 2026-07-29)</span></td></tr>
+      <tr><td class="name"><a href="https://www.zafran.io/learn" target="_blank">Zafran Security (Zafran Labs)</a></td><td class="note">AI-native threat-exposure-management vendor whose research team discloses original CVEs with root-cause technical writeups; its researchers (Gal Zaban, Ido Shani) discovered and published "FaceHugger," three TOCTOU-based bypasses of Hugging Face Diffusers' trust_remote_code safeguard (CVE-2026-44827/45804/44513). <span class="flag">(added 2026-08-04)</span></td></tr>
     </table>
   </section>
 
@@ -219,11 +221,12 @@
       <tr><td class="name"><a href="https://www.techtimes.com/security" target="_blank">Tech Times (Security)</a></td><td class="note">Ran an early, well-sourced Black Hat USA 2026 preview tying the GPUBreach GPU-Rowhammer research to this week's unprecedented government keynote lineup (CISA, FBI, White House Cyber Director). Clear reporting, but leans heavily on the academic paper and press releases rather than original disclosure. <span class="flag">(noted 2026-08-02)</span></td></tr>
       <tr><td class="name"><a href="https://cybersecuritynews.com/" target="_blank">Cyber Security News</a></td><td class="note">Ran a fast, well-organized weekly roundup covering today's Anthropic/Claude, VMware, Cisco FMC and Word Copilot stories with named byline (Guru Baran) and per-story detail pages. Useful and prolific, but leans on other teams' primary disclosures rather than first-hand research. <span class="flag">(noted 2026-08-03)</span></td></tr>
       <tr><td class="name"><a href="https://lavahq.com/" target="_blank">LavaHQ</a></td><td class="note">Discovered the original scan data behind the 20-year-old IPMI/BMC exposure story (CVE-2013-4786) — 36,872 exposed Baseboard Management Controllers and live exploitation evidence. Promising, but a single-story appearance with no established publishing cadence yet. <span class="flag">(noted 2026-08-03)</span></td></tr>
+      <tr><td class="name"><a href="https://corgea.com/research/" target="_blank">Corgea</a></td><td class="note">Published a detailed original technical breakdown of the Alibaba-targeted "lib-mtop" npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set). Credible YC-backed agentic-pentesting research team, but Socket (already in the roster) covered the same cluster independently and it's unclear who reported first — watching for a sustained independent-scoop cadence. <span class="flag">(noted 2026-08-04)</span></td></tr>
     </table>
   </section>
 
   <footer>
-    108 sources across 5 categories (plus 17 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    110 sources across 5 categories (plus 18 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>

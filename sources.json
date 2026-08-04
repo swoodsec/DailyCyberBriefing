@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 32,
-  "lastUpdated": "2026-08-03",
+  "version": 33,
+  "lastUpdated": "2026-08-04",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1048,6 +1048,26 @@
       "seed": false,
       "note": "Broadcom's own security-advisory portal covering VMware vCenter, ESXi and Cloud Foundation.",
       "rationale": "Published the original coordinated-disclosure advisory VMSA-2026-0006 behind today's lead vuln story — CVE-2026-59309/CVE-2026-59310, twin CVSS 9.8 vCenter authentication-bypass and RCE flaws, plus the VMXNET3 VM-escape bug CVE-2026-47876 — with per-CVE technical detail and patched-build guidance across vCenter and ESXi branches. Primary vendor disclosure, comparable to the existing Microsoft MSRC, Arista and JetBrains entries; no broadcom.com domain in the roster."
+    },
+    {
+      "name": "Resecurity",
+      "url": "https://www.resecurity.com/blog",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-04",
+      "seed": false,
+      "note": "Threat-intelligence firm running its own dark-web/leak-site monitoring and cybercrime research.",
+      "rationale": "Published the original weekend report behind today's lead breach story, tracking INC Ransomware's accelerating exploitation of the SonicWall SMA 1000 flaws (CVE-2026-15409/CVE-2026-15410) and its 885-victim leak-site count, cited directly by The Hacker News and SecurityWeek ahead of broad coverage. Primary hands-on dark-web/threat research, not aggregation; no resecurity.com domain in the roster."
+    },
+    {
+      "name": "Zafran Security (Zafran Labs)",
+      "url": "https://www.zafran.io/learn",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-04",
+      "seed": false,
+      "note": "AI-native threat-exposure-management vendor whose research team discloses original CVEs with root-cause technical writeups.",
+      "rationale": "Its researchers (Gal Zaban, Ido Shani) discovered and published the original 'FaceHugger' disclosure behind today's lead AI story — three TOCTOU-based bypasses of Hugging Face Diffusers' trust_remote_code safeguard (CVE-2026-44827/45804/44513) letting a crafted model repository execute arbitrary code. Primary hands-on AI-supply-chain vulnerability research, not aggregation; no zafran.io domain in the roster."
     }
   ],
   "candidates": [
@@ -1185,6 +1205,14 @@
       "tier": "strong",
       "noted": "2026-08-03",
       "rationale": "Its researchers discovered and published the original scan data behind today's 20-year-old IPMI/BMC exposure story (CVE-2013-4786), finding 36,872 publicly exposed Baseboard Management Controllers and live exploitation evidence (an HPE iLO ransom note). Promising original hands-on research, but a single-story appearance with no established publishing cadence yet — watch before promoting."
+    },
+    {
+      "name": "Corgea",
+      "url": "https://corgea.com/research/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "noted": "2026-08-04",
+      "rationale": "Published a detailed original technical breakdown of the Alibaba-targeted 'lib-mtop' npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set) behind today's supply-chain story. Credible agentic-pentesting research team (YC-backed), but Socket — already in the roster — covered the same cluster independently and it's unclear who reported first; watch for a sustained independent-scoop cadence before promoting."
     }
   ]
 }

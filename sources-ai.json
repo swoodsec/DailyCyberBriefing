@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 25,
-  "lastUpdated": "2026-08-03",
+  "version": 26,
+  "lastUpdated": "2026-08-04",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -502,9 +502,29 @@
       "seed": false,
       "note": "Independent, skeptical AI-analysis newsletter from veteran tech journalist Timothy B. Lee (ex-Ars Technica, Vox); provided a widely-cited vendor-neutral read on today's Astra math-proof announcement, noting the results 'played to AI's strengths.'",
       "rationale": "Editorially independent, technically rigorous original analysis that serves as a reality-check on lab capability claims — the same function Simon Willison's Weblog and Interconnects serve, but from a professional journalist's skeptical-explainer angle rather than a practitioner's hands-on-testing or researcher's technical-essay angle. Actively publishing in 2026, clearly AI-relevant (research), not cybersecurity-focused, deduped by domain (understandingai.org not previously in roster)."
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/",
+      "category": "business",
+      "tier": "strong",
+      "added": "2026-08-04",
+      "seed": false,
+      "note": "European deep-tech/AI-infrastructure desk (TNW, an Amsterdam-based outlet) doing original reporting on AI funding, chips, energy, and market structure; the originating source behind today's Valar Atomics $1B nuclear-for-data-centers report, the OLIX $312M photonic-chip report, and the Nvidia CUDA-moat analysis (Aug 3).",
+      "rationale": "Promoted from candidate (parked Jul 1 on the concern that its coverage overlapped existing Verge/Ars/VentureBeat/Engadget product desks) after a clearly differentiated, load-bearing original-reporting day: TNW independently originated three distinct Aug 3 stories used in today's brief — a dedicated Valar Atomics $1B Series B report with CEO quotes, a dedicated OLIX $312M photonic-chip report, and a reported Nvidia CUDA-moat analysis with first-hand quotes from Rebellions, Modular and others — that other outlets relayed. Its distinct value versus the roster is deep-tech/AI-infrastructure original reporting (chips, energy, compute economics, funding) rather than consumer-product coverage. Reputable, actively publishing in 2026, clearly AI/business relevant, not cybersecurity-focused, deduped by domain (thenextweb.com not previously in the sources list)."
     }
   ],
   "candidates": [
+    {
+      "name": "Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/",
+      "category": "products",
+      "tier": "strong",
+      "added": "2026-08-04",
+      "seed": false,
+      "note": "Cloudflare's engineering/announcement blog; primary source behind today's Agents Week launch and its 'Agent Cloud'/agentic-web framing (Aug 2), and a recurring primary channel for agent-infrastructure releases (Workers AI, MCP hosting, agent primitives).",
+      "rationale": "Authoritative primary channel for a central AI-infrastructure vendor and a genuinely original technical source, but it is a single-vendor corporate blog that primarily documents Cloudflare's own products — the same category concern that has kept non-model-lab vendor blogs out of the roster. Used directly as a primary link for the Agents Week item and parked pending evidence it should stand as a recurring roster source rather than a one-off primary citation."
+    },
     {
       "name": "CBS News",
       "url": "https://www.cbsnews.com/",
@@ -694,16 +714,6 @@
       "seed": false,
       "note": "Top-tier original health/biotech journalism; interviewed Dario Amodei for its Claude Science coverage.",
       "rationale": "Excellent original reporting at the AI-and-medicine intersection (Claude Science, drug discovery), but primarily a health/pharma desk rather than a general-AI outlet; parked as candidate pending recurring general-AI relevance to avoid over-narrowing the roster."
-    },
-    {
-      "name": "The Next Web",
-      "url": "https://thenextweb.com/",
-      "category": "products",
-      "tier": "strong",
-      "added": "2026-07-01",
-      "seed": false,
-      "note": "European tech outlet with original AI product and startup coverage; covered Claude Science as an 'AI workbench for the lab.'",
-      "rationale": "Credible, actively publishing outlet with original AI coverage, but coverage overlaps existing Verge/Ars/VentureBeat/Engadget product desks; parked as candidate pending a clearly differentiated original scoop."
     },
     {
       "name": "One Useful Thing (Ethan Mollick)",
