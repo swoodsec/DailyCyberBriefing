@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 33,
-  "lastUpdated": "2026-08-04",
+  "version": 34,
+  "lastUpdated": "2026-08-05",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1068,6 +1068,26 @@
       "seed": false,
       "note": "AI-native threat-exposure-management vendor whose research team discloses original CVEs with root-cause technical writeups.",
       "rationale": "Its researchers (Gal Zaban, Ido Shani) discovered and published the original 'FaceHugger' disclosure behind today's lead AI story — three TOCTOU-based bypasses of Hugging Face Diffusers' trust_remote_code safeguard (CVE-2026-44827/45804/44513) letting a crafted model repository execute arbitrary code. Primary hands-on AI-supply-chain vulnerability research, not aggregation; no zafran.io domain in the roster."
+    },
+    {
+      "name": "SafeDep",
+      "url": "https://safedep.io/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-05",
+      "seed": false,
+      "note": "Open-source supply-chain security research team that reverse-engineers and publishes original npm/PyPI compromise analysis in near-real time.",
+      "rationale": "Its payload analysis was the primary technical source behind today's lead breach story, the Keyv-linked 'ChainDrop' npm worm — verified poisoned package/version counts, decoded the credential-harvesting bundle, and documented the Claude Code/VS Code hook persistence mechanism, cited directly by The Hacker News ahead of broad coverage. Primary hands-on research, not aggregation; no safedep.io domain in the roster."
+    },
+    {
+      "name": "Securonix Threat Research",
+      "url": "https://www.securonix.com/blog/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-05",
+      "seed": false,
+      "note": "Threat-research team that discovers and names original malware campaigns with full technical infrastructure breakdowns.",
+      "rationale": "Discovered and named 'SMOKE#SCREEN' behind today's ScreenConnect RMM-abuse story — a live WsgiDAV staging server and rotating Cloudflare Tunnel/Dropbox C2 infrastructure hidden behind fake Adobe and Zoom update pages — publishing named-researcher technical detail (Sangwan, Gaikwad, Beardslee) ahead of broad coverage. Primary hands-on research, not aggregation; no securonix.com domain in the roster."
     }
   ],
   "candidates": [
@@ -1213,6 +1233,14 @@
       "tier": "strong",
       "noted": "2026-08-04",
       "rationale": "Published a detailed original technical breakdown of the Alibaba-targeted 'lib-mtop' npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set) behind today's supply-chain story. Credible agentic-pentesting research team (YC-backed), but Socket — already in the roster — covered the same cluster independently and it's unclear who reported first; watch for a sustained independent-scoop cadence before promoting."
+    },
+    {
+      "name": "VenariX",
+      "url": "https://venarix.com/",
+      "category": "investigative",
+      "tier": "strong",
+      "noted": "2026-08-05",
+      "rationale": "Reviewed samples from 11 of ExfilSquad's 15 claimed victims and found consistent Dataverse/Power Pages misconfiguration patterns behind today's UK Police National Legal Database (PNLD) breach story, confirming at least one unauthenticated-exposure case (Houston). Promising original forensic research, but a single-story appearance so far with unclear publishing cadence — watch before promoting."
     }
   ]
 }

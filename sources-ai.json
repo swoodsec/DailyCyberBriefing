@@ -516,6 +516,16 @@
   ],
   "candidates": [
     {
+      "name": "Exponential View (Azeem Azhar)",
+      "url": "https://www.exponentialview.co/",
+      "category": "policy",
+      "tier": "newsletter",
+      "added": "2026-08-05",
+      "seed": false,
+      "note": "Azeem Azhar's widely-read newsletter connecting AI to economics, energy, and society; surfaced in a discovery search on emerging AI-industry/economics analysis newsletters as a leading big-picture voice.",
+      "rationale": "Editorially independent, reputable newsletter with genuine original analysis (not aggregation) and a distinct macro/economics-and-society lens, but it has no direct tie to any of today's stories and its big-picture-analysis angle overlaps the roster's existing newsletter slots (Import AI on governance, Interconnects and The Batch on research). Consistent with how other analysis newsletters (Air Street Press, Turing Post, One Useful Thing) were handled, parked as a candidate pending a clearly differentiated original contribution behind a day's story."
+    },
+    {
       "name": "Cloudflare Blog",
       "url": "https://blog.cloudflare.com/",
       "category": "products",

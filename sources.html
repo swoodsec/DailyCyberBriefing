@@ -50,7 +50,7 @@
   <header>
     <div class="kick">The Cyber Briefing</div>
     <h1>Sources &amp; Masthead</h1>
-    <div class="sub">Updated August 4, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
+    <div class="sub">Updated August 5, 2026 &nbsp;·&nbsp; the outlets feeding your daily briefing &nbsp;·&nbsp; <a href="index.html">← Back to today's edition</a></div>
   </header>
 
   <p class="intro">Researched and ranked by reputation, originality of reporting, and freshness. <span class="tier t1">Core</span> sources are checked first each morning; <span class="tier t2">Strong</span> add depth and vendor threat research; <span class="tier t3">AI focus</span> cover LLM/agent security specifically. This roster is <b>self-updating</b> — each morning the briefing vets and adds new qualifying sources (see <a href="sources-changelog.md">changelog</a>).</p>
@@ -128,6 +128,7 @@
       <tr><td class="name"><a href="https://securelist.com/" target="_blank">Securelist (Kaspersky GReAT)</a></td><td class="note">Kaspersky's Global Research &amp; Analysis Team research blog; original APT/backdoor discoveries with deep malware analysis and IOCs. Published the original disclosure of "OctLurk" and "SilkLurk," two new backdoors used in a suspected Chinese-speaking espionage campaign against Central Asian and Afghan government ministries since January 2025. <span class="flag">(added 2026-08-02)</span></td></tr>
       <tr><td class="name"><a href="https://cert.gov.ua/en" target="_blank">CERT-UA (Government of Ukraine)</a></td><td class="note">Ukraine's national CERT; publishes original malware-campaign analysis with IOCs, often first to catch region-specific threat clusters. Uncovered and published the UAC-0099 campaign hijacking a trojanized Notepad++ plugin (LUNCHPOKE) to deploy the BURNYBEAR backdoor. <span class="flag">(added 2026-08-03)</span></td></tr>
       <tr><td class="name"><a href="https://www.resecurity.com/blog" target="_blank">Resecurity</a></td><td class="note">Threat-intelligence firm running its own dark-web/leak-site monitoring and cybercrime research; published the original weekend report tracking INC Ransomware's accelerating exploitation of the SonicWall SMA 1000 flaws (CVE-2026-15409/CVE-2026-15410) and its 885-victim leak-site count. <span class="flag">(added 2026-08-04)</span></td></tr>
+      <tr><td class="name"><a href="https://www.securonix.com/blog/" target="_blank">Securonix Threat Research</a></td><td class="note">Threat-research team that discovers and names original malware campaigns with full technical infrastructure breakdowns; discovered and named "SMOKE#SCREEN," a live WsgiDAV staging server and rotating Cloudflare Tunnel/Dropbox C2 chain hidden behind fake Adobe and Zoom update pages. <span class="flag">(added 2026-08-05)</span></td></tr>
     </table>
   </section>
 
@@ -158,6 +159,7 @@
       <tr><td class="name"><a href="https://blog.qualys.com/" target="_blank">Qualys Security Blog</a></td><td class="note">Qualys Threat Research Unit; discloses original CVEs with deep technical root-cause writeups, including AI-assisted vulnerability-hunting research. Published the original disclosure of RefluXFS (CVE-2026-64600), a nine-year-old Linux kernel XFS race condition exposing an estimated 16.4 million RHEL/enterprise Linux systems to silent root takeover, found by tasking Anthropic's Claude Mythos Preview with hunting for a Dirty COW-style race condition. <span class="flag">(added 2026-08-02)</span></td></tr>
       <tr><td class="name"><a href="https://www.n-able.com/blog" target="_blank">N-able Blog (Security Advisories)</a></td><td class="note">N-able's own product-security advisories for its N-central RMM platform; published the coordinated disclosure and dated incident updates behind CVE-2026-18556/CVE-2026-18577, an N-central auth bypass attackers exploited to seize admin control after the first fix proved incomplete. <span class="flag">(added 2026-08-03)</span></td></tr>
       <tr><td class="name"><a href="https://support.broadcom.com/web/ecx/support-content-notification" target="_blank">Broadcom / VMware Security Advisories</a></td><td class="note">Broadcom's own security-advisory portal covering VMware vCenter, ESXi and Cloud Foundation; published the original VMSA-2026-0006 advisory disclosing twin CVSS 9.8 vCenter auth-bypass/RCE flaws (CVE-2026-59309, CVE-2026-59310) and a VMXNET3 VM-escape bug. <span class="flag">(added 2026-08-03)</span></td></tr>
+      <tr><td class="name"><a href="https://safedep.io/" target="_blank">SafeDep</a></td><td class="note">Open-source supply-chain security research team that reverse-engineers and publishes original npm/PyPI compromise analysis in near-real time; its payload analysis was the primary technical source behind the Keyv-linked "ChainDrop" npm worm — verified poisoned package/version counts and documented the Claude Code/VS Code hook persistence mechanism. <span class="flag">(added 2026-08-05)</span></td></tr>
     </table>
   </section>
 
@@ -222,11 +224,12 @@
       <tr><td class="name"><a href="https://cybersecuritynews.com/" target="_blank">Cyber Security News</a></td><td class="note">Ran a fast, well-organized weekly roundup covering today's Anthropic/Claude, VMware, Cisco FMC and Word Copilot stories with named byline (Guru Baran) and per-story detail pages. Useful and prolific, but leans on other teams' primary disclosures rather than first-hand research. <span class="flag">(noted 2026-08-03)</span></td></tr>
       <tr><td class="name"><a href="https://lavahq.com/" target="_blank">LavaHQ</a></td><td class="note">Discovered the original scan data behind the 20-year-old IPMI/BMC exposure story (CVE-2013-4786) — 36,872 exposed Baseboard Management Controllers and live exploitation evidence. Promising, but a single-story appearance with no established publishing cadence yet. <span class="flag">(noted 2026-08-03)</span></td></tr>
       <tr><td class="name"><a href="https://corgea.com/research/" target="_blank">Corgea</a></td><td class="note">Published a detailed original technical breakdown of the Alibaba-targeted "lib-mtop" npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set). Credible YC-backed agentic-pentesting research team, but Socket (already in the roster) covered the same cluster independently and it's unclear who reported first — watching for a sustained independent-scoop cadence. <span class="flag">(noted 2026-08-04)</span></td></tr>
+      <tr><td class="name"><a href="https://venarix.com/" target="_blank">VenariX</a></td><td class="note">Reviewed samples from 11 of ExfilSquad's 15 claimed victims and found consistent Dataverse/Power Pages misconfiguration patterns behind the UK Police National Legal Database (PNLD) breach, confirming at least one unauthenticated-exposure case. Promising original forensic research, but a single-story appearance so far with unclear publishing cadence — watching before promoting. <span class="flag">(noted 2026-08-05)</span></td></tr>
     </table>
   </section>
 
   <footer>
-    110 sources across 5 categories (plus 18 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
+    112 sources across 5 categories (plus 19 candidates under review), ranked by reporting quality and freshness. This roster updates itself daily — see the <a href="sources-changelog.md">changelog</a>. Links open the live sites.
   </footer>
 </div>
 </body>
