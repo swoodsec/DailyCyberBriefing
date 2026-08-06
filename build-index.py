@@ -50,7 +50,7 @@ def main():
     print('index.html written — %d editions, latest %s' % (len(eds), latest))
 
 TEMPLATE = r'''<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,9 +97,17 @@ TEMPLATE = r'''<!DOCTYPE html>
   .topnav a{font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:var(--muted);
     padding:7px 12px;border-radius:7px}
   .topnav a:hover{background:var(--navhover);color:var(--ink)}
-  .theme-btn{appearance:none;border:1px solid var(--rule2);background:var(--panel);color:var(--ink);
-    cursor:pointer;border-radius:8px;padding:7px 11px;font-size:14px;line-height:1;display:flex;align-items:center;gap:6px}
-  .theme-btn:hover{background:var(--navhover)}
+  /* theme slider */
+  .theme-toggle{display:flex;align-items:center;gap:8px;user-select:none}
+  .theme-toggle .gl{font-size:14px;color:var(--muted);line-height:1}
+  .theme-toggle .sw{position:relative;width:46px;height:24px;border-radius:999px;cursor:pointer;
+    background:var(--chip);border:1px solid var(--rule2);transition:background .2s,border-color .2s}
+  .theme-toggle .sw .knob{position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;
+    background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .2s}
+  html[data-theme="dark"] .theme-toggle .sw{background:var(--accent);border-color:var(--accent)}
+  html[data-theme="dark"] .theme-toggle .sw .knob{transform:translateX(22px)}
+  html[data-theme="dark"] .theme-toggle .moon{color:var(--accent)}
+  html[data-theme="light"] .theme-toggle .sun{color:var(--accent)}
 
   /* layout */
   .shell{display:grid;grid-template-columns:288px minmax(0,1fr);gap:34px;
@@ -227,7 +235,11 @@ TEMPLATE = r'''<!DOCTYPE html>
     <a href="sources-ai.html">AI Sources</a>
     <a href="sources-tech.html">Tech Sources</a>
   </nav>
-  <button class="theme-btn" id="themeBtn" title="Toggle theme"><span id="themeIco">&#9789;</span></button>
+  <div class="theme-toggle" title="Toggle light / dark">
+    <span class="gl sun">&#9728;</span>
+    <div class="sw" id="themeSw" role="switch" tabindex="0" aria-label="Toggle dark mode"><span class="knob"></span></div>
+    <span class="gl moon">&#9789;</span>
+  </div>
 </div>
 
 <div class="shell">
@@ -387,18 +399,21 @@ function stepDay(dir){
     state.calYear=+state.date.slice(0,4); state.calMonth=+state.date.slice(5,7)-1; render(); }
 }
 
-function initTheme(){
-  let t='light';
-  try{ t=localStorage.getItem('db-theme')||'light'; }catch(e){}
+function setTheme(t){
   document.documentElement.setAttribute('data-theme',t);
-  document.getElementById('themeIco').innerHTML = t==='dark'?'&#9728;':'&#9789;';
-}
-document.getElementById('themeBtn').onclick=()=>{
-  let t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
-  document.documentElement.setAttribute('data-theme',t);
-  document.getElementById('themeIco').innerHTML = t==='dark'?'&#9728;':'&#9789;';
+  const sw=document.getElementById('themeSw'); if(sw) sw.setAttribute('aria-checked', t==='dark'?'true':'false');
   try{ localStorage.setItem('db-theme',t); }catch(e){}
-};
+}
+function initTheme(){
+  let t='dark';
+  try{ t=localStorage.getItem('db-theme')||'dark'; }catch(e){}
+  setTheme(t);
+}
+function toggleTheme(){
+  setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+}
+document.getElementById('themeSw').addEventListener('click',toggleTheme);
+document.getElementById('themeSw').addEventListener('keydown',(e)=>{ if(e.key===' '||e.key==='Enter'){ e.preventDefault(); toggleTheme(); } });
 document.getElementById('prevDay').onclick=()=>stepDay(-1);
 document.getElementById('nextDay').onclick=()=>stepDay(1);
 document.getElementById('calPrev').onclick=()=>{ state.calMonth--; if(state.calMonth<0){state.calMonth=11;state.calYear--;} renderCalendar(); };
