@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 34,
-  "lastUpdated": "2026-08-05",
+  "version": 35,
+  "lastUpdated": "2026-08-06",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1088,6 +1088,36 @@
       "seed": false,
       "note": "Threat-research team that discovers and names original malware campaigns with full technical infrastructure breakdowns.",
       "rationale": "Discovered and named 'SMOKE#SCREEN' behind today's ScreenConnect RMM-abuse story — a live WsgiDAV staging server and rotating Cloudflare Tunnel/Dropbox C2 infrastructure hidden behind fake Adobe and Zoom update pages — publishing named-researcher technical detail (Sangwan, Gaikwad, Beardslee) ahead of broad coverage. Primary hands-on research, not aggregation; no securonix.com domain in the roster."
+    },
+    {
+      "name": "FBI Cyber Division (IC3 / Cyber Alerts)",
+      "url": "https://www.fbi.gov/investigate/cyber",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "The FBI's own cyber-alert and PSA feed, often issued jointly with CISA/EPA/sector regulators on active exploitation of critical-infrastructure systems.",
+      "rationale": "Published the original joint FBI/EPA alert behind today's lead breach story — hackers actively hijacking internet-connected water-utility PLCs (Rockwell/Allen-Bradley MicroLogix) across at least seven states since July 27, rewriting ladder logic to cause flooding and pressure loss. Authoritative primary government source, comparable to the existing CISA Advisories entry; no fbi.gov domain in the roster."
+    },
+    {
+      "name": "Barracuda Networks (Threat Research)",
+      "url": "https://blog.barracuda.com/category/research",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "Email-security vendor's threat-research team publishing original proof-of-concept research on AI-assistant abuse alongside its recurring SOC Threat Radar reports.",
+      "rationale": "Built and published the original proof-of-concept behind today's AI-security story, showing a compromised low-privilege email account's own built-in AI assistant can be directed to escalate access and impersonate an executive while evading detection. Sustained original threat-research cadence (SOC Threat Radar); primary hands-on research, not aggregation; no blog.barracuda.com domain in the roster."
+    },
+    {
+      "name": "Novee Security",
+      "url": "https://novee.security/blog",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "AI-agent red-teaming firm whose researchers publish hands-on disclosures against Anthropic, OpenAI and Google agent products.",
+      "rationale": "Presented original Black Hat research ('Trusted Enough to Run') comparing containment failures across Claude Code, Gemini CLI and Codex CLI sandboxes, part of four original sessions disclosing vulnerabilities in Anthropic, OpenAI and Google agent products this week. Primary offensive AI-security research, not aggregation; no novee.security domain in the roster."
     }
   ],
   "candidates": [
@@ -1241,6 +1271,22 @@
       "tier": "strong",
       "noted": "2026-08-05",
       "rationale": "Reviewed samples from 11 of ExfilSquad's 15 claimed victims and found consistent Dataverse/Power Pages misconfiguration patterns behind today's UK Police National Legal Database (PNLD) breach story, confirming at least one unauthenticated-exposure case (Houston). Promising original forensic research, but a single-story appearance so far with unclear publishing cadence — watch before promoting."
+    },
+    {
+      "name": "Open Secure AI Alliance / Linux Foundation (SAFE)",
+      "url": "https://www.linuxfoundation.org/",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "noted": "2026-08-06",
+      "rationale": "Published the original SAFE (Shared AI Findings Exchange) RFC behind today's AI-vendor story — the first proposed voluntary cross-org framework for sharing AI agent security incidents, backed by 120 member orgs including Nvidia, Cisco, CrowdStrike and Red Hat. Significant primary industry document, but a standards-body/alliance publishing occasional RFCs rather than a sustained research or reporting cadence — watch for continued original output before promoting."
+    },
+    {
+      "name": "BankInfoSecurity (ISMG)",
+      "url": "https://www.bankinfosecurity.com/",
+      "category": "breaking",
+      "tier": "strong",
+      "noted": "2026-08-06",
+      "rationale": "Ran the first detailed writeup of DentaQuest's confirmed 15-million-patient breach behind today's lead story, citing the Oregon AG's data-breach reporting site directly. Consistent, well-sourced breach reporting from ISMG's security-focused outlet, but leans on regulatory filings and other outlets' scoops more often than first-hand discovery — watch for original scoops before promoting."
     }
   ]
 }

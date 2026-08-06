@@ -516,6 +516,16 @@
   ],
   "candidates": [
     {
+      "name": "GeekWire",
+      "url": "https://www.geekwire.com/",
+      "category": "business",
+      "tier": "strong",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "Independent Seattle-based tech newsroom (Todd Bishop & John Cook, est. 2011) with original startup/AI reporting; ran the original 'the startup idea that convinced a UW computer science legend to leave Google after 27 years' angle behind today's Jeff Dean / Discovery Loop story.",
+      "rationale": "Editorially independent, high-factual outlet doing genuine original reporting with a distinct Pacific-Northwest (Microsoft, Amazon, UW) lens, and a proximate original source on today's Jeff Dean departure. But its beat is regional tech/startups broadly rather than a standing general-AI desk, and today's story is better anchored to roster outlets already carrying it (TechCrunch, NYT, Axios, Bloomberg, Fortune); parked as a candidate — consistent with how BetaKit and other regional newsrooms were handled — pending a clearly differentiated, recurring general-AI original contribution. Deduped by domain (geekwire.com not previously in roster)."
+    },
+    {
       "name": "Exponential View (Azeem Azhar)",
       "url": "https://www.exponentialview.co/",
       "category": "policy",

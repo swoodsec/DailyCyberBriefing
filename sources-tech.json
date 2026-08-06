@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 24,
-  "lastUpdated": "2026-08-04",
+  "version": 25,
+  "lastUpdated": "2026-08-06",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -462,9 +462,29 @@
       "seed": false,
       "note": "South Korea-based electronics trade publication with original, well-sourced supply-chain reporting on semiconductors (DRAM/NAND memory, foundry), display panels, and batteries, closely tracking Samsung, SK Hynix, LG, and their component customers.",
       "rationale": "Surfaced via a source-discovery search for original semiconductor/supply-chain journalism amid the recurring memory-shortage beat that dominated today's coverage (Tim Cook's '100-year flood' on memory pricing, DDR4 revival, Qualcomm hikes). Passes discovery criteria: reputable and editorially credible (frequently cited by Reuters, Nikkei, and others on Samsung/SK Hynix supply-chain scoops), primarily original reporting rather than aggregation, actively publishing throughout 2026, and clearly relevant to general devices/consumer and big-tech supply chains rather than narrow cybersecurity or pure AI-model coverage. Distinguished from the parked DIGITIMES (reliability concerns), EE Times, and Semiconductor Engineering candidates by a Korea-centric DRAM/NAND-memory focus directly on the three suppliers driving the memory crunch. New domain (thelec.net) not previously in roster."
+    },
+    {
+      "name": "TechNode",
+      "url": "https://technode.com/",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "China-focused technology and startup news outlet (since 2007), reporting natively in English and Chinese on Chinese big tech, startups, venture capital, devices, and the domestic-chip/self-sufficiency push.",
+      "rationale": "Surfaced as the original source behind today's Huawei MateBook Fold Ultimate Design (2026) launch coverage — the 18-inch foldable PC on Huawei's homegrown Kirin X90 Plus and HarmonyOS. Passes discovery criteria: reputable and editorially credible (a leading, long-running China-tech outlet founded 2007, cited across the ecosystem), primarily original reporting rather than aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business and devices from a China vantage rather than narrow cybersecurity or pure AI-model coverage. Distinguished from roster peers SCMP (Hong Kong general newspaper) by a mainland startup/tech-ecosystem focus, and complements Rest of World and TechCabal on emerging-markets tech. New domain (technode.com) not previously in roster."
     }
   ],
   "candidates": [
+    {
+      "name": "TechXplore",
+      "url": "https://techxplore.com/",
+      "category": "science",
+      "tier": "strong",
+      "added": "2026-08-06",
+      "seed": false,
+      "note": "Technology-news site (Science X network, sibling to Phys.org) covering engineering, computing, energy, and applied research.",
+      "rationale": "Surfaced as a dated source for today's Google Earth AI-image rollback item. Reviewed but parked as a candidate rather than added because, like its siblings Phys.org and ScienceDaily (also parked), its model leans toward lightly edited republication of institutional and wire material rather than primarily original reporting, which does not cleanly meet discovery criterion (2); the day's add slot went to the clearly original TechNode. Revisit only if it demonstrates original reporting or recurs as the best available source."
+    },
     {
       "name": "MIT Technology Review",
       "url": "https://www.technologyreview.com/",
