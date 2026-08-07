@@ -149,6 +149,66 @@
       "url": "https://blog.gitea.com/release-of-1.26.3-and-1.26.4/",
       "title": "gitea ships 1 26 3 1 26 4 to remove the wildcard trust default behind cve 2026 20896",
       "date": "2026-07-07"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+      "title": "shinyhunters claims breach of big four firm ernst young threatens full data leak",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/ransom-cartel-ransomware-creator-sentenced-to-16-years-in-prison/",
+      "title": "ransom cartel creator maksim silnikau sentenced to 16 years in prison",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+      "title": "cisa flags actively exploited jetbrains teamcity rce cve 2026 63077 aug 8 deadline",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.theregister.com/security/2026/08/04/feds-get-3-days-to-patch-n-able-god-mode-flaw-under-active-exploit/5282894",
+      "title": "n able n central auth bypass cve 2026 18577 exploited for admin takeover feds get 3 days",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+      "title": "cisco warns of secure fmc static credential zero day cve 2026 20316 exploited in the wild",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.securityweek.com/zero-click-ai-browser-hacking-claude-and-chatgpt-atlas-hijacked-via-emails-x-posts/",
+      "title": "zero click pleasefix hijacks claude chatgpt atlas and other ai browsers via a single email",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.esecurityplanet.com/threats/black-hat-2026-critical-flaws-found-in-anthropic-google-and-openai-coding-agents/",
+      "title": "black hat 2026 critical flaws found in anthropic google and openai coding agents",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.securityweek.com/openai-fixes-chatgpt-agent-flaw-that-could-let-attackers-forge-an-ai-insider/",
+      "title": "openai fixes chatgpt agent flaw that could let attackers forge an ai insider",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/",
+      "title": "eu ai act enforcement begins putting model adversarial resilience under the microscope",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.darkreading.com/cloud-security/microsoft-adds-agentic-ai-capabilities-sentinel",
+      "title": "microsoft adds agentic ai capabilities and ai agent posture risk to sentinel and defender",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://blog.jetbrains.com/teamcity/2026/07/cve-2026-63077/",
+      "title": "jetbrains ships an out of band security patch plugin for teamcity back to 2017 1",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.securityweek.com/googles-ai-agent-uncovers-13-year-old-chrome-flaw-amid-record-patching-pace/",
+      "title": "google s ai agent uncovers a 13 year old chrome flaw amid a record patching pace",
+      "date": "2026-08-07"
     }
   ],
   "ai": [
@@ -266,6 +326,51 @@
       "url": "https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-june-29-july-5-2026/",
       "title": "labs recruit philosophers and consciousness researchers to study model welfare",
       "date": "2026-07-07"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
+      "title": "meta debuts muse code and muse spark 1 2 its first coding agent to challenge claude code and codex",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://9to5mac.com/2026/08/06/gpt-5-turning-one-as-openai-shares-new-agent-plugins-standard/",
+      "title": "gpt 5 turns one as openai shares a new open agent plugins standard",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://humanoid.press/",
+      "title": "humanoid robot production milestones figure 03 past 1 000 units optimus gen 3 ramps",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+      "title": "anthropic misalignment gives way to incoherence as tasks and reasoning get harder",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://openai.com/index/openai-anthropic-safety-evaluation/",
+      "title": "openai and anthropic run a first of its kind joint safety evaluation of each other s models",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.engadget.com/2231285/meta-introduces-muse-code-its-take-on-a-coding-agent/",
+      "title": "meta s muse code arrives as a terminal coding agent that manages its own sub agents",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://9to5google.com/2026/08/03/august-2026-google-system-updates/",
+      "title": "google threads gemini deeper into android and workspace in its august updates",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+      "title": "eu starts enforcing ai act rules and new transparency requirements",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
+      "title": "global startup funding hit a record 510b in h1 2026 as the ai boom accelerates",
+      "date": "2026-08-07"
     }
   ],
   "tech": [
@@ -403,6 +508,56 @@
       "url": "https://restofworld.org/2026/china-ai-web-novels/",
       "title": "chinese web novel platforms cap ai output after reader backlash over bulk generated stories",
       "date": "2026-07-07"
+    },
+    {
+      "url": "https://qz.com/tesla-spacex-terafab-chip-factory-grimes-county-texas-080626",
+      "title": "spacex and tesla to invest 16 8b in terafab billed as the world s largest chip factory",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/04/nj-amazon-antitrust-lawsuit-delivery-contractors.html",
+      "title": "new jersey sues amazon on antitrust grounds over its power over delivery contractors",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://invezz.com/news/2026/08/06/why-nvidia-micron-and-amd-are-down-pre-market-after-sandisk-shock/",
+      "title": "nvidia micron and amd slide pre market after sandisk s guidance shock",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://stocksdownunder.com/amd-earnings-drop-nvidia-micron-sandisk/",
+      "title": "amd falls 8 after record earnings setting a high bar into nvidia s aug 26 report",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://techcabal.com/2026/07/23/samsung-galaxy-watch-9-official-price-specs-release-date/",
+      "title": "samsung galaxy watch 9 reaches retail with subscription free health tracking from 379",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.techradar.com/tech/top-tech-of-the-month-the-best-new-gadgets-weve-tested-for-august-2026",
+      "title": "august s notable gadgets sony s 1000x collexion and a rollable lenovo legion laptop",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/",
+      "title": "google says ai helped chrome fix 1 072 security bugs across two releases",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.tomsguide.com/entertainment/netflix/netflix-just-announced-5-big-changes-for-the-streaming-service-heres-all-the-new-features",
+      "title": "netflix announces five big changes including a rebuilt mobile app",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.space.com/space-exploration/international-space-station/1-more-step-nasa-astronauts-conduct-6-5-hour-spacewalk-to-prep-iss-for-solar-array-upgrade",
+      "title": "nasa astronauts complete a 6 5 hour spacewalk to ready the iss for new solar arrays",
+      "date": "2026-08-07"
+    },
+    {
+      "url": "https://spacepolicyonline.com/news/nasa-sets-launch-date-for-roman-space-telescope/",
+      "title": "nasa sets an aug 30 launch for the nancy grace roman space telescope",
+      "date": "2026-08-07"
     }
   ]
 }

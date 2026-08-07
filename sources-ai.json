@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 26,
-  "lastUpdated": "2026-08-04",
+  "version": 27,
+  "lastUpdated": "2026-08-07",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -512,6 +512,16 @@
       "seed": false,
       "note": "European deep-tech/AI-infrastructure desk (TNW, an Amsterdam-based outlet) doing original reporting on AI funding, chips, energy, and market structure; the originating source behind today's Valar Atomics $1B nuclear-for-data-centers report, the OLIX $312M photonic-chip report, and the Nvidia CUDA-moat analysis (Aug 3).",
       "rationale": "Promoted from candidate (parked Jul 1 on the concern that its coverage overlapped existing Verge/Ars/VentureBeat/Engadget product desks) after a clearly differentiated, load-bearing original-reporting day: TNW independently originated three distinct Aug 3 stories used in today's brief — a dedicated Valar Atomics $1B Series B report with CEO quotes, a dedicated OLIX $312M photonic-chip report, and a reported Nvidia CUDA-moat analysis with first-hand quotes from Rebellions, Modular and others — that other outlets relayed. Its distinct value versus the roster is deep-tech/AI-infrastructure original reporting (chips, energy, compute economics, funding) rather than consumer-product coverage. Reputable, actively publishing in 2026, clearly AI/business relevant, not cybersecurity-focused, deduped by domain (thenextweb.com not previously in the sources list)."
+    },
+    {
+      "name": "Anthropic Alignment",
+      "url": "https://alignment.anthropic.com/",
+      "category": "research",
+      "tier": "core",
+      "added": "2026-08-07",
+      "seed": false,
+      "note": "Anthropic's alignment-science blog publishing primary research on model behavior and safety.",
+      "rationale": "Primary-source lab research (misalignment-vs-incoherence scaling) cited today; first-party frontier-lab safety research."
     }
   ],
   "candidates": [

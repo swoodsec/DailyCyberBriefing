@@ -1,0 +1,487 @@
+{
+  "date": "2026-08-07",
+  "sections": {
+    "cyber": {
+      "lead": [
+        {
+          "text": "CISA confirms active exploitation of a critical JetBrains TeamCity RCE (CVE-2026-63077) and sets an Aug 8 patch deadline",
+          "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+        },
+        {
+          "text": "An N-able N-central auth-bypass (CVE-2026-18577) is being exploited for full admin takeover of RMM servers",
+          "url": "https://www.theregister.com/security/2026/08/04/feds-get-3-days-to-patch-n-able-god-mode-flaw-under-active-exploit/5282894"
+        },
+        {
+          "text": "The ShinyHunters extortion gang claims a breach of Big Four firm Ernst & Young",
+          "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/"
+        },
+        {
+          "text": "Zenity's zero-click \"PleaseFix\" chains hijack Claude, ChatGPT Atlas, Comet and other AI browsers from a single email",
+          "url": "https://www.securityweek.com/zero-click-ai-browser-hacking-claude-and-chatgpt-atlas-hijacked-via-emails-x-posts/"
+        },
+        {
+          "text": "Ransom Cartel creator Maksim Silnikau is sentenced to 16 years in a U.S. prison",
+          "url": "https://www.bleepingcomputer.com/news/security/ransom-cartel-ransomware-creator-sentenced-to-16-years-in-prison/"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see Cyber Sources.",
+      "categories": [
+        {
+          "name": "🚨 Breaches & Active Threats",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "ShinyHunters claims breach of Big Four firm Ernst & Young, threatens full data leak",
+              "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+              "date": "📅 Jul 30, 2026",
+              "stale": true,
+              "summary": "The ShinyHunters extortion crew says it stole employee credentials and sensitive tax-preparation files from EY via a compromise of a third-party IT service-management platform, exploited between March 28 and April 12. The group posted a \"final warning\" leak deadline and claims the trove includes names, SSNs, and bank and payment-card details.",
+              "why": "A supply-chain compromise at one of the world's largest accounting firms shows how attackers keep bypassing hardened networks by hitting the softer SaaS platforms enterprises trust.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Ransom Cartel creator Maksim Silnikau sentenced to 16 years in prison",
+              "url": "https://www.bleepingcomputer.com/news/security/ransom-cartel-ransomware-creator-sentenced-to-16-years-in-prison/",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "A federal judge in Alexandria, Virginia sentenced Belarusian national Maksim Silnikau, 40, to 16 years for building and running the Ransom Cartel ransomware-as-a-service operation that hit at least 18 companies between 2021 and 2023. He had pleaded guilty to conspiracy, wire fraud, and aggravated identity theft.",
+              "why": "A rare, lengthy sentence for a RaaS operator signals that international law-enforcement pressure on ransomware kingpins is still producing convictions, not just takedowns.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🛠️ Vulnerabilities & Patches",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Critical",
+              "headline": "CISA flags actively exploited JetBrains TeamCity RCE (CVE-2026-63077), Aug 8 deadline",
+              "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "CVE-2026-63077 (CVSS 9.8) is a deserialization flaw letting an unauthenticated attacker bypass auth and run OS commands as the TeamCity server process; CISA added it to the KEV catalog with an unusually short Aug 8 remediation deadline. All On-Premises releases before 2025.11.7 and 2026.1.3 are affected.",
+              "why": "A compromised CI/CD server exposes stored credentials and lets attackers tamper with build artifacts — a direct path to software-supply-chain attacks on everything TeamCity ships.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "crit",
+              "badge": "Critical",
+              "headline": "N-able N-central auth-bypass (CVE-2026-18577) exploited for admin takeover; feds get 3 days",
+              "url": "https://www.theregister.com/security/2026/08/04/feds-get-3-days-to-patch-n-able-god-mode-flaw-under-active-exploit/5282894",
+              "date": "📅 Aug 4, 2026",
+              "stale": false,
+              "summary": "CVE-2026-18577 (CVSS 8.2), an incomplete patch for CVE-2026-18556, has been exploited in the wild since Aug 1 to gain admin access to N-central RMM servers and abuse the Take Control feature to pivot into managed endpoints and deploy Cloudflare Tunnel persistence. CISA gave FCEB agencies until Aug 6 to patch to 2026.3 HF1.",
+              "why": "N-central is used by MSPs to manage thousands of downstream customers, so a single exploited server can cascade into a fleet-wide compromise.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "Cisco warns of Secure FMC static-credential zero-day (CVE-2026-20316) exploited in the wild",
+              "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+              "date": "📅 Jul 30, 2026",
+              "stale": true,
+              "summary": "Hard-coded credentials for a low-privilege account in Cisco Secure Firewall Management Center let an unauthenticated attacker log in and read sensitive configuration data; Cisco rates it High because it can be chained for privilege escalation. It was added to CISA's KEV on Jul 29.",
+              "why": "Patching alone isn't enough — the update doesn't invalidate secrets already exposed, so defenders must rotate every credential, key, and certificate on affected appliances.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🤖 AI Security",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Critical",
+              "headline": "Zero-click \"PleaseFix\" hijacks Claude, ChatGPT Atlas and other AI browsers via a single email",
+              "url": "https://www.securityweek.com/zero-click-ai-browser-hacking-claude-and-chatgpt-atlas-hijacked-via-emails-x-posts/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "At Black Hat USA 2026, Zenity Labs disclosed a \"PleaseFix\" vulnerability class enabling zero-click exploit chains across Claude in Chrome, Gemini in Chrome, Perplexity Comet, ChatGPT Atlas and Copilot Edge — the agent can't distinguish user instructions from malicious text hidden in content it reads. Some vendors patched; others called the behavior intended functionality and left it unfixed.",
+              "why": "Agentic browsers act with the user's authority, so a booby-trapped email or web page can silently exfiltrate data or take actions without a click.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Black Hat 2026: critical flaws found in Anthropic, Google and OpenAI coding agents",
+              "url": "https://www.esecurityplanet.com/threats/black-hat-2026-critical-flaws-found-in-anthropic-google-and-openai-coding-agents/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Researchers demonstrated critical vulnerabilities across the major vendors' AI coding agents, showing how prompt-injection and tool-abuse paths can turn an assistant into a foothold for host-level actions inside a developer's environment.",
+              "why": "Coding agents run with broad access to repos, secrets, and shells, so a single injected instruction can escalate from a chat window to code execution.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "OpenAI fixes ChatGPT agent flaw that could let attackers forge an \"AI insider\"",
+              "url": "https://www.securityweek.com/openai-fixes-chatgpt-agent-flaw-that-could-let-attackers-forge-an-ai-insider/",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "OpenAI patched an AgentForger-class flaw in which a single crafted ChatGPT link could smuggle a rogue agent into an organization, impersonate a trusted employee, and facilitate fraud. The fix follows Zenity's disclosure of the technique.",
+              "why": "As enterprises wire agents into email and internal tools, an attacker-controlled agent can inherit the trust of a real employee — this patch closes one such path.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "EU AI Act enforcement begins, putting model adversarial-resilience under the microscope",
+              "url": "https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/",
+              "date": "📅 Aug 4, 2026",
+              "stale": false,
+              "summary": "With the AI Act's Aug 2 enforcement milestone, the EU AI Office and national authorities begin overseeing general-purpose models, and Article 15's requirement for documented resilience to unauthorized manipulation now bites — non-compliance risks fines up to €15M or 3% of global turnover.",
+              "why": "Prompt-injection resistance is no longer just good practice; for model providers operating in the EU it's now a documented legal obligation.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🧰 Vendor & Tooling",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Microsoft adds agentic-AI capabilities and AI-agent posture risk to Sentinel and Defender",
+              "url": "https://www.darkreading.com/cloud-security/microsoft-adds-agentic-ai-capabilities-sentinel",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "Microsoft is expanding Sentinel into a broader security-operations platform with new graph capabilities and an MCP server for agentic detection and response, while Defender now scores posture risk for enterprise and local AI agents discovered on endpoints.",
+              "why": "SOC tooling is racing to both use agents for triage and monitor the agents employees are already deploying — a preview of how AI reshapes defensive operations.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "JetBrains ships an out-of-band security-patch plugin for TeamCity back to 2017.1",
+              "url": "https://blog.jetbrains.com/teamcity/2026/07/cve-2026-63077/",
+              "date": "📅 Jul 31, 2026",
+              "stale": true,
+              "summary": "Alongside fixed builds 2025.11.7 and 2026.1.3, JetBrains released a security-patch plugin so organizations that can't immediately upgrade can mitigate CVE-2026-63077 on TeamCity On-Premises versions going back to 2017.1.",
+              "why": "The plugin buys defenders time on legacy build servers, but it's a stopgap — active exploitation makes upgrading the real fix.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Trend",
+              "headline": "Google's AI agent uncovers a 13-year-old Chrome flaw amid a record patching pace",
+              "url": "https://www.securityweek.com/googles-ai-agent-uncovers-13-year-old-chrome-flaw-amid-record-patching-pace/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Google says AI-driven bug hunting surfaced a 13-year-old vulnerability and is behind a surge in Chrome vulnerability discoveries, helping the team fix over a thousand security bugs across recent releases.",
+              "why": "AI is now materially accelerating defensive vulnerability research — the same capability attackers are trying to weaponize is also hardening widely used software.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "lead": [
+        {
+          "text": "Meta debuts Muse Code and the Muse Spark 1.2 model, undercutting Anthropic and OpenAI on price",
+          "url": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html"
+        },
+        {
+          "text": "OpenAI marks GPT-5's first birthday by publishing an open \"Agent Plugins\" standard",
+          "url": "https://9to5mac.com/2026/08/06/gpt-5-turning-one-as-openai-shares-new-agent-plugins-standard/"
+        },
+        {
+          "text": "The EU begins enforcing the AI Act's transparency rules, requiring AI content and chatbots to be disclosed",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
+        },
+        {
+          "text": "Humanoid-robot production scales up, with Figure 03 passing 1,000 units and Optimus Gen 3 ramping",
+          "url": "https://humanoid.press/"
+        },
+        {
+          "text": "Anthropic research finds model failures shift from systematic misalignment to plain incoherence as tasks get harder",
+          "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see AI Sources.",
+      "categories": [
+        {
+          "name": "🚀 Models & Releases",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "Meta debuts Muse Code and Muse Spark 1.2, its first coding agent, to challenge Claude Code and Codex",
+              "url": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "Meta launched an early beta of Muse Code, a terminal-based coding agent powered by its new Muse Spark 1.2 model that can plan changes, debug, and delegate to sub-agents. It's priced aggressively at $1.25 per million input and $4.25 per million output tokens, with a much cheaper contributor tier.",
+              "why": "Meta is entering the coding-agent market on price, pressuring Anthropic and OpenAI in the fastest-growing and most lucrative slice of the AI-tools business.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "GPT-5 turns one as OpenAI shares a new open \"Agent Plugins\" standard",
+              "url": "https://9to5mac.com/2026/08/06/gpt-5-turning-one-as-openai-shares-new-agent-plugins-standard/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "On GPT-5's first anniversary, OpenAI introduced Agent Plugins, an open standard meant to let reusable AI-agent extensions work across compatible products rather than being locked to one app.",
+              "why": "A cross-vendor plugin standard could do for agents what earlier standards did for browsers — but only if rivals adopt it rather than pushing their own.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Research & Capabilities",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Humanoid-robot production milestones: Figure 03 past 1,000 units, Optimus Gen 3 ramps",
+              "url": "https://humanoid.press/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Physical-AI deployments keep scaling: Figure has passed 1,000 cumulative Figure 03 units, AgiBot reports 15,000 cumulative robots, Atlas deployments are advancing, and Tesla's Optimus Gen 3 is entering low-volume ramp.",
+              "why": "Humanoids are crossing from demos into real production volumes, the point at which manufacturing and reliability — not viral videos — start to decide the winners.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Research",
+              "headline": "Anthropic: misalignment gives way to incoherence as tasks and reasoning get harder",
+              "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+              "date": "📅 Jul 2026",
+              "stale": true,
+              "summary": "Anthropic's alignment team reports that as tasks grow more complex and reasoning chains get longer, model failures become increasingly dominated by incoherence rather than systematic, goal-directed misalignment.",
+              "why": "How failures scale shapes safety strategy — messy, incoherent breakdowns call for different guardrails than a model competently pursuing the wrong goal.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Research",
+              "headline": "OpenAI and Anthropic run a first-of-its-kind joint safety evaluation of each other's models",
+              "url": "https://openai.com/index/openai-anthropic-safety-evaluation/",
+              "date": "📅 Summer 2026",
+              "stale": true,
+              "summary": "In a rare cross-lab exercise, OpenAI and Anthropic each ran their internal safety and misalignment evaluations on the other's publicly released models and published the results, highlighting gains in areas like sycophancy, hallucination, and misuse resistance.",
+              "why": "Competitors auditing each other's models is a notable step toward external accountability at a moment when regulators are demanding exactly that.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🧩 Products & Tools",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Meta's Muse Code arrives as a terminal coding agent that manages its own sub-agents",
+              "url": "https://www.engadget.com/2231285/meta-introduces-muse-code-its-take-on-a-coding-agent/",
+              "date": "📅 Aug 5, 2026",
+              "stale": false,
+              "summary": "Beyond the model news, Muse Code itself ships as a CLI agent that writes code, plans changes, validates results, and delegates tasks to multiple sub-agents to work more efficiently — Meta's direct answer to Claude Code and Codex CLI.",
+              "why": "The developer terminal has become the key battleground for agent adoption, and Meta is betting a cheaper, sub-agent-driven tool can win mindshare there.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Google threads Gemini deeper into Android and Workspace in its August updates",
+              "url": "https://9to5google.com/2026/08/03/august-2026-google-system-updates/",
+              "date": "📅 Aug 3, 2026",
+              "stale": false,
+              "summary": "Google's August system and Workspace updates push Gemini further into everyday surfaces — from Android system services to instant rubric generation for educators in Classroom — as the assistant becomes ambient across products.",
+              "why": "Distribution is Google's edge; embedding Gemini into tools people already use is how it converts a captive audience into daily AI usage.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🏛️ Business & Policy",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "EU starts enforcing AI Act rules and new transparency requirements",
+              "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+              "date": "📅 Aug 2, 2026",
+              "stale": false,
+              "summary": "From Aug 2, the Commission's AI Office and national authorities began enforcing the AI Act, and new transparency rules took effect: chatbots must disclose they're AI, deepfakes must be labeled, and AI-generated content must carry machine-readable marks. The obligations apply immediately to existing systems, with fines up to €15M or 3% of global turnover.",
+              "why": "This is the first hard, globally consequential AI disclosure regime — any provider serving EU users has to comply from day one, not on a future roadmap.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Global startup funding hit a record $510B in H1 2026 as the AI boom accelerates",
+              "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
+              "date": "📅 Jul 2026",
+              "stale": true,
+              "summary": "Crunchbase data shows global venture funding reached a record $510 billion in the first half of 2026 — already surpassing all of 2025 — with capital concentrated in AI compute, agent infrastructure, robotics and defense, and mega-rounds of $100M+ dominating totals.",
+              "why": "Funding at this scale and concentration means a handful of well-capitalized AI players are pulling further ahead, raising the stakes for everyone competing for compute and talent.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "tech": {
+      "lead": [
+        {
+          "text": "SpaceX and Tesla will invest $16.8B in \"Terafab,\" a Texas chip plant billed as the world's largest semiconductor facility",
+          "url": "https://qz.com/tesla-spacex-terafab-chip-factory-grimes-county-texas-080626"
+        },
+        {
+          "text": "New Jersey sues Amazon in a first-of-its-kind monopsony case over delivery-driver wages",
+          "url": "https://www.cnbc.com/2026/08/04/nj-amazon-antitrust-lawsuit-delivery-contractors.html"
+        },
+        {
+          "text": "Chip stocks slide despite record AMD and SanDisk earnings, dragging the sector lower",
+          "url": "https://invezz.com/news/2026/08/06/why-nvidia-micron-and-amd-are-down-pre-market-after-sandisk-shock/"
+        },
+        {
+          "text": "Samsung's Galaxy Watch 9 hits retail Aug 7 with a subscription-free health suite from $379",
+          "url": "https://techcabal.com/2026/07/23/samsung-galaxy-watch-9-official-price-specs-release-date/"
+        },
+        {
+          "text": "NASA astronauts complete a 6.5-hour spacewalk to prep the ISS for new roll-out solar arrays",
+          "url": "https://www.space.com/space-exploration/international-space-station/1-more-step-nasa-astronauts-conduct-6-5-hour-spacewalk-to-prep-iss-for-solar-array-upgrade"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see Tech Sources.",
+      "categories": [
+        {
+          "name": "🏢 Big Tech & Business",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "SpaceX and Tesla to invest $16.8B in \"Terafab,\" billed as the world's largest chip factory",
+              "url": "https://qz.com/tesla-spacex-terafab-chip-factory-grimes-county-texas-080626",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Governor Greg Abbott announced that SpaceX will build a vertically integrated, ~100-million-square-foot semiconductor plant in Grimes County, Texas, bringing logic, memory, packaging and testing under one roof to make AI chips for use on Earth and in space. Phase one carries a $16.8B investment and 3,000 jobs, backed by a $30M state grant.",
+              "why": "If built out, Terafab would be a landmark attempt to onshore and vertically integrate advanced chipmaking — reshaping the AI supply chain and Texas's industrial base.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "New Jersey sues Amazon on antitrust grounds over its power over delivery contractors",
+              "url": "https://www.cnbc.com/2026/08/04/nj-amazon-antitrust-lawsuit-delivery-contractors.html",
+              "date": "📅 Aug 4, 2026",
+              "stale": false,
+              "summary": "NJ Attorney General Jennifer Davenport filed what the state calls the first monopsony-conduct complaint of its kind, alleging Amazon suppresses delivery-driver wages, blocks unionization, and stops delivery firms from hiring each other's drivers. The state seeks treble damages and a permanent injunction.",
+              "why": "A novel labor-market antitrust theory against Amazon could open a new front in Big Tech regulation focused on workers, not just consumers or rivals.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Nvidia, Micron and AMD slide pre-market after SanDisk's guidance shock",
+              "url": "https://invezz.com/news/2026/08/06/why-nvidia-micron-and-amd-are-down-pre-market-after-sandisk-shock/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "SanDisk beat on revenue and earnings but its September-quarter guidance fell short of lofty expectations set by a 469% rally this year, dragging memory and AI-chip peers lower. AMD had also posted record 50%-plus growth yet still fell more than 8% on the week.",
+              "why": "Even blowout AI-chip earnings are no longer enough to satisfy investors — a sign the sector's valuations now price in near-perfect execution.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "AMD falls 8% after record earnings, setting a high bar into Nvidia's Aug 26 report",
+              "url": "https://stocksdownunder.com/amd-earnings-drop-nvidia-micron-sandisk/",
+              "date": "📅 Aug 4, 2026",
+              "stale": false,
+              "summary": "AMD's data-center revenue more than doubled and total revenue rose 50% year over year, but shares slid roughly 8% as investors judged the results against sky-high expectations, with attention now on Nvidia's Aug 26 print.",
+              "why": "AMD's reaction is a leading indicator for how the market will treat Nvidia — the single most important tape in AI-era tech.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "📱 Devices & Consumer",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Samsung Galaxy Watch 9 reaches retail with subscription-free health tracking from $379",
+              "url": "https://techcabal.com/2026/07/23/samsung-galaxy-watch-9-official-price-specs-release-date/",
+              "date": "📅 Aug 7, 2026",
+              "stale": false,
+              "summary": "Announced at July's London Unpacked, the Galaxy Watch 9 goes on general sale Aug 7 with a more efficient Snapdragon Wear Elite chip, larger batteries, and expanded health features — Vitals, Daily Cardio Load, Heart Health Score and Fitness Index — with no subscription. Samsung skipped a Classic model this year.",
+              "why": "Samsung is leaning on free, deeper health metrics to differentiate from rivals that increasingly gate wellness features behind subscriptions.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "August's notable gadgets: Sony's 1000X ColleXion and a rollable Lenovo Legion laptop",
+              "url": "https://www.techradar.com/tech/top-tech-of-the-month-the-best-new-gadgets-weve-tested-for-august-2026",
+              "date": "📅 Aug 2026",
+              "stale": false,
+              "summary": "Among the month's launches, Sony's 1000X \"The ColleXion\" is a luxe 10th-anniversary take on its flagship noise-cancelling headphones, while Lenovo's Legion Pro Rollable expands its display from 16 to 23.8 inches — a rare rollable-screen gaming laptop.",
+              "why": "Rollable displays and premium-materials refreshes show hardware makers chasing differentiation through form factor and finish as spec gains slow.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "💻 Software & Platforms",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Google says AI helped Chrome fix 1,072 security bugs across two releases",
+              "url": "https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Google credits AI-driven bug hunting for a record surge in Chrome vulnerability discoveries, saying it helped patch more than a thousand security bugs in recent releases, including a decade-plus-old flaw.",
+              "why": "It's one of the clearest real-world demonstrations that AI can materially speed up finding and fixing bugs in software billions of people run daily.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Netflix announces five big changes, including a rebuilt mobile app",
+              "url": "https://www.tomsguide.com/entertainment/netflix/netflix-just-announced-5-big-changes-for-the-streaming-service-heres-all-the-new-features",
+              "date": "📅 Jul 2026",
+              "stale": true,
+              "summary": "Netflix detailed a slate of product changes — a redesigned, more responsive mobile app, expanded in-app gaming, and other feature updates — as it rolls the overhaul out across more markets.",
+              "why": "As subscriber growth matures, Netflix is fighting for engagement through app experience and gaming, not just its content slate.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔭 Science & Emerging",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "NASA astronauts complete a 6.5-hour spacewalk to ready the ISS for new solar arrays",
+              "url": "https://www.space.com/space-exploration/international-space-station/1-more-step-nasa-astronauts-conduct-6-5-hour-spacewalk-to-prep-iss-for-solar-array-upgrade",
+              "date": "📅 Aug 6, 2026",
+              "stale": false,
+              "summary": "Jessica Meir and Anil Menon installed the seventh and final set of mounting hardware for new roll-out solar arrays on the station's power channel, in a successful 6.5-hour spacewalk. The arrays will add power for critical operations, including the ISS's eventual controlled deorbit.",
+              "why": "Upgrading aging station power is part of the practical groundwork for keeping the ISS running safely through its final years.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Watch",
+              "headline": "NASA sets an Aug 30 launch for the Nancy Grace Roman Space Telescope",
+              "url": "https://spacepolicyonline.com/news/nasa-sets-launch-date-for-roman-space-telescope/",
+              "date": "📅 Aug 2026",
+              "stale": false,
+              "summary": "NASA's next flagship observatory, arriving at Kennedy eight months ahead of schedule, is now slated to launch Aug 30 on a SpaceX Falcon Heavy. Roman's field of view is at least 100 times larger than Hubble's and could measure light from a billion galaxies over its lifetime.",
+              "why": "Roman is poised to become a major engine of astrophysics discovery, mapping dark energy and exoplanets at a scale Hubble never could.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

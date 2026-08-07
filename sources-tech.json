@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 25,
-  "lastUpdated": "2026-08-06",
+  "version": 26,
+  "lastUpdated": "2026-08-07",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -472,6 +472,16 @@
       "seed": false,
       "note": "China-focused technology and startup news outlet (since 2007), reporting natively in English and Chinese on Chinese big tech, startups, venture capital, devices, and the domestic-chip/self-sufficiency push.",
       "rationale": "Surfaced as the original source behind today's Huawei MateBook Fold Ultimate Design (2026) launch coverage — the 18-inch foldable PC on Huawei's homegrown Kirin X90 Plus and HarmonyOS. Passes discovery criteria: reputable and editorially credible (a leading, long-running China-tech outlet founded 2007, cited across the ecosystem), primarily original reporting rather than aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business and devices from a China vantage rather than narrow cybersecurity or pure AI-model coverage. Distinguished from roster peers SCMP (Hong Kong general newspaper) by a mainland startup/tech-ecosystem focus, and complements Rest of World and TechCabal on emerging-markets tech. New domain (technode.com) not previously in roster."
+    },
+    {
+      "name": "TechRadar",
+      "url": "https://www.techradar.com/",
+      "category": "devices",
+      "tier": "strong",
+      "added": "2026-08-07",
+      "seed": false,
+      "note": "Major consumer-tech reviews and news outlet covering devices, gadgets, and platforms.",
+      "rationale": "Originating source for today's August gadget roundup (Sony 1000X ColleXion, Lenovo Legion Pro Rollable); established, hands-on device reviews."
     }
   ],
   "candidates": [

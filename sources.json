@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 35,
-  "lastUpdated": "2026-08-06",
+  "version": 36,
+  "lastUpdated": "2026-08-07",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1118,6 +1118,16 @@
       "seed": false,
       "note": "AI-agent red-teaming firm whose researchers publish hands-on disclosures against Anthropic, OpenAI and Google agent products.",
       "rationale": "Presented original Black Hat research ('Trusted Enough to Run') comparing containment failures across Claude Code, Gemini CLI and Codex CLI sandboxes, part of four original sessions disclosing vulnerabilities in Anthropic, OpenAI and Google agent products this week. Primary offensive AI-security research, not aggregation; no novee.security domain in the roster."
+    },
+    {
+      "name": "eSecurity Planet",
+      "url": "https://www.esecurityplanet.com/",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-07",
+      "seed": false,
+      "note": "Long-running enterprise-security news and analysis outlet doing original conference and threat reporting.",
+      "rationale": "Originating source behind today's Black Hat 2026 write-up on critical flaws in Anthropic, Google and OpenAI coding agents; reputable, dated, primary conference coverage."
     }
   ],
   "candidates": [
