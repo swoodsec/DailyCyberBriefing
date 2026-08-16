@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 27,
-  "lastUpdated": "2026-08-07",
+  "version": 28,
+  "lastUpdated": "2026-08-16",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -522,9 +522,29 @@
       "seed": false,
       "note": "Anthropic's alignment-science blog publishing primary research on model behavior and safety.",
       "rationale": "Primary-source lab research (misalignment-vs-incoherence scaling) cited today; first-party frontier-lab safety research."
+    },
+    {
+      "name": "The Register",
+      "url": "https://www.theregister.com/software/ai_ml/",
+      "category": "products",
+      "tier": "strong",
+      "added": "2026-08-16",
+      "seed": false,
+      "note": "Long-established (est. 1994), editorially independent British enterprise-tech newsroom with a dedicated AI/ML desk; original, skeptical reporting behind today's Microsoft Copilot consolidation ('super app') story and its own reported framing of Meta's open-weight/compute-auction announcement.",
+      "rationale": "Reputable, editorially independent outlet doing genuine original reporting (not aggregation) with a distinct skeptical enterprise-IT lens; it independently reported today's Microsoft Copilot app-merger/'super app' story (Aug 13) and originated critical framing of Meta's open-weight/compute-auction plan (Aug 10). A conspicuous absence from a roster that already carries Verge/Ars/Engadget/VentureBeat product desks — The Register's value is its adversarial, detail-first enterprise-tech reporting rather than consumer-product coverage. Actively publishing in 2026, clearly AI-relevant (products/enterprise), broad tech rather than primarily cybersecurity, deduped by domain (theregister.com not previously in the sources list)."
     }
   ],
   "candidates": [
+    {
+      "name": "Unite.AI",
+      "url": "https://www.unite.ai/",
+      "category": "models",
+      "tier": "strong",
+      "added": "2026-08-16",
+      "seed": false,
+      "note": "AI-focused news/explainer site; proximate source behind today's Z.ai GLM-5.3 open-weight coding item, including the post-training-only capability-jump and staged-weights-release detail.",
+      "rationale": "Covers substantive model-release stories with technical framing and was a usable dated source for the GLM-5.3 item, but the site leans toward explainer/aggregation and SEO-oriented content rather than clearly original first-hand reporting, and its editorial track record is unproven relative to roster peers (MarkTechPost, The Decoder); parked as a candidate pending stronger evidence of sustained original reporting, consistent with how techtimes and marktechpost's product desk were handled. Deduped by domain (unite.ai not previously in roster)."
+    },
     {
       "name": "GeekWire",
       "url": "https://www.geekwire.com/",

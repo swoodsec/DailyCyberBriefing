@@ -1,0 +1,266 @@
+{
+  "date": "2026-08-16",
+  "sections": {
+    "cyber": {
+      "lead": [
+        {
+          "text": "Today's automated run could not complete the live Cyber source sweep, so no new stories are published in this edition.",
+          "url": ""
+        },
+        {
+          "text": "The section's web-research budget for this run was exhausted before the Cyber sweep could finish; this was an infrastructure limit, not a quiet news day.",
+          "url": ""
+        },
+        {
+          "text": "No items were added to avoid publishing unverified or previously-seen stories as if they were fresh.",
+          "url": ""
+        },
+        {
+          "text": "The next scheduled run restores full Cyber coverage; the Cyber Sources page and prior editions remain available in the meantime.",
+          "url": ""
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see Cyber Sources.",
+      "categories": [
+        {
+          "name": "⚠️ Service Notice",
+          "items": [
+            {
+              "severity": "low",
+              "badge": "Notice",
+              "headline": "Cyber feed could not refresh this run",
+              "url": "",
+              "date": "📅 Aug 16, 2026",
+              "stale": false,
+              "summary": "The automated data-gathering step for the Cyber section did not finish before this run's web-research budget was used up, so no new items are shown. This is a build-side limitation for today's edition only — no news event.",
+              "why": "The archive stays honest — the next run will re-run the full Cyber sweep and republish live coverage.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "lead": [
+        {
+          "text": "Google ships Gemini 3.7 Flash — a cheaper coding-and-agent workhorse — just three weeks after 3.6, while its flagship 3.5 Pro stays delayed",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
+        },
+        {
+          "text": "OpenAI previews \"Ultrafast,\" running GPT-5.6 Sol up to 14x faster on Cerebras hardware",
+          "url": "https://openai.com/index/previewing-ultrafast/"
+        },
+        {
+          "text": "Anthropic is in talks to buy Israeli infrastructure startup Decart for ~$6B, what would be its largest-ever acquisition",
+          "url": "https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/"
+        },
+        {
+          "text": "Coding startup Cognition is reportedly raising again at $40B+, up 50% in under three months",
+          "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+        },
+        {
+          "text": "Microsoft merges its consumer and business Copilot apps ahead of a planned \"super app\"",
+          "url": "https://www.geekwire.com/2026/microsoft-starts-merging-its-copilot-consumer-and-business-apps-in-advance-of-super-app-rollout/"
+        },
+        {
+          "text": "DeepSeek's V4 Pro 0813 goes GA with Opus-class benchmark claims — and sharp price hikes on premium workloads",
+          "url": "https://www.techtimes.com/articles/324241/20260813/deepseek-v4-pro-0813-goes-ga-benchmark-claims-await-independent-proof.htm"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see AI Sources.",
+      "categories": [
+        {
+          "name": "🚀 Models & Releases",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "Google launches Gemini 3.7 Flash, its \"most intelligent workhorse\" for coding and agents",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "Released just three weeks after Gemini 3.6 Flash, the new model posts big coding gains (65.3% on DeepSWE v1.1, up from 49.0%), keeps a 1M-token context window, and cuts introductory pricing to $0.75 per million input tokens. It's live across the Gemini API, AI Studio, Android Studio, and the Spark agent — even as Google's flagship Gemini 3.5 Pro remains delayed.",
+              "why": "Google is iterating its cheap, fast \"Flash\" line at a blistering cadence to win the everyday developer and agent workloads that actually drive AI revenue.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "DeepSeek V4 Pro 0813 goes GA with Opus-class claims — and raises prices on premium workloads",
+              "url": "https://www.techtimes.com/articles/324241/20260813/deepseek-v4-pro-0813-goes-ga-benchmark-claims-await-independent-proof.htm",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "DeepSeek's 1.6T-parameter flagship reportedly ranks #2 on SWE-bench Verified (96.4%) behind only Claude Opus 5, and near Kimi K3 on Terminal Bench — though the numbers first circulated via WeChat and Reddit with no official announcement page. Notably, DeepSeek is now raising API prices sharply on peak/premium usage rather than competing purely on cheapness.",
+              "why": "China's cheapest frontier lab is pivoting toward monetizing premium performance, a signal that inference prices won't only move down.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Apple trained a custom AI model for China with Alibaba's help",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+              "date": "📅 Aug 14, 2026",
+              "stale": false,
+              "summary": "Apple has built a China-specific large language model, developed with Alibaba, to power Apple Intelligence in a market where ChatGPT and other Western services are unavailable. Apple recently registered its on-device generative AI service with Chinese regulators, clearing a hurdle for a planned rollout.",
+              "why": "Geopolitics is now fragmenting the AI stack itself — global companies increasingly need separate models, partners, and compliance regimes per market.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "China's Z.ai ships GLM-5.3, topping open-weight coding on post-training alone",
+              "url": "https://www.unite.ai/z-ai-launches-glm-5-3-with-frontier-coding-and-a-cyber-capability-that-outgrew-its-training/",
+              "date": "📅 Aug 14, 2026",
+              "stale": false,
+              "summary": "Z.ai reused the same 743B-parameter base as GLM-5.2 and spent everything on scaled-up post-training, yet emerged as its strongest open-weights coding model. The company is holding the weights for roughly two weeks pending safety hardening, citing cyber capabilities that grew faster than expected.",
+              "why": "It's fresh evidence that large capability jumps can come from post-training alone — and that open-weight labs are now self-imposing staged releases over dual-use risk.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Research & Capabilities",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "OpenAI previews \"Ultrafast\" mode: GPT-5.6 Sol at up to 14x the speed on Cerebras",
+              "url": "https://openai.com/index/previewing-ultrafast/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "OpenAI, working with Cerebras, is previewing a service tier that runs its most capable model at ~750 output tokens/second with the same intelligence as standard Sol. On Humanity's Last Exam it reached comparable accuracy nearly 7x faster than Claude Fable 5. It's a limited preview for select API customers.",
+              "why": "Latency is becoming a competitive axis alongside intelligence and price — and specialized inference silicon is emerging as a real alternative to Nvidia GPUs for real-time agents.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Medium",
+              "headline": "Writer's Palmyra X6 and new agent harness claim 52% lower cost per task",
+              "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "Enterprise AI firm Writer says pairing its new Palmyra X6 model (a post-trained variant of Z.ai's open GLM-5.2) with an upgraded orchestration \"harness\" cuts agent costs ~52% and runs 48% faster at higher quality. Its research argues the software controlling retrieval, tool calls, and retries can shape economics as much as the model choice.",
+              "why": "As agents chain dozens of model calls per task, orchestration efficiency — not just raw model IQ — may decide whether enterprise AI has attractive unit economics.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🧩 Products & Tools",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Microsoft merges its consumer and business Copilot apps ahead of a \"super app\"",
+              "url": "https://www.geekwire.com/2026/microsoft-starts-merging-its-copilot-consumer-and-business-apps-in-advance-of-super-app-rollout/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "From mid-August, Microsoft is folding its separate consumer and enterprise Copilot tools into one unified app, retiring features like Copilot Podcasts, Group Chat, and the \"Mico\" blob. It's billed as the first structural step toward a later-2026 \"super app\" spanning chat, Cowork, coding, and autonomous agents.",
+              "why": "Consolidation is Microsoft's bid to make Copilot a single daily surface across work and personal use — the same all-in-one play Google and OpenAI are racing toward.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "IBM and OpenAI expand an enterprise alliance, embedding GPT-5.6 in IBM Consulting",
+              "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "IBM will build a dedicated OpenAI practice, train tens of thousands of consultants, and integrate GPT-5.6, Codex, and ChatGPT Work into its Consulting Advantage platform, targeting finance, government, telecom, and retail deployments.",
+              "why": "Systems integrators are becoming the primary channel that carries frontier models into legacy enterprise systems — a quieter but bigger phase of AI adoption than the chatbot boom.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Google's Gemini app crosses 1 billion monthly active users",
+              "url": "https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/",
+              "date": "📅 Aug 11, 2026",
+              "stale": true,
+              "summary": "Sundar Pichai says Gemini is Google's fastest-growing product ever, up from ~750M users earlier this year, with more than 100M users on Apple devices. Google notes 63% of users interact by voice. The milestone lands the same week ChatGPT reportedly reached ~1 billion weekly users.",
+              "why": "Distribution at billion-user scale, powered by Android and Search, is Google's structural edge in converting reach into everyday AI habit.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🏛️ Business & Policy",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Anthropic in talks to buy AI infrastructure startup Decart for ~$6B",
+              "url": "https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/",
+              "date": "📅 Aug 13, 2026",
+              "stale": false,
+              "summary": "Anthropic is reportedly in early talks to acquire Israel-based Decart — known for training/inference optimization stacks and real-time \"world models\" like Oasis and Lucy — in what would be its largest acquisition ever. Decart was valued near $4B in May; the deal isn't final and could fall through.",
+              "why": "Buying compute-efficiency tech would help Anthropic serve surging Claude demand at lower cost as it prepares one of the largest IPOs on record.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Cognition reportedly raising at a $40B+ valuation, up 50% in under three months",
+              "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+              "date": "📅 Aug 12, 2026",
+              "stale": false,
+              "summary": "The maker of the Devin coding agent is weighing a $1B+ round that would lift its valuation above $40 billion, versus $26 billion in May, as its annualized revenue nears $1 billion after six straight months of ~50% growth.",
+              "why": "Coding is the hottest, most monetizable slice of AI, and investors are paying up fast for the leading agent players even amid selective venture markets.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Nvidia scales back its OpenAI Ohio data-center guarantee to under $120B",
+              "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html",
+              "date": "📅 Aug 14, 2026",
+              "stale": false,
+              "summary": "After investors pressed it on risk, Nvidia is cutting its planned financial backstop for OpenAI's 10-GW Ohio campus from a discussed ~$250B to less than $120B, covering only the first phase — with a separate GPU-financing arrangement of up to $350B negotiated alongside.",
+              "why": "It's a fresh sign of Wall Street pushback on the circular, vendor-financed economics underwriting the AI data-center buildout.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "tech": {
+      "lead": [
+        {
+          "text": "Today's automated run could not complete the live Tech source sweep, so no new stories are published in this edition.",
+          "url": ""
+        },
+        {
+          "text": "The section's web-research budget for this run was exhausted before the Tech sweep could finish; this was an infrastructure limit, not a quiet news day.",
+          "url": ""
+        },
+        {
+          "text": "No items were added to avoid publishing unverified or previously-seen stories as if they were fresh.",
+          "url": ""
+        },
+        {
+          "text": "The next scheduled run restores full Tech coverage; the Tech Sources page and prior editions remain available in the meantime.",
+          "url": ""
+        }
+      ],
+      "rosternote": "Roster update: added 0 new source(s) today — see Tech Sources.",
+      "categories": [
+        {
+          "name": "⚠️ Service Notice",
+          "items": [
+            {
+              "severity": "low",
+              "badge": "Notice",
+              "headline": "Tech feed could not refresh this run",
+              "url": "",
+              "date": "📅 Aug 16, 2026",
+              "stale": false,
+              "summary": "The automated data-gathering step for the Tech section did not finish before this run's web-research budget was used up, so no new items are shown. This is a build-side limitation for today's edition only — no news event.",
+              "why": "The archive stays honest — the next run will re-run the full Tech sweep and republish live coverage.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

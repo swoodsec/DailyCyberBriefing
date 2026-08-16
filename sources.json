@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 36,
-  "lastUpdated": "2026-08-07",
+  "version": 40,
+  "lastUpdated": "2026-08-16",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1128,6 +1128,76 @@
       "seed": false,
       "note": "Long-running enterprise-security news and analysis outlet doing original conference and threat reporting.",
       "rationale": "Originating source behind today's Black Hat 2026 write-up on critical flaws in Anthropic, Google and OpenAI coding agents; reputable, dated, primary conference coverage."
+    },
+    {
+      "name": "Anthropic (Engineering Blog)",
+      "url": "https://www.anthropic.com/engineering",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-11",
+      "seed": false,
+      "note": "Frontier AI lab's own engineering blog; first-party security-relevant product and safety disclosures for Claude and Claude Code.",
+      "rationale": "Published the original engineering writeup behind today's lead AI story — making Claude Code's Auto Mode the default and disclosing that it blocked 89% of dangerous commands in a 1,053-user trial versus a 13.6% human refusal rate, plus 720 indirect-prompt-injection tests with zero successes. Primary first-party vendor disclosure, directly comparable to the existing OpenAI newsroom entry; no anthropic.com domain in the roster."
+    },
+    {
+      "name": "Synack Red Team (Synack Research)",
+      "url": "https://www.synack.com/research/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-11",
+      "seed": false,
+      "note": "Crowdsourced pentest firm's research arm; original attack-class disclosures with vendor coordination and CVEs.",
+      "rationale": "Researcher Malcolm Stagg discovered and disclosed NatJack, a new attack class exploiting trust assumptions in NAT implementations across Windows, Linux and macOS, behind today's lead vuln story — 13 vendors notified, 32 products tested, two CVEs assigned (CVE-2026-56181, CVE-2026-63913). Primary original vulnerability research presented at Black Hat, not aggregation; no synack.com domain in the roster."
+    },
+    {
+      "name": "1Password (Off-By-1 Labs)",
+      "url": "https://1password.com/blog",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-11",
+      "seed": false,
+      "note": "1Password's new dedicated security-research team; debut study on AI-generated vulnerability-patch reliability.",
+      "rationale": "Off-By-1 Labs' inaugural research behind today's vendor/AI story evaluated 6,000+ AI-generated patches across six disclosed open-source CVEs and found 54% failed to remediate the target vulnerability. Primary original hands-on research presented at Black Hat USA 2026, not aggregation; no 1password.com domain in the roster."
+    },
+    {
+      "name": "PromptArmor",
+      "url": "https://www.promptarmor.com/resources",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-12",
+      "seed": false,
+      "note": "AI-risk-intelligence firm that discloses original zero-click prompt-injection flaws in enterprise AI assistants.",
+      "rationale": "Discovered and published the original zero-click indirect-prompt-injection disclosure behind today's lead AI story, showing Atlassian's Rovo assistant can be tricked into exfiltrating Jira and Confluence data even with web search disabled; disclosed to Atlassian in May with no response after two months. Sustained original-disclosure track record (Notion AI exfiltration, Claude Cowork file theft, SlackAI prompt injection); no promptarmor.com domain in the roster."
+    },
+    {
+      "name": "PortSwigger Research",
+      "url": "https://portswigger.net/research",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-12",
+      "seed": false,
+      "note": "Burp Suite maker's web-security research team; original browser/parser-level vulnerability research with a long publication history.",
+      "rationale": "Researcher Gareth Heyes published the original 'CSS: the bomb inside your inbox' research behind today's AI-security story, disclosing CSS/message-boundary attack chains across Outlook, Gmail, Fastmail, Proton Mail, Yahoo and AOL that can also manipulate AI tools reading email. Long-established, widely cited original web-security research team (AngularJS sandbox breaks, CSP bypasses); no portswigger.net domain in the roster."
+    },
+    {
+      "name": "Cisco Security Advisories",
+      "url": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-12",
+      "seed": false,
+      "note": "Cisco's own PSIRT advisory portal; first-party disclosures for Cisco-authored and high-profile third-party software bundled in Cisco products.",
+      "rationale": "Published the original advisories behind today's ClamAV/Secure Endpoint Connector vulnerability story (seven flaws, two with public PoCs). Primary vendor disclosure, directly comparable to the existing Microsoft MSRC, Arista, JetBrains, N-able and Broadcom/VMware entries; no cisco.com/cloudapps.cisco.com domain in the roster."
+    },
+    {
+      "name": "Field Effect (Security Intelligence Feed)",
+      "url": "https://fieldeffect.com/blog",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-16",
+      "seed": false,
+      "note": "MDR provider's Security Intelligence Team; fast, dated original threat-brief writeups on newly disclosed and actively exploited CVEs.",
+      "rationale": "Published same-day original threat briefs behind two of today's lead vuln stories — the SAP Commerce Cloud CVE-2026-58231 exploitation (posted Aug 14, hours after researchers first reported attacks) and the GeoServer zero-day SQLi-to-RCE campaign (posted within a day of disclosure) — each with independent technical detail (Shadowserver exposure counts, IP-filter mitigation guidance) rather than rewritten wire copy. Consistent dated cadence on its Security Intelligence tag; primary hands-on threat-brief research, not aggregation; no fieldeffect.com domain in the roster."
     }
   ],
   "candidates": [

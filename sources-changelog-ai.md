@@ -251,3 +251,6 @@ Refreshed the briefing with the latest 24-72h stories (Demis Hassabis stepping d
 
 ## 2026-08-07
 - ADD: Anthropic Alignment (alignment.anthropic.com, research/core) — primary-source lab safety research cited today. (1 new source; other domains today already in roster or aggregators.)
+
+## 2026-08-16
+- +ADDED The Register (products/strong) — reputable, editorially independent outlet doing genuine original reporting (not aggregation) with a skeptical enterprise-IT lens; independently reported today's Microsoft Copilot app-merge story behind a Products & Tools item. No theregister.com domain previously in roster. Version bumped 27 → 28; lastUpdated set to 2026-08-16. (AI section itself completed normally with 12 items.)
