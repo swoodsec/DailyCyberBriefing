@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 28,
-  "lastUpdated": "2026-08-16",
+  "version": 29,
+  "lastUpdated": "2026-08-17",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -532,6 +532,16 @@
       "seed": false,
       "note": "Long-established (est. 1994), editorially independent British enterprise-tech newsroom with a dedicated AI/ML desk; original, skeptical reporting behind today's Microsoft Copilot consolidation ('super app') story and its own reported framing of Meta's open-weight/compute-auction announcement.",
       "rationale": "Reputable, editorially independent outlet doing genuine original reporting (not aggregation) with a distinct skeptical enterprise-IT lens; it independently reported today's Microsoft Copilot app-merger/'super app' story (Aug 13) and originated critical framing of Meta's open-weight/compute-auction plan (Aug 10). A conspicuous absence from a roster that already carries Verge/Ars/Engadget/VentureBeat product desks — The Register's value is its adversarial, detail-first enterprise-tech reporting rather than consumer-product coverage. Actively publishing in 2026, clearly AI-relevant (products/enterprise), broad tech rather than primarily cybersecurity, deduped by domain (theregister.com not previously in the sources list)."
+    },
+    {
+      "name": "Calcalist (CTech)",
+      "url": "https://www.calcalistech.com/ctechnews",
+      "category": "business",
+      "tier": "strong",
+      "added": "2026-08-17",
+      "seed": false,
+      "note": "English-language tech-business desk of Israel's Calcalist; original reporting on Israeli AI startups, deals, and M&A — the originating source behind today's DoiT/Attribute AI-cost-management acquisition and a recurring first source on Israeli AI companies (Decart, Attribute, and the broader Israeli AI ecosystem).",
+      "rationale": "Reputable, editorially credible newsroom (part of Yedioth Ahronoth's Calcalist) doing genuine original business reporting rather than aggregation, and the originating source behind today's DoiT-acquires-Attribute item; fills a clear roster gap for the Israeli AI ecosystem, which keeps surfacing in AI-business stories (Decart's $6B Anthropic talks, Attribute's AI-spend tooling, numerous AI-infra startups) but had no standing original-reporting desk distinct from the wire/US business outlets. Actively publishing in 2026, clearly AI/business relevant, not cybersecurity-focused, deduped by domain (calcalistech.com not previously in roster)."
     }
   ],
   "candidates": [

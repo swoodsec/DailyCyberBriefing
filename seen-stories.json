@@ -209,6 +209,66 @@
       "url": "https://www.securityweek.com/googles-ai-agent-uncovers-13-year-old-chrome-flaw-amid-record-patching-pace/",
       "title": "google s ai agent uncovers a 13 year old chrome flaw amid a record patching pace",
       "date": "2026-08-07"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/",
+      "title": "french tax authority data breach affects 678 000 individuals",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+      "title": "suspected china nexus actor exploits vmware vcenter flaw deploys babuk derived ransomware",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/",
+      "title": "philips and ge investigating clop ransomware data theft claims",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
+      "title": "new evooo1bot linux botnet turns routers into traffic relay nodes",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/",
+      "title": "new amnesiastealer macos malware hijacks browser sessions via remote control",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/",
+      "title": "microsoft working on defender patch for shieldbreak zero day",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/",
+      "title": "max severity sap commerce cloud flaw now targeted in attacks",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+      "title": "lazarus hackers exploited windows zero day to target defense firms",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+      "title": "openai anthropic google api flaw let weaker ai models decode stronger models reasoning",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.cyera.com/blog/local-ai-security-fragility-vulnerabilities-inside-the-engine-running-your-local-models",
+      "title": "local ai security fragility vulnerabilities inside the engine running your local models",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/13/a10-networks-introduces-ai-gateway-to-secure-and-manage-enterprise-ai/",
+      "title": "a10 networks introduces ai gateway to secure and manage enterprise ai",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/13/searchlight-cyber-preemptive-threat-exposure-management-ptem-platform/",
+      "title": "searchlight cyber combines exposure and threat intelligence in new ptem platform",
+      "date": "2026-08-17"
     }
   ],
   "ai": [
@@ -431,6 +491,71 @@
       "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-scales-back-250-billion-234356524.html",
       "title": "nvidia scales back its openai ohio data center guarantee to under 120b",
       "date": "2026-08-16"
+    },
+    {
+      "url": "https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis",
+      "title": "xai ships grok 4 6 tying gpt 5 6 sol for third on artificial analysis",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://datanorth.ai/news/bytedance-releases-seed-2-1-pro-and-seed-2-1-turbo",
+      "title": "bytedance opens up seed 2 1 turbo a faster cheaper coding agent variant",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "title": "an unreleased claude pushes a 37 year old riemann zeta bound from 41 6 to 67 2",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "title": "state of open models open weights are closing on the frontier",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://thenextweb.com/news/openai-chatgpt-computer-history-mac-keystrokes",
+      "title": "chatgpt for mac adds computer history a searchable log of what you did",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
+      "title": "wispr flow raises 280m at a 2b valuation and pushes past dictation",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.calcalistech.com/ctechnews/article/kxpymxav0",
+      "title": "doit buys ai spend startup attribute to track cost across tokens models and agents",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://fortune.com/2026/08/16/stripe-7-billion-deal-ai-firm-openrouter-acquisition/",
+      "title": "stripe clinches a 7b deal to acquire model router openrouter",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html",
+      "title": "nvidia nears a 105b credit guarantee for openai s ohio campus",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
+      "title": "higgsfield raises 400m at a 5 4b valuation as ai video goes enterprise",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-track-first-profitable-quarter-124217577.html",
+      "title": "anthropic is on track for its first profitable quarter",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://techstartups.com/2026/08/17/top-tech-news-today-august-17-2026-ge-microsoft-nvidia-open-stripe-unitree-more/",
+      "title": "unitree sets an aug 19 shanghai ipo after record retail demand",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/",
+      "title": "openai disbands its preparedness team folding frontier risk work into product groups",
+      "date": "2026-08-17"
     }
   ],
   "tech": [
@@ -618,6 +743,66 @@
       "url": "https://spacepolicyonline.com/news/nasa-sets-launch-date-for-roman-space-telescope/",
       "title": "nasa sets an aug 30 launch for the nancy grace roman space telescope",
       "date": "2026-08-07"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "title": "stripe to acquire ai gateway openrouter for more than 7 billion",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/nvidia-turns-usd5b-intel-stock-bet-into-usd30b-windfall-filing-reveals-new-usd21b-spacex-stake-and-complete-exit-from-arm-stock",
+      "title": "nvidia s 5b intel bet is now worth 30b filing reveals a 21b spacex stake and a full arm exit",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
+      "title": "waymo wins california approval to expand robotaxis across 18 counties",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.fastcompany.com/91586807/tech-layoffs-august-2026-update-tiktok-etsy-zillow-slash-jobs",
+      "title": "tech layoffs in 2026 have already surpassed all of 2025",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.androidcentral.com/phones/google-pixel-11",
+      "title": "google unveils the pixel 11 lineup including the pixel 11 pro fold",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://electrek.co/2026/08/15/tesla-model-y-premium-vehicle-to-load-2-4-kw-adapter/",
+      "title": "tesla adds 2 4 kw vehicle to load power to the model y with an 80 adapter",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://electrek.co/2026/08/16/ferrari-luce-chassis-0-sells-40-million-record/",
+      "title": "ferrari s first ev the luce sells for 40 million at auction",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://shattered.io/cloudflare-outage-august-2026/",
+      "title": "cloudflare logs 13 outages in 8 days as r2 storage falters",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://9to5mac.com/2026/08/13/ted-lasso-just-had-the-biggest-apple-tv-premiere-ever/",
+      "title": "ted lasso season 4 is apple tv s biggest launch ever",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://spaceflightnow.com/2026/08/15/live-coverage-spacex-to-launch-satellite-replenishment-mission-for-globalstar-from-cape-canaveral/",
+      "title": "spacex sets a record with two falcon 9 launches just 38 5 minutes apart",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.space.com/astronomy/black-holes/super-star-being-shredded-by-black-hole-releases-as-much-energy-as-400-billion-suns",
+      "title": "a black hole shreds a super sun in the most powerful stellar blast yet seen",
+      "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-next-starship-this-month-and-catch-it-too-elon-musk-says-in-1st-earnings-call-since-historic-ipo",
+      "title": "spacex targets its first starship ship tower catch on flight 14 as soon as late august",
+      "date": "2026-08-17"
     }
   ]
 }

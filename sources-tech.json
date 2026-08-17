@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 27,
-  "lastUpdated": "2026-08-12",
+  "version": 28,
+  "lastUpdated": "2026-08-17",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -492,6 +492,16 @@
       "seed": false,
       "note": "Long-running enterprise-IT publication (Foundry/IDG) with original reporting and analysis on networking, data centers, cloud infrastructure, and the hardware/supply-chain economics behind enterprise and AI computing.",
       "rationale": "Surfaced as the original source behind today's memory-shortage industry price-surge story (Samsung warning of an additional ~20% DRAM hike in Q3 as HBM reallocation tightens supply through 2027). Passes discovery criteria: reputable and editorially credible (established Foundry/IDG enterprise-tech outlet), primarily original reporting/analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general software/platforms and big-tech infrastructure (enterprise IT, cloud, data centers, memory supply) rather than narrow cybersecurity or pure AI-model coverage. New domain (networkworld.com) not previously in roster; complements The Register, ZDNet, and The Elec on enterprise-infrastructure and supply-chain coverage."
+    },
+    {
+      "name": "Fast Company",
+      "url": "https://www.fastcompany.com/",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-08-17",
+      "seed": false,
+      "note": "Business-and-innovation magazine (Mansueto Ventures) with a substantial standing technology desk producing original reporting and analysis on big-tech strategy, the workforce, startups, and the business impact of AI and automation.",
+      "rationale": "Surfaced as the original source behind today's milestone story that 2026 tech layoffs have already surpassed the full-year 2025 total (fresh cuts at Google, TikTok, Etsy, Zillow). Passes discovery criteria: reputable and editorially credible, with a dedicated tech/innovation newsroom doing original reporting rather than pure aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business rather than narrow cybersecurity or pure AI-model coverage. Distinguished from its earlier reviewed-and-parked status (2026-07-05, as broad general-business news) by repeatedly originating general-tech-business stories used directly in the briefing, following the same precedent that promoted Fortune. New domain (fastcompany.com) not previously in the sources list."
     }
   ],
   "candidates": [

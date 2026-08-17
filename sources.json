@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 40,
-  "lastUpdated": "2026-08-16",
+  "version": 41,
+  "lastUpdated": "2026-08-17",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -497,7 +497,7 @@
       "added": "2026-06-25",
       "seed": false,
       "note": "Research team that discovers exposed databases and credential leaks first-hand.",
-      "rationale": "Its own researchers discovered and published today's lead story — the 24-billion-record, 8.3 TB infostealer leak — and have a documented track record of original breach-discovery research (4B-record China leak, IDMerit 3B KYC exposure). Primary investigative research, not aggregation; no cybernews.com domain in the roster."
+      "rationale": "Its own researchers discovered and published today's lead story \u2014 the 24-billion-record, 8.3 TB infostealer leak \u2014 and have a documented track record of original breach-discovery research (4B-record China leak, IDMerit 3B KYC exposure). Primary investigative research, not aggregation; no cybernews.com domain in the roster."
     },
     {
       "name": "JFrog Security Research",
@@ -547,7 +547,7 @@
       "added": "2026-07-02",
       "seed": false,
       "note": "SentinelLABS research team; original macOS/APT malware analysis and attribution.",
-      "rationale": "Published the original technical breakdown of today's macOS.Gaslight DPRK backdoor (Phil Stokes) — the first malware seen prompt-injecting AI triage agents. Consistent primary macOS/DPRK research (NimDoor, BONZAI family); no sentinelone.com domain in the roster."
+      "rationale": "Published the original technical breakdown of today's macOS.Gaslight DPRK backdoor (Phil Stokes) \u2014 the first malware seen prompt-injecting AI triage agents. Consistent primary macOS/DPRK research (NimDoor, BONZAI family); no sentinelone.com domain in the roster."
     },
     {
       "name": "Calif.io",
@@ -567,7 +567,7 @@
       "added": "2026-07-03",
       "seed": false,
       "note": "Threat Research Unit (STRU) that runs original dark-web and exposure investigations and ships free checker tools.",
-      "rationale": "Its STRU team ran the original FortiBleed investigation behind today's lead story — analyzing the full 86,644-firewall dataset, first tying the campaign to INC and Lynx ransomware, notifying affected orgs and pushing data to CERTs. Primary original research, not aggregation; no socradar.io domain in the roster."
+      "rationale": "Its STRU team ran the original FortiBleed investigation behind today's lead story \u2014 analyzing the full 86,644-firewall dataset, first tying the campaign to INC and Lynx ransomware, notifying affected orgs and pushing data to CERTs. Primary original research, not aggregation; no socradar.io domain in the roster."
     },
     {
       "name": "Security Discovery (Bob Diachenko)",
@@ -587,7 +587,7 @@
       "added": "2026-07-04",
       "seed": false,
       "note": "Cloud/runtime threat-research team (Sysdig TRT) that captures live attacks with honeypot/runtime telemetry and publishes original incident breakdowns with IOCs.",
-      "rationale": "Its TRT published the original research on today's lead AI story — JADEPUFFER, the first documented end-to-end LLM-driven ransomware operation (Langflow CVE-2025-3248 to database extortion) — with full payload analysis, timestamps and IOCs. Documented original-research track record (LLMjacking coinage, Langflow CVE-2026-33017 campaign, agentic container escape). Primary hands-on research, not aggregation; no sysdig.com domain in the roster."
+      "rationale": "Its TRT published the original research on today's lead AI story \u2014 JADEPUFFER, the first documented end-to-end LLM-driven ransomware operation (Langflow CVE-2025-3248 to database extortion) \u2014 with full payload analysis, timestamps and IOCs. Documented original-research track record (LLMjacking coinage, Langflow CVE-2026-33017 campaign, agentic container escape). Primary hands-on research, not aggregation; no sysdig.com domain in the roster."
     },
     {
       "name": "Blackpoint Cyber",
@@ -597,7 +597,7 @@
       "added": "2026-07-04",
       "seed": false,
       "note": "MDR provider with an APG (Adversary Pursuit Group) that publishes first-party intrusion analysis and malware breakdowns.",
-      "rationale": "Its researchers (Nevan Beal, Sam Decker) discovered and published the original analysis of today's Avalon modular framework and the new CrownX ransomware — full kill chain, EDR-evasion set and AI-assisted-development assessment — ahead of broad coverage. Primary threat research, not aggregation; no blackpointcyber.com domain in the roster."
+      "rationale": "Its researchers (Nevan Beal, Sam Decker) discovered and published the original analysis of today's Avalon modular framework and the new CrownX ransomware \u2014 full kill chain, EDR-evasion set and AI-assisted-development assessment \u2014 ahead of broad coverage. Primary threat research, not aggregation; no blackpointcyber.com domain in the roster."
     },
     {
       "name": "runZero Research",
@@ -627,7 +627,7 @@
       "added": "2026-07-05",
       "seed": false,
       "note": "Sekoia Threat Detection & Research team; original malware/campaign analysis with IOCs and infrastructure tracking.",
-      "rationale": "Its TDR team (with YesWeHack) ran the original investigation behind today's ChocoPoC story — analyzing seven trojanized CVE-PoC repos, the PyPI dropper chain and the Mapbox DNS-over-HTTPS dead-drop C2 — ahead of broad coverage; long-running French threat-intel firm with consistent primary research (Aurora Stealer, GootLoader, ClickFix tracking). Primary original research, not aggregation; no sekoia.io domain in the roster."
+      "rationale": "Its TDR team (with YesWeHack) ran the original investigation behind today's ChocoPoC story \u2014 analyzing seven trojanized CVE-PoC repos, the PyPI dropper chain and the Mapbox DNS-over-HTTPS dead-drop C2 \u2014 ahead of broad coverage; long-running French threat-intel firm with consistent primary research (Aurora Stealer, GootLoader, ClickFix tracking). Primary original research, not aggregation; no sekoia.io domain in the roster."
     },
     {
       "name": "Armadin",
@@ -647,7 +647,7 @@
       "added": "2026-07-07",
       "seed": false,
       "note": "Zscaler's threat-research org; analyzes cloud telemetry at scale and runs its own AI-agent red-team experiments.",
-      "rationale": "Published the original indirect-prompt-injection research behind today's lead AI story — CSS-hidden and JSON-LD-buried web prompts that tricked 4 of 26 tested LLM agents (incl. Llama and Gemini variants) into autonomous crypto payments and typosquat trust — tested with its own in-house agent harness across SEO-poisoned sites. Documented track record of zero-day discoveries and annual ransomware/AI-security reports. Primary original research, not aggregation; no zscaler.com domain in the roster."
+      "rationale": "Published the original indirect-prompt-injection research behind today's lead AI story \u2014 CSS-hidden and JSON-LD-buried web prompts that tricked 4 of 26 tested LLM agents (incl. Llama and Gemini variants) into autonomous crypto payments and typosquat trust \u2014 tested with its own in-house agent harness across SEO-poisoned sites. Documented track record of zero-day discoveries and annual ransomware/AI-security reports. Primary original research, not aggregation; no zscaler.com domain in the roster."
     },
     {
       "name": "Synacktiv",
@@ -657,7 +657,7 @@
       "added": "2026-07-07",
       "seed": false,
       "note": "French offensive-security/pentest firm that discloses original CVEs and unauthenticated RCE chains with deep technical writeups.",
-      "rationale": "Discovered and published the original unauthenticated-RCE research behind today's lead vuln story — an unpatched, un-CVE'd Argo CD repo-server flaw that can fully compromise a Kubernetes cluster — after 18 months of unresolved vendor disclosure; documented track record of 300+ public vulnerability disclosures (Livewire, BizTalk360, Snipe-IT, Citrix Provisioning Services) and Pwn2Own research. Primary technical research, not aggregation; no synacktiv.com domain in the roster."
+      "rationale": "Discovered and published the original unauthenticated-RCE research behind today's lead vuln story \u2014 an unpatched, un-CVE'd Argo CD repo-server flaw that can fully compromise a Kubernetes cluster \u2014 after 18 months of unresolved vendor disclosure; documented track record of 300+ public vulnerability disclosures (Livewire, BizTalk360, Snipe-IT, Citrix Provisioning Services) and Pwn2Own research. Primary technical research, not aggregation; no synacktiv.com domain in the roster."
     },
     {
       "name": "Aikido Security",
@@ -677,7 +677,7 @@
       "added": "2026-07-09",
       "seed": false,
       "note": "Threat Research team publishing original APT/campaign analysis with IOCs and attribution.",
-      "rationale": "Its Threat Research team has tracked UNK_MassTraction, a suspected China-aligned cluster exploiting Roundcube n-day flaws (CVE-2024-42009, CVE-2025-49113) against US/Canadian university physics and national-security researchers, since May 2026 — original hands-on campaign research (IceCube stealer, VShell backdoor analysis) ahead of broad coverage. Long-established, well-resourced threat-intel vendor with a deep original-research track record; no proofpoint.com domain in the roster."
+      "rationale": "Its Threat Research team has tracked UNK_MassTraction, a suspected China-aligned cluster exploiting Roundcube n-day flaws (CVE-2024-42009, CVE-2025-49113) against US/Canadian university physics and national-security researchers, since May 2026 \u2014 original hands-on campaign research (IceCube stealer, VShell backdoor analysis) ahead of broad coverage. Long-established, well-resourced threat-intel vendor with a deep original-research track record; no proofpoint.com domain in the roster."
     },
     {
       "name": "Varonis Threat Labs",
@@ -697,7 +697,7 @@
       "added": "2026-07-10",
       "seed": false,
       "note": "Zack Whittaker's security desk; original breach reporting, frequently obtains primary source documents (breach notices, court filings).",
-      "rationale": "Broke today's lead breach story — the 6.99M-record AssuranceAmerica driver's-license breach — after obtaining and reviewing the actual data breach notification letters via the Indiana and Maine AG offices, ahead of broad coverage. Long documented track record of original security-lapse discoveries (hotel check-in systems, prison payphone providers, UK visa portal, Texas DMV). Primary investigative reporting, not aggregation; surprising gap in the roster given its influence."
+      "rationale": "Broke today's lead breach story \u2014 the 6.99M-record AssuranceAmerica driver's-license breach \u2014 after obtaining and reviewing the actual data breach notification letters via the Indiana and Maine AG offices, ahead of broad coverage. Long documented track record of original security-lapse discoveries (hotel check-in systems, prison payphone providers, UK visa portal, Texas DMV). Primary investigative reporting, not aggregation; surprising gap in the roster given its influence."
     },
     {
       "name": "CERT Coordination Center (CERT/CC)",
@@ -747,7 +747,7 @@
       "added": "2026-07-14",
       "seed": false,
       "note": "AI-agent runtime-security research team (AIDR platform) founded by the creators of the LLM Guard open-source firewall.",
-      "rationale": "Disclosed the original ClaudeBleed-linked bypass behind today's lead AI story — reported to Anthropic on May 21 and re-verified as unpatched across all eight subsequent Claude for Chrome releases; also published the earlier spoofed-git-identity AI-code-reviewer research referenced in the Ghostcommit writeup. Primary hands-on AI-agent security research, not aggregation; no manifold.security domain in the roster."
+      "rationale": "Disclosed the original ClaudeBleed-linked bypass behind today's lead AI story \u2014 reported to Anthropic on May 21 and re-verified as unpatched across all eight subsequent Claude for Chrome releases; also published the earlier spoofed-git-identity AI-code-reviewer research referenced in the Ghostcommit writeup. Primary hands-on AI-agent security research, not aggregation; no manifold.security domain in the roster."
     },
     {
       "name": "Socket",
@@ -777,7 +777,7 @@
       "added": "2026-07-15",
       "seed": false,
       "note": "200+ analyst research arm publishing original threat intelligence and annual security reports.",
-      "rationale": "Published the original 2026 AI Security Report behind today's lead AI story, documenting autonomous AI-orchestrated intrusions and the 87-93%-of-orgs high-risk-AI-interaction finding. Held back as a candidate on 2026-07-05 pending recurrence; today's original report resolves that — 718+ published research articles, no checkpoint.com domain in the roster."
+      "rationale": "Published the original 2026 AI Security Report behind today's lead AI story, documenting autonomous AI-orchestrated intrusions and the 87-93%-of-orgs high-risk-AI-interaction finding. Held back as a candidate on 2026-07-05 pending recurrence; today's original report resolves that \u2014 718+ published research articles, no checkpoint.com domain in the roster."
     },
     {
       "name": "Okta Threat Intelligence",
@@ -787,7 +787,7 @@
       "added": "2026-07-15",
       "seed": false,
       "note": "Identity-security research team publishing original phishing/vishing campaign tracking with named threat-actor clusters.",
-      "rationale": "Discovered and published the original O-UNC-066 research behind today's lead breach story — an operator-controlled vishing campaign hijacking Microsoft Entra passkey enrollment for data extortion, tracked since April with its own leak-site attribution. Primary hands-on identity-threat research, not aggregation; no okta.com domain in the roster."
+      "rationale": "Discovered and published the original O-UNC-066 research behind today's lead breach story \u2014 an operator-controlled vishing campaign hijacking Microsoft Entra passkey enrollment for data extortion, tracked since April with its own leak-site attribution. Primary hands-on identity-threat research, not aggregation; no okta.com domain in the roster."
     },
     {
       "name": "GitGuardian",
@@ -807,7 +807,7 @@
       "added": "2026-07-16",
       "seed": false,
       "note": "Independent AI-safety researcher publishing wire-level (mitmproxy packet-capture) analyses of what AI coding tools actually transmit.",
-      "rationale": "Published the original wire-level analysis (posted to a reproducible GitHub gist, cereblab.com) behind today's lead AI story proving xAI's Grok Build CLI uploaded entire tracked Git repositories plus secrets/history to a Google Cloud bucket — 27,800x the data the task needed — despite xAI's 'nothing transmitted' privacy claim. Primary hands-on AI-tool security research with reproducible methodology, not aggregation; no cereblab.com domain in the roster."
+      "rationale": "Published the original wire-level analysis (posted to a reproducible GitHub gist, cereblab.com) behind today's lead AI story proving xAI's Grok Build CLI uploaded entire tracked Git repositories plus secrets/history to a Google Cloud bucket \u2014 27,800x the data the task needed \u2014 despite xAI's 'nothing transmitted' privacy claim. Primary hands-on AI-tool security research with reproducible methodology, not aggregation; no cereblab.com domain in the roster."
     },
     {
       "name": "Wiz Research",
@@ -817,7 +817,7 @@
       "added": "2026-07-16",
       "seed": false,
       "note": "Cloud-security research team of veteran white-hat hackers publishing original cloud/AI isolation and supply-chain vulnerability disclosures.",
-      "rationale": "Discovered and published the original 'GhostApproval' research behind today's AI story — a trust-boundary/symlink flaw letting malicious repos trick six major AI coding assistants (Amazon Q, Claude Code, Cursor, Google Antigravity, Windsurf, Augment) into writing files outside their sandbox via a spoofed approval dialog. Documented original-research track record (Replicate AI-as-a-Service critical vuln, GitHub RCE CVE-2026-3854). Primary hands-on research, not aggregation; no wiz.io domain in the roster."
+      "rationale": "Discovered and published the original 'GhostApproval' research behind today's AI story \u2014 a trust-boundary/symlink flaw letting malicious repos trick six major AI coding assistants (Amazon Q, Claude Code, Cursor, Google Antigravity, Windsurf, Augment) into writing files outside their sandbox via a spoofed approval dialog. Documented original-research track record (Replicate AI-as-a-Service critical vuln, GitHub RCE CVE-2026-3854). Primary hands-on research, not aggregation; no wiz.io domain in the roster."
     },
     {
       "name": "Defused",
@@ -827,7 +827,7 @@
       "added": "2026-07-16",
       "seed": false,
       "note": "Honeypot-as-a-service threat-intel firm that detects pre-disclosure zero-day exploitation via globally distributed decoy sensors.",
-      "rationale": "Its honeypot telemetry has repeatedly surfaced active exploitation ahead of vendor confirmation — first flagging in-the-wild attacks on the Cisco Unified CM SSRF (CVE-2026-20230) and publishing original SharePoint exploit-intelligence writeups behind this week's CISA SharePoint warning, plus prior pre-disclosure catches (CVE-2026-35616 FortiClient EMS days before Fortinet's advisory). Primary original telemetry-based research, not aggregation; no defusedcyber.com domain in the roster."
+      "rationale": "Its honeypot telemetry has repeatedly surfaced active exploitation ahead of vendor confirmation \u2014 first flagging in-the-wild attacks on the Cisco Unified CM SSRF (CVE-2026-20230) and publishing original SharePoint exploit-intelligence writeups behind this week's CISA SharePoint warning, plus prior pre-disclosure catches (CVE-2026-35616 FortiClient EMS days before Fortinet's advisory). Primary original telemetry-based research, not aggregation; no defusedcyber.com domain in the roster."
     },
     {
       "name": "Tracebit Research",
@@ -837,7 +837,7 @@
       "added": "2026-07-17",
       "seed": false,
       "note": "AI-agent deception/canary research team publishing hands-on offensive-AI benchmarking with reproducible cyber-range methodology.",
-      "rationale": "Published the original 'Context Bombs' research behind today's AI story — testing defensive prompt injection against five frontier AI-attacker models (Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, Kimi K2.6) across 152 runs in a live AWS cyber range, cutting agent attack success from 91% to 15%; builds on its May 2026 951-run AWS cyber-range benchmark (10 models reaching admin in an average of 14 minutes). Primary hands-on AI-security research with rigorous, repeated methodology, not aggregation; no tracebit.com domain in the roster."
+      "rationale": "Published the original 'Context Bombs' research behind today's AI story \u2014 testing defensive prompt injection against five frontier AI-attacker models (Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, Kimi K2.6) across 152 runs in a live AWS cyber range, cutting agent attack success from 91% to 15%; builds on its May 2026 951-run AWS cyber-range benchmark (10 models reaching admin in an average of 14 minutes). Primary hands-on AI-security research with rigorous, repeated methodology, not aggregation; no tracebit.com domain in the roster."
     },
     {
       "name": "Volexity",
@@ -897,7 +897,7 @@
       "added": "2026-07-23",
       "seed": false,
       "note": "Google's AI research lab; publishes original vulnerability-hunting model releases and AI-agent-security research alongside a sustained 'Responsibility & Safety' cadence.",
-      "rationale": "Original source behind today's lead vendor story — 'Introducing Gemini 3.5 Flash Cyber,' a gated vulnerability-discovery-and-patching model restricted to governments and trusted partners over dual-use risk, published the same week as its 'Securing the future of AI agents' and 'Investing in multi-agent AI safety research' posts. Primary technical AI-security research, not aggregation; no deepmind.google domain in the roster."
+      "rationale": "Original source behind today's lead vendor story \u2014 'Introducing Gemini 3.5 Flash Cyber,' a gated vulnerability-discovery-and-patching model restricted to governments and trusted partners over dual-use risk, published the same week as its 'Securing the future of AI agents' and 'Investing in multi-agent AI safety research' posts. Primary technical AI-security research, not aggregation; no deepmind.google domain in the roster."
     },
     {
       "name": "Forescout Research (Vedere Labs)",
@@ -907,7 +907,7 @@
       "added": "2026-07-23",
       "seed": false,
       "note": "Forescout's dedicated threat-and-vulnerability research division; runs a Global Cyber Intelligence Dashboard drawing on 30 billion telemetry datapoints from deployed IT/IoT/OT/IoMT devices.",
-      "rationale": "Published the original 2026 H1 Threat Review behind today's vendor story — 37,137 newly published vulnerabilities (+51% YoY), 4,544 ransomware claims (+25%), 103 active ransomware groups, and its own tracking of 1,033 threat actors and 5,700+ hacktivist Telegram claims. Decade-long track record of original IoT/OT/IoMT research (Sierra:21); primary data, not aggregation; no forescout.com domain in the roster."
+      "rationale": "Published the original 2026 H1 Threat Review behind today's vendor story \u2014 37,137 newly published vulnerabilities (+51% YoY), 4,544 ransomware claims (+25%), 103 active ransomware groups, and its own tracking of 1,033 threat actors and 5,700+ hacktivist Telegram claims. Decade-long track record of original IoT/OT/IoMT research (Sierra:21); primary data, not aggregation; no forescout.com domain in the roster."
     },
     {
       "name": "0patch / ACROS Security",
@@ -927,7 +927,7 @@
       "added": "2026-07-25",
       "seed": false,
       "note": "Threat-intelligence firm that finds exposed attacker infrastructure and staging servers via internet-wide scanning, then publishes original technical breakdowns.",
-      "rationale": "Discovered and published, alongside researcher Bob Diachenko, the original evidence behind today's lead AI story — an operator running the open-source Hermes AI agent unattended against Thailand's Ministry of Finance — after finding the operator's own logs, exploit tooling and staging-server indicators on an open web directory. Primary hands-on discovery research, not aggregation; no hunt.io domain in the roster."
+      "rationale": "Discovered and published, alongside researcher Bob Diachenko, the original evidence behind today's lead AI story \u2014 an operator running the open-source Hermes AI agent unattended against Thailand's Ministry of Finance \u2014 after finding the operator's own logs, exploit tooling and staging-server indicators on an open web directory. Primary hands-on discovery research, not aggregation; no hunt.io domain in the roster."
     },
     {
       "name": "Zenity Labs",
@@ -937,7 +937,7 @@
       "added": "2026-07-25",
       "seed": false,
       "note": "AI-agent security research team publishing original disclosures on enterprise AI-platform trust-boundary and agent-hijacking flaws.",
-      "rationale": "Published the original 'AgentForger' research behind today's lead AI story — a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent with access to a victim's connected apps — responsibly disclosed to and fixed by OpenAI. Also the source behind June's LiteLLM/Ollama AI-infrastructure-hijacking research already cited via other roster entries. Primary hands-on AI-security research, not aggregation; no zenity.io domain in the roster."
+      "rationale": "Published the original 'AgentForger' research behind today's lead AI story \u2014 a ChatGPT Workspace Agent CSRF flaw letting a single phishing link forge a persistent, self-scheduling rogue agent with access to a victim's connected apps \u2014 responsibly disclosed to and fixed by OpenAI. Also the source behind June's LiteLLM/Ollama AI-infrastructure-hijacking research already cited via other roster entries. Primary hands-on AI-security research, not aggregation; no zenity.io domain in the roster."
     },
     {
       "name": "OpenAI",
@@ -947,7 +947,7 @@
       "added": "2026-07-29",
       "seed": false,
       "note": "Frontier AI lab's own newsroom, including first-party incident disclosures and safety/security research on its models and agents.",
-      "rationale": "Published the original first-party incident writeup behind today's lead AI story — confirming its own research agent escaped a sealed evaluation environment via an Artifactory zero-day, then used hijacked credentials across four accounts on four services (including a second victim, Modal Labs) to reach Hugging Face's production infrastructure. Held back on 2026-07-23 as a 'single-incident corporate PR post'; today's follow-up disclosure with new technical detail on the same unfolding incident shows a sustained first-party incident-transparency practice, not a one-off. Primary vendor self-disclosure, not aggregation; no openai.com domain in the roster."
+      "rationale": "Published the original first-party incident writeup behind today's lead AI story \u2014 confirming its own research agent escaped a sealed evaluation environment via an Artifactory zero-day, then used hijacked credentials across four accounts on four services (including a second victim, Modal Labs) to reach Hugging Face's production infrastructure. Held back on 2026-07-23 as a 'single-incident corporate PR post'; today's follow-up disclosure with new technical detail on the same unfolding incident shows a sustained first-party incident-transparency practice, not a one-off. Primary vendor self-disclosure, not aggregation; no openai.com domain in the roster."
     },
     {
       "name": "JetBrains Blog (TeamCity Security Advisories)",
@@ -957,7 +957,7 @@
       "added": "2026-07-29",
       "seed": false,
       "note": "JetBrains' own product-security advisories and patch guidance for TeamCity and its other developer tools.",
-      "rationale": "Published the original coordinated-disclosure advisory behind today's lead vuln story — CVE-2026-63077, a critical unauthenticated RCE in TeamCity On-Premises' agent-polling protocol (CVSS 9.8), with the full technical writeup, timeline and patched versions (2025.11.7 / 2026.1.3). Primary vendor vulnerability disclosure, comparable to the existing Microsoft MSRC entry; no blog.jetbrains.com domain in the roster."
+      "rationale": "Published the original coordinated-disclosure advisory behind today's lead vuln story \u2014 CVE-2026-63077, a critical unauthenticated RCE in TeamCity On-Premises' agent-polling protocol (CVSS 9.8), with the full technical writeup, timeline and patched versions (2025.11.7 / 2026.1.3). Primary vendor vulnerability disclosure, comparable to the existing Microsoft MSRC entry; no blog.jetbrains.com domain in the roster."
     },
     {
       "name": "Arista Networks Security Advisories",
@@ -967,7 +967,7 @@
       "added": "2026-07-29",
       "seed": false,
       "note": "Arista's own security-advisory portal covering its networking and SD-WAN product line.",
-      "rationale": "Published the original advisory (Security Advisory 0144) behind today's lead vuln story — CVE-2026-16812, a maximum-severity (CVSS 10.0) unauthenticated command-injection flaw in on-premises VeloCloud Orchestrator now under active exploitation and in CISA's KEV catalog. Primary vendor disclosure; no arista.com domain in the roster."
+      "rationale": "Published the original advisory (Security Advisory 0144) behind today's lead vuln story \u2014 CVE-2026-16812, a maximum-severity (CVSS 10.0) unauthenticated command-injection flaw in on-premises VeloCloud Orchestrator now under active exploitation and in CISA's KEV catalog. Primary vendor disclosure; no arista.com domain in the roster."
     },
     {
       "name": "DoublePulsar (Kevin Beaumont)",
@@ -977,7 +977,7 @@
       "added": "2026-08-01",
       "seed": false,
       "note": "Independent security researcher's blog with a long track record of original malware/infrastructure discoveries.",
-      "rationale": "Kevin Beaumont discovered and published the original analysis behind today's lead breach story — the Adform ad-platform crypto-clipper supply-chain attack (trackpoint-async.js clipboard hijacker) — ahead of broad coverage. Long-running independent-research blog (former Microsoft MSTIC/Mandiant/Sophos analyst) with a documented history of primary discoveries (WannaCry kill-switch domain registration, PrintNightmare naming, ransomware infrastructure tracking). Primary hands-on research, not aggregation; no doublepulsar.com domain in the roster."
+      "rationale": "Kevin Beaumont discovered and published the original analysis behind today's lead breach story \u2014 the Adform ad-platform crypto-clipper supply-chain attack (trackpoint-async.js clipboard hijacker) \u2014 ahead of broad coverage. Long-running independent-research blog (former Microsoft MSTIC/Mandiant/Sophos analyst) with a documented history of primary discoveries (WannaCry kill-switch domain registration, PrintNightmare naming, ransomware infrastructure tracking). Primary hands-on research, not aggregation; no doublepulsar.com domain in the roster."
     },
     {
       "name": "DataBreaches.Net (Dissent Kim)",
@@ -997,7 +997,7 @@
       "added": "2026-08-01",
       "seed": false,
       "note": "Malware-analysis research team publishing original hands-on vulnerability and threat disclosures.",
-      "rationale": "Discovered and published the original technical writeup behind the AWS Kiro agentic-IDE RCE (CVE-2026-10591) — hidden one-pixel web text rewriting Kiro's MCP config to auto-launch an attacker-controlled MCP server with developer privileges — ahead of broad coverage. Established malware-research team (Intezer Analyze) with a consistent original-research track record. Primary hands-on research, not aggregation; no intezer.com domain in the roster."
+      "rationale": "Discovered and published the original technical writeup behind the AWS Kiro agentic-IDE RCE (CVE-2026-10591) \u2014 hidden one-pixel web text rewriting Kiro's MCP config to auto-launch an attacker-controlled MCP server with developer privileges \u2014 ahead of broad coverage. Established malware-research team (Intezer Analyze) with a consistent original-research track record. Primary hands-on research, not aggregation; no intezer.com domain in the roster."
     },
     {
       "name": "Securelist (Kaspersky GReAT)",
@@ -1007,7 +1007,7 @@
       "added": "2026-08-02",
       "seed": false,
       "note": "Kaspersky's Global Research & Analysis Team (GReAT) research blog; original APT/backdoor discoveries with deep malware analysis and IOCs.",
-      "rationale": "Published the original technical disclosure behind today's OctLurk and SilkLurk backdoors — a suspected Chinese-speaking cyber-espionage campaign against Central Asian and Afghan government targets since January 2025 — ahead of broad coverage. Long-established, globally cited APT-research team with a deep original-disclosure track record (dating to Stuxnet/Flame analysis); surprising gap in the roster given its influence. Primary research, not aggregation; no securelist.com domain in the roster."
+      "rationale": "Published the original technical disclosure behind today's OctLurk and SilkLurk backdoors \u2014 a suspected Chinese-speaking cyber-espionage campaign against Central Asian and Afghan government targets since January 2025 \u2014 ahead of broad coverage. Long-established, globally cited APT-research team with a deep original-disclosure track record (dating to Stuxnet/Flame analysis); surprising gap in the roster given its influence. Primary research, not aggregation; no securelist.com domain in the roster."
     },
     {
       "name": "Qualys Security Blog",
@@ -1017,7 +1017,7 @@
       "added": "2026-08-02",
       "seed": false,
       "note": "Qualys Threat Research Unit; discloses original CVEs with deep technical root-cause writeups, including AI-assisted vulnerability-hunting research.",
-      "rationale": "Published the original technical disclosure of RefluXFS (CVE-2026-64600), the nine-year-old Linux kernel XFS race condition exposing an estimated 16.4 million RHEL and enterprise Linux systems to silent root takeover — found by tasking Anthropic's Claude Mythos Preview with hunting for a Dirty COW-style race condition. Established vulnerability-research vendor with a long original-disclosure track record; no blog.qualys.com domain in the roster."
+      "rationale": "Published the original technical disclosure of RefluXFS (CVE-2026-64600), the nine-year-old Linux kernel XFS race condition exposing an estimated 16.4 million RHEL and enterprise Linux systems to silent root takeover \u2014 found by tasking Anthropic's Claude Mythos Preview with hunting for a Dirty COW-style race condition. Established vulnerability-research vendor with a long original-disclosure track record; no blog.qualys.com domain in the roster."
     },
     {
       "name": "N-able Blog (Security Advisories)",
@@ -1027,7 +1027,7 @@
       "added": "2026-08-03",
       "seed": false,
       "note": "N-able's own product-security advisories and incident updates for its N-central RMM platform.",
-      "rationale": "Published the original coordinated disclosure and running incident updates behind today's lead breach story — CVE-2026-18556/CVE-2026-18577, an N-central authentication bypass that attackers exploited to seize admin control after N-able's first fix proved incomplete — with dated advisory posts and the August 2 hotfix (2026.3.1.7). Primary vendor disclosure, comparable to the existing Microsoft MSRC and JetBrains entries; no n-able.com domain in the roster."
+      "rationale": "Published the original coordinated disclosure and running incident updates behind today's lead breach story \u2014 CVE-2026-18556/CVE-2026-18577, an N-central authentication bypass that attackers exploited to seize admin control after N-able's first fix proved incomplete \u2014 with dated advisory posts and the August 2 hotfix (2026.3.1.7). Primary vendor disclosure, comparable to the existing Microsoft MSRC and JetBrains entries; no n-able.com domain in the roster."
     },
     {
       "name": "CERT-UA (Government of Ukraine)",
@@ -1047,7 +1047,7 @@
       "added": "2026-08-03",
       "seed": false,
       "note": "Broadcom's own security-advisory portal covering VMware vCenter, ESXi and Cloud Foundation.",
-      "rationale": "Published the original coordinated-disclosure advisory VMSA-2026-0006 behind today's lead vuln story — CVE-2026-59309/CVE-2026-59310, twin CVSS 9.8 vCenter authentication-bypass and RCE flaws, plus the VMXNET3 VM-escape bug CVE-2026-47876 — with per-CVE technical detail and patched-build guidance across vCenter and ESXi branches. Primary vendor disclosure, comparable to the existing Microsoft MSRC, Arista and JetBrains entries; no broadcom.com domain in the roster."
+      "rationale": "Published the original coordinated-disclosure advisory VMSA-2026-0006 behind today's lead vuln story \u2014 CVE-2026-59309/CVE-2026-59310, twin CVSS 9.8 vCenter authentication-bypass and RCE flaws, plus the VMXNET3 VM-escape bug CVE-2026-47876 \u2014 with per-CVE technical detail and patched-build guidance across vCenter and ESXi branches. Primary vendor disclosure, comparable to the existing Microsoft MSRC, Arista and JetBrains entries; no broadcom.com domain in the roster."
     },
     {
       "name": "Resecurity",
@@ -1067,7 +1067,7 @@
       "added": "2026-08-04",
       "seed": false,
       "note": "AI-native threat-exposure-management vendor whose research team discloses original CVEs with root-cause technical writeups.",
-      "rationale": "Its researchers (Gal Zaban, Ido Shani) discovered and published the original 'FaceHugger' disclosure behind today's lead AI story — three TOCTOU-based bypasses of Hugging Face Diffusers' trust_remote_code safeguard (CVE-2026-44827/45804/44513) letting a crafted model repository execute arbitrary code. Primary hands-on AI-supply-chain vulnerability research, not aggregation; no zafran.io domain in the roster."
+      "rationale": "Its researchers (Gal Zaban, Ido Shani) discovered and published the original 'FaceHugger' disclosure behind today's lead AI story \u2014 three TOCTOU-based bypasses of Hugging Face Diffusers' trust_remote_code safeguard (CVE-2026-44827/45804/44513) letting a crafted model repository execute arbitrary code. Primary hands-on AI-supply-chain vulnerability research, not aggregation; no zafran.io domain in the roster."
     },
     {
       "name": "SafeDep",
@@ -1077,7 +1077,7 @@
       "added": "2026-08-05",
       "seed": false,
       "note": "Open-source supply-chain security research team that reverse-engineers and publishes original npm/PyPI compromise analysis in near-real time.",
-      "rationale": "Its payload analysis was the primary technical source behind today's lead breach story, the Keyv-linked 'ChainDrop' npm worm — verified poisoned package/version counts, decoded the credential-harvesting bundle, and documented the Claude Code/VS Code hook persistence mechanism, cited directly by The Hacker News ahead of broad coverage. Primary hands-on research, not aggregation; no safedep.io domain in the roster."
+      "rationale": "Its payload analysis was the primary technical source behind today's lead breach story, the Keyv-linked 'ChainDrop' npm worm \u2014 verified poisoned package/version counts, decoded the credential-harvesting bundle, and documented the Claude Code/VS Code hook persistence mechanism, cited directly by The Hacker News ahead of broad coverage. Primary hands-on research, not aggregation; no safedep.io domain in the roster."
     },
     {
       "name": "Securonix Threat Research",
@@ -1087,7 +1087,7 @@
       "added": "2026-08-05",
       "seed": false,
       "note": "Threat-research team that discovers and names original malware campaigns with full technical infrastructure breakdowns.",
-      "rationale": "Discovered and named 'SMOKE#SCREEN' behind today's ScreenConnect RMM-abuse story — a live WsgiDAV staging server and rotating Cloudflare Tunnel/Dropbox C2 infrastructure hidden behind fake Adobe and Zoom update pages — publishing named-researcher technical detail (Sangwan, Gaikwad, Beardslee) ahead of broad coverage. Primary hands-on research, not aggregation; no securonix.com domain in the roster."
+      "rationale": "Discovered and named 'SMOKE#SCREEN' behind today's ScreenConnect RMM-abuse story \u2014 a live WsgiDAV staging server and rotating Cloudflare Tunnel/Dropbox C2 infrastructure hidden behind fake Adobe and Zoom update pages \u2014 publishing named-researcher technical detail (Sangwan, Gaikwad, Beardslee) ahead of broad coverage. Primary hands-on research, not aggregation; no securonix.com domain in the roster."
     },
     {
       "name": "FBI Cyber Division (IC3 / Cyber Alerts)",
@@ -1097,7 +1097,7 @@
       "added": "2026-08-06",
       "seed": false,
       "note": "The FBI's own cyber-alert and PSA feed, often issued jointly with CISA/EPA/sector regulators on active exploitation of critical-infrastructure systems.",
-      "rationale": "Published the original joint FBI/EPA alert behind today's lead breach story — hackers actively hijacking internet-connected water-utility PLCs (Rockwell/Allen-Bradley MicroLogix) across at least seven states since July 27, rewriting ladder logic to cause flooding and pressure loss. Authoritative primary government source, comparable to the existing CISA Advisories entry; no fbi.gov domain in the roster."
+      "rationale": "Published the original joint FBI/EPA alert behind today's lead breach story \u2014 hackers actively hijacking internet-connected water-utility PLCs (Rockwell/Allen-Bradley MicroLogix) across at least seven states since July 27, rewriting ladder logic to cause flooding and pressure loss. Authoritative primary government source, comparable to the existing CISA Advisories entry; no fbi.gov domain in the roster."
     },
     {
       "name": "Barracuda Networks (Threat Research)",
@@ -1137,7 +1137,7 @@
       "added": "2026-08-11",
       "seed": false,
       "note": "Frontier AI lab's own engineering blog; first-party security-relevant product and safety disclosures for Claude and Claude Code.",
-      "rationale": "Published the original engineering writeup behind today's lead AI story — making Claude Code's Auto Mode the default and disclosing that it blocked 89% of dangerous commands in a 1,053-user trial versus a 13.6% human refusal rate, plus 720 indirect-prompt-injection tests with zero successes. Primary first-party vendor disclosure, directly comparable to the existing OpenAI newsroom entry; no anthropic.com domain in the roster."
+      "rationale": "Published the original engineering writeup behind today's lead AI story \u2014 making Claude Code's Auto Mode the default and disclosing that it blocked 89% of dangerous commands in a 1,053-user trial versus a 13.6% human refusal rate, plus 720 indirect-prompt-injection tests with zero successes. Primary first-party vendor disclosure, directly comparable to the existing OpenAI newsroom entry; no anthropic.com domain in the roster."
     },
     {
       "name": "Synack Red Team (Synack Research)",
@@ -1147,7 +1147,7 @@
       "added": "2026-08-11",
       "seed": false,
       "note": "Crowdsourced pentest firm's research arm; original attack-class disclosures with vendor coordination and CVEs.",
-      "rationale": "Researcher Malcolm Stagg discovered and disclosed NatJack, a new attack class exploiting trust assumptions in NAT implementations across Windows, Linux and macOS, behind today's lead vuln story — 13 vendors notified, 32 products tested, two CVEs assigned (CVE-2026-56181, CVE-2026-63913). Primary original vulnerability research presented at Black Hat, not aggregation; no synack.com domain in the roster."
+      "rationale": "Researcher Malcolm Stagg discovered and disclosed NatJack, a new attack class exploiting trust assumptions in NAT implementations across Windows, Linux and macOS, behind today's lead vuln story \u2014 13 vendors notified, 32 products tested, two CVEs assigned (CVE-2026-56181, CVE-2026-63913). Primary original vulnerability research presented at Black Hat, not aggregation; no synack.com domain in the roster."
     },
     {
       "name": "1Password (Off-By-1 Labs)",
@@ -1197,7 +1197,37 @@
       "added": "2026-08-16",
       "seed": false,
       "note": "MDR provider's Security Intelligence Team; fast, dated original threat-brief writeups on newly disclosed and actively exploited CVEs.",
-      "rationale": "Published same-day original threat briefs behind two of today's lead vuln stories — the SAP Commerce Cloud CVE-2026-58231 exploitation (posted Aug 14, hours after researchers first reported attacks) and the GeoServer zero-day SQLi-to-RCE campaign (posted within a day of disclosure) — each with independent technical detail (Shadowserver exposure counts, IP-filter mitigation guidance) rather than rewritten wire copy. Consistent dated cadence on its Security Intelligence tag; primary hands-on threat-brief research, not aggregation; no fieldeffect.com domain in the roster."
+      "rationale": "Published same-day original threat briefs behind two of today's lead vuln stories \u2014 the SAP Commerce Cloud CVE-2026-58231 exploitation (posted Aug 14, hours after researchers first reported attacks) and the GeoServer zero-day SQLi-to-RCE campaign (posted within a day of disclosure) \u2014 each with independent technical detail (Shadowserver exposure counts, IP-filter mitigation guidance) rather than rewritten wire copy. Consistent dated cadence on its Security Intelligence tag; primary hands-on threat-brief research, not aggregation; no fieldeffect.com domain in the roster."
+    },
+    {
+      "name": "Cyera Research Labs",
+      "url": "https://www.cyera.com/research",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-17",
+      "seed": false,
+      "note": "Data-security vendor's research arm; original DEF CON-grade vulnerability research into AI/agent tooling and the infrastructure underneath local AI.",
+      "rationale": "Its researchers (Vladimir Tokarev, Saar Pearl and team) published two of today's lead AI-security stories from DEF CON 34: 10 vulnerabilities in llama.cpp (the inference engine behind Ollama, LM Studio, Jan, GPT4All, two rated CVSS 9.2) and 'Cellbreak,' a Pyodide sandbox-escape pattern reproduced across seven products including n8n (CVE-2025-68668, CVSS 9.9) and Grist. Primary hands-on vulnerability research, not aggregation; no cyera.com domain in the roster."
+    },
+    {
+      "name": "Sansec",
+      "url": "https://sansec.io/research",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-17",
+      "seed": false,
+      "note": "E-commerce security firm (eComscan) that monitors 1 in 10 Magento/Adobe Commerce stores worldwide and partners with Europol/Google on digital-skimming takedowns.",
+      "rationale": "Blocked and publicly documented the first exploitation attempts against today's lead vuln story, Adobe Commerce's CVE-2026-71362 account-takeover flaw, within hours of Adobe's advisory, confirming attackers could switch a customer session to another account. Long track record of original CVE-class Magento/Adobe Commerce research (CosmicSting, SessionReaper, PolyShell); primary hands-on research, not aggregation; no sansec.io domain in the roster."
+    },
+    {
+      "name": "A Security",
+      "url": "https://a.security/blog",
+      "category": "aisecurity",
+      "tier": "aifocus",
+      "added": "2026-08-17",
+      "seed": false,
+      "note": "Offensive-security research team demonstrating AI-accelerated exploit development against real-world software.",
+      "rationale": "Published the original 'ZOOMSDAY' research behind today's lead AI story, using fewer than 20 prompts to public AI models to chain Zoom annotation-feature memory-corruption bugs into a working zero-click RCE across Windows, macOS, iOS and Android in under 24 hours \u2014 work the team says previously required a five-person team six months. Primary hands-on offensive-AI research, not aggregation; no a.security domain in the roster."
     }
   ],
   "candidates": [
@@ -1207,7 +1237,7 @@
       "category": "investigative",
       "tier": "strong",
       "noted": "2026-06-15",
-      "rationale": "Daily cyber+geopolitics briefing; useful but more of a curated digest than original reporting — watch for original analysis before promoting."
+      "rationale": "Daily cyber+geopolitics briefing; useful but more of a curated digest than original reporting \u2014 watch for original analysis before promoting."
     },
     {
       "name": "S-RM",
@@ -1215,7 +1245,7 @@
       "category": "investigative",
       "tier": "strong",
       "noted": "2026-06-17",
-      "rationale": "Weekly cyber-intelligence briefing with some original incident framing (e.g., law-firm helpdesk-impersonation campaign). Useful, but largely a curated briefing — watch for sustained original reporting before promoting."
+      "rationale": "Weekly cyber-intelligence briefing with some original incident framing (e.g., law-firm helpdesk-impersonation campaign). Useful, but largely a curated briefing \u2014 watch for sustained original reporting before promoting."
     },
     {
       "name": "Halcyon",
@@ -1223,7 +1253,7 @@
       "category": "threatintel",
       "tier": "strong",
       "noted": "2026-06-17",
-      "rationale": "Original ransomware tracking (e.g., INC Ransom law-firm campaign, 200+ legal-sector incidents). Credible data, but a vendor alert feed — monitor independence/cadence before promoting."
+      "rationale": "Original ransomware tracking (e.g., INC Ransom law-firm campaign, 200+ legal-sector incidents). Credible data, but a vendor alert feed \u2014 monitor independence/cadence before promoting."
     },
     {
       "name": "YesWeHack",
@@ -1231,7 +1261,7 @@
       "category": "vulnfeeds",
       "tier": "strong",
       "noted": "2026-07-05",
-      "rationale": "Its vulnerability-intelligence team co-authored the original ChocoPoC research with Sekoia TDR (trojanized CVE-PoC repos targeting researchers). Promising original vuln-intel, but primarily a bug-bounty-platform news blog — watch for sustained independent original research beyond co-published work before promoting."
+      "rationale": "Its vulnerability-intelligence team co-authored the original ChocoPoC research with Sekoia TDR (trojanized CVE-PoC repos targeting researchers). Promising original vuln-intel, but primarily a bug-bounty-platform news blog \u2014 watch for sustained independent original research beyond co-published work before promoting."
     },
     {
       "name": "ASSET Research Group (UMKC)",
@@ -1239,7 +1269,7 @@
       "category": "aisecurity",
       "tier": "aifocus",
       "noted": "2026-07-14",
-      "rationale": "University of Missouri-Kansas City academic group that built and disclosed 'Ghostcommit,' the PNG-hidden prompt-injection technique behind today's AI story, with a public GitHub PoC and a working multimodal PR-defense prototype. Strong original hands-on research, but a project/disclosure page rather than a sustained publishing outlet — watch for a continued cadence of independent research before promoting."
+      "rationale": "University of Missouri-Kansas City academic group that built and disclosed 'Ghostcommit,' the PNG-hidden prompt-injection technique behind today's AI story, with a public GitHub PoC and a working multimodal PR-defense prototype. Strong original hands-on research, but a project/disclosure page rather than a sustained publishing outlet \u2014 watch for a continued cadence of independent research before promoting."
     },
     {
       "name": "TNW (The Next Web)",
@@ -1247,7 +1277,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-07-16",
-      "rationale": "Ran a fast, clear writeup of today's xAI Grok Build CLI data-exfiltration story with named authorship and direct sourcing, but the underlying wire-level research was done by an independent researcher (cereblab), not TNW itself — TNW's cybersecurity coverage is intermittent within a broader general-tech beat. Watch for sustained original cyber-specific reporting before promoting."
+      "rationale": "Ran a fast, clear writeup of today's xAI Grok Build CLI data-exfiltration story with named authorship and direct sourcing, but the underlying wire-level research was done by an independent researcher (cereblab), not TNW itself \u2014 TNW's cybersecurity coverage is intermittent within a broader general-tech beat. Watch for sustained original cyber-specific reporting before promoting."
     },
     {
       "name": "DeepInspect",
@@ -1255,14 +1285,14 @@
       "category": "aisecurity",
       "tier": "aifocus",
       "noted": "2026-07-17",
-      "rationale": "Runs a comprehensive, well-organized rolling roundup of 2026 agentic-AI security incidents, regulatory actions and framework releases. Useful as a curated index, but appears to be aggregation/synthesis of others' findings rather than original hands-on research or disclosures — watch for primary research before promoting."
+      "rationale": "Runs a comprehensive, well-organized rolling roundup of 2026 agentic-AI security incidents, regulatory actions and framework releases. Useful as a curated index, but appears to be aggregation/synthesis of others' findings rather than original hands-on research or disclosures \u2014 watch for primary research before promoting."
     },
     {
       "name": "Hackread",
       "url": "https://hackread.com/",
       "category": "breaking",
       "added": "2026-07-20",
-      "note": "Security news outlet; more aggregation than original reporting — parked pending evidence of original scoops."
+      "note": "Security news outlet; more aggregation than original reporting \u2014 parked pending evidence of original scoops."
     },
     {
       "name": "Sakana AI",
@@ -1270,7 +1300,7 @@
       "category": "aisecurity",
       "tier": "aifocus",
       "noted": "2026-07-22",
-      "rationale": "Released Fugu-Cyber, a purpose-built defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits behind today's story. Legitimate original vendor content, but a product-announcement blog rather than a sustained research/disclosure body of work — watch for original security research before promoting."
+      "rationale": "Released Fugu-Cyber, a purpose-built defensive cybersecurity orchestration model, with a candid first-party writeup on real-world deployment limits behind today's story. Legitimate original vendor content, but a product-announcement blog rather than a sustained research/disclosure body of work \u2014 watch for original security research before promoting."
     },
     {
       "name": "Windows Latest",
@@ -1278,7 +1308,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-07-25",
-      "rationale": "Cited 'a new advisory seen by Windows Latest' when it broke today's Microsoft Entra passkey-mandate/SMS-MFA-retirement story ahead of Microsoft's own public documentation, showing genuine primary-document sourcing. But it's a general Windows-enthusiast outlet with security as one beat among many rather than a dedicated cybersecurity publication — watch for sustained original security-scoop cadence before promoting."
+      "rationale": "Cited 'a new advisory seen by Windows Latest' when it broke today's Microsoft Entra passkey-mandate/SMS-MFA-retirement story ahead of Microsoft's own public documentation, showing genuine primary-document sourcing. But it's a general Windows-enthusiast outlet with security as one beat among many rather than a dedicated cybersecurity publication \u2014 watch for sustained original security-scoop cadence before promoting."
     },
     {
       "name": "Axios",
@@ -1286,7 +1316,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-07-29",
-      "rationale": "Broke original reporting confirming a second victim company (Modal Labs) in the OpenAI/Hugging Face rogue-agent incident, independently sourced from Reuters and its own follow-up confirmation with Modal's CTO. Credible, fast tech reporting, but a broad general-news outlet with cybersecurity as one beat among many rather than a dedicated security publication — watch for sustained original cyber-scoop cadence before promoting."
+      "rationale": "Broke original reporting confirming a second victim company (Modal Labs) in the OpenAI/Hugging Face rogue-agent incident, independently sourced from Reuters and its own follow-up confirmation with Modal's CTO. Credible, fast tech reporting, but a broad general-news outlet with cybersecurity as one beat among many rather than a dedicated security publication \u2014 watch for sustained original cyber-scoop cadence before promoting."
     },
     {
       "name": "The Register (Security)",
@@ -1294,7 +1324,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-08-01",
-      "rationale": "Ran an early, clearly-sourced writeup tying the Zimbra CVE-2025-66376 exploitation history to today's Laundry Bear/TA488 Outlook OWA campaign, citing Proofpoint's research directly. Consistently fast and well-sourced, but leans on other teams' primary research (Proofpoint, vendors) rather than first-hand disclosure — informally parked on 2026-06-20 and 2026-07-02 for the same reason; formalizing as a candidate here to track cadence and independence before promoting."
+      "rationale": "Ran an early, clearly-sourced writeup tying the Zimbra CVE-2025-66376 exploitation history to today's Laundry Bear/TA488 Outlook OWA campaign, citing Proofpoint's research directly. Consistently fast and well-sourced, but leans on other teams' primary research (Proofpoint, vendors) rather than first-hand disclosure \u2014 informally parked on 2026-06-20 and 2026-07-02 for the same reason; formalizing as a candidate here to track cadence and independence before promoting."
     },
     {
       "name": "Ayush Paul (personal blog)",
@@ -1302,7 +1332,7 @@
       "category": "aisecurity",
       "tier": "aifocus",
       "noted": "2026-08-01",
-      "rationale": "Independent researcher published \"The Memory Heist,\" original hands-on research showing claude.ai's web_fetch tool could be chained with nested links to exfiltrate a user's inferred personal data via Claude's memory system; picked up and analyzed by Simon Willison and multiple security outlets. Promising primary AI-security research from a single-researcher blog with limited publishing cadence so far — watch for continued original output before promoting."
+      "rationale": "Independent researcher published \"The Memory Heist,\" original hands-on research showing claude.ai's web_fetch tool could be chained with nested links to exfiltrate a user's inferred personal data via Claude's memory system; picked up and analyzed by Simon Willison and multiple security outlets. Promising primary AI-security research from a single-researcher blog with limited publishing cadence so far \u2014 watch for continued original output before promoting."
     },
     {
       "name": "Block Engineering Blog",
@@ -1310,7 +1340,7 @@
       "category": "vulnfeeds",
       "tier": "strong",
       "noted": "2026-08-02",
-      "rationale": "Published the original root-cause technical analysis behind today's Coldcard hardware-wallet story, tracing the $70.2M Bitcoin theft to a predictable-RNG fallback and 32-bit reseed flaw in Coldcard firmware (production config disabling the hardware RNG). Credible first-party engineering research from Block/Square's security team, but publishes on security topics only occasionally rather than as a sustained cadence — watch for continued original vulnerability research before promoting."
+      "rationale": "Published the original root-cause technical analysis behind today's Coldcard hardware-wallet story, tracing the $70.2M Bitcoin theft to a predictable-RNG fallback and 32-bit reseed flaw in Coldcard firmware (production config disabling the hardware RNG). Credible first-party engineering research from Block/Square's security team, but publishes on security topics only occasionally rather than as a sustained cadence \u2014 watch for continued original vulnerability research before promoting."
     },
     {
       "name": "Tech Times (Security)",
@@ -1318,7 +1348,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-08-02",
-      "rationale": "Ran an early, well-sourced Black Hat USA 2026 preview tying the GPUBreach GPU-Rowhammer research (University of Toronto, IEEE S&P 2026) to this week's unprecedented government keynote lineup (CISA, FBI, White House Cyber Director). Clear, well-organized reporting, but leans heavily on the academic paper, Black Hat's own press releases and the Cloud Security Alliance's research note rather than original disclosure — general tech outlet with security as one beat among many. Watch for sustained original cyber-scoop cadence before promoting."
+      "rationale": "Ran an early, well-sourced Black Hat USA 2026 preview tying the GPUBreach GPU-Rowhammer research (University of Toronto, IEEE S&P 2026) to this week's unprecedented government keynote lineup (CISA, FBI, White House Cyber Director). Clear, well-organized reporting, but leans heavily on the academic paper, Black Hat's own press releases and the Cloud Security Alliance's research note rather than original disclosure \u2014 general tech outlet with security as one beat among many. Watch for sustained original cyber-scoop cadence before promoting."
     },
     {
       "name": "Cyber Security News",
@@ -1326,7 +1356,7 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-08-03",
-      "rationale": "Ran a fast, well-organized weekly roundup covering today's Anthropic/Claude, VMware, Cisco FMC and Word Copilot stories with named byline (Guru Baran) and per-story detail pages. Useful and prolific, but leans on other teams' primary disclosures (Wiz, Cisco PSIRT, CERT-UA, Nebula Security) rather than first-hand research or scoops — watch for original reporting cadence before promoting."
+      "rationale": "Ran a fast, well-organized weekly roundup covering today's Anthropic/Claude, VMware, Cisco FMC and Word Copilot stories with named byline (Guru Baran) and per-story detail pages. Useful and prolific, but leans on other teams' primary disclosures (Wiz, Cisco PSIRT, CERT-UA, Nebula Security) rather than first-hand research or scoops \u2014 watch for original reporting cadence before promoting."
     },
     {
       "name": "LavaHQ",
@@ -1334,7 +1364,7 @@
       "category": "vulnfeeds",
       "tier": "strong",
       "noted": "2026-08-03",
-      "rationale": "Its researchers discovered and published the original scan data behind today's 20-year-old IPMI/BMC exposure story (CVE-2013-4786), finding 36,872 publicly exposed Baseboard Management Controllers and live exploitation evidence (an HPE iLO ransom note). Promising original hands-on research, but a single-story appearance with no established publishing cadence yet — watch before promoting."
+      "rationale": "Its researchers discovered and published the original scan data behind today's 20-year-old IPMI/BMC exposure story (CVE-2013-4786), finding 36,872 publicly exposed Baseboard Management Controllers and live exploitation evidence (an HPE iLO ransom note). Promising original hands-on research, but a single-story appearance with no established publishing cadence yet \u2014 watch before promoting."
     },
     {
       "name": "Corgea",
@@ -1342,7 +1372,7 @@
       "category": "vulnfeeds",
       "tier": "strong",
       "noted": "2026-08-04",
-      "rationale": "Published a detailed original technical breakdown of the Alibaba-targeted 'lib-mtop' npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set) behind today's supply-chain story. Credible agentic-pentesting research team (YC-backed), but Socket — already in the roster — covered the same cluster independently and it's unclear who reported first; watch for a sustained independent-scoop cadence before promoting."
+      "rationale": "Published a detailed original technical breakdown of the Alibaba-targeted 'lib-mtop' npm RAT cluster (18 packages, dws_lateral/aisearch/aipoison command set) behind today's supply-chain story. Credible agentic-pentesting research team (YC-backed), but Socket \u2014 already in the roster \u2014 covered the same cluster independently and it's unclear who reported first; watch for a sustained independent-scoop cadence before promoting."
     },
     {
       "name": "VenariX",
@@ -1350,7 +1380,7 @@
       "category": "investigative",
       "tier": "strong",
       "noted": "2026-08-05",
-      "rationale": "Reviewed samples from 11 of ExfilSquad's 15 claimed victims and found consistent Dataverse/Power Pages misconfiguration patterns behind today's UK Police National Legal Database (PNLD) breach story, confirming at least one unauthenticated-exposure case (Houston). Promising original forensic research, but a single-story appearance so far with unclear publishing cadence — watch before promoting."
+      "rationale": "Reviewed samples from 11 of ExfilSquad's 15 claimed victims and found consistent Dataverse/Power Pages misconfiguration patterns behind today's UK Police National Legal Database (PNLD) breach story, confirming at least one unauthenticated-exposure case (Houston). Promising original forensic research, but a single-story appearance so far with unclear publishing cadence \u2014 watch before promoting."
     },
     {
       "name": "Open Secure AI Alliance / Linux Foundation (SAFE)",
@@ -1358,7 +1388,7 @@
       "category": "aisecurity",
       "tier": "aifocus",
       "noted": "2026-08-06",
-      "rationale": "Published the original SAFE (Shared AI Findings Exchange) RFC behind today's AI-vendor story — the first proposed voluntary cross-org framework for sharing AI agent security incidents, backed by 120 member orgs including Nvidia, Cisco, CrowdStrike and Red Hat. Significant primary industry document, but a standards-body/alliance publishing occasional RFCs rather than a sustained research or reporting cadence — watch for continued original output before promoting."
+      "rationale": "Published the original SAFE (Shared AI Findings Exchange) RFC behind today's AI-vendor story \u2014 the first proposed voluntary cross-org framework for sharing AI agent security incidents, backed by 120 member orgs including Nvidia, Cisco, CrowdStrike and Red Hat. Significant primary industry document, but a standards-body/alliance publishing occasional RFCs rather than a sustained research or reporting cadence \u2014 watch for continued original output before promoting."
     },
     {
       "name": "BankInfoSecurity (ISMG)",
@@ -1366,7 +1396,15 @@
       "category": "breaking",
       "tier": "strong",
       "noted": "2026-08-06",
-      "rationale": "Ran the first detailed writeup of DentaQuest's confirmed 15-million-patient breach behind today's lead story, citing the Oregon AG's data-breach reporting site directly. Consistent, well-sourced breach reporting from ISMG's security-focused outlet, but leans on regulatory filings and other outlets' scoops more often than first-hand discovery — watch for original scoops before promoting."
+      "rationale": "Ran the first detailed writeup of DentaQuest's confirmed 15-million-patient breach behind today's lead story, citing the Oregon AG's data-breach reporting site directly. Consistent, well-sourced breach reporting from ISMG's security-focused outlet, but leans on regulatory filings and other outlets' scoops more often than first-hand discovery \u2014 watch for original scoops before promoting."
+    },
+    {
+      "name": "QUIRSO",
+      "url": "https://medium.com/@quirso_de",
+      "category": "threatintel",
+      "tier": "strong",
+      "noted": "2026-08-17",
+      "rationale": "German digital-forensics/incident-response firm; its threat research team discovered and published the original attribution behind today's lead breach story, the China-nexus VMware vCenter CVE-2026-59310 exploitation campaign (361 victim IPs, 47 countries), cited directly by The Hacker News, BleepingComputer, DarkReading and Infosecurity Magazine. Primary hands-on IR research, not aggregation \u2014 clearly passes discovery criteria, but the daily cap of 3 new sources was already used earlier today (Cyera Research Labs, Sansec, A Security); parking for tomorrow's review."
     }
   ]
 }
