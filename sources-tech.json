@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 28,
-  "lastUpdated": "2026-08-17",
+  "version": 30,
+  "lastUpdated": "2026-08-21",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -502,9 +502,49 @@
       "seed": false,
       "note": "Business-and-innovation magazine (Mansueto Ventures) with a substantial standing technology desk producing original reporting and analysis on big-tech strategy, the workforce, startups, and the business impact of AI and automation.",
       "rationale": "Surfaced as the original source behind today's milestone story that 2026 tech layoffs have already surpassed the full-year 2025 total (fresh cuts at Google, TikTok, Etsy, Zillow). Passes discovery criteria: reputable and editorially credible, with a dedicated tech/innovation newsroom doing original reporting rather than pure aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business rather than narrow cybersecurity or pure AI-model coverage. Distinguished from its earlier reviewed-and-parked status (2026-07-05, as broad general-business news) by repeatedly originating general-tech-business stories used directly in the briefing, following the same precedent that promoted Fortune. New domain (fastcompany.com) not previously in the sources list."
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com/technology",
+      "category": "bigtech",
+      "tier": "strong",
+      "added": "2026-08-20",
+      "seed": false,
+      "note": "Global business-and-financial newspaper of record with a large, well-sourced technology desk producing original reporting and analysis on big-tech deals, semiconductors, earnings, and strategy.",
+      "rationale": "Surfaced as the original source behind today's biggest Big Tech story — Google's $12.2B custom-chip warrant deal with Marvell. Passes discovery criteria: reputable and editorially credible (a premier financial-news organization), primarily original reporting and analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business rather than narrow cybersecurity or pure AI-model coverage. Consistent with the precedent that already promoted the comparable business-news desks Bloomberg, Reuters, CNBC, and Fortune, and distinguished from the parked general-news candidates (CNN, Axios, WaPo) by a deep, standing technology/deals operation that repeatedly breaks original stories. New domain (ft.com) not previously in roster."
     }
   ],
   "candidates": [
+    {
+      "name": "Search Engine Land",
+      "url": "https://searchengineland.com/",
+      "category": "software",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Third Door Media publication (since 2006) covering search engines, Google, and platform/product changes, with original reporting alongside marketing and SEO how-to content.",
+      "rationale": "Surfaced as the original source behind today's item that Google will begin removing Assistant from phones on September 4 as Gemini takes over. Reviewed but parked as a candidate rather than added because its editorial center of gravity is search-marketing/SEO practitioner coverage rather than the broader original technology reporting the roster prioritizes — the same reservation that parked Social Media Today — and Google/platform scoops it runs typically also surface through roster outlets like 9to5Google and The Verge. Promote if it recurs as the direct original source on general software/platform stories."
+    },
+    {
+      "name": "PhoneArena",
+      "url": "https://www.phonearena.com/",
+      "category": "devices",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Long-running (since 2001) smartphone news and reviews site with original hands-on coverage, benchmarks, and daily device launch reporting.",
+      "rationale": "Surfaced as a dated source for today's item on Sony scheduling an Aug 25 Xperia 10 VIII unveiling. Reviewed but parked as a candidate rather than added because its phone-launch beat substantially overlaps roster incumbents GSMArena, 9to5Google, Android Central, and Tom's Guide, which already cover the same devices; the day had no clearly non-overlapping original story to justify a new devices slot. Promote if it originates a distinct device story not covered by existing roster outlets."
+    },
+    {
+      "name": "EEJournal",
+      "url": "https://www.eejournal.com/",
+      "category": "devices",
+      "tier": "strong",
+      "added": "2026-08-20",
+      "seed": false,
+      "note": "Electronics-engineering publication with original columns and analysis plus an industry-news feed covering chips, EDA, embedded systems, and edge devices.",
+      "rationale": "Surfaced as a dated source for today's TDK edgeRX Pro edge-AI predictive-maintenance sensor item. Reviewed but parked as a candidate rather than added because the specific piece used was largely a vendor press-release reprint, and much of its news feed leans that way, which does not cleanly meet discovery criterion (2) primarily original reporting; its stronger original work is opinion/columns. Sits alongside EE Times and Semiconductor Engineering as electronics-trade candidates; promote if it originates a clearly reported general-tech/hardware story used directly, especially as the daily add slot went to the clearly original Financial Times."
+    },
     {
       "name": "WABetaInfo",
       "url": "https://wabetainfo.com/",

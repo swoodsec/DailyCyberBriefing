@@ -1,12 +1,12 @@
 <div class="lead">
   <h2>Top of the Morning — Cyber</h2>
   <ul>
-    <li><a href="https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/" target="_blank" rel="noopener">France's tax authority admits attackers stole income, family-quotient and withholding data on 678,000 people and businesses</a></li>
-    <li><a href="https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html" target="_blank" rel="noopener">A suspected China-nexus actor is exploiting a critical VMware vCenter flaw across 361 hosts in 47 countries, deploying a Babuk-derived encryptor</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" target="_blank" rel="noopener">Clop's Windchill victim list keeps growing — Philips and GE are now confirmed investigating alongside Shell, with Reuters counting nearly 50 named companies</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/" target="_blank" rel="noopener">A new Mirai-derived botnet, Evooo1Bot, is turning routers and IoT gear into DDoS launchpads and SOCKS5 proxy relays</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/" target="_blank" rel="noopener">New AmnesiaStealer malware clones victims' authenticated Chromium browser sessions for live remote control on macOS</a></li>
-    <li><a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" rel="noopener">Microsoft assigns a CVE to the unpatched Defender "ShieldBreak" zero-day and confirms it's building a fix — none exists yet</a></li>
+    <li><a href="https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html" target="_blank" rel="noopener">Microsoft confirms a CVSS 10.0 Entra ID remote-code-execution flaw was exploited in the wild — it's already mitigated cloud-side, no customer action needed</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/" target="_blank" rel="noopener">CISA, FBI and HHS warn Medusa ransomware has now hit over 500 critical infrastructure organizations since 2021, with victims getting just 48 hours before public shaming begins</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/" target="_blank" rel="noopener">CISA adds an actively-exploited MLflow SSRF flaw to its KEV catalog after attackers used it to steal AWS, GCP and Azure cloud credentials via metadata-service abuse</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/" target="_blank" rel="noopener">NSA, CISA, FBI, DOE and EPA warn threat actors are using AI-generated Python scripts disguised as OT monitoring tools to probe internet-exposed Siemens S7 PLCs</a></li>
+    <li><a href="https://cybernews.com/security/mcdonalds-vodafone-azure-microdoft-credential-theft/" target="_blank" rel="noopener">A threat actor called "TheHatman" is selling 3.64 million employee records allegedly pulled from the Azure tenants of McDonald's, Vodafone, TCS and six other Fortune 500 firms</a></li>
+    <li><a href="https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/" target="_blank" rel="noopener">DOJ charges 17 Iranians tied to the IRGC-linked Mabna Institute over a campaign that stole 31.5TB from 144 U.S. universities and dozens of companies — $10M bounties on five defendants</a></li>
   </ul>
   <p class="rosternote">Roster update: added 3 new sources today — see Cyber Sources.</p>
 </div>
@@ -14,44 +14,52 @@
   <div class="cat"><span class="ico">🛡️ Breaches &amp; Active Threats</span></div>
   <div class="cols">
     <div class="item">
-      <div class="top"><span class="badge b-crit">Government Breach</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/" target="_blank" rel="noopener">French tax authority data breach affects 678,000 individuals</a></h3>
-      <div class="date">📅 Aug 17, 2026</div>
-      <p>Attackers used stolen credentials from a DGFiP employee and an authorized third party during June–July intrusions; a threat actor going by "ZeroBytes" listed the stolen database for sale on a hacking forum August 12. Exposed data covers taxable income, family-quotient and withholding-tax rates for individuals plus SIREN and cadastral records for businesses — account logins were not compromised.</p>
-      <div class="why"><b>Why it matters:</b> Tax and property data at this scale is prime fuel for targeted phishing against millions of French taxpayers — watch for official DGFiP letters starting next week, and treat unsolicited "tax data" emails or calls as suspect.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/" target="_blank">BleepingComputer</a></div>
+      <div class="top"><span class="badge b-crit">500+ Victims</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/" target="_blank" rel="noopener">CISA: Medusa ransomware hit over 500 critical infrastructure orgs</a></h3>
+      <div class="date">📅 Aug 19, 2026</div>
+      <p>An updated joint advisory from CISA, the FBI and HHS says Medusa's RaaS affiliates have breached 500+ organizations since 2021 — concentrated in healthcare, defense industrial base, critical manufacturing and government — using an affiliate model where victims get 48 hours before Medusa contacts them directly and starts a leak-site countdown timer.</p>
+      <div class="why"><b>Why it matters:</b> Patch internet-facing systems and segment networks now — Medusa affiliates are still active and the 48-hour negotiation window leaves little time to react once encryption starts.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/" target="_blank">BleepingComputer</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-crit">Active Exploitation</span></div>
-      <h3><a href="https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html" target="_blank" rel="noopener">Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware</a></h3>
-      <div class="date">📅 Aug 17, 2026</div>
-      <p>German incident-response firm QUIRSO found 361 compromised vCenter IPs across 47 countries; systems began contacting attacker infrastructure August 3, just five days after Broadcom's July 29 patch for CVE-2026-59310 (CVSS 9.8), a directory-traversal RCE. Attackers used reverse SSH for persistence and dropped a Babuk-derived encryptor.</p>
-      <div class="why"><b>Why it matters:</b> Any vCenter host that wasn't patched within days of disclosure should be treated as likely already compromised — hunt for reverse_ssh and rogue cron jobs, not just patch and move on.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html" target="_blank">The Hacker News</a></div>
+      <div class="top"><span class="badge b-high">3.64M Records</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/" target="_blank" rel="noopener">Hacker claims 3.6 million Azure account records stolen from major companies</a></h3>
+      <div class="date stale">📅 Aug 17, 2026 (updated Aug 19)</div>
+      <p>A threat actor known as "TheHatman" has posted Azure/Entra employee-directory dumps for nine Fortune 500 firms — McDonald's (1.7M records), TCS (800K), Vodafone (425K), HCL, IHG, Kyndryl, Gap, Hexaware and Wyndham — claiming compromised credentials and MFA fatigue as the access vector. Hudson Rock linked several victims to prior infostealer infections; TCS, Gap and Vodafone say the data is old and non-sensitive.</p>
+      <div class="why"><b>Why it matters:</b> Whether or not the data is "old," accurate org charts and manager/report details are gold for spear-phishing — audit infostealer-log exposure for your domain and tighten Conditional Access/CAE enforcement on Entra tenants.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/" target="_blank">BleepingComputer</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-high">Update</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" target="_blank" rel="noopener">Philips and GE investigating Clop ransomware data theft claims</a></h3>
-      <div class="date">📅 Aug 17, 2026</div>
-      <p><b>What's new:</b> Since Friday's report that only Shell was investigating an 89GB claim, Clop has now confirmed targeting Philips (13.5GB, a contained enterprise-server compromise) and GE as part of the same PTC Windchill/FlexPLM zero-day campaign — Reuters now counts nearly 50 named victim companies in total, including Fiserv.</p>
-      <div class="why"><b>Why it matters:</b> The victim list is still growing a week after disclosure — any organization running internet-exposed Windchill or FlexPLM should already have patched CVE-2026-12569 and hunted for the campaign's JSP webshells.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" target="_blank">BleepingComputer</a></div>
+      <div class="top"><span class="badge b-high">Active Threat Advisory</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/" target="_blank" rel="noopener">US warns of AI-powered attacks on Siemens PLCs in critical infrastructure</a></h3>
+      <div class="date">📅 Aug 19, 2026</div>
+      <p>NSA, CISA, FBI, DOE and EPA say attackers are using Censys and ZoomEye to find internet-exposed Siemens S7-200 through S7-1500 PLCs, then using AI to write Python exploitation scripts (via snap7.dll/python-snap7) disguised as OT monitoring software to read and write PLC memory and ladder logic over S7comm. Activity spans Critical Manufacturing, Energy, Water, Chemical, Food/Ag and Commercial Facilities sectors and appears focused on reconnaissance for now.</p>
+      <div class="why"><b>Why it matters:</b> This follows the July Minnesota water-utility PLC attacks — inventory every Siemens S7 device, take them off the public internet, and don't assume "just reconnaissance" stays that way.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/" target="_blank">BleepingComputer</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-high">New Botnet</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/" target="_blank" rel="noopener">New Evooo1Bot Linux botnet turns routers into traffic-relay nodes</a></h3>
-      <div class="date">📅 Aug 16, 2026</div>
-      <p>Built on Mirai's DDoS engine, Evooo1Bot adds 16 flooding methods, encrypted C2, an SSH brute-forcer, a credential sniffer and an exploit dispatcher targeting known flaws in D-Link, Tenda, Hikvision, Zyxel and TP-Link gear, turning compromised edge devices into SOCKS5 proxy relays.</p>
-      <div class="why"><b>Why it matters:</b> Internet-facing routers and IoT/edge devices from the named vendors need patching and default-credential rotation now, before they're absorbed into this botnet's proxy network.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/" target="_blank">BleepingComputer</a></div>
+      <div class="top"><span class="badge b-high">New APT Cluster</span></div>
+      <h3><a href="https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html" target="_blank" rel="noopener">SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs</a></h3>
+      <div class="date">📅 Aug 19, 2026</div>
+      <p>A previously unreported, medium-confidence China-nexus cluster is hitting government ministries across Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan and Kazakhstan with spear-phishing lures and seven RAT families — five never documented before (DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT, NodeEdgeRAT) — alongside BLOODALCHEMY, a ShadowPad-derived backdoor. Researchers found clear traces of AI-assisted development woven into otherwise expert-level tooling.</p>
+      <div class="why"><b>Why it matters:</b> Government and NGO entities working with Central Asian partners should watch for these new RAT signatures — AI-assisted malware development is showing up in professional-grade espionage tooling, not just commodity crimeware.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html" target="_blank">The Hacker News</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-high">New Malware</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/" target="_blank" rel="noopener">New AmnesiaStealer macOS malware hijacks browser sessions via remote control</a></h3>
-      <div class="date">📅 Aug 16, 2026</div>
-      <p>Distributed via ClickFix pages spoofing a GitHub download, the Rust-based stealer harvests credentials, crypto wallets, Apple Notes and Keychain data across 16 Chromium browsers, then clones the victim's authenticated browser profile into a hidden headless instance the attacker can drive live.</p>
-      <div class="why"><b>Why it matters:</b> The "copy-paste this Terminal command" ClickFix lure keeps working on Mac users — train staff to never paste unknown commands into Terminal, regardless of how legitimate the download page looks.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/" target="_blank">BleepingComputer</a></div>
+      <div class="top"><span class="badge b-med">Law Enforcement</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/" target="_blank" rel="noopener">US charges Iranian hackers over $3.4 billion intellectual property theft</a></h3>
+      <div class="date">📅 Aug 19, 2026</div>
+      <p>DOJ unsealed a 14-count superseding indictment against 17 alleged Mabna Institute members for a 2013–2017 campaign that hit 144 U.S. and 178 foreign universities, 42 U.S. companies, five federal/state agencies and two NGOs on behalf of Iran's IRGC, stealing roughly 31.5TB of academic data and IP. The DOJ is offering up to $10 million each for five of the defendants still at large.</p>
+      <div class="why"><b>Why it matters:</b> A reminder that credential-phishing campaigns against universities and researchers can have years-long intelligence payoffs — academic IT and library-resource portals remain a soft target worth hardening.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/" target="_blank">BleepingComputer</a></div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="badge b-med">New Malware</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/" target="_blank" rel="noopener">New Manic Android malware can exfiltrate data through nearby devices</a></h3>
+      <div class="date">📅 Aug 20, 2026</div>
+      <p>Active since February and primarily targeting Ukraine, Manic combines spyware, banking fraud and remote control across 169 banking/government-eID/crypto/2FA apps, using Accessibility-service overlays as a UI keylogger. When it can't reach its C2 server it falls back to relaying encrypted data through nearby infected devices over Wi-Fi Direct or Bluetooth, up to four hops — meaning even offline phones can leak data.</p>
+      <div class="why"><b>Why it matters:</b> Deny Accessibility permissions to apps that don't need them and avoid sideloaded APKs — this malware is built to keep exfiltrating even when you think you've cut off its network access.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/" target="_blank">BleepingComputer</a></div>
     </div>
   </div>
 </section>
@@ -59,28 +67,36 @@
   <div class="cat"><span class="ico">🧩 Vulnerabilities &amp; Patches</span></div>
   <div class="cols">
     <div class="item">
-      <div class="top"><span class="badge b-high">Update</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" rel="noopener">Microsoft working on Defender patch for ShieldBreak zero-day</a></h3>
-      <div class="date">📅 Aug 17, 2026</div>
-      <p><b>What's new:</b> Microsoft has now assigned CVE-2026-69414 to the ShieldBreak Defender-patch-bypass covered here Aug 12 and publicly confirmed it's developing a fix. As of this morning no patch is available, and Microsoft's advisory rates exploitation "more likely."</p>
-      <div class="why"><b>Why it matters:</b> A CVE number makes the flaw trackable in vulnerability-management tooling, but there's still no fix — keep monitoring for Cloud Filter API (cfapi) callback abuse until Microsoft ships one.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank">BleepingComputer</a></div>
-    </div>
-    <div class="item">
       <div class="top"><span class="badge b-crit">CVSS 10.0</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/" target="_blank" rel="noopener">Max severity SAP Commerce Cloud flaw now targeted in attacks</a></h3>
-      <div class="date">📅 Aug 14, 2026</div>
-      <p>CVE-2026-58231, an unauthenticated RCE in the Data Hub Adapter, requires no privileges and no working public PoC — yet Field Effect and Defused detected exploitation attempts within three days of the patch, suggesting attackers reverse-engineered SAP's fix.</p>
-      <div class="why"><b>Why it matters:</b> Upgrade to SAP Commerce Cloud 2211.55 or 2211-jdk21.17 now — low-complexity, unauthenticated RCE at CVSS 10.0 is about as bad as it gets.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/" target="_blank">BleepingComputer</a></div>
+      <h3><a href="https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html" target="_blank" rel="noopener">Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution</a></h3>
+      <div class="date">📅 Aug 21, 2026</div>
+      <p>CVE-2026-69836 is a deserialization-of-untrusted-data RCE in Entra ID (formerly Azure AD) that Microsoft confirms was exploited in the wild. Because Entra ID is a cloud service, Microsoft says it has already fully mitigated the flaw server-side and no customer action is required — details on how it was exploited or discovered haven't been released.</p>
+      <div class="why"><b>Why it matters:</b> No patch to deploy here, but a maximum-severity RCE against your identity provider being exploited before public disclosure is a strong reason to review Entra sign-in and audit logs from the past month for anomalies.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html" target="_blank">The Hacker News</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-crit">Nation-State 0-Day</span></div>
-      <h3><a href="https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/" target="_blank" rel="noopener">Lazarus hackers exploited Windows zero-day to target defense firms</a></h3>
-      <div class="date stale">📅 Aug 12, 2026</div>
-      <p>North Korea's Lazarus group used fake Lockheed Martin job-offer lures to chain a use-after-free in afd.sys (CVE-2026-68820) into SYSTEM privileges and deploy its FudModule kernel rootkit against European and Indian defense contractors for roughly five weeks before Check Point's report led Microsoft to patch it on August 11's Patch Tuesday.</p>
-      <div class="why"><b>Why it matters:</b> Defense-sector staff should treat unsolicited recruiter PDFs as a credible initial-access vector — Lazarus has now paired that lure with a kernel zero-day, not just credential phishing.</div>
-      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/" target="_blank">BleepingComputer</a></div>
+      <div class="top"><span class="badge b-crit">Cloud Credential Theft</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/" target="_blank" rel="noopener">CISA warns of hackers exploiting critical MLflow vulnerability</a></h3>
+      <div class="date">📅 Aug 20, 2026</div>
+      <p>CVE-2026-64849 is a DNS-rebinding SSRF bypass in MLflow's unauthenticated webhook-test endpoint, patched in 3.15.0, that lets attackers make the tracking server fetch AWS/GCP/Azure cloud-metadata endpoints and read the response — handing over IAM credentials. Honeypots have already captured real exploitation, with attackers deploying cryptominers and creating rogue IAM users after credential theft. CISA added it to the KEV catalog and gave federal agencies two weeks to patch.</p>
+      <div class="why"><b>Why it matters:</b> MLflow has 30M+ monthly downloads and is often deployed with the default no-auth SQLite config — audit exposed tracking-server instances and upgrade to 3.15.0+ immediately.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/" target="_blank">BleepingComputer</a></div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="badge b-high">Active Exploitation</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/" target="_blank" rel="noopener">Critical Zimbra RCE flaw now actively exploited in attacks</a></h3>
+      <div class="date">📅 Aug 20, 2026</div>
+      <p>CERT Polska confirms attackers are exploiting CVE-2026-73570, an unauthenticated command-injection RCE in Zimbra Collaboration Suite's SNMP monitoring component when notifications are enabled, patched July 20 in version 10.1.20. Shadowserver counts over 12,100 internet-exposed Zimbra servers, concentrated in Europe and Asia.</p>
+      <div class="why"><b>Why it matters:</b> Zimbra is a recurring target for state-linked actors (APT29, APT28) — patch to 10.1.20+ now and check logs per CERT Polska's guidance for unexpected service restarts or files dropped in Zimbra's webapps/tmp directories.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/" target="_blank">BleepingComputer</a></div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="badge b-high">CISA KEV Update</span></div>
+      <h3><a href="https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/" target="_blank" rel="noopener">Critical RCE flaw in Windows IKE Extension now actively exploited</a></h3>
+      <div class="date">📅 Aug 18, 2026</div>
+      <p>CISA added CVE-2026-33824, a pre-auth double-free RCE in Windows IKE Service Extensions reachable via crafted UDP packets on ports 500/4500, to its KEV catalog after confirming active exploitation. Organizations that can't patch immediately should block inbound UDP 500/4500 or restrict IKE traffic to known peer addresses.</p>
+      <div class="why"><b>Why it matters:</b> This affects every supported Windows 10/11/Server release and needs no authentication — treat it as a priority patch alongside this week's Entra ID and MLflow advisories.</div>
+      <div class="src"><a href="https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/" target="_blank">BleepingComputer</a></div>
     </div>
   </div>
 </section>
@@ -88,20 +104,20 @@
   <div class="cat"><span class="ico">🤖 AI Security</span></div>
   <div class="cols">
     <div class="item">
-      <div class="top"><span class="badge b-high">Cross-Vendor Flaw</span></div>
-      <h3><a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html" target="_blank" rel="noopener">OpenAI, Anthropic, Google API Flaw Let Weaker AI Models Decode Stronger Models' Reasoning</a></h3>
-      <div class="date stale">📅 Aug 12, 2026</div>
-      <p>Researchers found all three providers encrypt hidden reasoning blocks with one key shared globally across sessions and users; replaying a block into a weaker model from the same provider family made it transcribe the hidden reasoning in plaintext, letting the team recover 182 real credentials from 315,320 decoded blocks found in public GitHub and Hugging Face agent-trajectory logs.</p>
-      <div class="why"><b>Why it matters:</b> Treat any published "agent trajectory" or reasoning log as potentially containing recoverable secrets — audit what your own agents expose before sharing logs publicly.</div>
-      <div class="src"><a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html" target="_blank">The Hacker News</a></div>
+      <div class="top"><span class="badge b-high">One-Click Data Theft</span></div>
+      <h3><a href="https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html" target="_blank" rel="noopener">Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps</a></h3>
+      <div class="date">📅 Aug 18, 2026</div>
+      <p>Varonis's "CoSnitch" research (CVE-2026-24301) found that pairing an undocumented autorun=1 parameter with Copilot Personal's existing q parameter lets a crafted link auto-run an attacker prompt on page load, pulling data from connected Gmail, Drive, Calendar and Copilot's own chat history/memory via the assistant's built-in URL fetch. Researchers found the flaw by repeatedly asking Copilot why it wasn't possible — reframing each refusal until it named the parameter itself. Microsoft patched it August 18; no in-the-wild exploitation found.</p>
+      <div class="why"><b>Why it matters:</b> Review which third-party apps are connected to Copilot and disconnect anything not actively needed — a single malicious link can silently harvest data across every service a user has authorized.</div>
+      <div class="src"><a href="https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html" target="_blank">The Hacker News</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-high">Widespread Risk</span></div>
-      <h3><a href="https://www.cyera.com/blog/local-ai-security-fragility-vulnerabilities-inside-the-engine-running-your-local-models" target="_blank" rel="noopener">Local AI Security Fragility: Vulnerabilities Inside the Engine Running Your Local Models</a></h3>
-      <div class="date stale">📅 Aug 11, 2026</div>
-      <p>Cyera Research Labs found 10 vulnerabilities — use-after-free, integer overflow and out-of-bounds flaws — in llama.cpp, the inference engine underlying Ollama, LM Studio, Jan and GPT4All. Two llama-server bugs rated CVSS 9.2 remain unpatched, exposing any organization running local AI inference to untrusted traffic.</p>
-      <div class="why"><b>Why it matters:</b> Nearly every popular "run AI locally" tool inherits these flaws — restrict network exposure of local inference servers until patches land.</div>
-      <div class="src"><a href="https://www.cyera.com/blog/local-ai-security-fragility-vulnerabilities-inside-the-engine-running-your-local-models" target="_blank">Cyera Research Labs</a></div>
+      <div class="top"><span class="badge b-med">Unified AI Governance</span></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/08/19/f5-ai-gateway-enhancements/" target="_blank" rel="noopener">F5 enhances AI Gateway to control AI costs, access, and security</a></h3>
+      <div class="date">📅 Aug 19, 2026</div>
+      <p>F5's next-gen AI Gateway now combines a Model Gateway (model access/cost control), MCP Gateway (agent-to-tool governance) and AI Guardrails (prompt/response protection) into one policy enforcement point, integrated into F5's broader AI Security Platform. F5's own research says 77% of organizations now consider AI inference their dominant AI workload, managing an average of seven models each.</p>
+      <div class="why"><b>Why it matters:</b> As agent-to-tool (MCP) traffic grows, having a single chokepoint for governance and guardrails is worth evaluating against whatever ad hoc controls you've stitched together for shadow AI usage.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/08/19/f5-ai-gateway-enhancements/" target="_blank">Help Net Security</a></div>
     </div>
   </div>
 </section>
@@ -109,20 +125,20 @@
   <div class="cat"><span class="ico">🏢 Vendor &amp; Tooling</span></div>
   <div class="cols">
     <div class="item">
-      <div class="top"><span class="badge b-low">Product Launch</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/08/13/a10-networks-introduces-ai-gateway-to-secure-and-manage-enterprise-ai/" target="_blank" rel="noopener">A10 Networks introduces AI Gateway to secure and manage enterprise AI</a></h3>
-      <div class="date">📅 Aug 13, 2026</div>
-      <p>Unveiled at Black Hat USA 2026, the A10 AI Gateway is a centralized control plane routing and governing traffic across every AI agent, application and LLM an organization uses, applying access policies by user/group and tracking per-request cost, deployable on-prem, in private cloud, or air-gapped.</p>
-      <div class="why"><b>Why it matters:</b> Enterprises struggling to inventory "shadow AI" agents now have another chokepoint option for centralizing visibility — worth evaluating against existing API gateway and CASB tooling before adding a new control plane.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/08/13/a10-networks-introduces-ai-gateway-to-secure-and-manage-enterprise-ai/" target="_blank">Help Net Security</a></div>
+      <div class="top"><span class="badge b-low">Product Expansion</span></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/08/18/netscout-expands-adaptive-ddos-protection-with-outbound-attack-mitigation/" target="_blank" rel="noopener">NETSCOUT expands Adaptive DDoS Protection with outbound attack mitigation</a></h3>
+      <div class="date">📅 Aug 18, 2026</div>
+      <p>NETSCOUT's Adaptive DDoS Protection now uses AI/ML detection on outbound traffic — drawing on visibility into roughly half of all internet traffic — to identify and mitigate DDoS attacks launched from a service provider's own network, pinpointing the compromised subscriber devices responsible.</p>
+      <div class="why"><b>Why it matters:</b> ISPs dealing with Turbo-Mirai-class botnets weaponizing home routers and IoT gear get a way to catch outbound attack traffic before it burns their own capacity or hits downstream customers.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/08/18/netscout-expands-adaptive-ddos-protection-with-outbound-attack-mitigation/" target="_blank">Help Net Security</a></div>
     </div>
     <div class="item">
-      <div class="top"><span class="badge b-low">Product Launch</span></div>
-      <h3><a href="https://www.helpnetsecurity.com/2026/08/13/searchlight-cyber-preemptive-threat-exposure-management-ptem-platform/" target="_blank" rel="noopener">Searchlight Cyber combines exposure and threat intelligence in new PTEM platform</a></h3>
-      <div class="date">📅 Aug 13, 2026</div>
-      <p>Searchlight unified its Assetnote attack-surface tool (now "Searchlight Exposure") with its Cerberus/DarkIQ dark-web monitoring (now "Searchlight Threat") into a single Preemptive Threat Exposure Management platform aimed at shrinking the gap between vulnerability disclosure and exploitation.</p>
-      <div class="why"><b>Why it matters:</b> As AI compresses exploit-development timelines from months to hours, exposure-management platforms that fuse attacker intelligence with asset visibility are becoming table stakes rather than a nice-to-have.</div>
-      <div class="src"><a href="https://www.helpnetsecurity.com/2026/08/13/searchlight-cyber-preemptive-threat-exposure-management-ptem-platform/" target="_blank">Help Net Security</a></div>
+      <div class="top"><span class="badge b-low">Product Update</span></div>
+      <h3><a href="https://www.helpnetsecurity.com/2026/08/20/tufin-expands-unified-control-plane-with-ai-intelligence-and-multi-vendor-automation/" target="_blank" rel="noopener">Tufin expands Unified Control Plane with AI intelligence and multi-vendor automation</a></h3>
+      <div class="date">📅 Aug 20, 2026</div>
+      <p>Tufin Orchestration Suite 5.3 adds AI-powered Segmentation Intelligence that continuously analyzes segmentation policies to flag gaps and recommend fixes, plus expanded automation for AWS Firewall, Palo Alto Strata Cloud Manager, VMware NSX-T and Cisco Meraki — addressing research showing 49% of companies now manage 20+ security tools.</p>
+      <div class="why"><b>Why it matters:</b> Teams drowning in multi-vendor firewall and segmentation sprawl get another consolidated-governance option worth comparing against existing network security policy management tooling.</div>
+      <div class="src"><a href="https://www.helpnetsecurity.com/2026/08/20/tufin-expands-unified-control-plane-with-ai-intelligence-and-multi-vendor-automation/" target="_blank">Help Net Security</a></div>
     </div>
   </div>
 </section>

@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 29,
-  "lastUpdated": "2026-08-17",
+  "version": 30,
+  "lastUpdated": "2026-08-21",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -542,9 +542,49 @@
       "seed": false,
       "note": "English-language tech-business desk of Israel's Calcalist; original reporting on Israeli AI startups, deals, and M&A — the originating source behind today's DoiT/Attribute AI-cost-management acquisition and a recurring first source on Israeli AI companies (Decart, Attribute, and the broader Israeli AI ecosystem).",
       "rationale": "Reputable, editorially credible newsroom (part of Yedioth Ahronoth's Calcalist) doing genuine original business reporting rather than aggregation, and the originating source behind today's DoiT-acquires-Attribute item; fills a clear roster gap for the Israeli AI ecosystem, which keeps surfacing in AI-business stories (Decart's $6B Anthropic talks, Attribute's AI-spend tooling, numerous AI-infra startups) but had no standing original-reporting desk distinct from the wire/US business outlets. Actively publishing in 2026, clearly AI/business relevant, not cybersecurity-focused, deduped by domain (calcalistech.com not previously in roster)."
+    },
+    {
+      "name": "MIT News",
+      "url": "https://news.mit.edu/topic/artificial-intelligence2",
+      "category": "research",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "PRIMARY: MIT's official newsroom announcing peer-reviewed research from CSAIL and other labs; originating source behind today's 'attribution decay' study (Nature Communications) showing single training images become unattributable as diffusion datasets scale.",
+      "rationale": "Reputable primary institutional source publishing original, first-hand write-ups of MIT research (not aggregation), actively publishing in 2026, clearly AI-relevant (research/capabilities), not cybersecurity-focused; complements Stanford HAI's annual-Index slot with a standing academic-lab primary-research channel, and was the originating source behind today's attribution-decay copyright story that The Register, TechXplore and others relayed. Deduped by domain (news.mit.edu not previously in roster)."
+    },
+    {
+      "name": "InfoWorld",
+      "url": "https://www.infoworld.com/category/artificial-intelligence/",
+      "category": "models",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Long-established IDG enterprise-developer publication with original reporting on models, frameworks, and developer tooling; source behind today's read on Z.ai pitching GLM-5.2 (and its Turbo variant) for long-running software-engineering and agent tasks.",
+      "rationale": "Reputable, editorially credible enterprise-developer outlet (IDG) doing original reporting and analysis rather than aggregation, actively publishing in 2026, clearly AI-relevant (model/tooling adoption for developers) and not cybersecurity-focused; adds a developer/enterprise-adoption lens on model releases distinct from the consumer-product desks (Verge/Ars/Engadget) and the benchmarking orgs. Deduped by domain (infoworld.com not previously in roster)."
     }
   ],
   "candidates": [
+    {
+      "name": "Samsung Research (Samsung Global Newsroom)",
+      "url": "https://news.samsung.com/global/",
+      "category": "research",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Samsung's corporate research/newsroom channel; primary source behind today's on-device health foundation models (xMAE and HiMAE) trained self-supervised on wearable biosignals, with HiMAE billed as the first on-device health foundation model.",
+      "rationale": "Authoritative primary channel for genuinely novel Samsung research and a proximate source for today's on-device health-model item, but it is a single-vendor corporate newsroom that primarily documents Samsung's own work — the same category concern that has kept non-model-lab vendor blogs (Cloudflare, etc.) parked. Used as a primary link but logged as a candidate rather than a standing roster source."
+    },
+    {
+      "name": "Futurism",
+      "url": "https://futurism.com/",
+      "category": "business",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Science/tech news outlet; carried the ECB AI-market-correction warning and a critical ChatGPT-for-Teens test writeup this week.",
+      "rationale": "Actively publishing and AI-relevant, but its coverage this cycle largely restated stories better anchored to roster outlets (the ECB blog via CNBC/Bloomberg; ChatGPT for Teens via OpenAI/TechCrunch) and it leans toward high-arousal framing; parked pending a clearly differentiated original AI scoop, consistent with how other aggregation-leaning outlets were handled."
+    },
     {
       "name": "Unite.AI",
       "url": "https://www.unite.ai/",

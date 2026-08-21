@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 41,
-  "lastUpdated": "2026-08-17",
+  "version": 42,
+  "lastUpdated": "2026-08-21",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1228,6 +1228,36 @@
       "seed": false,
       "note": "Offensive-security research team demonstrating AI-accelerated exploit development against real-world software.",
       "rationale": "Published the original 'ZOOMSDAY' research behind today's lead AI story, using fewer than 20 prompts to public AI models to chain Zoom annotation-feature memory-corruption bugs into a working zero-click RCE across Windows, macOS, iOS and Android in under 24 hours \u2014 work the team says previously required a five-person team six months. Primary hands-on offensive-AI research, not aggregation; no a.security domain in the roster."
+    },
+    {
+      "name": "QUIRSO",
+      "url": "https://medium.com/@quirso_de",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "German digital-forensics/incident-response firm publishing original attribution research on active exploitation campaigns.",
+      "rationale": "Parked as a candidate on 2026-08-17 after discovering and publishing the original attribution behind the China-nexus VMware vCenter CVE-2026-59310 exploitation campaign (361 victim IPs, 47 countries), cited directly by The Hacker News, BleepingComputer, Dark Reading and Infosecurity Magazine. Promoting today \u2014 daily cap was already used on 2026-08-17; primary hands-on IR research, not aggregation; no medium.com/@quirso_de-equivalent domain in the roster."
+    },
+    {
+      "name": "ThreatFabric",
+      "url": "https://www.threatfabric.com/blogs",
+      "category": "threatintel",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Mobile threat-intelligence firm specializing in original reverse-engineering research on Android/iOS banking trojans and spyware.",
+      "rationale": "Published the original technical breakdown behind today's Manic Android malware story \u2014 an Accessibility-service UI keylogger with a novel Wi-Fi Direct/Bluetooth mesh-relay exfiltration fallback for offline devices, targeting 169 banking/government/eID/crypto apps primarily in Ukraine. Sustained multi-year track record of first-hand mobile-malware discovery (Copybara, SoumniBot, Crocodilus); primary hands-on research, not aggregation; no threatfabric.com domain in the roster."
+    },
+    {
+      "name": "Shadowserver Foundation",
+      "url": "https://www.shadowserver.org/news/",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-21",
+      "seed": false,
+      "note": "Nonprofit internet-scanning organization publishing free daily exposure telemetry (dashboard.shadowserver.org) widely cited across the industry for tracking at-risk/unpatched internet-facing systems.",
+      "rationale": "Its exposure telemetry (12,100+ internet-facing Zimbra Collaboration Suite servers, split by region) was cited directly in today's Zimbra CVE-2026-73570 active-exploitation story to size the at-risk population. Long-standing primary source for internet-wide vulnerability-exposure data used routinely by CISA, CERTs and researchers; not aggregation; no shadowserver.org domain in the roster."
     }
   ],
   "candidates": [
@@ -1399,12 +1429,12 @@
       "rationale": "Ran the first detailed writeup of DentaQuest's confirmed 15-million-patient breach behind today's lead story, citing the Oregon AG's data-breach reporting site directly. Consistent, well-sourced breach reporting from ISMG's security-focused outlet, but leans on regulatory filings and other outlets' scoops more often than first-hand discovery \u2014 watch for original scoops before promoting."
     },
     {
-      "name": "QUIRSO",
-      "url": "https://medium.com/@quirso_de",
+      "name": "Hudson Rock",
+      "url": "https://www.infostealers.com/",
       "category": "threatintel",
       "tier": "strong",
-      "noted": "2026-08-17",
-      "rationale": "German digital-forensics/incident-response firm; its threat research team discovered and published the original attribution behind today's lead breach story, the China-nexus VMware vCenter CVE-2026-59310 exploitation campaign (361 victim IPs, 47 countries), cited directly by The Hacker News, BleepingComputer, DarkReading and Infosecurity Magazine. Primary hands-on IR research, not aggregation \u2014 clearly passes discovery criteria, but the daily cap of 3 new sources was already used earlier today (Cyera Research Labs, Sansec, A Security); parking for tomorrow's review."
+      "noted": "2026-08-21",
+      "rationale": "Cybercrime-intelligence firm whose infostealer-log analysis was cited by Cybernews and BleepingComputer to confirm the likely access vector (infostealer-compromised credentials, not an Azure zero-day) behind today's McDonald's/Vodafone/TCS Azure data-theft story, tying specific companies to infostealer infections in its own logs. Promising original infostealer-log research reused across multiple outlets today, but appeared as a secondary source cited by others rather than breaking the story itself \u2014 watch for original scoops before promoting."
     }
   ]
 }

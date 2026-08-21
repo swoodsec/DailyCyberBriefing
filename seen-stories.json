@@ -269,6 +269,76 @@
       "url": "https://www.helpnetsecurity.com/2026/08/13/searchlight-cyber-preemptive-threat-exposure-management-ptem-platform/",
       "title": "searchlight cyber combines exposure and threat intelligence in new ptem platform",
       "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
+      "title": "cisa medusa ransomware hit over 500 critical infrastructure orgs",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/",
+      "title": "hacker claims 3 6 million azure account records stolen from major companies",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/",
+      "title": "us warns of ai powered attacks on siemens plcs in critical infrastructure",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+      "title": "silkparasite espionage campaign targets central asian governments with five new rats",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/",
+      "title": "us charges iranian hackers over 3 4 billion intellectual property theft",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
+      "title": "new manic android malware can exfiltrate data through nearby devices",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+      "title": "microsoft entra id flaw cvss 10 0 exploited in wild allows remote code execution",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/",
+      "title": "cisa warns of hackers exploiting critical mlflow vulnerability",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
+      "title": "critical zimbra rce flaw now actively exploited in attacks",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
+      "title": "critical rce flaw in windows ike extension now actively exploited",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
+      "title": "microsoft copilot personal flaws could let one click exfiltrate data from connected apps",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/19/f5-ai-gateway-enhancements/",
+      "title": "f5 enhances ai gateway to control ai costs access and security",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/18/netscout-expands-adaptive-ddos-protection-with-outbound-attack-mitigation/",
+      "title": "netscout expands adaptive ddos protection with outbound attack mitigation",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/20/tufin-expands-unified-control-plane-with-ai-intelligence-and-multi-vendor-automation/",
+      "title": "tufin expands unified control plane with ai intelligence and multi vendor automation",
+      "date": "2026-08-21"
     }
   ],
   "ai": [
@@ -556,6 +626,66 @@
       "url": "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/",
       "title": "openai disbands its preparedness team folding frontier risk work into product groups",
       "date": "2026-08-17"
+    },
+    {
+      "url": "https://techstartups.com/2026/08/10/meta-launches-new-ai-model-muse-glimmer-as-zuckerberg-urges-u-s-to-remove-barriers-to-open-source-ai/",
+      "title": "meta ships muse glimmer a 30b on device model as zuckerberg pitches the future is for everyone",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.infoworld.com/article/4186136/z-ai-pitches-glm-5-2-for-long-running-software-engineering-tasks.html",
+      "title": "z ai pushes glm 5 2 for long running software engineering adds a faster turbo variant",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+      "title": "claude autonomously designed protein binders that worked against 14 of 15 lab targets",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
+      "title": "mit finds attribution decay the bigger the training set the less any one image matters",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://news.samsung.com/global/from-biosignals-to-health-insights-samsung-researchs-work-on-health-foundation-models",
+      "title": "samsung s health foundation model runs on a smartwatch in under a millisecond",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://thenextweb.com/news/chatgpt-for-teens-openai-age-prediction-study-mode",
+      "title": "openai launches chatgpt for teens and will auto enrol under 18s via age prediction",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
+      "title": "binance opens live crypto trading to ai agents with agent os",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+      "title": "google packs gemini with a student hub and brings deep research to gemini live",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html",
+      "title": "ecb economists warn an ai driven market correction is highly probable",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+      "title": "pew 52 of americans are now more concerned than excited about ai",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "title": "anthropic starts watermarking claude s text to comply with the eu ai act",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/",
+      "title": "vivodyne builds robotic labs growing 20 human tissues to fix ai drug discovery s data gap",
+      "date": "2026-08-21"
     }
   ],
   "tech": [
@@ -803,6 +933,56 @@
       "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-next-starship-this-month-and-catch-it-too-elon-musk-says-in-1st-earnings-call-since-historic-ipo",
       "title": "spacex targets its first starship ship tower catch on flight 14 as soon as late august",
       "date": "2026-08-17"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/17/meta-attorneys-general-california-federal-trial-astronomical-consequences.html",
+      "title": "meta goes on trial as 29 states allege it built facebook and instagram to addict kids",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.techtimes.com/articles/325078/20260820/nvidia-h200-chips-enter-china-13-quota-beijing-not-washington-controls-rest.htm",
+      "title": "nvidia s h200 ai chips reach china but at just 13 of the licensed cap",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+      "title": "nevada clears tesla uber and waymo to run up to 8 000 robotaxis",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
+      "title": "amazon makes its alexa assistant free on fire tv no prime required",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.gsmarena.com/the_fairphone_6_now_has_an_official_launch_date-news-74189.php",
+      "title": "fairphone sets a launch date for the repair friendly fairphone 6",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.phonearena.com/news/sony-just-announced-its-launching-a-new-smartphone-next-week_id182724",
+      "title": "sony sets an aug 25 unveiling for the xperia 10 viii as samsung teases a galaxy s26 fe",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.theregister.com/security/2026/08/18/apple-plugs-image-processing-hole-ripe-for-spyware-abuse/5289031",
+      "title": "apple rushes out ios 26 6 1 to plug a zero click image bug meta found",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://searchengineland.com/google-assistant-to-be-discontinued-on-android-starting-september-4-484307",
+      "title": "google will start removing assistant from phones on sept 4 as gemini takes over",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+      "title": "webb spots a black hole star a brand new type of cosmic object",
+      "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-launch-private-japanese-earth-observing-sar-satellite-lightning-god-defends",
+      "title": "rocket lab launches a japanese radar imaging satellite on its 93rd electron flight",
+      "date": "2026-08-21"
     }
   ]
 }

@@ -1,0 +1,550 @@
+{
+  "date": "2026-08-21",
+  "sections": {
+    "cyber": {
+      "lead": [
+        {
+          "text": "Microsoft confirms a CVSS 10.0 Entra ID remote-code-execution flaw was exploited in the wild — it's already mitigated cloud-side, no customer action needed",
+          "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html"
+        },
+        {
+          "text": "CISA, FBI and HHS warn Medusa ransomware has now hit over 500 critical infrastructure organizations since 2021, with victims getting just 48 hours before public shaming begins",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/"
+        },
+        {
+          "text": "CISA adds an actively-exploited MLflow SSRF flaw to its KEV catalog after attackers used it to steal AWS, GCP and Azure cloud credentials via metadata-service abuse",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/"
+        },
+        {
+          "text": "NSA, CISA, FBI, DOE and EPA warn threat actors are using AI-generated Python scripts disguised as OT monitoring tools to probe internet-exposed Siemens S7 PLCs",
+          "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/"
+        },
+        {
+          "text": "A threat actor called \"TheHatman\" is selling 3.64 million employee records allegedly pulled from the Azure tenants of McDonald's, Vodafone, TCS and six other Fortune 500 firms",
+          "url": "https://cybernews.com/security/mcdonalds-vodafone-azure-microdoft-credential-theft/"
+        },
+        {
+          "text": "DOJ charges 17 Iranians tied to the IRGC-linked Mabna Institute over a campaign that stole 31.5TB from 144 U.S. universities and dozens of companies — $10M bounties on five defendants",
+          "url": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/"
+        }
+      ],
+      "rosternote": "Roster update: added 3 new sources today — see Cyber Sources.",
+      "categories": [
+        {
+          "name": "🛡️ Breaches & Active Threats",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "500+ Victims",
+              "headline": "CISA: Medusa ransomware hit over 500 critical infrastructure orgs",
+              "url": "https://www.bleepingcomputer.com/news/security/cisa-medusa-ransomware-hit-over-500-critical-infrastructure-orgs/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "An updated joint advisory from CISA, the FBI and HHS says Medusa's RaaS affiliates have breached 500+ organizations since 2021 — concentrated in healthcare, defense industrial base, critical manufacturing and government — using an affiliate model where victims get 48 hours before Medusa contacts them directly and starts a leak-site countdown timer.",
+              "why": "Patch internet-facing systems and segment networks now — Medusa affiliates are still active and the 48-hour negotiation window leaves little time to react once encryption starts.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "high",
+              "badge": "3.64M Records",
+              "headline": "Hacker claims 3.6 million Azure account records stolen from major companies",
+              "url": "https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/",
+              "date": "📅 Aug 17, 2026 (updated Aug 19)",
+              "stale": true,
+              "summary": "A threat actor known as \"TheHatman\" has posted Azure/Entra employee-directory dumps for nine Fortune 500 firms — McDonald's (1.7M records), TCS (800K), Vodafone (425K), HCL, IHG, Kyndryl, Gap, Hexaware and Wyndham — claiming compromised credentials and MFA fatigue as the access vector. Hudson Rock linked several victims to prior infostealer infections; TCS, Gap and Vodafone say the data is old and non-sensitive.",
+              "why": "Whether or not the data is \"old,\" accurate org charts and manager/report details are gold for spear-phishing — audit infostealer-log exposure for your domain and tighten Conditional Access/CAE enforcement on Entra tenants.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "high",
+              "badge": "Active Threat Advisory",
+              "headline": "US warns of AI-powered attacks on Siemens PLCs in critical infrastructure",
+              "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "NSA, CISA, FBI, DOE and EPA say attackers are using Censys and ZoomEye to find internet-exposed Siemens S7-200 through S7-1500 PLCs, then using AI to write Python exploitation scripts (via snap7.dll/python-snap7) disguised as OT monitoring software to read and write PLC memory and ladder logic over S7comm. Activity spans Critical Manufacturing, Energy, Water, Chemical, Food/Ag and Commercial Facilities sectors and appears focused on reconnaissance for now.",
+              "why": "This follows the July Minnesota water-utility PLC attacks — inventory every Siemens S7 device, take them off the public internet, and don't assume \"just reconnaissance\" stays that way.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "high",
+              "badge": "New APT Cluster",
+              "headline": "SilkParasite Espionage Campaign Targets Central Asian Governments with Five New RATs",
+              "url": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "A previously unreported, medium-confidence China-nexus cluster is hitting government ministries across Uzbekistan, Turkmenistan, Kyrgyzstan, Tajikistan and Kazakhstan with spear-phishing lures and seven RAT families — five never documented before (DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT, NodeEdgeRAT) — alongside BLOODALCHEMY, a ShadowPad-derived backdoor. Researchers found clear traces of AI-assisted development woven into otherwise expert-level tooling.",
+              "why": "Government and NGO entities working with Central Asian partners should watch for these new RAT signatures — AI-assisted malware development is showing up in professional-grade espionage tooling, not just commodity crimeware.",
+              "srcName": "The Hacker News"
+            },
+            {
+              "severity": "med",
+              "badge": "Law Enforcement",
+              "headline": "US charges Iranian hackers over $3.4 billion intellectual property theft",
+              "url": "https://www.bleepingcomputer.com/news/security/us-charges-iranian-hackers-over-34-billion-intellectual-property-theft/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "DOJ unsealed a 14-count superseding indictment against 17 alleged Mabna Institute members for a 2013–2017 campaign that hit 144 U.S. and 178 foreign universities, 42 U.S. companies, five federal/state agencies and two NGOs on behalf of Iran's IRGC, stealing roughly 31.5TB of academic data and IP. The DOJ is offering up to $10 million each for five of the defendants still at large.",
+              "why": "A reminder that credential-phishing campaigns against universities and researchers can have years-long intelligence payoffs — academic IT and library-resource portals remain a soft target worth hardening.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "med",
+              "badge": "New Malware",
+              "headline": "New Manic Android malware can exfiltrate data through nearby devices",
+              "url": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Active since February and primarily targeting Ukraine, Manic combines spyware, banking fraud and remote control across 169 banking/government-eID/crypto/2FA apps, using Accessibility-service overlays as a UI keylogger. When it can't reach its C2 server it falls back to relaying encrypted data through nearby infected devices over Wi-Fi Direct or Bluetooth, up to four hops — meaning even offline phones can leak data.",
+              "why": "Deny Accessibility permissions to apps that don't need them and avoid sideloaded APKs — this malware is built to keep exfiltrating even when you think you've cut off its network access.",
+              "srcName": "BleepingComputer"
+            }
+          ]
+        },
+        {
+          "name": "🧩 Vulnerabilities & Patches",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "CVSS 10.0",
+              "headline": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+              "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "CVE-2026-69836 is a deserialization-of-untrusted-data RCE in Entra ID (formerly Azure AD) that Microsoft confirms was exploited in the wild. Because Entra ID is a cloud service, Microsoft says it has already fully mitigated the flaw server-side and no customer action is required — details on how it was exploited or discovered haven't been released.",
+              "why": "No patch to deploy here, but a maximum-severity RCE against your identity provider being exploited before public disclosure is a strong reason to review Entra sign-in and audit logs from the past month for anomalies.",
+              "srcName": "The Hacker News"
+            },
+            {
+              "severity": "crit",
+              "badge": "Cloud Credential Theft",
+              "headline": "CISA warns of hackers exploiting critical MLflow vulnerability",
+              "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "CVE-2026-64849 is a DNS-rebinding SSRF bypass in MLflow's unauthenticated webhook-test endpoint, patched in 3.15.0, that lets attackers make the tracking server fetch AWS/GCP/Azure cloud-metadata endpoints and read the response — handing over IAM credentials. Honeypots have already captured real exploitation, with attackers deploying cryptominers and creating rogue IAM users after credential theft. CISA added it to the KEV catalog and gave federal agencies two weeks to patch.",
+              "why": "MLflow has 30M+ monthly downloads and is often deployed with the default no-auth SQLite config — audit exposed tracking-server instances and upgrade to 3.15.0+ immediately.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "high",
+              "badge": "Active Exploitation",
+              "headline": "Critical Zimbra RCE flaw now actively exploited in attacks",
+              "url": "https://www.bleepingcomputer.com/news/security/critical-zimbra-rce-flaw-now-actively-exploited-in-attacks/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "CERT Polska confirms attackers are exploiting CVE-2026-73570, an unauthenticated command-injection RCE in Zimbra Collaboration Suite's SNMP monitoring component when notifications are enabled, patched July 20 in version 10.1.20. Shadowserver counts over 12,100 internet-exposed Zimbra servers, concentrated in Europe and Asia.",
+              "why": "Zimbra is a recurring target for state-linked actors (APT29, APT28) — patch to 10.1.20+ now and check logs per CERT Polska's guidance for unexpected service restarts or files dropped in Zimbra's webapps/tmp directories.",
+              "srcName": "BleepingComputer"
+            },
+            {
+              "severity": "high",
+              "badge": "CISA KEV Update",
+              "headline": "Critical RCE flaw in Windows IKE Extension now actively exploited",
+              "url": "https://www.bleepingcomputer.com/news/security/cisa-critical-windows-ike-extension-flaw-now-exploited-in-attacks/",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "CISA added CVE-2026-33824, a pre-auth double-free RCE in Windows IKE Service Extensions reachable via crafted UDP packets on ports 500/4500, to its KEV catalog after confirming active exploitation. Organizations that can't patch immediately should block inbound UDP 500/4500 or restrict IKE traffic to known peer addresses.",
+              "why": "This affects every supported Windows 10/11/Server release and needs no authentication — treat it as a priority patch alongside this week's Entra ID and MLflow advisories.",
+              "srcName": "BleepingComputer"
+            }
+          ]
+        },
+        {
+          "name": "🤖 AI Security",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "One-Click Data Theft",
+              "headline": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
+              "url": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "Varonis's \"CoSnitch\" research (CVE-2026-24301) found that pairing an undocumented autorun=1 parameter with Copilot Personal's existing q parameter lets a crafted link auto-run an attacker prompt on page load, pulling data from connected Gmail, Drive, Calendar and Copilot's own chat history/memory via the assistant's built-in URL fetch. Researchers found the flaw by repeatedly asking Copilot why it wasn't possible — reframing each refusal until it named the parameter itself. Microsoft patched it August 18; no in-the-wild exploitation found.",
+              "why": "Review which third-party apps are connected to Copilot and disconnect anything not actively needed — a single malicious link can silently harvest data across every service a user has authorized.",
+              "srcName": "The Hacker News"
+            },
+            {
+              "severity": "med",
+              "badge": "Unified AI Governance",
+              "headline": "F5 enhances AI Gateway to control AI costs, access, and security",
+              "url": "https://www.helpnetsecurity.com/2026/08/19/f5-ai-gateway-enhancements/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "F5's next-gen AI Gateway now combines a Model Gateway (model access/cost control), MCP Gateway (agent-to-tool governance) and AI Guardrails (prompt/response protection) into one policy enforcement point, integrated into F5's broader AI Security Platform. F5's own research says 77% of organizations now consider AI inference their dominant AI workload, managing an average of seven models each.",
+              "why": "As agent-to-tool (MCP) traffic grows, having a single chokepoint for governance and guardrails is worth evaluating against whatever ad hoc controls you've stitched together for shadow AI usage.",
+              "srcName": "Help Net Security"
+            }
+          ]
+        },
+        {
+          "name": "🏢 Vendor & Tooling",
+          "items": [
+            {
+              "severity": "low",
+              "badge": "Product Expansion",
+              "headline": "NETSCOUT expands Adaptive DDoS Protection with outbound attack mitigation",
+              "url": "https://www.helpnetsecurity.com/2026/08/18/netscout-expands-adaptive-ddos-protection-with-outbound-attack-mitigation/",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "NETSCOUT's Adaptive DDoS Protection now uses AI/ML detection on outbound traffic — drawing on visibility into roughly half of all internet traffic — to identify and mitigate DDoS attacks launched from a service provider's own network, pinpointing the compromised subscriber devices responsible.",
+              "why": "ISPs dealing with Turbo-Mirai-class botnets weaponizing home routers and IoT gear get a way to catch outbound attack traffic before it burns their own capacity or hits downstream customers.",
+              "srcName": "Help Net Security"
+            },
+            {
+              "severity": "low",
+              "badge": "Product Update",
+              "headline": "Tufin expands Unified Control Plane with AI intelligence and multi-vendor automation",
+              "url": "https://www.helpnetsecurity.com/2026/08/20/tufin-expands-unified-control-plane-with-ai-intelligence-and-multi-vendor-automation/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Tufin Orchestration Suite 5.3 adds AI-powered Segmentation Intelligence that continuously analyzes segmentation policies to flag gaps and recommend fixes, plus expanded automation for AWS Firewall, Palo Alto Strata Cloud Manager, VMware NSX-T and Cisco Meraki — addressing research showing 49% of companies now manage 20+ security tools.",
+              "why": "Teams drowning in multi-vendor firewall and segmentation sprawl get another consolidated-governance option worth comparing against existing network security policy management tooling.",
+              "srcName": "Help Net Security"
+            }
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "lead": [
+        {
+          "text": "An AI agent running Claude designed working protein binders for 14 of 15 lab targets — beating human experts on some",
+          "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design"
+        },
+        {
+          "text": "OpenAI launches ChatGPT for Teens and will auto-enrol under-18s using AI age prediction",
+          "url": "https://thenextweb.com/news/chatgpt-for-teens-openai-age-prediction-study-mode"
+        },
+        {
+          "text": "Binance opens live crypto trading to AI agents via Agent OS — with no cap on what an agent can lose",
+          "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/"
+        },
+        {
+          "text": "ECB economists warn an AI-driven market correction is \"highly probable,\" with global fallout",
+          "url": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html"
+        },
+        {
+          "text": "Pew finds 52% of Americans are now more concerned than excited about AI in daily life",
+          "url": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/"
+        },
+        {
+          "text": "MIT: the bigger the training set, the less any single image shapes an output — an \"attribution decay\" that cuts at copyright cases",
+          "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818"
+        }
+      ],
+      "rosternote": "Roster update: added 2 new sources today — see AI Sources.",
+      "categories": [
+        {
+          "name": "🚀 Models & Releases",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Meta ships Muse Glimmer, a 30B on-device model, as Zuckerberg pitches \"The Future is for Everyone\"",
+              "url": "https://techstartups.com/2026/08/10/meta-launches-new-ai-model-muse-glimmer-as-zuckerberg-urges-u-s-to-remove-barriers-to-open-source-ai/",
+              "date": "📅 Aug 10, 2026",
+              "stale": true,
+              "summary": "Meta released Muse Glimmer, an open-weight 30B agentic model built to run on a single GPU on a Mac or PC, alongside a 6,500-word Zuckerberg manifesto arguing that individuals — not a handful of labs — should control open AI and that Washington should not restrict open models. Critics note the \"for everyone\" model still needs hardware most people lack.",
+              "why": "It sharpens the open-vs-closed fight, positioning Meta's local-first, download-and-own approach against the API-gated frontier as regulators weigh open-weight rules.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Z.ai pushes GLM-5.2 for long-running software engineering, adds a faster Turbo variant",
+              "url": "https://www.infoworld.com/article/4186136/z-ai-pitches-glm-5-2-for-long-running-software-engineering-tasks.html",
+              "date": "📅 Aug 17, 2026",
+              "stale": false,
+              "summary": "China's Z.ai is positioning its GLM-5.2 family for extended, multi-step coding and agent jobs, and rolled out a lower-latency GLM-5.2 Turbo (Aug 17) tuned for high-frequency, cost-sensitive workloads — the latest cadence in a summer of near-weekly Chinese open-weight coding releases.",
+              "why": "Chinese labs keep undercutting Western coding models on price while chasing agentic reliability, feeding the multi-model stacks US enterprises now assemble to control cost.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Research & Capabilities",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "Claude autonomously designed protein binders that worked against 14 of 15 lab targets",
+              "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "In an Anthropic study, an agent running Claude (Mythos Preview and Opus 4.8) ran the full computational design pipeline and produced 354 confirmed de novo binders from 1,320 designs across 15 targets — hit rates of 22–35% versus the 10–15% typical of the field. Two independent CROs, Adaptyv Bio and Twist Bioscience, synthesized and tested the sequences blind; on one target Claude hit 40% where human competition entrants managed 3.7%.",
+              "why": "It is concrete evidence that general frontier models — not just specialized bio tools — can now drive real wet-lab discovery, raising both the therapeutic upside and the biosecurity stakes of open capability.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "MIT finds \"attribution decay\": the bigger the training set, the less any one image matters",
+              "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "MIT CSAIL researchers, publishing in Nature Communications, show that as diffusion models train on more data the influence of any single training example on any given output shrinks along an inverse power law — often to the point that removing a specific image or artist's work does not change what the model generates.",
+              "why": "The finding cuts directly at fair-use and derivative-work arguments in AI copyright fights, though it covers image models rather than the language models at the center of the biggest cases.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Samsung's health foundation model runs on a smartwatch in under a millisecond",
+              "url": "https://news.samsung.com/global/from-biosignals-to-health-insights-samsung-researchs-work-on-health-foundation-models",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "Samsung Research introduced two self-supervised health models trained on wearable biosignals: xMAE, which reconstructs ECG-quality signals from the blood-flow data a watch already collects and beat prior methods on 15 of 19 tasks, and HiMAE, which Samsung says is the first on-device health foundation model, returning results in under 1ms with no cloud server.",
+              "why": "On-device foundation models push capable, private health inference onto consumer wearables — no server round-trip, and no data leaving the wrist.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🛠️ Products & Tools",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "OpenAI launches ChatGPT for Teens and will auto-enrol under-18s via age prediction",
+              "url": "https://thenextweb.com/news/chatgpt-for-teens-openai-age-prediction-study-mode",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "OpenAI began rolling out a teen experience (ages 13–17) with content restrictions around self-harm and romantic/sexual chats, Study Mode and parental controls. An age-prediction system — inferring age from topics, usage patterns and account history — automatically places suspected minors into it. Launch-day tester probes found the guardrails inconsistent, and OpenAI says the feature is still being built out.",
+              "why": "Automated age inference makes AI age-gating a live product-and-policy battleground, and OpenAI's approach will shape how regulators expect every consumer chatbot to handle minors.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Binance opens live crypto trading to AI agents with Agent OS",
+              "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "The world's largest crypto exchange (300M+ accounts) launched Agent OS, an MCP-based platform letting agents like ChatGPT, Claude Code, Codex and Cursor read markets, check balances and place spot, margin and futures orders. Containment is left to users via scoped subaccounts that block withdrawals — but Binance sets no cap on what an agent can lose, and a VP conceded the exchange cannot see the reasoning behind a trade.",
+              "why": "Handing autonomous agents a live trading account with real money and configurable-but-optional guardrails is a stress test for prompt-injection risk and agent accountability in high-stakes settings.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Google packs Gemini with a student hub and brings Deep Research to Gemini Live",
+              "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Google added a dedicated student hub with diagnostic-quiz study notebooks and Calendar integration, and — notably — put Deep Research into Gemini Live so users can kick off a report by voice, lock the phone, and talk through the findings later. Eligible US college students get a free year of Google AI Pro.",
+              "why": "Voice-initiated, background long-form research is a real step toward assistants that work asynchronously, and Google is racing to lock in students ahead of Gemini replacing Assistant on Android Sept 4.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "💼 Business & Policy",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "ECB economists warn an AI-driven market correction is \"highly probable\"",
+              "url": "https://www.cnbc.com/2026/08/18/ai-tech-rally-correction-economists.html",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "A European Central Bank blog post argues that soaring AI valuations are unlikely to hold and that a pullback in US tech stocks would ripple worldwide, with thin fiscal and monetary buffers to cushion it. Euro-zone households hold roughly €440B of Magnificent Seven stock, with similar pension and insurance exposure, leaving Europe exposed to a US-led AI selloff.",
+              "why": "A major central bank publicly flagging AI-concentration risk adds official weight to the bubble debate as capex and circular chip-financing deals keep escalating.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Pew: 52% of Americans are now more concerned than excited about AI",
+              "url": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Public sentiment keeps souring — Pew finds 52% of Americans more concerned than excited about AI in daily life, up from 37% in 2021, while a CNBC poll shows most 18–34-year-olds distrust the industry's best-known leaders. The discontent is showing up on balance sheets, with data-center developers now sweetening deals with job guarantees and local perks after political blowback.",
+              "why": "A durable trust deficit is becoming a business and political constraint on the AI buildout — shaping siting fights, regulation, and adoption — not just a PR problem.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Anthropic starts watermarking Claude's text to comply with the EU AI Act",
+              "url": "https://www.anthropic.com/news/claude-text-watermark",
+              "date": "📅 Aug 14, 2026",
+              "stale": true,
+              "summary": "Anthropic detailed an invisible, machine-readable watermark — based on Google DeepMind's SynthID-Text — that it is adding to text from Claude models launched after Aug 2, across the API, Claude Code and cloud deployments, to meet Article 50 transparency rules. It survives copy-paste, adds no words and names no user, but critics note it appears even when Claude only fixes spelling and is easy to strip.",
+              "why": "It is the first big lab operationalizing EU AI Act transparency mandates in production, a template — and a stress test — for how enforceable AI-content provenance really is.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Vivodyne builds robotic labs growing 20 human tissues to fix AI drug discovery's data gap",
+              "url": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Biotech startup Vivodyne argues AI drug discovery is starved of real human-biology data, and built modular robotic labs — \"HIVE\" — that grow 20 kinds of human tissue and autonomously dose and monitor them. It reports 94% predictive accuracy for liver toxicity against human trials and opened a large facility near San Francisco, backed by ~$80M across two Khosla-led rounds.",
+              "why": "It reframes the bottleneck in AI-for-drugs as data generation, not models — a bet that whoever industrializes human-tissue testing owns the training set for the next wave of therapeutics.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "tech": {
+      "lead": [
+        {
+          "text": "29 states put Meta on trial in Oakland, alleging it engineered Facebook and Instagram to addict children.",
+          "url": "https://www.cnbc.com/2026/08/17/meta-attorneys-general-california-federal-trial-astronomical-consequences.html"
+        },
+        {
+          "text": "Nevada clears Tesla, Uber and Waymo to run up to 8,000 robotaxis around Las Vegas.",
+          "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/"
+        },
+        {
+          "text": "Amazon makes its Alexa+ assistant free on Fire TV, scrapping the $19.99/mo non-Prime fee.",
+          "url": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/"
+        },
+        {
+          "text": "Nvidia's H200 AI chips finally reach China — but at just 13% of the licensed cap.",
+          "url": "https://www.techtimes.com/articles/325078/20260820/nvidia-h200-chips-enter-china-13-quota-beijing-not-washington-controls-rest.htm"
+        },
+        {
+          "text": "Apple rushes out an emergency iOS 26.6.1 patch for a zero-click image bug Meta found.",
+          "url": "https://www.theregister.com/security/2026/08/18/apple-plugs-image-processing-hole-ripe-for-spyware-abuse/5289031"
+        }
+      ],
+      "rosternote": "Roster update: no new sources today (2 candidates parked) — see Tech Sources.",
+      "categories": [
+        {
+          "name": "💼 Big Tech & Business",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "Meta goes on trial as 29 states allege it built Facebook and Instagram to addict kids",
+              "url": "https://www.cnbc.com/2026/08/17/meta-attorneys-general-california-federal-trial-astronomical-consequences.html",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "Opening arguments began this week in an Oakland federal court, where a coalition of 29 state attorneys general — led by California — accuse Meta of engineering its apps to hook teens and children while assuring parents they were safe. The case, which also alleges the company illegally collected kids' data in violation of COPPA, is expected to run about six weeks.",
+              "why": "A loss could force changes to how \"engaging\" features are designed for minors and set precedent for the wider multidistrict fight over social-media harms.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Nvidia's H200 AI chips reach China — but at just 13% of the licensed cap",
+              "url": "https://www.techtimes.com/articles/325078/20260820/nvidia-h200-chips-enter-china-13-quota-beijing-not-washington-controls-rest.htm",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "After Washington's framework cleared roughly ten Chinese firms — Alibaba, Tencent, ByteDance and JD.com among them — to buy up to 75,000 H200s each (with 25% of revenue routed to the US Treasury and chips screened on US soil), the first shipments finally landed, with ByteDance and Tencent reportedly receiving about 10,000 apiece. Volumes remain far below the ceiling as Beijing steers buyers toward domestic silicon.",
+              "why": "The trickle shows how tightly both governments now control the AI-chip trade — and how hard China is pushing homegrown alternatives to Nvidia.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Nevada clears Tesla, Uber and Waymo to run up to 8,000 robotaxis",
+              "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "The Nevada Transportation Authority unanimously approved commercial permits for all three companies in Clark County, home to Las Vegas — up to 5,000 driverless vehicles for Tesla and 1,000 each for Waymo and Uber (operating through Motional and Zoox) over the next year.",
+              "why": "Vegas becomes one of the most crowded robotaxi battlegrounds yet, a real-world test of whether rival operators can scale autonomy in the same city at once.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "📱 Devices & Consumer",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Amazon makes its Alexa+ assistant free on Fire TV, no Prime required",
+              "url": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Amazon is auto-upgrading current Fire TV Sticks, the Fire TV Cube, its Ember TVs and compatible Hisense and Panasonic sets to the AI-powered Alexa+, dropping the $19.99/month fee non-Prime users faced. It adds conversational search — ask for a \"top-rated thriller,\" then narrow to \"something newer with a female lead\" — plus smart-home control, with no app or subscription to enroll in.",
+              "why": "Putting a capable assistant on tens of millions of TVs for free is a land-grab for the living-room interface — and fresh pressure on Google TV and Roku.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Fairphone sets a launch date for the repair-friendly Fairphone 6+",
+              "url": "https://www.gsmarena.com/the_fairphone_6_now_has_an_official_launch_date-news-74189.php",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "The new 6+ moves up to a Snapdragon 7s Gen 4 and 12GB of RAM and adds a Cobalt Blue finish, while keeping the brand's user-repairable, modular design and long software-support promise.",
+              "why": "A rare mainstream phone built around repairability offers a counterpoint to sealed, hard-to-fix flagships as right-to-repair rules spread.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Sony sets an Aug 25 unveiling for the Xperia 10 VIII as Samsung teases a Galaxy S26 FE",
+              "url": "https://www.phonearena.com/news/sony-just-announced-its-launching-a-new-smartphone-next-week_id182724",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Sony scheduled a livestreamed launch for Aug 25, widely expected to debut the mid-range Xperia 10 VIII, while Samsung is separately lining up a Galaxy S26 FE event for Aug 27 — filling out the late-summer phone calendar ahead of Apple's September iPhone reveal.",
+              "why": "Fan-edition and mid-range refreshes are where most buyers actually shop, even as pricier flagships grab the headlines.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🖥️ Software & Platforms",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Apple rushes out iOS 26.6.1 to plug a zero-click image bug Meta found",
+              "url": "https://www.theregister.com/security/2026/08/18/apple-plugs-image-processing-hole-ripe-for-spyware-abuse/5289031",
+              "date": "📅 Aug 18, 2026",
+              "stale": false,
+              "summary": "Apple patched CVE-2026-65346, an integer-overflow flaw in its ImageIO framework that could run malicious code when a device merely processes a booby-trapped image — a classic zero-click spyware vector. Fixes shipped across iOS/iPadOS 26.6.1, macOS Tahoe and the older iOS 18.7.10, crediting a researcher on Meta's Red Team X.",
+              "why": "Image-parsing bugs are prime targets for commercial spyware, so users should update promptly even though Apple hasn't confirmed active exploitation.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Google will start removing Assistant from phones on Sept 4 as Gemini takes over",
+              "url": "https://searchengineland.com/google-assistant-to-be-discontinued-on-android-starting-september-4-484307",
+              "date": "📅 Aug 6, 2026",
+              "stale": true,
+              "summary": "Google is emailing users that it will begin pulling Google Assistant from mobile devices on September 4, replacing it with Gemini. The change also reaches Wear OS watches, some headphones and phone-projected Android Auto, though cars with Google built-in keep Assistant for now.",
+              "why": "Retiring the decade-old Assistant pushes hundreds of millions of users onto Gemini, cementing generative AI as Google's default interface.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Science & Emerging",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Webb spots a \"black hole star,\" a brand-new type of cosmic object",
+              "url": "https://news.mit.edu/2026/astronomers-discover-brand-new-type-astrophysical-object-black-hole-star-0812",
+              "date": "📅 Aug 12, 2026",
+              "stale": true,
+              "summary": "MIT-led astronomers using the James Webb Space Telescope found MoM-BH*-1, an object from roughly 660 million years after the Big Bang that looks like a colossal star but is actually a growing black hole cloaked in a dense hydrogen envelope, radiating far more energy than any star could produce. The result, published in Nature, may explain how billion-solar-mass black holes formed so early.",
+              "why": "A new class of object could resolve the puzzle of the early universe's mysterious \"little red dots\" and how supermassive black holes grew so fast.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Rocket Lab launches a Japanese radar-imaging satellite on its 93rd Electron flight",
+              "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-launch-private-japanese-earth-observing-sar-satellite-lightning-god-defends",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "Electron lifted off from New Zealand on the \"Lightning God Defends\" mission, deploying iQPS's latest QPS-SAR synthetic-aperture-radar satellite to a 575 km orbit — Rocket Lab's 14th launch of the year and the ninth in a booked run building out the Japanese Earth-observation constellation by 2030.",
+              "why": "Small-satellite radar constellations are making all-weather, day-or-night Earth imaging cheaper and far more frequent for climate, defense and disaster response.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
