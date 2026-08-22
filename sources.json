@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Cyber Briefing. The 6 AM scheduled task reads this file to build the briefing and APPENDS newly vetted sources here over time. Categories: breaking | investigative | threatintel | vulnfeeds | aisecurity. Tiers: core | strong | aifocus. Do not remove the seeded core sources without reason.",
-  "version": 42,
-  "lastUpdated": "2026-08-21",
+  "version": 43,
+  "lastUpdated": "2026-08-22",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -1258,6 +1258,16 @@
       "seed": false,
       "note": "Nonprofit internet-scanning organization publishing free daily exposure telemetry (dashboard.shadowserver.org) widely cited across the industry for tracking at-risk/unpatched internet-facing systems.",
       "rationale": "Its exposure telemetry (12,100+ internet-facing Zimbra Collaboration Suite servers, split by region) was cited directly in today's Zimbra CVE-2026-73570 active-exploitation story to size the at-risk population. Long-standing primary source for internet-wide vulnerability-exposure data used routinely by CISA, CERTs and researchers; not aggregation; no shadowserver.org domain in the roster."
+    },
+    {
+      "name": "Truffle Security",
+      "url": "https://trufflesecurity.com/blog",
+      "category": "vulnfeeds",
+      "tier": "strong",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Secrets-detection research team (creators of the open-source TruffleHog scanner) that discovers and quantifies exposed live credentials across code, registries and AI datasets.",
+      "rationale": "Published the original research behind today's AI-supply-chain story — scanning publicly exposed AWS credentials and finding 88% of thousands still authenticated (768 corporate keys with full admin, 526 root keys), with Hugging Face the single largest source (8,482 live keys across 3,394 public datasets). Parallels the existing GitGuardian secrets-research entry; sustained original scanning research (petabyte-scale Hugging Face secret scans), primary data not aggregation; no trufflesecurity.com domain in the roster."
     }
   ],
   "candidates": [

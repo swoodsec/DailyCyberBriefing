@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily AI Briefing (general artificial intelligence news, NOT cybersecurity). The 6 AM scheduled task reads this file to build the AI section of the briefing and APPENDS newly vetted sources here over time. Categories: models | research | products | business | policy. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason.",
-  "version": 30,
-  "lastUpdated": "2026-08-21",
+  "version": 31,
+  "lastUpdated": "2026-08-22",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -562,9 +562,39 @@
       "seed": false,
       "note": "Long-established IDG enterprise-developer publication with original reporting on models, frameworks, and developer tooling; source behind today's read on Z.ai pitching GLM-5.2 (and its Turbo variant) for long-running software-engineering and agent tasks.",
       "rationale": "Reputable, editorially credible enterprise-developer outlet (IDG) doing original reporting and analysis rather than aggregation, actively publishing in 2026, clearly AI-relevant (model/tooling adoption for developers) and not cybersecurity-focused; adds a developer/enterprise-adoption lens on model releases distinct from the consumer-product desks (Verge/Ars/Engadget) and the benchmarking orgs. Deduped by domain (infoworld.com not previously in roster)."
+    },
+    {
+      "name": "Counterpoint Research",
+      "url": "https://counterpointresearch.com/",
+      "category": "research",
+      "tier": "strong",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Independent global technology-market research firm producing original primary data on AI hardware, chips, devices and robotics; originating source behind today's finding that global humanoid-robot shipments soared nearly 300% YoY in H1 2026 with China at 97% share, which Forbes, TechRepublic and others relayed.",
+      "rationale": "Reputable, editorially independent analyst firm publishing first-hand market data and tracker research (not aggregation), actively publishing in 2026, clearly AI-relevant (embodied AI, AI silicon, device shipments) and not cybersecurity-focused; complements SemiAnalysis (compute economics) and Epoch/Artificial Analysis (model capabilities) with a distinct AI-hardware/robotics shipment-and-market-share lens, and was the primary source behind today's humanoid-robot shipment item. Deduped by domain (counterpointresearch.com not previously in roster)."
     }
   ],
   "candidates": [
+    {
+      "name": "Variety",
+      "url": "https://variety.com/v/digital/",
+      "category": "policy",
+      "tier": "strong",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Entertainment-industry outlet of record; original reporting behind today's Sony Music v. Udio item, detailing the 30,117 recordings surfaced in discovery and the new SDNY complaint after a judge barred Sony from amending its original case.",
+      "rationale": "Reputable, editorially credible newsroom with genuine original reporting on AI-and-media copyright litigation, but — like Skift, Chalkbeat and Endpoints before it — it is primarily an entertainment-beat outlet rather than a general-AI desk; parked as a candidate pending recurring general-AI relevance to avoid over-narrowing the roster. Deduped by domain (variety.com not previously in roster)."
+    },
+    {
+      "name": "Search Engine Land",
+      "url": "https://searchengineland.com/",
+      "category": "products",
+      "tier": "strong",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Long-running search-marketing trade publication; proximate source behind today's item that Gemini 3.7 Flash now powers Google Search's AI Mode answers for AI Pro/Ultra subscribers.",
+      "rationale": "Actively publishing and useful on the Google-Search/AI-Mode beat, but its coverage leans SEO/search-industry trade and often restates Google announcements (this item traced to an X post) rather than breaking original general-AI reporting; parked as a candidate pending a clearly differentiated original AI scoop, consistent with how other trade/aggregation-leaning outlets were handled. Deduped by domain (searchengineland.com not previously in roster)."
+    },
     {
       "name": "Samsung Research (Samsung Global Newsroom)",
       "url": "https://news.samsung.com/global/",

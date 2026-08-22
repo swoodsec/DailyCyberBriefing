@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical source roster for the Daily Tech Briefing (general technology: big tech & business, devices & consumer, software & platforms, science & emerging tech). The 6 AM scheduled task reads this file to build the Tech section and APPENDS newly vetted sources here over time. Categories: bigtech | devices | software | science. Tiers: core | strong | newsletter. Do not remove the seeded core sources without reason. This is a sibling roster to the Cyber and AI briefings; it deliberately avoids pure cybersecurity and pure AI-model coverage.",
-  "version": 30,
-  "lastUpdated": "2026-08-21",
+  "version": 31,
+  "lastUpdated": "2026-08-22",
   "discoveryRules": {
     "maxNewPerDay": 3,
     "dedupeBy": "domain",
@@ -512,9 +512,29 @@
       "seed": false,
       "note": "Global business-and-financial newspaper of record with a large, well-sourced technology desk producing original reporting and analysis on big-tech deals, semiconductors, earnings, and strategy.",
       "rationale": "Surfaced as the original source behind today's biggest Big Tech story — Google's $12.2B custom-chip warrant deal with Marvell. Passes discovery criteria: reputable and editorially credible (a premier financial-news organization), primarily original reporting and analysis rather than aggregation, actively publishing throughout 2026, and clearly relevant to general big-tech/business rather than narrow cybersecurity or pure AI-model coverage. Consistent with the precedent that already promoted the comparable business-news desks Bloomberg, Reuters, CNBC, and Fortune, and distinguished from the parked general-news candidates (CNN, Axios, WaPo) by a deep, standing technology/deals operation that repeatedly breaks original stories. New domain (ft.com) not previously in roster."
+    },
+    {
+      "name": "Platformer (Casey Newton)",
+      "url": "https://www.platformer.news/",
+      "category": "software",
+      "tier": "newsletter",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Independent, reader-supported newsletter by veteran journalist Casey Newton (ex-The Verge) with original reporting and analysis on the social platforms, content moderation, and the intersection of Big Tech and democracy.",
+      "rationale": "Surfaced repeatedly in a source-discovery search for the best original/independent technology journalism of 2026, cited alongside Stratechery and The Information as a top-tier subscription newsletter that produces original reporting rather than aggregation. Passes discovery criteria: reputable and editorially credible (award-winning reporter, sizable paid subscriber base), primarily original reporting/analysis, actively publishing throughout 2026, and clearly relevant to general software/platforms and big-tech accountability rather than narrow cybersecurity or pure AI-model coverage. Complements Stratechery's business-strategy lens with a platforms/policy/internet-culture focus. New domain (platformer.news) not previously in roster."
     }
   ],
   "candidates": [
+    {
+      "name": "The Pragmatic Engineer (Gergely Orosz)",
+      "url": "https://www.pragmaticengineer.com/",
+      "category": "software",
+      "tier": "newsletter",
+      "added": "2026-08-22",
+      "seed": false,
+      "note": "Widely read software-engineering newsletter by Gergely Orosz with original reporting and analysis on Big Tech engineering practices, developer tooling, layoffs, and the tech labor market.",
+      "rationale": "Surfaced in the same source-discovery search for top independent technology journalism, cited alongside Stratechery and Platformer. Reviewed but parked as a candidate rather than added because its editorial center of gravity is engineering-career and dev-practice coverage aimed at practitioners, a narrower fit than the general software/platforms reporting the roster prioritizes, and the single daily add slot went to the broader-audience Platformer. Promote if it recurs as the direct original source on a general-tech or platforms story used in the briefing."
+    },
     {
       "name": "Search Engine Land",
       "url": "https://searchengineland.com/",

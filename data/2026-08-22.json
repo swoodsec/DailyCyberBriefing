@@ -1,0 +1,539 @@
+{
+  "date": "2026-08-22",
+  "sections": {
+    "cyber": {
+      "lead": [
+        {
+          "text": "CISA puts an actively exploited Zimbra mail-server flaw on its must-patch list with a Friday federal deadline.",
+          "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+        },
+        {
+          "text": "ShinyHunters dumps 7.1 million records stolen from medical-device maker Baxter International.",
+          "url": "https://www.govinfosecurity.com/shinyhunters-leaks-71-million-baxter-international-records-a-32630"
+        },
+        {
+          "text": "Healthcare tech firm CareCloud confirms a March hack exposed 3.75 million patients.",
+          "url": "https://techcrunch.com/2026/08/19/carecloud-confirms-3-7m-patients-had-their-medical-records-stolen-in-data-breach/"
+        },
+        {
+          "text": "CISA orders agencies to patch two actively exploited flaws in TrueConf video-conferencing servers.",
+          "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/"
+        },
+        {
+          "text": "Researchers find 9,300+ leaked AWS keys still live — with Hugging Face the single biggest source.",
+          "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/"
+        },
+        {
+          "text": "Attackers pounce on a critical GitLab flaw days after an emergency patch.",
+          "url": "https://www.securityweek.com/critical-gitlab-flaw-exploited-shortly-after-disclosure/"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see Cyber Sources.",
+      "categories": [
+        {
+          "name": "🚨 Breaches & Active Threats",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "ShinyHunters leaks 7.1 million records stolen from Baxter International",
+              "url": "https://www.govinfosecurity.com/shinyhunters-leaks-71-million-baxter-international-records-a-32630",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "The extortion crew ShinyHunters published roughly 7.1 million records it says it lifted from the medical-device maker's Salesforce environment, including names, contact details and device purchase history. Baxter had earlier acknowledged \"unauthorized activity\" tied to third-party apps.",
+              "why": "It is the latest in a wave of ShinyHunters thefts from corporate Salesforce tenants, showing that a single compromised SaaS app can expose millions of customer records.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "CareCloud confirms 3.75 million patients hit in data breach",
+              "url": "https://techcrunch.com/2026/08/19/carecloud-confirms-3-7m-patients-had-their-medical-records-stolen-in-data-breach/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Healthcare technology company CareCloud told U.S. regulators that a data breach earlier this year affected more than 3.75 million people, making it one of the largest health-data incidents disclosed in 2026 and the first confirmation of the breach's scale.",
+              "why": "Stolen medical records fuel identity theft and insurance fraud, and affected patients should watch for notification letters and monitor their accounts.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Medium",
+              "headline": "Pokémon Center customers exposed via CEVA Logistics breach",
+              "url": "https://www.bleepingcomputer.com/news/security/pokemon-center-data-breach-exposes-customer-info-cancels-some-orders/",
+              "date": "📅 Aug 18, 2026",
+              "stale": true,
+              "summary": "Pokémon Center told shoppers in the UK and Germany that names, addresses, phone numbers, emails and order details leaked through a breach at third-party fulfillment partner CEVA Logistics, which also disrupted shipping and cancelled some orders. Payment card data was not affected.",
+              "why": "A single logistics provider's compromise rippled across many retailers (Valve's Steam hardware among them), a reminder that your data is only as safe as a company's vendors.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🛠️ Vulnerabilities & Patches",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "CISA adds exploited Zimbra mail-server flaw to KEV, sets Aug 24 deadline",
+              "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "What's new:Beyond the earlier reports that attackers were exploiting this Zimbra Collaboration flaw, CISA has now formally added it to its Known Exploited Vulnerabilities catalog as CVE-2026-73570 and ordered federal agencies to patch by August 24. The bug lets an unauthenticated attacker run shell commands; a fix shipped in version 10.1.20.",
+              "why": "A KEV listing with a binding deadline signals confirmed, ongoing exploitation — with roughly 12,000 Zimbra servers still exposed online, patching is urgent.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "crit",
+              "badge": "Critical",
+              "headline": "Critical GitLab flaw exploited within days of emergency patch",
+              "url": "https://www.securityweek.com/critical-gitlab-flaw-exploited-shortly-after-disclosure/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Attackers began exploiting CVE-2026-19478, a critical (CVSS 9.4) code-injection flaw in GitLab's GraphQL, roughly two days after disclosure. An unauthenticated attacker can modify or delete public projects and data without any user interaction; GitLab shipped emergency fixes (19.2.4 and earlier branches).",
+              "why": "GitLab holds source code and CI/CD pipelines, so a wormable, no-login flaw is a prime target — self-managed installs should update immediately.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "CISA flags two actively exploited TrueConf Server flaws",
+              "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "CISA added CVE-2026-72529 and CVE-2026-72530 in TrueConf Server to its KEV catalog after the Head Mare hacktivist group chained them to hijack on-premises instances and push PhantomCore malware to meeting participants. The flaws were patched in June (versions 5.3.9/5.4.9/5.5.5).",
+              "why": "Attackers turned a video-conferencing server into a malware-delivery channel for everyone who joined a call — organizations still running older TrueConf builds should patch now.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "Apple macOS, SharePoint and vCenter flaws join CISA's exploited list",
+              "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "CISA ordered agencies to patch a fresh batch of actively exploited bugs, including a critical (CVSS 9.8) macOS Screen Sharing authentication-bypass (CVE-2026-65400), a Microsoft SharePoint weak-authentication flaw, and a Broadcom VMware vCenter path-traversal issue — all now confirmed under attack.",
+              "why": "These are widely deployed enterprise platforms, and a KEV listing means the exploitation is real, not theoretical — apply vendor updates on priority.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "\"Zombie Card\" attack revives expired Visa cards for contactless payments",
+              "url": "https://thehackernews.com/2026/08/zombie-card-attack-can-revive-expired.html",
+              "date": "📅 Aug 18, 2026",
+              "stale": true,
+              "summary": "University of Massachusetts Amherst researchers showed that a relay attack can make expired Visa contactless cards complete real purchases, by rewriting an expiry field that Visa's contactless kernel does not cover with the card's digital signature. Equivalent Mastercard, Amex and Discover configs rejected the trick.",
+              "why": "It undercuts the assumption that a lapsed or \"cancelled\" card is harmless, though the attack requires close physical proximity and specialized relay gear.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🤖 AI Security",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "High",
+              "headline": "9,300+ leaked AWS keys still work — Hugging Face is the top source",
+              "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "Truffle Security found that 88% of thousands of publicly exposed AWS credentials still authenticated, including 768 tied to companies with full admin rights and 526 root keys. AI model hub Hugging Face was the single biggest source, leaking 8,482 live keys across 3,394 public datasets, alongside Git histories, Docker images and CI/CD logs.",
+              "why": "AI training data and model repositories have become a sprawling new place for secrets to leak — organizations should scan datasets and repos for credentials and rotate exposed keys.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Medium",
+              "headline": "Nearly 800 malicious npm packages deliver cross-platform malware",
+              "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+              "date": "📅 Aug 6, 2026",
+              "stale": true,
+              "summary": "Researchers flagged a cluster of nearly 800 npm packages using AI-generated, typosquatted names to push a cross-platform remote-access trojan and infostealer. Unusually, the packages instruct developers to load them viarequire()rather than relying on install hooks, and target developer machines including AI coding-tool configurations.",
+              "why": "Open-source package registries remain a favorite path onto developer laptops; teams should pin dependencies and vet unfamiliar packages before installing.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🧰 Vendor & Tooling",
+          "items": [
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Intezer adds built-in response automation without a separate SOAR",
+              "url": "https://www.helpnetsecurity.com/2026/08/19/intezer-workflows-automation/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Intezer launched Workflows, a native automation and response builder that lets security teams create and run response playbooks inside the same platform where alerts are triaged, aiming to remove the need to maintain a standalone SOAR system for post-investigation actions.",
+              "why": "Folding automation into the investigation tool reflects a broader push to cut alert fatigue and shrink the tooling sprawl smaller security teams juggle.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "lead": [
+        {
+          "text": "Nvidia pays coding startup Poolside $6B to license its \"model factory\" and hires 109 staff — a deal built to sidestep acquisition scrutiny",
+          "url": "https://thenextweb.com/news/nvidia-poolside-6bn-model-factory-licence"
+        },
+        {
+          "text": "Marvell gives Google the right to buy up to $12.2B of its stock in a custom-AI-chip deal, widening Google's silicon push beyond Broadcom",
+          "url": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html"
+        },
+        {
+          "text": "DeepSeek ships an experimental V4 Flash Vision model that rivals Claude Opus 4.8 on some multimodal benchmarks at a fraction of the price",
+          "url": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/"
+        },
+        {
+          "text": "Anthropic's IPO filing will list public AI backlash as a formal risk factor as it eyes a SpaceX-sized listing",
+          "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
+        },
+        {
+          "text": "Global humanoid-robot shipments jumped nearly 300% in H1 2026, with Chinese makers taking 97% of the market",
+          "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see AI Sources.",
+      "categories": [
+        {
+          "name": "🚀 Models & Releases",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "DeepSeek releases experimental V4 Flash Vision model that rivals Opus 4.8 on some benchmarks",
+              "url": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "DeepSeek quietly launched V4-Flash-Vision-Exp, a narrow addition that bolts image understanding onto its cheap V4-Flash text model while keeping its agentic, reasoning and knowledge behavior. The company published eleven multimodal-agent benchmarks, claiming near-Opus-4.8 performance and beating Anthropic's flagship on three of them — at roughly $0.22/$0.66 per million tokens on OpenRouter.",
+              "why": "Chinese labs keep closing the multimodal gap with Western frontier models at a tenth of the price, reinforcing the cost-driven, multi-model stacks enterprises now assemble.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Gemini 3.7 Flash is now the model behind Google Search's AI Mode answers",
+              "url": "https://searchengineland.com/gemini-3-7-flash-rolling-out-in-google-search-485058",
+              "date": "📅 Aug 14, 2026",
+              "stale": true,
+              "summary": "A day after releasing Gemini 3.7 Flash as its \"most intelligent workhorse\" for coding and agents, Google made it a selectable model inside Search's AI Mode for AI Pro and Ultra subscribers, rolling out globally in English. Google says it improves instruction-following and intent understanding — though the change was announced on X, not through official Search channels.",
+              "why": "What's new since the model's launch: the same Flash model now powers Search answers for paying users, quietly swapping the engine behind one of the web's highest-traffic AI surfaces.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Research & Capabilities",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Humanoid-robot shipments soared nearly 300% in the first half of 2026",
+              "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Counterpoint Research reports more than 22,000 humanoid robots shipped globally in H1 2026, up close to 300% year-over-year, with Chinese vendors Agibot and Unitree together taking roughly three-quarters of the market and China commanding 97% of shipments. Analysts still disagree on whether most units are doing real industrial work or research and entertainment.",
+              "why": "Embodied AI is moving from demos to volume manufacturing, and — as with models — China is setting the pace on shipments even as questions about real deployment linger.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "DeepMind's largest study finds frontier models can measurably manipulate human decisions",
+              "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+              "date": "📅 Aug 12, 2026",
+              "stale": true,
+              "summary": "In an experiment with 10,101 participants across the US, UK and India, DeepMind found that when prompted to persuade, Gemini 3 Pro could induce real, measurable shifts in people's beliefs and spending across policy, finance and health — often without subjects realizing it, and with the strongest effects in financial scenarios. The team notes \"manipulative propensity\" and \"manipulative efficacy\" don't line up: subtle, polite responses were frequently the most effective.",
+              "why": "It gives regulators and safety teams hard, quantified evidence that persuasion — not just misinformation — is a frontier-model risk that standard benchmarks miss.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "A new \"blind\" benchmark catches frontier AI recovering research ideas just 3% of the time",
+              "url": "https://www.techtimes.com/articles/324932/20260819/blind-benchmark-catches-frontier-ai-just-three-percent-research-idea-recovery.htm",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "The \"Reconstruction\" benchmark asks models to reconstruct a paper's core research idea from only its bibliography. Frontier LLMs scored between 3% and 15%; a multi-agent Swiss-tournament setup reached 42%, exposing structural limits in genuine hypothesis reasoning even as coding and math scores climb.",
+              "why": "It tempers the \"AI scientist\" narrative — today's models still struggle to originate ideas rather than pattern-match them, a key gauge as labs pitch autonomous discovery.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🛠️ Products & Tools",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "ChatGPT for Mac adds an Apple Messages plugin that can read, search and send texts",
+              "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "OpenAI made the Apple Messages plugin generally available in the ChatGPT desktop app for macOS across all plans, letting the assistant read and search a user's Messages and draft or send texts — with sends gated behind explicit approval. The plugin also works in ChatGPT Work and Codex.",
+              "why": "It pushes ChatGPT deeper into the OS as an agent acting on personal data, sharpening the platform fight with Apple's own on-device assistant and raising familiar consent-and-privacy questions.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Notable",
+              "headline": "Amazon makes its AI-powered Alexa+ free on Fire TV, no Prime required",
+              "url": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Amazon opened its generative-AI Alexa+ assistant to all Fire TV users at no charge and without a Prime subscription, letting anyone use conversational search, recommendations and control by voice. It's the widest free distribution yet for the revamped assistant Amazon has been slow-rolling.",
+              "why": "Free, mass distribution of a frontier-grade assistant on tens of millions of TVs is a bid to make Alexa+ a default AI habit before Google and OpenAI lock in living-room and ambient use.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "💼 Business & Policy",
+          "items": [
+            {
+              "severity": "crit",
+              "badge": "Major",
+              "headline": "Nvidia pays Poolside $6B to license its \"model factory\" and hires 109 of its staff",
+              "url": "https://thenextweb.com/news/nvidia-poolside-6bn-model-factory-licence",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Per a letter Poolside sent investors, Nvidia will pay $6B for a non-exclusive license to the coding startup's model-building platform (behind its open Laguna models), invest another $1B at a $12B valuation, and extend job offers to 109 employees. Poolside insists it \"is not an acquisition and it is not an acquihire,\" and will keep operating independently under its three founders.",
+              "why": "It's the clearest example yet of Big Tech's license-plus-hire playbook — absorbing a startup's talent and tech while sidestepping the antitrust scrutiny a formal acquisition would draw.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Marvell gives Google the right to buy up to $12.2B of its stock in a custom-AI-chip deal",
+              "url": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Marvell granted Google a warrant to buy nearly 59 million shares at $206.58 apiece, vesting in tranches tied to every $500M of chips Google purchases; the expanded deal covers products that attach to Google's TPU ecosystem, from inference accelerators to storage and networking controllers. Marvell shares jumped on the news, which would make Google its fifth-largest investor if fully exercised.",
+              "why": "Google is spreading its custom-silicon bets beyond Broadcom and binding a key supplier with equity — another sign hyperscalers are racing to own the chip layer of the AI buildout.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Anthropic's IPO filing will list public AI backlash as a formal risk factor",
+              "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "Sources say Anthropic's forthcoming prospectus will cite growing public and political backlash against AI among its risk factors as it prepares a listing that could rival SpaceX's in size. Anthropic filed a confidential draft S-1 on June 1 and could go public by end of August, with secondary markets and pre-IPO instruments implying valuations well above its $965B Series H.",
+              "why": "A frontier lab formally flagging societal backlash as a business risk signals how central public trust — and its erosion — has become to the AI investment case.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Notable",
+              "headline": "Sony sues Udio again, alleging the AI music generator copied 30,000+ recordings to train models",
+              "url": "https://variety.com/2026/music/news/sony-music-new-lawsuit-udio-ai-music-generator-1236817746/",
+              "date": "📅 Aug 18, 2026",
+              "stale": true,
+              "summary": "Sony Music filed a fresh suit in the Southern District of New York claiming discovery surfaced 30,117 of its tracks — from Beyoncé to Elvis — in Udio's training data, scraped from YouTube without permission. The new complaint follows a judge barring Sony from adding the tracks to its original 2024 case; Universal and Warner have since settled and licensed, leaving Sony the last major still litigating.",
+              "why": "With rivals settling, Sony's holdout keeps the core question — whether training generative models on copyrighted recordings is infringement — headed toward a courtroom test.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    "tech": {
+      "lead": [
+        {
+          "text": "Tesla quietly kills its Solar Roof after a decade, judging the tile business not financially viable",
+          "url": "https://electrek.co/2026/08/20/tesla-discontinues-solar-roof-panels-only/"
+        },
+        {
+          "text": "Charter closes its $34.5B Cox deal, forging the largest US cable-broadband operator by footprint",
+          "url": "https://variety.com/2026/tv/news/charter-closes-cox-merger-new-company-name-1236838902/"
+        },
+        {
+          "text": "Amazon plans to expand Prime Air drone delivery to nearly 500 US cities by year-end",
+          "url": "https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/"
+        },
+        {
+          "text": "GitHub blames its 8-hour outage on an autoscaling failure and a VS Code retry storm",
+          "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/"
+        },
+        {
+          "text": "New York overtakes the Bay Area as the top US tech-talent market for the first time",
+          "url": "https://www.cnbc.com/2026/08/21/new-york-san-francisco-tech-talent-cbre.html"
+        },
+        {
+          "text": "Apple Music will show listeners visible labels on songs that are materially generated with AI",
+          "url": "https://9to5mac.com/2026/08/20/apple-music-will-soon-get-visible-labels-for-ai-generated-content/"
+        }
+      ],
+      "rosternote": "Roster update: added 1 new source today — see Tech Sources.",
+      "categories": [
+        {
+          "name": "🏢 Big Tech & Business",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Tesla discontinues its Solar Roof, ending a decade-long bet",
+              "url": "https://electrek.co/2026/08/20/tesla-discontinues-solar-roof-panels-only/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Tesla has told installers it is winding down the Solar Roof tile product and will supply conventional solar panels instead, having concluded internally that the shingle-style system was not financially viable. The Solar Roof page now redirects to solar panels, ending a line Elon Musk unveiled in 2016 alongside the $2.6B SolarCity acquisition.",
+              "why": "It closes a marquee clean-energy experiment and refocuses Tesla Energy on higher-margin panels, storage, and grid products.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Charter closes $34.5B Cox deal, reshaping US broadband",
+              "url": "https://variety.com/2026/tv/news/charter-closes-cox-merger-new-company-name-1236838902/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Charter completed its $34.5 billion acquisition of Cox Communications, days after California's utility regulator cleared the last state hurdle. The combined company will serve roughly 37-38 million customers across 45 states, keep the Spectrum service brand, and adopt the Cox Communications parent name within a year.",
+              "why": "Cable incumbents are consolidating for scale as fiber, fixed-wireless, and Starlink erode traditional broadband, raising fresh questions on pricing and choice.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Trend",
+              "headline": "New York overtakes the Bay Area as the top US tech-talent market",
+              "url": "https://www.cnbc.com/2026/08/21/new-york-san-francisco-tech-talent-cbre.html",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "A CBRE report puts New York's tech workforce at about 394,300 jobs, edging past the San Francisco Bay Area's 375,730 for the first time in the survey's 13-year history. AI roles now make up nearly a third of US tech listings and grew 45% year over year, with finance-driven hiring and Bay Area cuts fueling the shift.",
+              "why": "The geography of tech hiring is moving toward finance and enterprise AI hubs, reshaping where firms recruit and site offices.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Supermicro board probe clears management in $2.5B Nvidia chip-diversion case",
+              "url": "https://fortune.com/2026/08/20/supermicro-investigation-ceo-nvidia-smuggling/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "An independent investigation found no evidence that Super Micro's CEO or current senior management knew about an alleged scheme to divert roughly $2.5 billion in Nvidia-equipped servers to China, following March's indictment of co-founder Yih-Shyan \"Wally\" Liaw. Supermicro nonetheless fired some staff and tightened its export-compliance program; separate US and Taiwanese inquiries remain active.",
+              "why": "As Washington tightens AI-chip export controls, hardware vendors face mounting legal and operational pressure to track where advanced systems end up.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "📱 Devices & Consumer",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "Amazon plans to expand Prime Air drone delivery to nearly 500 US cities",
+              "url": "https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/",
+              "date": "📅 Aug 19, 2026",
+              "stale": false,
+              "summary": "Amazon says it will grow Prime Air to nearly 500 US cities and towns by the end of 2026, a sixfold jump from today's 11 metro areas, with Chicago, Atlanta, Cleveland, Syracuse, and Boise up next. Drones carry packages up to 5 pounds in as fast as 30 minutes; delivery is free for Prime members on orders over $50.",
+              "why": "After years of pilots, drone delivery is scaling toward a mainstream last-mile option that could reset consumer expectations and logistics economics.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Trend",
+              "headline": "Apple Music will show listeners visible labels on AI-generated songs",
+              "url": "https://9to5mac.com/2026/08/20/apple-music-will-soon-get-visible-labels-for-ai-generated-content/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "In an email to industry partners, Apple said tracks that content providers identify as \"materially generated using AI\" will carry a visible label on Apple Music later this year, extending its March AI Transparency Tags. Apple has said more than a third of monthly uploads are now fully AI-generated, though such tracks account for under 0.5% of listening.",
+              "why": "Visible labeling could become a de facto standard for streaming as synthetic music, voices, and images grow harder to distinguish from human work.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Update",
+              "headline": "Samsung confirms an Aug 27 Galaxy event, all but certain to unveil the S26 FE",
+              "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-confirms-launch-date-galaxy-s26-fe",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Samsung has now officially set a livestreamed Galaxy event for August 27, firming up what had been a tease into a dated announcement widely expected to reveal the Galaxy S26 FE. Leaks point to a 6.7-inch 120Hz display, an Exynos 2500 chip, a 50MP main camera, a 4,900mAh battery, and seven years of updates.",
+              "why": "The Fan Edition is Samsung's volume play to bring flagship camera and AI features to a lower price, and the confirmed date sets the late-summer Android calendar.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "💻 Software & Platforms",
+          "items": [
+            {
+              "severity": "high",
+              "badge": "Notable",
+              "headline": "GitHub blames its ~8-hour outage on an autoscaling failure and a VS Code retry storm",
+              "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "GitHub's postmortem on the Aug 17 outage (7h 47m) says peak traffic saturated load balancers in its Central US data center after an Istio sidecar hit a concurrency limit a monitoring policy didn't watch. A latent VS Code retry bug then amplified traffic roughly 10x; at peak, web/API errors hit ~20% and raw-content downloads ~50%.",
+              "why": "As GitHub underpins CI/CD and AI coding agents, its scaling failures cascade across thousands of organizations and expose the strain the coding boom puts on core infrastructure.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Trend",
+              "headline": "Google gives publishers an embeddable 'Preferred Sources' button",
+              "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Google is rolling out a button publishers can embed on their own pages so readers can mark them as a preferred source, boosting their visibility in Top Stories, AI Overviews, and AI Mode; more than 600,000 sources have already been selected. Google is also adding natural-language controls to tune the Discover feed and Android audio briefings.",
+              "why": "It offers publishers a lifeline for direct visibility as AI-generated answers erode the search-to-click traffic they have long depended on.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "Cloudflare launches Kitesurf, a browser built for AI agents",
+              "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+              "date": "📅 Aug 7, 2026",
+              "stale": true,
+              "summary": "Cloudflare's Kitesurf is an agent-native browser that runs entirely in V8 isolates on its Workers platform, using 3-7x less CPU and memory than Chromium for common agentic tasks. Built in Rust and WebAssembly, it drops tabs, themes, and extensions while exposing a CDP endpoint compatible with Puppeteer, Playwright, and MCP clients.",
+              "why": "Whoever owns the runtime AI agents browse the web through owns a strategic distribution layer, extending Cloudflare from delivery into execution.",
+              "srcName": "Source"
+            }
+          ]
+        },
+        {
+          "name": "🔬 Science & Emerging",
+          "items": [
+            {
+              "severity": "med",
+              "badge": "Watch",
+              "headline": "Astromech raises $20M at a $3.8B valuation to forecast biological change",
+              "url": "https://siliconangle.com/2026/08/20/astromech-raises-20m-to-build-a-biological-operating-system-that-can-forecast-evolutionary-change/",
+              "date": "📅 Aug 20, 2026",
+              "stale": false,
+              "summary": "Colossal co-founders Ben Lamm and geneticist George Church have raised $20 million (total $60M) for Astromech, which combines genomic, evolutionary, and functional data into AI models that try to predict how organisms, diseases, and populations change over time rather than just analyze their current state.",
+              "why": "Predictive biology could reshape drug discovery, aging research, and pandemic preparedness if the models prove out scientifically.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "low",
+              "badge": "Watch",
+              "headline": "SpaceX launches 29 more Starlink satellites after a last-minute scrub",
+              "url": "https://spaceflightnow.com/2026/08/20/live-coverage-spacex-to-launch-75th-starlink-mission-of-2026/",
+              "date": "📅 Aug 21, 2026",
+              "stale": false,
+              "summary": "SpaceX flew its 75th Starlink mission of 2026 from Cape Canaveral, sending 29 more broadband satellites to orbit a day after an undisclosed issue scrubbed the first attempt. The relentless launch cadence continues as SpaceX preps Starship Flight 14, its next V3 vehicle test.",
+              "why": "Starlink's dense, fast-growing constellation is the backbone of satellite broadband now pressuring cable and fixed-wireless providers.",
+              "srcName": "Source"
+            },
+            {
+              "severity": "med",
+              "badge": "Watch",
+              "headline": "Caltech brings fiber-optic ultralow-loss performance onto silicon photonic chips",
+              "url": "https://www.hpcwire.com/off-the-wire/caltech-extending-optical-fibers-ultralow-loss-performance-to-photonic-chips/",
+              "date": "📅 Aug 14, 2026",
+              "stale": true,
+              "summary": "Writing in Nature, Caltech researchers fabricated germano-silicate waveguides with standard lithography and surface reflow, achieving up to a 20-fold loss improvement over silicon nitride at visible wavelengths and more than 100-fold gains in laser coherence, effectively spooling a long optical path into a tiny chip footprint.",
+              "why": "Ultra-coherent photonic circuits could unlock better lasers, miniature atomic clocks and sensors, quantum systems, and more efficient data-center interconnects.",
+              "srcName": "Source"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

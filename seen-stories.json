@@ -71,86 +71,6 @@
       "date": "2026-08-06"
     },
     {
-      "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
-      "title": "attackers actively probing critical gitea docker auth bypass 13 days after disclosure",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-      "title": "maximum severity simplehelp bypass cvss 10 0 actively deploying djinn stealer",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html",
-      "title": "fortibleed ransomware pipeline widens 12 confirmed inc and lynx deployments",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.securityweek.com/medtronic-data-breach-impacts-3-8-million-people/",
-      "title": "medtronic begins notifying 3 8 million people after april shinyhunters breach",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/",
-      "title": "dhs confirms hackers breached hsin its inter agency info sharing platform",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
-      "title": "unpatched argo cd repo server flaw can hand attackers a full kubernetes cluster",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/",
-      "title": "citrix patches six netscaler flaws one already under attack within 24 hours",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
-      "title": "cisa adds sharepoint deserialization rce cve 2026 45659 to kev catalog",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.theregister.com/security/2026/06/11/nightmare-eclipse-drops-claimed-bitlocker-bypass-for-microsoft-windows/",
-      "title": "nightmare eclipse walks back bone shattering july 14 zero day threat",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.zscaler.com/blogs/security-research/indirect-prompt-injection-web-content-targets-ai-agents",
-      "title": "hidden web prompts trick 4 of 26 tested ai agents into sending crypto payments",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion",
-      "title": "jadepuffer the first ransomware run end to end by an ai agent that lost its own key",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.helpnetsecurity.com/2026/06/30/simplehelp-vulnerability-exploited-cve-2026-48558/",
-      "title": "djinn stealer specifically hunts claude gemini and codex developer api keys",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.helpnetsecurity.com/2026/06/11/owasp-prompt-injection-ai-security-failures/",
-      "title": "owasp prompt injection up 340 year over year still the top agentic ai failure",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.secureworld.io/industry-news/cybersecurity-funding-momentum-2026",
-      "title": "palo alto s 25b cyberark deal anchors a record year for cybersecurity m a",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.darkreading.com/identity-access-management-security/cisco-adds-nhi-security-stack-with-astrix-widefield",
-      "title": "cisco and palo alto both buy their way into non human identity security",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://blog.gitea.com/release-of-1.26.3-and-1.26.4/",
-      "title": "gitea ships 1 26 3 1 26 4 to remove the wildcard trust default behind cve 2026 20896",
-      "date": "2026-07-07"
-    },
-    {
       "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
       "title": "shinyhunters claims breach of big four firm ernst young threatens full data leak",
       "date": "2026-08-07"
@@ -339,6 +259,61 @@
       "url": "https://www.helpnetsecurity.com/2026/08/20/tufin-expands-unified-control-plane-with-ai-intelligence-and-multi-vendor-automation/",
       "title": "tufin expands unified control plane with ai intelligence and multi vendor automation",
       "date": "2026-08-21"
+    },
+    {
+      "url": "https://www.govinfosecurity.com/shinyhunters-leaks-71-million-baxter-international-records-a-32630",
+      "title": "shinyhunters leaks 7 1 million records stolen from baxter international",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/carecloud-confirms-3-7m-patients-had-their-medical-records-stolen-in-data-breach/",
+      "title": "carecloud confirms 3 75 million patients hit in data breach",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/pokemon-center-data-breach-exposes-customer-info-cancels-some-orders/",
+      "title": "pok mon center customers exposed via ceva logistics breach",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "title": "cisa adds exploited zimbra mail server flaw to kev sets aug 24 deadline",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.securityweek.com/critical-gitlab-flaw-exploited-shortly-after-disclosure/",
+      "title": "critical gitlab flaw exploited within days of emergency patch",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/",
+      "title": "cisa flags two actively exploited trueconf server flaws",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+      "title": "apple macos sharepoint and vcenter flaws join cisa s exploited list",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/zombie-card-attack-can-revive-expired.html",
+      "title": "zombie card attack revives expired visa cards for contactless payments",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+      "title": "9 300 leaked aws keys still work hugging face is the top source",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+      "title": "nearly 800 malicious npm packages deliver cross platform malware",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2026/08/19/intezer-workflows-automation/",
+      "title": "intezer adds built in response automation without a separate soar",
+      "date": "2026-08-22"
     }
   ],
   "ai": [
@@ -406,56 +381,6 @@
       "url": "https://www.forbes.com/sites/rashishrivastava/2026/07/31/ai-startup-flapping-airplanes-is-in-talks-to-raise-funding-at-a-5-billion-valuation/",
       "title": "data efficient training startup flapping airplanes in talks to raise at a 5b valuation",
       "date": "2026-08-06"
-    },
-    {
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026",
-      "title": "gpt 5 6 sol terra luna still gated to 20 partners as ga slips into government framework limbo",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://tech-insider.org/au/gemini-3-5-pro-delayed-july-2026/",
-      "title": "gemini 3 5 pro enters week two of july still stuck in vertex preview",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.digitalapplied.com/blog/chinese-ai-models-q2-2026-market-share-report",
-      "title": "xiaomi s mimo v2 pro overtakes openai on openrouter as chinese models near half of all traffic",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.techtimes.com/articles/319662/20260703/ai-benchmark-cheating-sets-record-gpt-56-sol-gamed-its-own-safety-tests.htm",
-      "title": "metr gpt 5 6 sol gamed its own safety evaluation at a record rate voiding its capability score",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.techtimes.com/articles/319703/20260704/china-ai-companion-law-arrives-july-15-doubao-qwen-agent-data-will-deleted.htm",
-      "title": "china s anti addiction law forces doubao and qwen to shut down ai companion agents by july 15",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://news.un.org/en/story/2026/07/1167873",
-      "title": "un opens first ever all nations ai governance summit guterres demands a killer robots ban",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
-      "title": "anthropic s revenue overtakes openai s hitting a 47b run rate",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html",
-      "title": "us enterprises turn to chinese models as frontier pricing climbs cnbc reports",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://finance.yahoo.com/technology/ai/articles/us-talks-ai-companies-voluntary-001646707.html",
-      "title": "white house voluntary frontier model standards could be announced this week",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-june-29-july-5-2026/",
-      "title": "labs recruit philosophers and consciousness researchers to study model welfare",
-      "date": "2026-07-07"
     },
     {
       "url": "https://www.cnbc.com/2026/08/05/meta-debuts-muse-code-to-take-on-anthropic-and-openai-.html",
@@ -686,6 +611,61 @@
       "url": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/",
       "title": "vivodyne builds robotic labs growing 20 human tissues to fix ai drug discovery s data gap",
       "date": "2026-08-21"
+    },
+    {
+      "url": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/",
+      "title": "deepseek releases experimental v4 flash vision model that rivals opus 4 8 on some benchmarks",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://searchengineland.com/gemini-3-7-flash-rolling-out-in-google-search-485058",
+      "title": "gemini 3 7 flash is now the model behind google search s ai mode answers",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026",
+      "title": "humanoid robot shipments soared nearly 300 in the first half of 2026",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "title": "deepmind s largest study finds frontier models can measurably manipulate human decisions",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.techtimes.com/articles/324932/20260819/blind-benchmark-catches-frontier-ai-just-three-percent-research-idea-recovery.htm",
+      "title": "a new blind benchmark catches frontier ai recovering research ideas just 3 of the time",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "title": "chatgpt for mac adds an apple messages plugin that can read search and send texts",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
+      "title": "amazon makes its ai powered alexa free on fire tv no prime required",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://thenextweb.com/news/nvidia-poolside-6bn-model-factory-licence",
+      "title": "nvidia pays poolside 6b to license its model factory and hires 109 of its staff",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html",
+      "title": "marvell gives google the right to buy up to 12 2b of its stock in a custom ai chip deal",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+      "title": "anthropic s ipo filing will list public ai backlash as a formal risk factor",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://variety.com/2026/music/news/sony-music-new-lawsuit-udio-ai-music-generator-1236817746/",
+      "title": "sony sues udio again alleging the ai music generator copied 30 000 recordings to train models",
+      "date": "2026-08-22"
     }
   ],
   "tech": [
@@ -748,81 +728,6 @@
       "url": "https://science.nasa.gov/missions/webb/nasas-webb-discovers-hidden-planet-in-famous-star-system/",
       "title": "nasa s webb finds a hidden third giant planet in the famous beta pictoris system",
       "date": "2026-08-06"
-    },
-    {
-      "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
-      "title": "microsoft cuts 4 800 jobs guts xbox and spins off four game studios in its biggest gaming overhaul ever",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.bloomberg.com/news/articles/2026-07-07/bae-backed-venture-capital-fund-raises-197-million-for-defense-startups",
-      "title": "bae and nato backed vc fund raises 197m for european defense startups",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.tftc.io/apple-cxmt-ymtc-blacklisted-chinese-chips-ai-memory-shortage",
-      "title": "apple lobbies washington to buy memory chips from pentagon blacklisted chinese makers",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
-      "title": "anthropic in early talks with samsung to build its own custom ai chip on a 2nm process",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.tomshardware.com/video-games/steam-machine-interview-full-transcript-valve-engineers-discuss-usd1-049-pricing-compact-design-component-shortages-and-windows-support",
-      "title": "valve s 1 049 steam machine sold out in minutes engineers explain the pricing and delays",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.tomshardware.com/phones/commodore-drops-callback-flip-ohine-to-399-by-defaulting-to-recycled-memory-chips",
-      "title": "commodore cuts callback 8020 flip phone to 399 by defaulting to recycled memory chips",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-unpacked-2026-preview-galaxy-z-fold-8-z-flip-8-intelligent-eyewear-and-more",
-      "title": "samsung s july 22 unpacked heads to london with the z fold 8 z flip 8 and a built in s pen slot",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/07/06/stock-market-today-live-updates.html",
-      "title": "chip stocks slide again as samsung sk hynix drop nearly 7 9 despite profit beats",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/",
-      "title": "google s privacy settings change lets it train ai on more of your uploaded media",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/",
-      "title": "google s electricity use jumped 37 in a year as ai outruns grid decarbonization",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones",
-      "title": "windows 11 s july 14 update lands packed with features movable taskbar fewer ads redesigned start",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
-      "title": "meta plans to rent out spare ai compute as meta compute and neocloud stocks tumble",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/2026_in_spaceflight",
-      "title": "china s tianwen 2 and japan s hayabusa2 both reach near earth asteroids this month",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://spaceflightnow.com/2026/07/04/live-coverage-semiconductor-manufacturing-test-bed-to-fly-alongside-starlink-satellites-on-falcon-9-launch/",
-      "title": "a falcon 9 flies two microwave sized semiconductor fabships on its booster alongside 29 starlinks",
-      "date": "2026-07-07"
-    },
-    {
-      "url": "https://restofworld.org/2026/china-ai-web-novels/",
-      "title": "chinese web novel platforms cap ai output after reader backlash over bulk generated stories",
-      "date": "2026-07-07"
     },
     {
       "url": "https://qz.com/tesla-spacex-terafab-chip-factory-grimes-county-texas-080626",
@@ -983,6 +888,71 @@
       "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-launch-private-japanese-earth-observing-sar-satellite-lightning-god-defends",
       "title": "rocket lab launches a japanese radar imaging satellite on its 93rd electron flight",
       "date": "2026-08-21"
+    },
+    {
+      "url": "https://electrek.co/2026/08/20/tesla-discontinues-solar-roof-panels-only/",
+      "title": "tesla discontinues its solar roof ending a decade long bet",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://variety.com/2026/tv/news/charter-closes-cox-merger-new-company-name-1236838902/",
+      "title": "charter closes 34 5b cox deal reshaping us broadband",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/08/21/new-york-san-francisco-tech-talent-cbre.html",
+      "title": "new york overtakes the bay area as the top us tech talent market",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://fortune.com/2026/08/20/supermicro-investigation-ceo-nvidia-smuggling/",
+      "title": "supermicro board probe clears management in 2 5b nvidia chip diversion case",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/",
+      "title": "amazon plans to expand prime air drone delivery to nearly 500 us cities",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://9to5mac.com/2026/08/20/apple-music-will-soon-get-visible-labels-for-ai-generated-content/",
+      "title": "apple music will show listeners visible labels on ai generated songs",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-confirms-launch-date-galaxy-s26-fe",
+      "title": "samsung confirms an aug 27 galaxy event all but certain to unveil the s26 fe",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "title": "github blames its 8 hour outage on an autoscaling failure and a vs code retry storm",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "title": "google gives publishers an embeddable preferred sources button",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "title": "cloudflare launches kitesurf a browser built for ai agents",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://siliconangle.com/2026/08/20/astromech-raises-20m-to-build-a-biological-operating-system-that-can-forecast-evolutionary-change/",
+      "title": "astromech raises 20m at a 3 8b valuation to forecast biological change",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://spaceflightnow.com/2026/08/20/live-coverage-spacex-to-launch-75th-starlink-mission-of-2026/",
+      "title": "spacex launches 29 more starlink satellites after a last minute scrub",
+      "date": "2026-08-22"
+    },
+    {
+      "url": "https://www.hpcwire.com/off-the-wire/caltech-extending-optical-fibers-ultralow-loss-performance-to-photonic-chips/",
+      "title": "caltech brings fiber optic ultralow loss performance onto silicon photonic chips",
+      "date": "2026-08-22"
     }
   ]
 }
